@@ -1,80 +1,4 @@
 from datetime import datetime, timedelta
-import heapq
-
-# class PriorityQueue:
-#     def __init__(self) -> None:
-#         self.pq: list[tuple[float, Node]] = []
-
-#     def is_empty(self) -> bool:
-#         return not self.pq
-
-#     def enqueue(self, item: 'Node', priority: float) -> None:
-#         heapq.heappush(self.pq, (priority, item))
-
-#     def dequeue(self) -> 'Node':
-#         return heapq.heappop(self.pq)[1]
-
-#     def contains(self, node: 'Node') -> bool:
-#         for priority, elem in self.pq:
-#             if elem == node:
-#                 return True
-#         return False
-
-# class PriorityQueue:
-#     def __init__(self) -> None:
-#         self.pq: list[Node] = []
-
-#     def is_empty(self) -> bool:
-#         return len(self.pq) == 0
-
-#     def enqueue(self, item: 'Node', priority: float):
-#         heapq.heappush(self.pq, (priority, item))
-
-#     def dequeue(self) -> 'Node':
-#         return heapq.heappop(self.pq)[1]
-
-#     def contains(self, item: 'Node') -> bool:
-#         for _, element in self.pq:
-#             if element == item:
-#                 return True
-#         return False
-    
-#     def update_priority(self, item: 'Node', new_priority: float) -> None:
-#         for i, (priority, element) in enumerate(self.pq):
-#             if element == item:
-#                 self.pq[i] = (new_priority, element)
-#                 heapq.heapify(self.pq)
-#                 break
-
-class PriorityQueue:
-    def __init__(self) -> None:
-        self.pq: list[tuple[float, 'Node']] = []
-        self.item_map: dict['Node', float] = {}
-
-    def is_empty(self) -> bool:
-        return len(self.pq) == 0
-
-    def enqueue(self, item: 'Node', priority: float):
-        heapq.heappush(self.pq, (priority, item))
-        self.item_map[item] = len(self.pq) - 1
-
-    def dequeue(self) -> 'Node':
-        priority, item = heapq.heappop(self.pq)
-        del self.item_map[item]
-        return item
-
-    def contains(self, item: 'Node') -> bool:
-        return item in self.item_map
-
-    def update_priority(self, item: 'Node', new_priority: float) -> None:
-        if item not in self.item_map:
-            raise ValueError("Item not found in priority queue")
-        i = self.item_map[item]
-        _, item = self.pq[i]
-        self.pq[i] = (new_priority, item)
-        self.item_map[item] = i
-        heapq._siftup(self.pq, i)
-
 
 class Node:
     def __init__(self, stop_name: str, latitude: float,
@@ -83,9 +7,6 @@ class Node:
         self.latitude = latitude
         self.longitude = longitude
         self.outgoing_edges = outgoing_edges
-        
-    def add_edge(self, edge: 'Edge') -> None:
-        self.outgoing_edges.append(edge)
     
     def __str__(self) -> str:
         return "Stop name: " + self.stop_name + ", coordinates: " + \
@@ -104,8 +25,8 @@ class Edge:
         self.start_node = start_node
         self.end_node = end_node
         self.line_name = line_name
-        self.departure_time = datetime.strptime(departure_time.strftime('%H:%M:%S'), '%H:%M:%S').time()
-        self.arrival_time = datetime.strptime(arrival_time.strftime('%H:%M:%S'), '%H:%M:%S').time()
+        self.departure_time = departure_time
+        self.arrival_time = arrival_time
         
     def calculate_weight(self, ref_time: datetime.time) -> float:
         dep_time = datetime.combine(datetime.today(), self.departure_time)
@@ -122,16 +43,12 @@ class Edge:
 
 
 class Graph:
-    def __init__(self, nodes: dict[str, Node] = None, 
-                    edges: dict[str, list[Edge]] = None) -> None:
-        self.nodes = nodes or {}
+    def __init__(self, nodes: dict[str, Node], edges: dict[str, list[Edge]] = None) -> None:
         self.edges = edges or {}
+        self.nodes = nodes or {}
         
     def compare_times(self, current: datetime.time, departure: datetime.time) -> bool:
         return current <= departure
-        
-    def get_node(self, name: str) -> Node:
-        return self.nodes.get(name, None)
             
     def get_outgoing_edges(self, start_node: Node) -> list[Edge]:
         return self.edges.get(start_node.stop_name, [])
@@ -142,14 +59,6 @@ class Graph:
         for edge in adjacent_edges:
             neighbor_nodes.append(edge.end_node)
         return neighbor_nodes
-    
-    def add_node(self, node: Node) -> None:
-        if node.stop_name in self.nodes:
-            for edge in node.outgoing_edges:
-                if edge not in self.nodes[node.stop_name]:
-                    self.nodes[node.stop_name].append(edge)
-        else:
-            self.nodes[node.stop_name] = node
     
     def add_edge(self, edge: Edge) -> None:
         start_node_found = self.nodes[edge.start_node.stop_name]

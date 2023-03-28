@@ -11,15 +11,13 @@ def main():
     beginning = "PL. GRUNWALDZKI"
     destination = "GALERIA DOMINIKAŃSKA"
     time = datetime(2023, 1, 1, 10, 0, 0).time()
-    
-    print(len(graph.nodes))
-    print(len(graph.edges))
+
     print(f"Starting point: {beginning}")
     print(f"Destination: {destination}")
     print(f"Starting time: {time}")
     
-    # #DijkstraAlg.dijkstra(dij, "Perzowa", "Jaworowa", datetime.strptime("12:30:00", '%H:%M:%S').time())
-    # #DijkstraAlg.dijkstra(dij, "Broniewskiego", "BISKUPIN", datetime.strptime("15:00:00", '%H:%M:%S').time())
+    # DijkstraAlg.dijkstra(dij, "Perzowa", "Jaworowa", datetime.strptime("12:30:00", '%H:%M:%S').time())
+    # DijkstraAlg.dijkstra(dij, "Broniewskiego", "BISKUPIN", datetime.strptime("15:00:00", '%H:%M:%S').time())
     # DijkstraAlg.dijkstra(dij, "Perzowa", "Jaworowa", datetime.strptime("23:34:00", '%H:%M:%S').time())
 
     run = DijkstraAlg(graph, time, beginning, destination)

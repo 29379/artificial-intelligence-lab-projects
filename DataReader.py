@@ -25,28 +25,31 @@ class DataReader():
                    "end_stop_lat", "end_stop_lon"],
             parse_dates=['departure_time', 'arrival_time'])
         
-        df['departure_time'] = [time.time() for time in pd.to_datetime(df['departure_time'], format='%H:%M:%S')]
-        df['arrival_time'] = [time.time() for time in pd.to_datetime(df['arrival_time'], format='%H:%M:%S')]
+        # df['departure_time'] = [time.time() for time in pd.to_datetime(df['departure_time'], format='%H:%M:%S')]
+        # df['arrival_time'] = [time.time() for time in pd.to_datetime(df['arrival_time'], format='%H:%M:%S')]
+
+        df['departure_time'] = pd.to_datetime(df['departure_time'], format='%H:%M:%S').dt.time
+        df['arrival_time'] = pd.to_datetime(df['arrival_time'], format='%H:%M:%S').dt.time
+        
+        #   max_arrival_time = pd.to_datetime(df['arrival_time'], format='%H:%M:%S').max().strftime('%H:%M:%S')
+        #   print(max_arrival_time)
 
         nodes = {}
         edges = {}
         
         for row in df.itertuples():
-            print(".")
-            #   print(str(row.Index))
             start_node = Node(row.start_stop, float(row.start_stop_lat), float(row.start_stop_lon), [])
             end_node = Node(row.end_stop, float(row.end_stop_lat), float(row.end_stop_lon), [])
 
             departure_td = datetime.timedelta(hours=row.departure_time.hour, minutes=row.departure_time.minute, seconds=row.departure_time.second)
             arrival_td = datetime.timedelta(hours=row.arrival_time.hour, minutes=row.arrival_time.minute, seconds=row.arrival_time.second)
 
-            edge = Edge(row.Index, row.company, start_node, end_node, row.line, row.departure_time, row.arrival_time)
-            #edges.append(edge)
+            edge = Edge(row.Index, row.company, start_node, end_node, row.line, departure_td, arrival_td)
+            
             if edge.start_node.stop_name not in edges:
                 edges[edge.start_node.stop_name] = [edge]
             else:
-                if edge not in edges[edge.start_node.stop_name]:
-                    edges[edge.start_node.stop_name].append(edge)
+                edges[edge.start_node.stop_name].append(edge)
             
             if edge not in start_node.outgoing_edges:
                 start_node.outgoing_edges.append(edge)
@@ -55,10 +58,11 @@ class DataReader():
                 nodes[start_node.stop_name] = start_node
             if end_node.stop_name not in nodes:
                 nodes[end_node.stop_name] = end_node
-
-
         print("Data loaded")
+        print(f"Number of vertices: {len(edges)} / {len(nodes)}")
+        print(f"Number of edges: {sum(len(lst) for lst in edges.values())}")
         graph = Graph(nodes, edges)
         print("Graph created")
+        print("\n- - - - - - - - - - - - - - - - - - - -\n")
         return graph
     
