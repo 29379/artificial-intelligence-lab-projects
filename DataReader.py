@@ -25,9 +25,6 @@ class DataReader():
                    "start_stop_lat", "start_stop_lon",
                    "end_stop_lat", "end_stop_lon"],
             parse_dates=['departure_time', 'arrival_time'])
-        
-        # df['departure_time'] = [time.time() for time in pd.to_datetime(df['departure_time'], format='%H:%M:%S')]
-        # df['arrival_time'] = [time.time() for time in pd.to_datetime(df['arrival_time'], format='%H:%M:%S')]
 
         df['departure_time'] = pd.to_datetime(df['departure_time'], format='%H:%M:%S').dt.time
         df['arrival_time'] = pd.to_datetime(df['arrival_time'], format='%H:%M:%S').dt.time

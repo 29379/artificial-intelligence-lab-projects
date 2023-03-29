@@ -1,8 +1,9 @@
 from graph import *
 import numpy as np
 import datetime
-import heapq, sys, math
+import heapq, sys, math, csv
 from typing import Optional
+import pandas as pd
 
 class Algorithms:
     def __init__(self, graph: Graph, time: datetime.timedelta, start_node: str, end_node: str) -> None:
@@ -52,11 +53,20 @@ class Algorithms:
         self.path.reverse()            
     
     
-    def print_solution(self) -> None:
-        print(self.path[0])
-        for i in range(1, len(self.path)):
-            print(f">   {self.used_lines[i]} :   {self.dep_times[i].strftime('%H:%M:%S')}  -   {self.arr_times[i].strftime('%H:%M:%S')}")
-            print(self.path[i])
+    def write_solution_to_file(self, alg_type: str, runtime: str) -> None:
+        with open('output.csv', 'a', newline='') as file:
+            writer = csv.writer(file, delimiter=',')
+            writer.writerow([alg_type, runtime])
+            writer.writerow(['From: ', self.start_node.stop_name, 'To: ', self.end_node.stop_name])
+            for i in range(0, len(self.path)):
+                if i < len(self.path):
+                    if i == 0:
+                        writer.writerow([self.path[i], '>', '', '', self.arr_times[i].strftime('%H:%M:%S')])
+                    else:
+                        writer.writerow([self.path[i], '>', self.used_lines[i], self.dep_times[i].strftime('%H:%M:%S'), self.arr_times[i].strftime('%H:%M:%S')])
+                else:
+                    writer.writerow([self.path[i]])
+            writer.writerow('')
             
               
     def execute_dijkstra(self) -> None:
@@ -102,12 +112,6 @@ class Algorithms:
     def euclidean_dist(self, start: str, end: str) -> float:
         return float(math.sqrt(pow(self.graph.nodes[start].latitude - self.graph.nodes[end].latitude, 2) 
                          + pow(self.graph.nodes[start].longitude - self.graph.nodes[end].longitude, 2)))
-
-
-    def cost_of_line_transfer(self, prev: Edge, next: Edge) -> float:
-        if prev is not None and next is not None and prev.line_name != next.line_name:
-            return 1000
-        return 0
     
     
     #   'criterion' string decides which crierion will be used in the a* algorithm,
@@ -148,7 +152,7 @@ class Algorithms:
                         self.previous_nodes[end_name] = my_focus
                         self.cost[end_name] = new_cost  
                         
-                        priority = new_cost + self.manhattan_dist(my_focus, end_name)
+                        priority = new_cost + (self.manhattan_dist(my_focus, end_name) * 1000)
                         heapq.heappush(self.unsettled_nodes, (priority, edge.end_node.stop_name, edge.arrival_time))
                         
                             
@@ -162,7 +166,7 @@ class Algorithms:
                     or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
                         new_cost = (edge.arrival_time - self.time).seconds / 60
                         if edge.line_name != self.lines[my_focus]:
-                            new_cost += 25
+                            new_cost += 50
                         end_name = edge.end_node.stop_name
                         if edge.end_node not in self.settled_nodes and new_cost < self.cost[end_name]:
                             self.arrivals[end_name] = edge.arrival_time
@@ -171,6 +175,6 @@ class Algorithms:
                             self.previous_nodes[end_name] = my_focus
                             self.cost[end_name] = new_cost  
                             
-                            priority = new_cost + self.manhattan_dist(my_focus, end_name)
+                            priority = new_cost + (self.manhattan_dist(my_focus, end_name) * 1000)
                             heapq.heappush(self.unsettled_nodes, (priority, edge.end_node.stop_name, edge.arrival_time))
     
