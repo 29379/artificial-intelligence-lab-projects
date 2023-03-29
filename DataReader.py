@@ -2,6 +2,7 @@ import pandas as pd
 from graph import *
 import os
 import datetime
+from unidecode import unidecode
 
 class DataReader():
     @staticmethod
@@ -38,13 +39,13 @@ class DataReader():
         edges = {}
         
         for row in df.itertuples():
-            start_node = Node(row.start_stop, float(row.start_stop_lat), float(row.start_stop_lon), [])
-            end_node = Node(row.end_stop, float(row.end_stop_lat), float(row.end_stop_lon), [])
+            start_node = Node(unidecode(row.start_stop), float(row.start_stop_lat), float(row.start_stop_lon), [])
+            end_node = Node(unidecode(row.end_stop), float(row.end_stop_lat), float(row.end_stop_lon), [])
 
             departure_td = datetime.timedelta(hours=row.departure_time.hour, minutes=row.departure_time.minute, seconds=row.departure_time.second)
             arrival_td = datetime.timedelta(hours=row.arrival_time.hour, minutes=row.arrival_time.minute, seconds=row.arrival_time.second)
 
-            edge = Edge(row.Index, row.company, start_node, end_node, row.line, departure_td, arrival_td)
+            edge = Edge(row.Index, unidecode(row.company), start_node, end_node, unidecode(row.line), departure_td, arrival_td)
             
             if edge.start_node.stop_name not in edges:
                 edges[edge.start_node.stop_name] = [edge]
