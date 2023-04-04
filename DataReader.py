@@ -28,12 +28,9 @@ class DataReader():
 
         df['departure_time'] = pd.to_datetime(df['departure_time'], format='%H:%M:%S').dt.time
         df['arrival_time'] = pd.to_datetime(df['arrival_time'], format='%H:%M:%S').dt.time
-        
-        #   max_arrival_time = pd.to_datetime(df['arrival_time'], format='%H:%M:%S').max().strftime('%H:%M:%S')
-        #   print(max_arrival_time)
 
-        nodes = {}
-        edges = {}
+        nodes: dict[str, Node] = {}
+        edges: dict[str, list[Edge]] = {}
         
         for row in df.itertuples():
             start_node = Node(unidecode(row.start_stop), float(row.start_stop_lat), float(row.start_stop_lon))
@@ -48,11 +45,17 @@ class DataReader():
                 edges[edge.start_node.stop_name] = [edge]
             else:
                 edges[edge.start_node.stop_name].append(edge)
+                
+            #   thats why there was a problem with "Zorawina - Niepodleglosci (Mostek)" - there was no edge
+            #   coming out of it, so it was not added to the edges dictionary as a key (fixed in 51 and 52)
+            if edge.end_node.stop_name not in edges:
+                edges[edge.end_node.stop_name] = []
             
             if start_node.stop_name not in nodes:
                 nodes[start_node.stop_name] = start_node
             if end_node.stop_name not in nodes:
                 nodes[end_node.stop_name] = end_node
+                
         print("Data loaded")
         print(f"Number of vertices: {len(edges)} / {len(nodes)}")
         print(f"Number of edges: {sum(len(lst) for lst in edges.values())}")

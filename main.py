@@ -13,47 +13,53 @@ def main() -> None:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(['Stop', 'Runtime', 'Line', 'Departure time', 'Arrival time'])
     
-    # dijkstra_sample100(graph, starting_nodes, ending_nodes, starting_times)
-    # astar_time_sample100(graph, starting_nodes, ending_nodes, starting_times)
-    # astar_transfers_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    dijkstra_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    astar_time_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    astar_transfers_sample100(graph, starting_nodes, ending_nodes, starting_times)
     
     #   dijkstra_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
     #   astar_time_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
     #   astar_transfers_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
     
-    astar_transfers_single(graph, "Rynek", "Zamkowa", timedelta(hours=14, minutes=33))
-    astar_transfers_single(graph, "Rynek", "PL. GRUNWALDZKI", timedelta(hours=14, minutes=33))
-    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=14, minutes=33))
-    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=19, minutes=33))
-    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=6, minutes=33))
-    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=0, minutes=33))
+    # astar_time_single(graph, "Rynek", "Zamkowa", timedelta(hours=14, minutes=33))
+    # astar_time_single(graph, "Rynek", "PL. GRUNWALDZKI", timedelta(hours=14, minutes=33))
+    # astar_time_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=14, minutes=33))
+    # astar_time_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=19, minutes=33))
+    # astar_time_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=6, minutes=33))
+    # astar_time_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=0, minutes=33))
     
+    
+    # astar_transfers_single(graph, "Rynek", "Zamkowa", timedelta(hours=14, minutes=33))
+    # astar_transfers_single(graph, "Rynek", "PL. GRUNWALDZKI", timedelta(hours=14, minutes=33))
+    # astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=14, minutes=33))
+    # astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=19, minutes=33))
+    # astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=6, minutes=33))
+    # astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=0, minutes=33))
+    
+    # astar_transfers_single(graph, "Rozanka", "GAJ", timedelta(hours=4, minutes=18))
+    # astar_transfers_single(graph, "Smocza", "Kielczowska", timedelta(hours=3, minutes=38))
+    #astar_transfers_single(graph, "Warminska", "Kielczow - WODROL", timedelta(hours=21, minutes=19))
 
-
-def calculate_average_runtimes(runtimes: list[float]) -> float:
-    runtimes.sort()
+def trim_extreme_cases(runtimes: list[float]) -> list[float]:
     n_trim = int(0.05 * len(runtimes))
-    start_index = n_trim
-    end_index = len(runtimes) - n_trim
-
-    trimmed_runtimes = runtimes[start_index:end_index]
-    return np.mean(trimmed_runtimes)
+    for i in range(n_trim):
+        max_runtime = max(runtimes)
+        runtimes.remove(max_runtime)
+        min_runtime = min(runtimes)
+        runtimes.remove(min_runtime)
+    return runtimes
 
 
 def get_samples(graph: Graph) -> tuple[list[str], list[str], list[timedelta]]:
-    starting_nodes = random.sample(list(graph.nodes.keys()), 100)
-    ending_nodes = random.sample(list(graph.nodes.keys()), 100)
+    starting_nodes = random.sample(list(graph.nodes.keys()), 5)
+    ending_nodes = random.sample(list(graph.nodes.keys()), 5)
     starting_times = []
     
     for i in range(len(starting_nodes)):
         hours = random.randint(0, 23)
         minutes = random.randint(1, 59)
-        starting_times.append(timedelta(hours=hours, minutes=minutes))
-        while starting_nodes[i] == ending_nodes[i] \
-            or starting_nodes[i] == "Zorawina - Niepodleglosci (Mostek)" \
-            or ending_nodes[i] == "Zorawina - Niepodleglosci (Mostek)":
-                starting_nodes[i] = random.choice(list(graph.nodes.keys()))
-                ending_nodes[i] = random.choice(list(graph.nodes.keys()))
+        starting_times.append(timedelta(hours=hours, minutes=minutes))     
+                        
     return (starting_nodes, ending_nodes, starting_times)
     
     
@@ -69,7 +75,8 @@ def dijkstra_single(graph: Graph, beginning: str, destination: str, time: timede
     end_time = datetime.now()
     runtime = (end_time - start_time).total_seconds()
     print(f"Dijkstras runtime in seconds: {runtime:.2f}")
-    dijkstra.write_solution_to_file('DIJKSTRA', runtime)
+    dijkstra.write_solution_to_file('DIJKSTRA', runtime, 'dijkstra_outputs.csv')
+    dijkstra.write_runtime_to_file('DIJKSTRA', runtime, 'dijkstra_runtimes.csv')
 
 
 def dijkstra_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: list[str], starting_times: list[timedelta]) -> None:
@@ -93,21 +100,11 @@ def dijkstra_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: li
         print(f"Dijkstras runtime in seconds: {runtime:.2f}")
         dijkstra_runtimes.append(runtime)
         print("")
-        dijkstra.write_solution_to_file('DIJKSTRA', runtime)   
-    avg = calculate_average_runtimes(dijkstra_runtimes)
-    print(f"Average runtime for finding a path with the dijkstra algorithm, from a random start, to a random destination, on a random time: {avg}") 
-    
-    dijkstra_runtimes.sort()
-    n_trim = int(0.05 * len(dijkstra_runtimes))
-    start_index = n_trim
-    end_index = len(dijkstra_runtimes) - n_trim
-    trimmed_runtimes = dijkstra_runtimes[start_index:end_index]
-    
-    with open('runtimes.csv', 'a', newline='') as file:
-            writer = csv.writer(file, delimiter=',')
-            for elem in trimmed_runtimes:
-                writer.writerow(['DIJKSTRA', elem])
-            writer.writerow('')
+        dijkstra.write_solution_to_file('DIJKSTRA', runtime, 'dijkstra_outputs.csv')  
+        dijkstra.write_runtime_to_file('DIJKSTRA', runtime, 'dijkstra_runtimes.csv') 
+
+    dijkstra_runtimes = trim_extreme_cases(dijkstra_runtimes)
+    print(f"Average runtime for finding a path with the dijkstra algorithm, from a random start, to a random destination, on a random time: {np.mean(dijkstra_runtimes)}") 
 
     
     
@@ -123,7 +120,8 @@ def astar_time_single(graph: Graph, beginning: str, destination: str, time: time
     end_time = datetime.now()
     runtime = (end_time - start_time).total_seconds()
     print(f"A* (time criterion) runtime in seconds: {runtime:.2f}")
-    astar_time.write_solution_to_file('A* - TIME', runtime)
+    astar_time.write_solution_to_file('A* - TIME', runtime, 'astar_time_outputs.csv')
+    astar_time.write_runtime_to_file('A* - TIME', runtime, 'astar_time_runtimes.csv')
     
     
 def astar_time_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: list[str], starting_times: list[timedelta]) -> None:
@@ -147,24 +145,12 @@ def astar_time_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: 
         print(f"A* (time criterion) runtime in seconds: {runtime:.2f}")
         astar_t_runtimes.append(runtime)
         print("")
-        astar_time.write_solution_to_file('A* - TIME', runtime)
-    avg = calculate_average_runtimes(astar_t_runtimes)
-    print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {avg}")
-    
-    astar_t_runtimes.sort()
-    n_trim = int(0.05 * len(astar_t_runtimes))
-    start_index = n_trim
-    end_index = len(astar_t_runtimes) - n_trim
-    trimmed_runtimes = astar_t_runtimes[start_index:end_index]
-    #   random.shuffle(trimmed_runtimes)
-    
-    with open('runtimes.csv', 'a', newline='') as file:
-            writer = csv.writer(file, delimiter=',')
-            for elem in trimmed_runtimes:
-                writer.writerow(['A* - TIME', elem])
-            writer.writerow('')
+        astar_time.write_solution_to_file('A* - TIME', runtime, 'astar_time_outputs.csv')
+        astar_time.write_runtime_to_file('A* - TIME', runtime, 'astar_time_runtimes.csv')
 
-    
+    astar_t_runtimes = trim_extreme_cases(astar_t_runtimes)
+    print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {np.mean(astar_t_runtimes)}")
+
     
 def astar_transfers_single(graph: Graph, beginning: str, destination: str, time: timedelta) -> None:
     print("\n\n- - - - - - - - - -A* : TRANSFERS- - - - - - - - - -\n\n")
@@ -178,7 +164,8 @@ def astar_transfers_single(graph: Graph, beginning: str, destination: str, time:
     end_time = datetime.now()
     runtime = (end_time - start_time).total_seconds()
     print(f"A* (transfer criterion) runtime in seconds: {runtime:.2f}")
-    astar_transfers.write_solution_to_file('A* - TRANSFERS', runtime)
+    astar_transfers.write_solution_to_file('A* - TRANSFERS', runtime, 'astar_transfers_outputs.csv')
+    astar_transfers.write_runtime_to_file('A* - TRANSFERS', runtime, 'astar_transfers_runtimes.csv')
     
     
 def astar_transfers_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: list[str], starting_times: list[timedelta]) -> None:
@@ -202,23 +189,11 @@ def astar_transfers_sample100(graph: Graph, starting_nodes: list[str], ending_no
         print(f"A* (transfer criterion) runtime in seconds: {runtime:.2f}")
         astar_t_runtimes.append(runtime)
         print("")
-        astar_transfers.write_solution_to_file('A* - TRANSFERS', runtime)
-    avg = calculate_average_runtimes(astar_t_runtimes)
-    print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {avg}")
-    
-    astar_t_runtimes.sort()
-    n_trim = int(0.05 * len(astar_t_runtimes))
-    start_index = n_trim
-    end_index = len(astar_t_runtimes) - n_trim
-    trimmed_runtimes = astar_t_runtimes[start_index:end_index]
-    random.sh
-    
-    with open('runtimes.csv', 'a', newline='') as file:
-            writer = csv.writer(file, delimiter=',')
-            for elem in trimmed_runtimes:
-                writer.writerow(['A* - TRANSFERS', elem])
-            writer.writerow('')
-    
+        astar_transfers.write_solution_to_file('A* - TRANSFERS', runtime, 'astar_transfer_outputs.csv')
+        astar_transfers.write_runtime_to_file('A* - TRANSFERS', runtime, 'astar_transfer_runtimes.csv')
+        
+    astar_t_runtimes = trim_extreme_cases(astar_t_runtimes)
+    print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {np.mean(astar_t_runtimes)}")
 
 
 if __name__ == '__main__':
