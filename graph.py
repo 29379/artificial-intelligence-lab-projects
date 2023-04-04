@@ -2,11 +2,10 @@ from datetime import datetime, timedelta
 
 class Node:
     def __init__(self, stop_name: str, latitude: float,
-                 longitude: float, outgoing_edges: list['Edge']) -> None:
+                 longitude: float) -> None:
         self.stop_name = stop_name
         self.latitude = latitude
         self.longitude = longitude
-        self.outgoing_edges = outgoing_edges
     
     def __str__(self) -> str:
         return "Stop name: " + self.stop_name + ", coordinates: " + \

@@ -36,8 +36,8 @@ class DataReader():
         edges = {}
         
         for row in df.itertuples():
-            start_node = Node(unidecode(row.start_stop), float(row.start_stop_lat), float(row.start_stop_lon), [])
-            end_node = Node(unidecode(row.end_stop), float(row.end_stop_lat), float(row.end_stop_lon), [])
+            start_node = Node(unidecode(row.start_stop), float(row.start_stop_lat), float(row.start_stop_lon))
+            end_node = Node(unidecode(row.end_stop), float(row.end_stop_lat), float(row.end_stop_lon))
 
             departure_td = datetime.timedelta(hours=row.departure_time.hour, minutes=row.departure_time.minute, seconds=row.departure_time.second)
             arrival_td = datetime.timedelta(hours=row.arrival_time.hour, minutes=row.arrival_time.minute, seconds=row.arrival_time.second)
@@ -48,9 +48,6 @@ class DataReader():
                 edges[edge.start_node.stop_name] = [edge]
             else:
                 edges[edge.start_node.stop_name].append(edge)
-            
-            if edge not in start_node.outgoing_edges:
-                start_node.outgoing_edges.append(edge)
             
             if start_node.stop_name not in nodes:
                 nodes[start_node.stop_name] = start_node

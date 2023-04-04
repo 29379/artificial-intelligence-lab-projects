@@ -13,12 +13,21 @@ def main() -> None:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(['Stop', 'Runtime', 'Line', 'Departure time', 'Arrival time'])
     
-    #   dijkstra_sample100(graph, starting_nodes, ending_nodes, starting_times)
-    #   astar_time_sample100(graph, starting_nodes, ending_nodes, starting_times)
-    astar_transfers_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    # dijkstra_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    # astar_time_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    # astar_transfers_sample100(graph, starting_nodes, ending_nodes, starting_times)
+    
     #   dijkstra_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
     #   astar_time_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
     #   astar_transfers_single(graph, "Psie Pole", "FAT", timedelta(hours=14, minutes=33))
+    
+    astar_transfers_single(graph, "Rynek", "Zamkowa", timedelta(hours=14, minutes=33))
+    astar_transfers_single(graph, "Rynek", "PL. GRUNWALDZKI", timedelta(hours=14, minutes=33))
+    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=14, minutes=33))
+    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=19, minutes=33))
+    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=6, minutes=33))
+    astar_transfers_single(graph, "MOKRY DWOR", "Dolmed", timedelta(hours=0, minutes=33))
+    
 
 
 def calculate_average_runtimes(runtimes: list[float]) -> float:

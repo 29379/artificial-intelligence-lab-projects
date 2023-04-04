@@ -7,20 +7,23 @@ import pandas as pd
 
 class Algorithms:
     def __init__(self, graph: Graph, time: datetime.timedelta, start_node: str, end_node: str) -> None:
+        #   params
         self.graph: Graph = graph
         self.time: datetime.timedelta = time
         self.start_node: Node = self.graph.get_node(start_node)
         self.end_node: Node = self.graph.get_node(end_node)
         
         self.cost: dict[str, float] = {}
-        self.previous_nodes: dict[str, Optional[str]] = {}
-        self.lines: dict[str, any] = {}
-        self.arrivals: dict[str, datetime.timedelta] = {}
-        self.departures: dict[str, datetime.timedelta] = {}
+        self.previous_nodes: dict[str, Optional[str]] = {}  #   to check which stop was visited before
+        self.lines: dict[str, any] = {} #   to check how did I get to wherever I am rn (through which edge)
+        self.arrivals: dict[str, datetime.timedelta] = {}   #   to check the time of arrival at a stop
+        self.departures: dict[str, datetime.timedelta] = {} #   to check the time of departure from a stop
         
+        #   priority queue equivalents
         self.settled_nodes: list[str] = []
-        self.unsettled_nodes: list[tuple[float, str, datetime.timedelta]] = []
+        self.unsettled_nodes: list[tuple[float, str, datetime.timedelta]] = []  #   priority, current node, current time
         
+        #   variables used to keep track of the best solution at the moment
         self.path: list[any] = []
         self.arr_times: list[datetime.datetime] = []
         self.dep_times: list[datetime.datetime] = []
@@ -72,7 +75,10 @@ class Algorithms:
     def execute_dijkstra(self) -> None:
         while self.unsettled_nodes:
             priority, my_focus, current_time = heapq.heappop(self.unsettled_nodes)
-            self.settled_nodes.append(my_focus)
+
+            if not my_focus in self.settled_nodes:
+                self.settled_nodes.append(my_focus)
+            
             if my_focus == self.end_node.stop_name:
                 break
             else:
@@ -85,13 +91,17 @@ class Algorithms:
 
     def update_unsettled_dijkstra(self, my_focus: str, current_time: datetime.timedelta) -> None:
         for edge in self.graph.edges[my_focus]:
-            total_seconds = edge.departure_time.total_seconds()
-            cmp_tool = (datetime.datetime.min + datetime.timedelta(seconds=total_seconds) - datetime.datetime.min)
+            departure_total_seconds = datetime.timedelta(seconds=edge.departure_time.total_seconds())
             
-            #   checking if the edge is valid given current time
-            if (self.lines[my_focus] == 0 and current_time == cmp_tool) \
-                or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool) \
-                or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
+            start_journey_condition = (self.lines[my_focus] == 0) and (current_time <= departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+            transfer_condition = (edge.line_name != self.lines[my_focus]) and (current_time < departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+            keep_going_condition = (edge.line_name == self.lines[my_focus]) and (current_time == departure_total_seconds)
+            
+            # if (self.lines[my_focus] == 0 and current_time <= cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+            #     or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+            #     or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
+            
+            if start_journey_condition or transfer_condition or keep_going_condition:
                     new_cost = (edge.arrival_time - self.time).seconds / 60
                     end_name = edge.end_node.stop_name
                     #   checking if I was there already and if not, is it worth it to go there
@@ -100,7 +110,7 @@ class Algorithms:
                         self.departures[end_name] = edge.departure_time
                         self.lines[end_name] = edge.line_name
                         self.previous_nodes[end_name] = my_focus
-                        self.cost[end_name] = new_cost  #   new priority
+                        self.cost[end_name] = new_cost  #   new__cost == new priority
                         heapq.heappush(self.unsettled_nodes, (new_cost, edge.end_node.stop_name, edge.arrival_time))
                         
                         
@@ -114,6 +124,37 @@ class Algorithms:
                          + pow(self.graph.nodes[start].longitude - self.graph.nodes[end].longitude, 2)))
     
     
+    
+    def update_unsettled_astar_time(self, priority: any, my_focus: str, current_time: datetime.timedelta) -> None:
+        for edge in self.graph.edges[my_focus]:
+            departure_total_seconds = datetime.timedelta(seconds=edge.departure_time.total_seconds())
+            
+            start_journey_condition = (self.lines[my_focus] == 0) and (current_time <= departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+            transfer_condition = (edge.line_name != self.lines[my_focus]) and (current_time < departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+            keep_going_condition = (edge.line_name == self.lines[my_focus]) and (current_time == departure_total_seconds)
+            
+            # if (self.lines[my_focus] == 0 and current_time <= cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+            #     or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+            #     or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
+            
+            if start_journey_condition or transfer_condition or keep_going_condition:
+                    
+                    # new_cost = (edge.arrival_time - self.time).seconds / 60
+                    new_cost = (edge.arrival_time - self.time).seconds
+                    priority = new_cost + (self.manhattan_dist(my_focus, end_name) * 1000)
+                    
+                    end_name = edge.end_node.stop_name
+                    
+                    if edge.end_node not in self.settled_nodes and new_cost < self.cost[end_name]:
+                        self.arrivals[end_name] = edge.arrival_time
+                        self.departures[end_name] = edge.departure_time
+                        self.lines[end_name] = edge.line_name
+                        self.previous_nodes[end_name] = my_focus
+                        self.cost[end_name] = new_cost  
+                        
+                        heapq.heappush(self.unsettled_nodes, (priority, edge.end_node.stop_name, edge.arrival_time))
+                        
+                            
     #   'criterion' string decides which crierion will be used in the a* algorithm,
     #   which helps me reduce excess code, since the initial setup is the same
     def execute_astar(self, criterion: str) -> None:
@@ -133,41 +174,28 @@ class Algorithms:
                     else:
                         print("Wrong criterion!")
         self.retrieve_solution(my_focus)
-        
-    
-    def update_unsettled_astar_time(self, priority: any, my_focus: str, current_time: datetime.timedelta) -> None:
-        for edge in self.graph.edges[my_focus]:
-            total_seconds = edge.departure_time.total_seconds()
-            cmp_tool = (datetime.datetime.min + datetime.timedelta(seconds=total_seconds) - datetime.datetime.min)
-            
-            if (self.lines[my_focus] == 0 and current_time == cmp_tool) \
-                or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool) \
-                or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
-                    new_cost = (edge.arrival_time - self.time).seconds / 60
-                    end_name = edge.end_node.stop_name
-                    if edge.end_node not in self.settled_nodes and new_cost < self.cost[end_name]:
-                        self.arrivals[end_name] = edge.arrival_time
-                        self.departures[end_name] = edge.departure_time
-                        self.lines[end_name] = edge.line_name
-                        self.previous_nodes[end_name] = my_focus
-                        self.cost[end_name] = new_cost  
-                        
-                        priority = new_cost + (self.manhattan_dist(my_focus, end_name) * 1000)
-                        heapq.heappush(self.unsettled_nodes, (priority, edge.end_node.stop_name, edge.arrival_time))
-                        
+                                
                             
+    
     def update_unsettled_astar_transfers(self, priority: any, my_focus: str, current_time: datetime.timedelta) -> None:
             for edge in self.graph.edges[my_focus]:
-                total_seconds = edge.departure_time.total_seconds()
-                cmp_tool = (datetime.datetime.min + datetime.timedelta(seconds=total_seconds) - datetime.datetime.min)
+                departure_total_seconds = datetime.timedelta(seconds=edge.departure_time.total_seconds())
                 
-                if (self.lines[my_focus] == 0 and current_time == cmp_tool) \
-                    or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool) \
-                    or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
+                start_journey_condition = (self.lines[my_focus] == 0) and (current_time <= departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+                transfer_condition = (edge.line_name != self.lines[my_focus]) and (current_time < departure_total_seconds) and ((departure_total_seconds - current_time).total_seconds() <= 7200)
+                keep_going_condition = (edge.line_name == self.lines[my_focus]) and (current_time == departure_total_seconds)
+                
+                # if (self.lines[my_focus] == 0 and current_time <= cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+                #     or (edge.line_name != self.lines[my_focus] and current_time < cmp_tool and (cmp_tool - current_time).total_seconds() <= 7200) \
+                #     or (edge.line_name == self.lines[my_focus] and current_time == cmp_tool):
+                
+                if start_journey_condition or transfer_condition or keep_going_condition:
+                        
                         new_cost = (edge.arrival_time - self.time).seconds / 60
                         if edge.line_name != self.lines[my_focus]:
-                            new_cost += 50
+                            new_cost += 25
                         end_name = edge.end_node.stop_name
+                        
                         if edge.end_node not in self.settled_nodes and new_cost < self.cost[end_name]:
                             self.arrivals[end_name] = edge.arrival_time
                             self.departures[end_name] = edge.departure_time
@@ -177,4 +205,9 @@ class Algorithms:
                             
                             priority = new_cost + (self.manhattan_dist(my_focus, end_name) * 1000)
                             heapq.heappush(self.unsettled_nodes, (priority, edge.end_node.stop_name, edge.arrival_time))
+                            
+                            
+                            
+    def tabu_search(self):
+        pass
     
