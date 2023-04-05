@@ -1,17 +1,34 @@
 from graph import *
 import numpy as np
 import datetime
-import heapq, sys, math, csv
+import heapq, sys, math, csv, random
 from typing import Optional
 import pandas as pd
 
 class Algorithms:
-    def __init__(self, graph: Graph, time: datetime.timedelta, start_node: str, end_node: str) -> None:
+    def __init__(self, graph: Graph, time: datetime.timedelta, start_node: str, end_node: str, tabu_stops: list[str]) -> None:
         #   params
         self.graph: Graph = graph
         self.time: datetime.timedelta = time
         self.start_node: Node = self.graph.get_node(start_node)
         self.end_node: Node = self.graph.get_node(end_node)
+        
+        #   params for tabu search
+        self.tabu_stops: list[str] = tabu_stops
+        self.tabu_current_solution = tabu_stops
+        random.shuffle(tabu_stops)
+        self.tabu_best_solution = self.tabu_current_solution
+        self.tabu_best_solution_cost = 0
+        self.tabu_max_iterations = math.ceil(1.1*(len(self.tabu_stops) * len(self.tabu_stops)))
+        self.tabu_improvement_threshold = 2 * math.floor(math.sqrt(self.tabu_max_iterations))
+        self.tabu_turns_improved = 0
+        self.tabu_tenure = len(self.tabu_stops)
+        self.tabu_list = []
+        self.tabu_best_path = None
+        self.tabu_best_arrival = None
+        self.tabu_best_departure = None
+        self.tabu_best_line = None
+        
         
         self.cost: dict[str, float] = {}    #   weights
         self.previous_nodes: dict[str, Optional[str]] = {}  #   to check which stop was visited before
@@ -50,6 +67,8 @@ class Algorithms:
             self.used_lines.append(self.lines[my_focus])
             self.path.append(my_focus)
             my_focus = self.previous_nodes[my_focus]
+            if len(self.path) > 250:
+                break
         self.arr_times.reverse()
         self.dep_times.reverse()
         self.used_lines.reverse()
@@ -61,22 +80,31 @@ class Algorithms:
             writer = csv.writer(file, delimiter=',')
             writer.writerow([alg_type, runtime])
             writer.writerow(['From: ', self.start_node.stop_name, 'To: ', self.end_node.stop_name])
-            for i in range(0, len(self.path)):
-                if i < len(self.path):
-                    if i == 0:
-                        writer.writerow([self.path[i], '>', '', '', self.arr_times[i].strftime('%H:%M:%S')])
+            
+            #   if len(self.path) > 250, then the path is nonsensical either way it is 
+            #   Wrocław after all, nobody will ride 250 stops, no matter the case
+            #   the value is kinda arbitrary, but makes sense
+            if len(self.path) > 250:
+                writer.writerow(["The correct path was not found",'','','',''])
+            else:
+                for i in range(0, len(self.path)):
+                    if i < len(self.path):
+                        if i == 0:
+                            writer.writerow([self.path[i], '>', '', '', self.arr_times[i].strftime('%H:%M:%S')])
+                        else:
+                            writer.writerow([self.path[i], '>', self.used_lines[i], self.dep_times[i].strftime('%H:%M:%S'), self.arr_times[i].strftime('%H:%M:%S')])
                     else:
-                        writer.writerow([self.path[i], '>', self.used_lines[i], self.dep_times[i].strftime('%H:%M:%S'), self.arr_times[i].strftime('%H:%M:%S')])
-                else:
-                    writer.writerow([self.path[i]])
+                        writer.writerow([self.path[i]])
             writer.writerow('')
             
             
     def write_runtime_to_file(self, alg_type: str, runtime: str, file_name: str) -> None:
         with open(file_name, 'a', newline='') as file:
             writer = csv.writer(file, delimiter=',')
-            writer.writerow([alg_type, runtime, self.start_node.stop_name, '--->', self.end_node.stop_name, self.time])
-            writer.writerow('')
+            if len(self.path) > 250:
+                writer.writerow([alg_type, float('inf'), self.start_node.stop_name, '--->', self.end_node.stop_name, self.time])
+            else:
+                writer.writerow([alg_type, runtime, self.start_node.stop_name, '--->', self.end_node.stop_name, self.time])
             
               
     def execute_dijkstra(self) -> None:
@@ -183,7 +211,7 @@ class Algorithms:
                         new_cost = (edge.arrival_time - self.time).seconds
                         
                         #   1 minnute == 60 in priority
-                        if edge.line_name != self.lines[my_focus]:
+                        if edge.line_name != self.lines[my_focus] and self.lines[my_focus] != 0:
                             new_cost += 600
                         
                         if edge.end_node not in self.settled_nodes and new_cost < self.cost[end_name]:
@@ -198,6 +226,70 @@ class Algorithms:
                             
                             
                             
-    def tabu_search(self):
-        pass
-    
+    # def tabu_search(self, criterion: str) -> None:
+    #     self.tabu_best_solution_cost, self.best_path, self.best_arrival, self.best_departure, self.tabu_best_line = self.get_path_cost(criterion)
+        
+    #     for _ in range(self.tabu_max_iterations):
+    #         if self.tabu_turns_improved > self.tabu_improvement_threshold:
+    #             break
+    #         best_neighbors = None
+    #         best_neighbors_cost = float('inf')
+    #         best_neighbors_path = []
+    #         best_neighbors_arrival = []
+    #         best_neighbors_departure = []
+    #         best_neighbors_line = []
+    #         x_coord, y_coord = 0, 0
+            
+    #         for i in range(len(self.tabu_stops)):
+    #             for j in range(i+1, self.tabu_stops):
+    #                 neighbors = self.tabu_current_solution
+    #                 temp = neighbors[i]
+    #                 neighbors[i] = neighbors[j]
+    #                 neighbors[j] = temp
+    #                 neighbor_cost, neighbor_path, neighbor_arrival, neighbor_departure, neighbor_line = self.get_path_cost(criterion)
+    #                 if (i, j) not in self.tabu_list:
+    #                     if neighbor_cost < best_neighbors_cost:
+    #                         best_neighbors = neighbors
+    #                         best_neighbors_path = neighbor_path
+    #                         best_neighbors_arrival = neighbor_arrival
+    #                         best_neighbors_departure = neighbor_departure
+    #                         best_neighbors_line = neighbor_line
+    #                         x_coord = i
+    #                         y_coord = j
+    #             self.tabu_list.append((x_coord, y_coord))
+
+    #         if best_neighbors is not None:
+    #             self.tabu_current_solution = best_neighbors
+    #             self.tabu_list.append((x_coord, y_coord))
+                
+    #         if len(self.tabu_list > self.tabu_tenure):
+    #             self.tabu_list.pop(0)
+            
+    #         if best_neighbors_cost < self.tabu_best_solution_cost:
+    #             self.tabu_best_solution = best_neighbors
+    #             self.tabu_best_solution_cost = best_neighbors_cost
+    #             self.tabu_best_path = best_neighbors_path
+    #             self.tabu_best_arrival = best_neighbors_arrival
+    #             self.tabu_best_departure = best_neighbors_departure
+    #             self.tabu_best_line = best_neighbors_line
+    #             self.tabu_turns_improved = 0
+    #         else:
+    #             self.tabu_turns_improved += 1
+                
+    #         #   write the solution to file or something
+        
+        
+    # def get_path_cost(self, criterion: str):
+    #     curr_time = self.time
+    #     curr_stop = self.start_node
+    #     final_path = [self.start_node]
+        
+    #     final_cost = 0
+    #     final_arrival_time = ['']
+    #     final_departure_time = ['']
+    #     final_line = ['']
+
+    #     for stop in self.tabu_stops:
+    #         pass
+
+            

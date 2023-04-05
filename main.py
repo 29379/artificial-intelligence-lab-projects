@@ -2,14 +2,23 @@ from DataReader import DataReader
 from graph import *
 from Algorithms import Algorithms
 from datetime import datetime, timedelta
-import random, csv
+import random, csv, math
 import numpy as np
 
 
 def main() -> None:
     graph = DataReader.load_data()
     starting_nodes, ending_nodes, starting_times = get_samples(graph)
-    with open('output.csv', 'a', newline='') as file:
+    
+    with open('dijkstra_outputs.csv', 'a', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        writer.writerow(['Stop', 'Runtime', 'Line', 'Departure time', 'Arrival time'])
+        
+    with open('astar_time_outputs.csv', 'a', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        writer.writerow(['Stop', 'Runtime', 'Line', 'Departure time', 'Arrival time'])
+        
+    with open('astar_transfer_outputs.csv', 'a', newline='') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(['Stop', 'Runtime', 'Line', 'Departure time', 'Arrival time'])
     
@@ -38,21 +47,59 @@ def main() -> None:
     
     # astar_transfers_single(graph, "Rozanka", "GAJ", timedelta(hours=4, minutes=18))
     # astar_transfers_single(graph, "Smocza", "Kielczowska", timedelta(hours=3, minutes=38))
-    #astar_transfers_single(graph, "Warminska", "Kielczow - WODROL", timedelta(hours=21, minutes=19))
+    # astar_transfers_single(graph, "Warminska", "Kielczow - WODROL", timedelta(hours=21, minutes=19))
+    
 
-def trim_extreme_cases(runtimes: list[float]) -> list[float]:
-    n_trim = int(0.05 * len(runtimes))
+def trim_extreme_cases(runtimes: list[float]) -> list[int]:
+    n = len(runtimes)
+    n_trim = min(5, math.ceil(0.05 * n))
+
+    top_indices = []
+    bottom_indices = []
+    
     for i in range(n_trim):
-        max_runtime = max(runtimes)
-        runtimes.remove(max_runtime)
-        min_runtime = min(runtimes)
-        runtimes.remove(min_runtime)
-    return runtimes
+        top_runtime = float('-inf')
+        bottom_runtime = float('inf')
+        top_index = None
+        bottom_index = None
+        for j, runtime in enumerate(runtimes):
+            if runtime is None:
+                continue
+            if runtime > top_runtime and j not in top_indices:
+                top_runtime = runtime
+                top_index = j
+            if runtime < bottom_runtime and j not in bottom_indices:
+                bottom_runtime = runtime
+                bottom_index = j
+        if top_index is not None:
+            top_indices.append(top_index)
+            runtimes[top_index] = None
+        if bottom_index is not None:
+            bottom_indices.append(bottom_index)
+            runtimes[bottom_index] = None
+    
+    return top_indices + bottom_indices
+
+
+def trim_extreme_cases_in_file(file_name: str) -> None:
+    with open(file_name, 'r', newline='') as file:
+        reader = csv.reader(file)
+        data = list(reader)
+
+    runtimes = [float(row[1]) for row in data[1:]]
+    indicies_to_trim = trim_extreme_cases(runtimes)
+
+    with open(file_name, 'w', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        for i in range(len(data)):
+            if i not in indicies_to_trim:
+                writer.writerow(data[i])
+        #writer.writerows(data)
 
 
 def get_samples(graph: Graph) -> tuple[list[str], list[str], list[timedelta]]:
-    starting_nodes = random.sample(list(graph.nodes.keys()), 5)
-    ending_nodes = random.sample(list(graph.nodes.keys()), 5)
+    starting_nodes = random.sample(list(graph.nodes.keys()), 100)
+    ending_nodes = random.sample(list(graph.nodes.keys()), 100)
     starting_times = []
     
     for i in range(len(starting_nodes)):
@@ -69,7 +116,7 @@ def dijkstra_single(graph: Graph, beginning: str, destination: str, time: timede
     print(f"Destination: {destination}")
     print(f"Starting time: {time}")
 
-    dijkstra = Algorithms(graph, time, beginning, destination)
+    dijkstra = Algorithms(graph, time, beginning, destination, [])
     start_time = datetime.now()
     dijkstra.execute_dijkstra()
     end_time = datetime.now()
@@ -92,7 +139,7 @@ def dijkstra_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: li
         print(f"Destination: {destination}")
         print(f"Starting time: {time}")
 
-        dijkstra = Algorithms(tmp_graph, time, beginning, destination)
+        dijkstra = Algorithms(tmp_graph, time, beginning, destination, [])
         start_time = datetime.now()
         dijkstra.execute_dijkstra()
         end_time = datetime.now()
@@ -103,7 +150,7 @@ def dijkstra_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: li
         dijkstra.write_solution_to_file('DIJKSTRA', runtime, 'dijkstra_outputs.csv')  
         dijkstra.write_runtime_to_file('DIJKSTRA', runtime, 'dijkstra_runtimes.csv') 
 
-    dijkstra_runtimes = trim_extreme_cases(dijkstra_runtimes)
+    trim_extreme_cases_in_file('dijkstra_runtimes.csv')
     print(f"Average runtime for finding a path with the dijkstra algorithm, from a random start, to a random destination, on a random time: {np.mean(dijkstra_runtimes)}") 
 
     
@@ -137,7 +184,7 @@ def astar_time_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: 
         print(f"Destination: {destination}")
         print(f"Starting time: {time}")
 
-        astar_time = Algorithms(tmp_graph, time, beginning, destination)
+        astar_time = Algorithms(tmp_graph, time, beginning, destination, [])
         start_time = datetime.now()
         astar_time.execute_astar('time')
         end_time = datetime.now()
@@ -148,7 +195,7 @@ def astar_time_sample100(graph: Graph, starting_nodes: list[str], ending_nodes: 
         astar_time.write_solution_to_file('A* - TIME', runtime, 'astar_time_outputs.csv')
         astar_time.write_runtime_to_file('A* - TIME', runtime, 'astar_time_runtimes.csv')
 
-    astar_t_runtimes = trim_extreme_cases(astar_t_runtimes)
+    trim_extreme_cases_in_file('astar_time_runtimes.csv')
     print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {np.mean(astar_t_runtimes)}")
 
     
@@ -158,7 +205,7 @@ def astar_transfers_single(graph: Graph, beginning: str, destination: str, time:
     print(f"Destination: {destination}")
     print(f"Starting time: {time}")
 
-    astar_transfers = Algorithms(graph, time, beginning, destination)
+    astar_transfers = Algorithms(graph, time, beginning, destination, [])
     start_time = datetime.now()
     astar_transfers.execute_astar('transfers')
     end_time = datetime.now()
@@ -181,7 +228,7 @@ def astar_transfers_sample100(graph: Graph, starting_nodes: list[str], ending_no
         print(f"Destination: {destination}")
         print(f"Starting time: {time}")
 
-        astar_transfers = Algorithms(tmp_graph, time, beginning, destination)
+        astar_transfers = Algorithms(tmp_graph, time, beginning, destination, [])
         start_time = datetime.now()
         astar_transfers.execute_astar('transfers')
         end_time = datetime.now()
@@ -192,7 +239,7 @@ def astar_transfers_sample100(graph: Graph, starting_nodes: list[str], ending_no
         astar_transfers.write_solution_to_file('A* - TRANSFERS', runtime, 'astar_transfer_outputs.csv')
         astar_transfers.write_runtime_to_file('A* - TRANSFERS', runtime, 'astar_transfer_runtimes.csv')
         
-    astar_t_runtimes = trim_extreme_cases(astar_t_runtimes)
+    trim_extreme_cases_in_file('astar_transfer_runtimes.csv')
     print(f"Average runtime for finding a path with the A* algorithm with a time criterion, from a random start, to a random destination, on a random time: {np.mean(astar_t_runtimes)}")
 
 
