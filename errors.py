@@ -1,0 +1,2 @@
+class UnexpectedFieldStateError(Exception):
+    pass
