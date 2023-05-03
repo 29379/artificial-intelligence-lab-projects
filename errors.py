@@ -3,3 +3,9 @@ class UnexpectedFieldStateError(Exception):
 
 class UnexpectedPlayerStateError(Exception):
     pass
+
+class GameHasEndedError(Exception):
+    pass
+
+class InvalidMoveError(Exception):
+    pass
