@@ -7,12 +7,12 @@ class Reversi:
     WHITE = 1
     BLACK = 2
     
-    GAME_STATES = {
-        "IN_PROGRESS": "In progress",
-        "WHITE_WIN": "White pieces win",
-        "BLACK_WIN": "Black pieces win",
-        "TIE": "It's a tie"
-    }
+    GAME_STATES = [
+        "IN_PROGRESS",
+        "WHITE_WIN",
+        "BLACK_WIN",
+        "TIE"
+    ]
     
     def __init__(self) -> None:
         self.board = Board()
