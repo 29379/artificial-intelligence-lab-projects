@@ -1,5 +1,6 @@
 from board import *
 from errors import *
+#from player import *
 
 class Reversi:
     GAME_STATUS = {
