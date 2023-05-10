@@ -46,7 +46,6 @@ class Algorithms:
                     False 
                 )
                 
-                #   why???
                 if score == float('inf'):
                     return score, candidate
                 elif score > best_score:

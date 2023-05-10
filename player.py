@@ -17,6 +17,6 @@ class Player:
 
 
     def make_a_move_alpha_beta(self, reversi: Reversi) -> tuple[float, tuple[int, int]]:
-        return self.alg.alpha_beta(reversi, 0, None, True, -float('inf'), float('inf'))
+        return self.alg.alpha_beta_pruning(reversi, 0, None, True, -float('inf'), float('inf'))
         
     

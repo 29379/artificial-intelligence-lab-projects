@@ -6,7 +6,8 @@ from errors import *
 from heuristics import *
 
 from datetime import datetime
-from copy import deepcopy4
+import time
+from copy import deepcopy
 import csv, itertools
     
     
@@ -16,12 +17,11 @@ depths = [(1, 1), (1, 2), (1, 3),
 
 heuristics = [stability, corners, coin_parity, mobility]
 
-heuristic_names = {}
+# heuristic_names = {}
 
 
 def minmax_test(reversi: Reversi, white_player: Player, black_player: Player):
-    start_time = datetime.now()
-    end_time = datetime.now()
+    start_time = time.perf_counter()
     while reversi.game_status == reversi.GAME_STATUS.get('IN_PROGRESS'):
         if reversi.board.current_player == white_player.field:
             _, field = white_player.make_a_move_minmax(deepcopy(reversi))
@@ -29,18 +29,17 @@ def minmax_test(reversi: Reversi, white_player: Player, black_player: Player):
         else: 
             _, field = black_player.make_a_move_minmax(deepcopy(reversi))
             reversi.play(field)
-    runtime = (end_time - start_time).total_seconds()
+    end_time = time.perf_counter()
+    runtime = round(end_time - start_time, 3)
     
     return reversi.game_status, \
        reversi.board.count_pieces(1), \
        reversi.board.count_pieces(2), \
-       runtime, \
-       False
+       runtime
        
 
 def alpha_beta_test(reversi: Reversi, white_player: Player, black_player: Player):
-    start_time = datetime.now()
-    end_time = datetime.now()
+    start_time = time.perf_counter()
     while reversi.game_status == reversi.GAME_STATUS.get('IN_PROGRESS'):
         if reversi.board.current_player == white_player.field:
             _, field = white_player.make_a_move_alpha_beta(deepcopy(reversi))
@@ -48,13 +47,41 @@ def alpha_beta_test(reversi: Reversi, white_player: Player, black_player: Player
         else: 
             _, field = black_player.make_a_move_alpha_beta(deepcopy(reversi))
             reversi.play(field)
-    runtime = (end_time - start_time).total_seconds()
+    end_time = time.perf_counter()
+    runtime = round(end_time - start_time, 3)
     
     return reversi.game_status, \
        reversi.board.count_pieces(1), \
        reversi.board.count_pieces(2), \
-       runtime, \
-       False
+       runtime
+
+
+def init_file(file_name):
+    with open(file_name, 'a', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        writer.writerow(["Game result",
+            "Winner score",
+            "Loser score",
+            "Runtime",
+            "Rounds played",
+            "White player heuristic",
+            "Black player heuristic",
+            "Min-max depth",
+            ])
+
+
+def write_row_to_file(file_name, row):
+    with open(file_name, 'a', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        writer.writerow([row['game_result'],
+            row['winner_score'],
+            row['loser_score'],
+            row['runtime'],
+            row['rounds'],
+            row['heuristic1_name'],
+            row['heuristic2_name'],
+            row['depth1'],
+            row['depth2']])
 
 
 def write_solution_to_file(self, file_name, rows):
@@ -62,65 +89,76 @@ def write_solution_to_file(self, file_name, rows):
         writer = csv.writer(file, delimiter=',')
         writer.writerow(["Game result",
                          "Winner score",
-                         "Loser score"
+                         "Loser score",
                          "Runtime",
+                         "Rounds played",
                          "White player heuristic",
                          "Black player heuristic",
                          "Min-max depth",
-                         "Alpha-beta-pruning"
                          ])
         for row in rows:
             writer.writerow([row['game_result'],
                     row['winner_score'],
                     row['loser_score'],
                     row['runtime'],
+                    row['rounds'],
                     row['heuristic1_name'],
                     row['heuristic2_name'],
                     row['depth1'],
-                    row['depth2'],
-                    row['alpha_beta']])
+                    row['depth2']])
     
 
 def main():
     minmax_results = []
     alpha_beta_results = []
-    for depth1, depth2 in itertools.product(depths, repeat=2):
+    match = 1
+    init_file('minmax_results.csv')
+    init_file('alpha_beta_results.csv')
+    for depth in depths:
+        depth1, depth2 = depth
         for heuristic1, heuristic2 in itertools.product(heuristics, repeat=2):
             player1 = Player(1, depth1, heuristic1)
             player2 = Player(2, depth2, heuristic2)
             reversi = Reversi()
             
-            game_result, winner_score, loser_score, runtime, alpha_beta = minmax_test(deepcopy(reversi), deepcopy(player1), deepcopy(player2))
-            minmax_results.append({
+            game_result, winner_score, loser_score, runtime = minmax_test(deepcopy(reversi), deepcopy(player1), deepcopy(player2))
+            m_row = {
                 'game_result': game_result, 
                 'winner_score': winner_score, 
-                'loser_score': loser_score, 
+                'loser_score': loser_score,
                 'runtime': runtime, 
-                'heuristic1_name': heuristic_names.get(heuristic1), 
-                'heuristic2_name': heuristic_names.get(heuristic2), 
+                'rounds': reversi.rounds, 
+                'heuristic1_name': heuristic1.__name__, 
+                'heuristic2_name': heuristic2.__name__, 
                 'depth1': depth1, 
-                'depth2': depth2, 
-                'alpha_beta': alpha_beta
-            })
+                'depth2': depth2
+            }
+            minmax_results.append(m_row)
+            print(f"Minmax match {match}/144 done")
+            write_row_to_file('minmax_results.csv', m_row)
             
-            game_result, winner_score, loser_score, runtime, alpha_beta = alpha_beta_test(deepcopy(reversi), deepcopy(player1), deepcopy(player2))
-            alpha_beta_results.append({
+            game_result, winner_score, loser_score, runtime = alpha_beta_test(deepcopy(reversi), deepcopy(player1), deepcopy(player2))
+            a_row = {
                 'game_result': game_result, 
                 'winner_score': winner_score, 
                 'loser_score': loser_score, 
                 'runtime': runtime, 
-                'heuristic1_name': heuristic_names.get(heuristic1), 
-                'heuristic2_name': heuristic_names.get(heuristic2), 
+                'rounds': reversi.rounds, 
+                'heuristic1_name': heuristic1.__name__, 
+                'heuristic2_name': heuristic2.__name__, 
                 'depth1': depth1, 
-                'depth2': depth2, 
-                'alpha_beta': alpha_beta
-            })
-    
+                'depth2': depth2
+            }
+            alpha_beta_results.append(a_row)
+            print(f"Alpha-beta match {match}/144 done")
+            write_row_to_file('alpha_beta_results.csv', a_row)
+            match += 1  
+            
     minmax_results = sorted(minmax_results, key=lambda x: x['runtime'])
     alpha_beta_results = sorted(alpha_beta_results, key=lambda x: x['runtime'])
     
-    write_solution_to_file('min-max.csv', minmax_results)
-    write_solution_to_file('alpha-beta.csv', alpha_beta_results)
+    write_solution_to_file('min-max.csv', 'minmax_results_sorted.csv', minmax_results)
+    write_solution_to_file('alpha-beta.csv', 'alpha_beta_results_sorted.csv', alpha_beta_results)
     
     print('\nMIN-MAX RESULTS\n')
     

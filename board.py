@@ -27,15 +27,15 @@ class Board:
         return str(self.grid)
 
 
-    def step(self, start: tuple[int, int], end: tuple[int, int], unit_vector: tuple[int, int]):
+    def step(self, start: tuple[int, int], end: tuple[int, int], unit_vector: tuple[int, int]) -> list[tuple[int, int]]:
         x, y = start
         x2, y2 = end
         dx, dy = unit_vector
         if (x2 - x) * dy != (y2 - y) * dx:
             raise InvalidMoveError('The move direction is not valid')
         result = []
-        while start != end:
-            result.append(start)
+        while tuple(start) != tuple(end):
+            result.append(tuple(start))
             start += unit_vector
         return result
 
@@ -54,15 +54,18 @@ class Board:
 
     #   flip a piece located on some coordinates
     def flip(self, coords: tuple[int, int]) -> None:
-        if self.grid[coords] == 1:
-            self.grid[coords] = 2
-        elif self.grid[coords] == 2:
-            self.grid[coords] = 1
-        else:
-            raise UnexpectedFieldStateError(
-                f"Unexpected field state at: {str(coords)}: the state - {self.grid[coords]}"
-            )
-        
+        # if self.grid[coords] == 1:
+        #     self.grid[coords] = 2
+        # elif self.grid[coords] == 2:
+        #     self.grid[coords] = 1
+        # elif self.grid[coords] == 0:
+        #     pass
+        # else:
+        #     raise UnexpectedFieldStateError(
+        #         f"Unexpected field state at: {str(coords)}: the state - {self.grid[coords]}"
+        #     )
+        if self.grid[coords] != self.current_player:
+            self.grid[coords] = self.current_player
 
     #   get the coordinates of all the ally pieces for a current player
     def get_player_pieces(self, player: int) -> list[tuple[int, int]]:
@@ -76,56 +79,63 @@ class Board:
 
     #   get all the moves that are possible for a specific player
     def get_valid_moves(self, player: int) -> list[tuple[int, int]]:
-        valid_moves = set()
-        
-        for x in range(8):
-            for y in range(8):
-                if self.grid[x, y] == player:
-                    tmp = self.get_valid_moves_for_square((x, y), player)
-                    valid_moves.update(tmp)
-        return list(valid_moves)
+        valid_moves: list[tuple[int, int]] = []
+        pieces = self.get_player_pieces(self.current_player)
+        # for x in range(8):
+        #     for y in range(8):
+        #         if self.grid[x, y] == player:
+        #             tmp = self.get_valid_moves_for_square((x, y), player)
+        #             valid_moves.update(tmp)
+        for piece in pieces:
+            for unit_vector in self.directions:
+                end = piece + unit_vector
+                while self.is_an_enemy_field(tuple(end)):
+                    end += unit_vector
+                    if self.is_an_empty_field(tuple(end)):
+                        if tuple(end) not in valid_moves:
+                            valid_moves.append(tuple(end))
+        return valid_moves
                 
         
     #   get all the moves that are possible for a player in that turn that originate in some coordinates
-    def get_valid_moves_for_square(self, start: tuple[int, int], player: int) -> list[tuple[int, int]]:
-        if not self.check_boundaries(start) or self.grid[start] != player:
-            return []
-        valid_moves: list[tuple[int, int]] = []
+    # def get_valid_moves_for_square(self, start: tuple[int, int], player: int) -> list[tuple[int, int]]:
+    #     if not self.check_boundaries(start) or self.grid[start] != player:
+    #         return []
+    #     valid_moves: list[tuple[int, int]] = []
         
-        for unit_vector in self.directions:
-            end = start + unit_vector
-            if not self.check_boundaries(end) or self.grid[end] == player:
-                continue
-            if self.check_direction(start, end):
-                valid_moves.append(end)
-        return valid_moves
+    #     for unit_vector in self.directions:
+    #         end = start + unit_vector
+    #         if not self.check_boundaries(end) or np.any(self.grid[end] == player):
+    #             continue
+    #         if self.check_direction(start, end):
+    #             valid_moves.append(end)
+    #     return valid_moves
         
         
-    #   check whether I can make a move in some direction
-    def check_direction(self, start: tuple[int, int], unit_vector: tuple[int, int], player: int) -> bool:
-        enemy = self.BLACK if player == self.WHITE else self.WHITE
-        end = np.add(start, unit_vector)
+    # def check_direction(self, start: tuple[int, int], unit_vector: tuple[int, int]) -> bool:
+    #     enemy = self.BLACK if self.current_player == self.WHITE else self.WHITE
+    #     end = np.add(start, unit_vector)
         
-        #   check the logic here! maybe check what is in the place where I am right now after the while loop?
-        if self.grid[end] != enemy or not self.check_boundaries(end):
-            return False
-        while self.grid[end] == enemy:
-            end += unit_vector
+    #     #   check the logic here! maybe check what is in the place where I am right now after the while loop?
+    #     if not self.check_boundaries(end) or np.any(self.grid[end] != enemy):
+    #         return False
+    #     while np.any(self.grid[end] == enemy):
+    #         end += unit_vector
             
-        if self.grid[end] != self.EMPTY or not self.check_boundaries(end):
-            return False
-        return True
+    #     if not self.check_boundaries(end) or np.any(self.grid[end] != self.EMPTY):
+    #         return False
+    #     return True
     
     
     def is_an_ally_field(self, coords: tuple[int, int]) -> bool:
         if self.check_boundaries(coords):
-            return self.grid[coords] == self.current_player
+            return np.all(self.grid[coords] == self.current_player)
         return False
     
 
     def is_an_empty_field(self, coords: tuple[int, int]) -> bool:
         if self.check_boundaries(coords):
-            return self.grid[coords] == self.EMPTY
+            return np.all(self.grid[coords] == self.EMPTY)
         return False
     
     
@@ -133,7 +143,7 @@ class Board:
         if self.check_boundaries(coords):
             enemy_color = self.BLACK \
                 if self.current_player == self.WHITE else self.WHITE
-            return self.grid[coords] == enemy_color
+            return np.all(self.grid[coords] == enemy_color)
         return False
 
 

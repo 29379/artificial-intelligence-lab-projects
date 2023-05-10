@@ -18,7 +18,7 @@ class Reversi:
     def __init__(self) -> None:
         self.board: Board = Board()
         self.game_mode: str = None
-        self.game_status: str = None
+        self.game_status: str = self.GAME_STATUS.get('IN_PROGRESS')
         self.rounds = 0
         self.white_score = None
         self.black_score = None
@@ -33,7 +33,7 @@ class Reversi:
             raise GameHasEndedError('The game is over already')
         #   there are no viable moves left for the current player
         if coord is None:
-            self.game_status = self.check_endgame()
+            self.game_status = self.finalize_game()
             return
         if coord not in self.board.get_valid_moves(coord):
             raise InvalidMoveError(f"The move to {coord} is not valid here")
@@ -41,18 +41,16 @@ class Reversi:
         fields = []
         for unit_vector in self.board.directions:
             curr = coord + unit_vector
-            while self.board.is_an_enemy_field(curr):
+            while self.board.is_an_enemy_field(tuple(curr)):
                 curr += unit_vector
-            if self.board.is_an_ally_field(curr):
+            if self.board.is_an_ally_field(tuple(curr)):
                 fields += self.board.step(coord, curr, unit_vector)
 
         #   finalize the move
         for field in fields:
-            self.board.flip(field)
+            self.board.flip(tuple(field))
         self.board.change_current_player()
         self.rounds += 1
-        self.white_score = self.board.check_game_state(self.board.WHITE)
-        self.black_score = self.board.check_game_state(self.board.BLACK)
         if self.rounds >= 62:
             self.game_status = self.finalize_game()
         
@@ -63,7 +61,7 @@ class Reversi:
     def finalize_game(self) -> str:
         if not self.board.get_valid_moves(self.board.current_player):
             self.board.change_current_player()
-            if not self.board.get_valid_movese(self.board.current_player):
+            if not self.board.get_valid_moves(self.board.current_player):
                 white = self.board.count_pieces(self.board.WHITE)
                 black = self.board.count_pieces(self.board.BLACK)
                 if white > black:

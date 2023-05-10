@@ -27,17 +27,21 @@ from board import *
 
 #     return result
 
-def stability(game: Reversi, player: int) -> float:
+def stability(game: Reversi) -> float:
     board = game.board.grid
-    enemy = 1 if player == 2 else 1
+    if game.board.current_player != 1 and game.board.current_player != 2:
+        raise UnexpectedPlayerStateError(
+            f"Unexpected player - the value: {game.board.current_player}"
+        )
+    enemy = game.board.BLACK if game.board.current_player == game.board.WHITE else game.board.WHITE
 
     ally_stable_tiles = 0
     enemy_stable_tiles = 0
 
     for i in range(8):
         for j in range(8):
-            if board[i][j] == player:
-                if is_stable((i, j), game.board, player):
+            if board[i][j] == game.board.current_player:
+                if is_stable((i, j), game.board, game.board.current_player):
                     ally_stable_tiles += 1
             elif board[i][j] == enemy:
                 if is_stable((i, j), game.board, enemy):
@@ -99,8 +103,8 @@ def is_stable(coords: tuple[int, int], board: Board, color: int) -> bool:
             #   if the line ends with an empty field, it is stable 
             #   IF there are no allies on any other side of the line
             if ally_fields == 0 or \
-                    (x - dx >= 0) and (board.grid[x-dx, y-dy] == player) or \
-                    (x2 + dx < 8) and board.grid[x2+dx, y2+dy] == player:
+                    (0 <= x - dx < 8) and (0 <= y - dy < 8) and (board.grid[x-dx, y-dy] == player) or \
+                    (0 <= x2 + dx < 8) and (0 <= y2 + dy < 8) and board.grid[x2+dx, y2+dy] == player:
                 continue
             
             #   if i managed to get here, the line is unstable
@@ -111,9 +115,13 @@ def is_stable(coords: tuple[int, int], board: Board, color: int) -> bool:
 
 #   ------------------------------------------------------------------------------
 
-def corners(game: Reversi, player: int) -> float:
+def corners(game: Reversi) -> float:
     board = game.board.grid
-    enemy = 1 if player == 2 else 2
+    if game.board.current_player != 1 and game.board.current_player != 2:
+        raise UnexpectedPlayerStateError(
+        f"Unexpected player - the value: {game.board.current_player}"
+    )
+    enemy = game.board.BLACK if game.board.current_player == game.board.WHITE else game.board.WHITE
 
     V = [
         [20, -3, 11, 8, 8, 11, -3, 20],
@@ -130,7 +138,7 @@ def corners(game: Reversi, player: int) -> float:
 
     for i in range(8):
         for j in range(8):
-            if board[i][j] == player:
+            if board[i][j] == game.board.current_player:
                 total_weight += V[i][j]
             elif board[i][j] == enemy:
                 total_weight -= V[i][j]
@@ -140,13 +148,13 @@ def corners(game: Reversi, player: int) -> float:
 
 #   ------------------------------------------------------------------------------
 
-def coin_parity(game: Reversi, player: int) -> float:
-    if player != 1 and player != 2:
+def coin_parity(game: Reversi) -> float:
+    if game.board.current_player != 1 and game.board.current_player != 2:
         raise UnexpectedPlayerStateError(
-            f"Unexpected player - the value: {player}"
+            f"Unexpected player - the value: {game.board.current_player}"
         )
-    enemy = game.board.BLACK if player == game.board.WHITE else game.board.WHITE
-    ally_pieces: int = np.count_nonzero(game.board.grid == player)
+    enemy = game.board.BLACK if game.board.current_player == game.board.WHITE else game.board.WHITE
+    ally_pieces: int = np.count_nonzero(game.board.grid == game.board.current_player)
     enemy_pieces: int = np.count_nonzero(game.board.grid == enemy)
     value = 0
     
@@ -156,18 +164,18 @@ def coin_parity(game: Reversi, player: int) -> float:
 
 #   ------------------------------------------------------------------------------
 
-def mobility(game: Reversi, player: int):
-    if player != 1 and player != 2:
+def mobility(game: Reversi):
+    if game.board.current_player != 1 and game.board.current_player != 2:
         raise UnexpectedPlayerStateError(
-            f"Unexpected player - the value: {player}"
+            f"Unexpected player - the value: {game.board.current_player}"
         )
-    enemy = game.board.BLACK if player == game.board.WHITE else game.board.WHITE
-    ally_moves = game.board.get_valid_moves(player)
+    enemy = game.board.BLACK if game.board.current_player == game.board.WHITE else game.board.WHITE
+    ally_moves = game.board.get_valid_moves(game.board.current_player)
     enemy_moves = game.board.get_valid_moves(enemy)
     value = 0
     
-    if (ally_moves - enemy_moves != 0) and (ally_moves + enemy_moves != 0):
-        value = 100 * (ally_moves - enemy_moves) / (ally_moves + enemy_moves)
+    if (len(ally_moves) - len(enemy_moves) != 0) and (len(ally_moves) + len(enemy_moves) != 0):
+        value = 100 * (len(ally_moves) - len(enemy_moves)) / (len(ally_moves) + len(enemy_moves))
     return value
 
 #   ------------------------------------------------------------------------------
