@@ -1,6 +1,6 @@
 from board import *
 from errors import *
-#from player import *
+
 
 class Reversi:
     GAME_STATUS = {
@@ -9,22 +9,15 @@ class Reversi:
         "BLACK_WIN": "Black pieces win",
         "TIE": "It's a tie"
     }
-    GAME_MODES = {
-        "PLAYER_VS_PLAYER": "Player vs Player",
-        "CPU_VS_CPU": "CPU vs CPU",
-        "PLAYER_VS_CPU": "Player vs CPU"
-    }
     
     def __init__(self) -> None:
         self.board: Board = Board()
         self.game_mode: str = None
         self.game_status: str = self.GAME_STATUS.get('IN_PROGRESS')
         self.rounds = 0
-        self.white_score = None
-        self.black_score = None
     
     
-    def check_game_status(self):
+    def check_game_status(self) -> str:
         return self.game_status
     
     
@@ -54,7 +47,6 @@ class Reversi:
         if self.rounds >= 62:
             self.game_status = self.finalize_game()
         
-        #   necessary for method chaining
         return self
     
     

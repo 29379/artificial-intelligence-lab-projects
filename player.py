@@ -9,7 +9,6 @@ class Player:
     def __init__(self, field: int, depth: int, heuristic) -> None:
         self.field: int = field
         self.alg: Algorithms = Algorithms(depth, heuristic)
-        self.heuristic = heuristic
         
         
     def make_a_move_minmax(self, reversi: Reversi) -> tuple[float, tuple[int, int]]:
