@@ -8,11 +8,12 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, Normalizer
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.model_selection import KFold, cross_val_score, train_test_split
+from sklearn.model_selection import KFold, cross_val_score, train_test_split, GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, precision_score, recall_score, classification_report
+from sklearn.svm import SVC
 
 
 """
@@ -31,7 +32,7 @@ from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, precisio
             > Testowanie klasyfikatorów i zbadanie ich wpływu na wyniki:
                 Bayes i drzewo decyzyjne z użyciem przynajmniej 3 różnych
                 zestawów hiperparametrów  
-        4. Ocena klasyfikacji                                                          |    20 pkt  |
+        4. Ocena klasyfikacji                                                          |    20 pkt  
             > Porównanie wyników różnego typu przygotowania danych oraz 
                 wykorzystanego klasyfikatora, ocena klasyfikacja, interpretacja
                 wyników
@@ -141,16 +142,80 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     return x_train, x_test, y_train, y_test
     
 
+def testing_models_SVC(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+    svc_model = SVC()
+    svc_model.fit(x_train, y_train)
+    y_pred = svc_model.predict(x_test)
+    svc_score = accuracy_score(y_pred, y_test)
+    #print(svc_model.feature_importances_)
+    return svc_score
+
+
+def testing_models_DecisionTree(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+    dec_tree_model = DecisionTreeClassifier()
+    dec_tree_model.fit(x_train, y_train)
+    y_pred = dec_tree_model.predict(x_test)
+    dec_tree_score = accuracy_score(y_pred, y_test)
+    #print(dec_tree_model.feature_importances_)
+    return dec_tree_score
+    
+
+def testing_models_RandomForest(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+    rand_forest_model = RandomForestClassifier(max_depth=3, min_samples_split=2, n_estimators=50, random_state=np.random.randint(100))
+    rand_forest_model.fit(x_train, y_train)
+    y_pred = rand_forest_model.predict(x_test)
+    rand_forest_score = accuracy_score(y_pred, y_test)
+    #print(rand_forest_model.feature_importances_)
+    return rand_forest_score
+
+
+def compare_scores(svc: float, dec_tree: float, rand_forest: float) -> None:
+    scores = pd.DataFrame([['Support Vector Machine', svc],
+                           ['Decision Tree', dec_tree],
+                           ['Random Forest', rand_forest]])
+    print(scores)
+
+
+def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> None:
+    tuned_parameters = [{'kernel': ['rbf','linear'], 'gamma': [0.001, 0.01, 0.1, 10],
+                     'C': [0.001, 0.01, 0.1, 1, 10]}]
+    grid = GridSearchCV(SVC(), tuned_parameters, cv=5, scoring='accuracy')
+    grid.fit(x_train, y_train)
+    
+    print("Best set found on training datasets:")
+    print(f' > {grid.best_params_}')
+    print(f' > {grid.best_estimator_}')
+    
+    model = grid.best_estimator_
+    model.fit(x_train, y_train)
+    y_pred = model.predict(x_test)
+    score = accuracy_score(y_pred, y_test)
+    
+    print('Score for best model and best parameter set: ')
+    print(f' > {score}')
+    
+    matrix = confusion_matrix(y_test, y_pred)
+    plt.subplots(figsize=(16, 9))
+    sns.heatmap(matrix.T, square=True, annot=True, fmt='d', cbar=False)
+    plt.xlabel('true label')
+    plt.ylabel('predicted label')
+    
+    print(classification_report(y_test, y_pred))
 
 
 def main():
     df = read_data()
     X, Y = get_X_and_Y(df)
     
-    #data_exploration(df)
-    split_dataset_with_PCA(df)
+    data_exploration(df)    
+    x_train, x_test, y_train, y_test = split_dataset_with_PCA(df)
+    svc = testing_models_SVC(x_train, x_test, y_train, y_test)
+    dec_tree = testing_models_DecisionTree(x_train, x_test, y_train, y_test)
+    rand_forest = testing_models_RandomForest(x_train, x_test, y_train, y_test)
     
-
+    compare_scores(svc, dec_tree, rand_forest)
+    print('-----')
+    hyperparameter_tuning_svc(x_train, x_test, y_train, y_test)
 
 
 
