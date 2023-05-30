@@ -56,12 +56,6 @@ def read_data() -> pd.DataFrame:
     return df
 
 
-def get_X_and_Y(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    X = df.drop(['ID','Type'], axis=1)
-    Y = df['Type']
-    return X, Y
-
-
 def data_exploration(df: pd.DataFrame) -> None:
     #   A chart to check out the count of different types of glass in the dataset
     sns.set(style="darkgrid", font_scale=1.5)    
@@ -137,17 +131,62 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     #   Splitting the dataset with 80-20 proportions
     X = X_reduced
     Y = df['Type'].values
-    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.2, random_state=np.random.randint(100))
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.2, random_state=np.random.randint(100))    #   random_state = 1? maybe?
+    
+    cv_scores = cross_val_score(SVC(), X, Y, cv=5)
+    # Print the cross-validation scores
+    print("Cross-validation scores:")
+    for i, score in enumerate(cv_scores):
+        print(f"Fold {i+1}: {score}")
     
     return x_train, x_test, y_train, y_test
     
+
+#   Normalization - scaling numerical features to a consisten range, bringing all 
+#   the features to a similar scale so that there is not one overly dominant feature
+def split_dataset_with_StandardScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    #   grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    Y = df['Type'].values
+    
+    # Perform normalization on the features
+    scaler = StandardScaler()
+    x_normalized = scaler.fit_transform(X)
+    
+    x_train, x_test, y_train, y_test = train_test_split(x_normalized, Y, test_size=0.2, random_state=1)
+
+    return x_train, x_test, y_train, y_test
+
+
+def split_dataset_with_MinMaxScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    #   grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    
+    # Apply MinMaxScaler for normalization
+    scaler = MinMaxScaler()
+    x_normalized = scaler.fit_transform(X)
+    
+    x_train, x_test, y_train, y_test = train_test_split(x_normalized, df['Type'].values, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test
+
+
+def split_dataset_with_Normalizer(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    #   grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    
+    # Apply Normalizer for normalization
+    normalizer = Normalizer()
+    x_normalized = normalizer.fit_transform(X)
+    
+    x_train, x_test, y_train, y_test = train_test_split(x_normalized, df['Type'].values, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test
+
 
 def testing_models_SVC(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
     svc_model = SVC()
     svc_model.fit(x_train, y_train)
     y_pred = svc_model.predict(x_test)
     svc_score = accuracy_score(y_pred, y_test)
-    #print(svc_model.feature_importances_)
     return svc_score
 
 
@@ -156,29 +195,42 @@ def testing_models_DecisionTree(x_train: np.ndarray, x_test: np.ndarray, y_train
     dec_tree_model.fit(x_train, y_train)
     y_pred = dec_tree_model.predict(x_test)
     dec_tree_score = accuracy_score(y_pred, y_test)
-    #print(dec_tree_model.feature_importances_)
     return dec_tree_score
     
 
 def testing_models_RandomForest(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
-    rand_forest_model = RandomForestClassifier(max_depth=3, min_samples_split=2, n_estimators=50, random_state=np.random.randint(100))
+    rand_forest_model = RandomForestClassifier(max_depth=3, min_samples_split=2, n_estimators=50, random_state=1)
     rand_forest_model.fit(x_train, y_train)
     y_pred = rand_forest_model.predict(x_test)
     rand_forest_score = accuracy_score(y_pred, y_test)
-    #print(rand_forest_model.feature_importances_)
     return rand_forest_score
 
 
-def compare_scores(svc: float, dec_tree: float, rand_forest: float) -> None:
+def testing_models_GaussianNB(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+    gaussian_nb_model = GaussianNB()
+    gaussian_nb_model.fit(x_train, y_train)
+    y_pred = gaussian_nb_model.predict(x_test)
+    gaussian_nb__score = accuracy_score(y_pred, y_test)
+    return gaussian_nb__score
+
+
+def compare_scores(svc: float, dec_tree: float, rand_forest: float, gaussian_nb: float) -> None:
     scores = pd.DataFrame([['Support Vector Machine', svc],
                            ['Decision Tree', dec_tree],
-                           ['Random Forest', rand_forest]])
+                           ['Random Forest', rand_forest],
+                           ['Gaussian Naive Bayes', gaussian_nb]
+                           ])
+    print('\n* * * * * * * * * * * * * * * \n')
     print(scores)
+    print('\n* * * * * * * * * * * * * * * \n')
 
 
 def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> None:
-    tuned_parameters = [{'kernel': ['rbf','linear'], 'gamma': [0.001, 0.01, 0.1, 10],
-                     'C': [0.001, 0.01, 0.1, 1, 10]}]
+    #   parameters: kernel type, gamma, regularization parameter (C)
+    tuned_parameters = [{'kernel': ['rbf','linear'], 
+                         'gamma': [0.001, 0.01, 0.1, 10],
+                         'C': [0.001, 0.01, 0.1, 1, 10]}]
+    #   SVC - estimator, cv - 5-fold cross-validation, 
     grid = GridSearchCV(SVC(), tuned_parameters, cv=5, scoring='accuracy')
     grid.fit(x_train, y_train)
     
@@ -212,8 +264,9 @@ def main():
     svc = testing_models_SVC(x_train, x_test, y_train, y_test)
     dec_tree = testing_models_DecisionTree(x_train, x_test, y_train, y_test)
     rand_forest = testing_models_RandomForest(x_train, x_test, y_train, y_test)
+    gaussian_nb = testing_models_GaussianNB(x_train, x_test, y_train, y_test)
     
-    compare_scores(svc, dec_tree, rand_forest)
+    compare_scores(svc, dec_tree, rand_forest, gaussian_nb)
     print('-----')
     hyperparameter_tuning_svc(x_train, x_test, y_train, y_test)
 
@@ -224,6 +277,8 @@ def main():
 
 
 
+
 if __name__ == '__main__':
     main()
+    plt.show()
     
