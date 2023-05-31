@@ -14,6 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, precision_score, recall_score, classification_report
 from sklearn.svm import SVC
+from sklearn.feature_selection import SelectKBest, f_classif
 
 
 """
@@ -42,7 +43,7 @@ from sklearn.svm import SVC
                 
 """
 
-#   ------------------------------------------------------------------------------------------------
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def read_data() -> pd.DataFrame:
     df = pd.read_csv("glass.data",      #   RI - refractive index - współczynnik załamania
@@ -54,6 +55,9 @@ def read_data() -> pd.DataFrame:
                             'Fe','Type']
                      )
     return df
+
+
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 def data_exploration(df: pd.DataFrame) -> None:
@@ -88,15 +92,9 @@ def data_exploration(df: pd.DataFrame) -> None:
         Ba - very high values and very high value range in type 7
         Fe - much higher values and value ranges for types 1, 2 & 3
     """
-
-    plt.show()
-
-
-#   PCA - Principal Component Analysis, reducing the number of variables in a dataset
-def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    #   grab specific columns from the dataframe
+    
     X_var = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
-    pca = PCA(random_state=np.random.randint(100))   #   random seed
+    pca = PCA(random_state=1)   #   seed
     pca.fit(X_var)
     
     var_exp = pca.explained_variance_ratio_ #   proportion of the variance explained by each component, e.g. RI, Na, Mg, ..., individual variance
@@ -117,11 +115,23 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     # Add percentages to individual variance bars
     for i, v in enumerate(var_exp):
         plt.text(i, v + 0.02, f'{v*100:.1f}%', ha='center')
-
     # Add percentages to the cumulative variance line
     for i, v in enumerate(cum_var_exp):
         plt.text(i, v - 0.05, f'{v*100:.1f}%', ha='center', color='red')
+
     plt.show()
+
+
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#   PCA - Principal Component Analysis, reducing the number of variables in a dataset
+#   and keeping the most important info. 
+def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    #   grab specific columns from the dataframe
+    X_var = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    pca = PCA(random_state=1)   #   seed
+    pca.fit(X_var)
     
     #   RI, Na, Mg, Al, Si i K equals to more or less 99.8%, so it is safe to say that I can cut
     #   Ca, Ba i Fe out of the batch as it almost does not affect the data at all in this case
@@ -131,19 +141,30 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     #   Splitting the dataset with 80-20 proportions
     X = X_reduced
     Y = df['Type'].values
-    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.2, random_state=np.random.randint(100))    #   random_state = 1? maybe?
-    
-    cv_scores = cross_val_score(SVC(), X, Y, cv=5)
-    # Print the cross-validation scores
-    print("Cross-validation scores:")
-    for i, score in enumerate(cv_scores):
-        print(f"Fold {i+1}: {score}")
-    
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.2, random_state=1)
     return x_train, x_test, y_train, y_test
     
+    
+#   Similar to PCA, but: instead of a linear transformation into a new batch of uncorrelated features it performs
+#   ANOVA variance analysis and scores the importance of each feature, giving a batch of the most important
+#   features without reducing the dimensions. PCA also works on the basis of maximizing the variance within the
+#   dataset, while this feature selection chooses on the basis of what is most influential for the classification quality
+def split_dataset_with_FeatureSelection(df: pd.DataFrame, k: int) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    #   grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    Y = df['Type'].values
+    
+    feature_selector = SelectKBest(f_classif, k=k)  #   f_classif - feature importance measure
+    x2 = feature_selector.fit_transform(X, Y)
+    
+    x_train, x_test, y_train, y_test = train_test_split(x2, Y, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test    
 
-#   Normalization - scaling numerical features to a consisten range, bringing all 
-#   the features to a similar scale so that there is not one overly dominant feature
+
+#   Standarization - deleting the mean and scaling to unit variance, calculates mean and
+#   standard deviation  and scales it in a way, that makes mean 0 and deviation 1. 
+#   Standard scaler assumes that the distribution of features is close to Gaussian distribution
+#   and is appropriate, when data does not have a specific range and can have negative values
 def split_dataset_with_StandardScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
@@ -151,131 +172,254 @@ def split_dataset_with_StandardScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.
     
     # Perform normalization on the features
     scaler = StandardScaler()
-    x_normalized = scaler.fit_transform(X)
+    x2 = scaler.fit_transform(X)
     
-    x_train, x_test, y_train, y_test = train_test_split(x_normalized, Y, test_size=0.2, random_state=1)
+    x_train, x_test, y_train, y_test = train_test_split(x2, Y, test_size=0.2, random_state=1)
 
     return x_train, x_test, y_train, y_test
 
 
+#   MinMaxScaler - min-max scaling is used to scale features in a specific range, usually 0 --> 1.
+#   It calculates min and max for every feature and the scales it accordingly to fit into the range.
+#   MinMax keeps the shape of the deature distribution and is appropriate even if it is not Gaussian, 
+#   and when features have a specific value range
 def split_dataset_with_MinMaxScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
     
     # Apply MinMaxScaler for normalization
     scaler = MinMaxScaler()
-    x_normalized = scaler.fit_transform(X)
+    x2 = scaler.fit_transform(X)
     
-    x_train, x_test, y_train, y_test = train_test_split(x_normalized, df['Type'].values, test_size=0.2, random_state=1)
+    x_train, x_test, y_train, y_test = train_test_split(x2, df['Type'].values, test_size=0.2, random_state=1)
     return x_train, x_test, y_train, y_test
 
 
+#   Normalization - scaling every row separately in a way, that makes them have unit norm, which means
+#   that the squared sum of the values is 1. Used when the direction/angle of the data matters more than
+#   specific feature magnitudes. Brings features to a similar scale, removes the dominance of a single feature
 def split_dataset_with_Normalizer(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
     
     # Apply Normalizer for normalization
     normalizer = Normalizer()
-    x_normalized = normalizer.fit_transform(X)
+    x2 = normalizer.fit_transform(X)
     
-    x_train, x_test, y_train, y_test = train_test_split(x_normalized, df['Type'].values, test_size=0.2, random_state=1)
-    return x_train, x_test, y_train, y_test
+    x_train, x_test, y_train, y_test = train_test_split(x2, df['Type'].values, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test    
 
 
-def testing_models_SVC(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def testing_models_SVC(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> tuple[float, float, float, float]:
     svc_model = SVC()
     svc_model.fit(x_train, y_train)
     y_pred = svc_model.predict(x_test)
-    svc_score = accuracy_score(y_pred, y_test)
-    return svc_score
+    
+    acc = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred, average='weighted')
+    prec = precision_score(y_test, y_pred, average='weighted')
+    rec = recall_score(y_test, y_pred, average='weighted')
+    
+    return acc, prec, rec, f1
 
 
-def testing_models_DecisionTree(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+def testing_models_DecisionTree(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> tuple[float, float, float, float]:
     dec_tree_model = DecisionTreeClassifier()
     dec_tree_model.fit(x_train, y_train)
     y_pred = dec_tree_model.predict(x_test)
-    dec_tree_score = accuracy_score(y_pred, y_test)
-    return dec_tree_score
+    
+    acc = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred, average='weighted')
+    prec = precision_score(y_test, y_pred, average='weighted')
+    rec = recall_score(y_test, y_pred, average='weighted')
+    
+    return acc, prec, rec, f1
     
 
-def testing_models_RandomForest(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+def testing_models_RandomForest(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> tuple[float, float, float, float]:
     rand_forest_model = RandomForestClassifier(max_depth=3, min_samples_split=2, n_estimators=50, random_state=1)
     rand_forest_model.fit(x_train, y_train)
     y_pred = rand_forest_model.predict(x_test)
-    rand_forest_score = accuracy_score(y_pred, y_test)
-    return rand_forest_score
+    
+    acc = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred, average='weighted')
+    prec = precision_score(y_test, y_pred, average='weighted')
+    rec = recall_score(y_test, y_pred, average='weighted')
+    
+    return acc, prec, rec, f1
 
 
-def testing_models_GaussianNB(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> float:
+def testing_models_GaussianNB(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> tuple[float, float, float, float]:
     gaussian_nb_model = GaussianNB()
     gaussian_nb_model.fit(x_train, y_train)
     y_pred = gaussian_nb_model.predict(x_test)
-    gaussian_nb__score = accuracy_score(y_pred, y_test)
-    return gaussian_nb__score
+    
+    acc = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred, average='weighted')
+    prec = precision_score(y_test, y_pred, average='weighted')
+    rec = recall_score(y_test, y_pred, average='weighted')
+    
+    return acc, prec, rec, f1
 
 
-def compare_scores(svc: float, dec_tree: float, rand_forest: float, gaussian_nb: float) -> None:
-    scores = pd.DataFrame([['Support Vector Machine', svc],
-                           ['Decision Tree', dec_tree],
-                           ['Random Forest', rand_forest],
-                           ['Gaussian Naive Bayes', gaussian_nb]
-                           ])
-    print('\n* * * * * * * * * * * * * * * \n')
+def compare_scores(svc_scores: float, dec_tree_scores: float, rand_forest_scores: float, gaussian_nb_scores: float) -> None:
+    scores = pd.DataFrame([
+        ['Support Vector Machine'] + list(svc_scores),
+        ['Decision Tree'] + list(dec_tree_scores),
+        ['Random Forest'] + list(rand_forest_scores),
+        ['Gaussian Naive Bayes'] + list(gaussian_nb_scores)
+    ], columns=['Model', 'Accuracy', 'Precision', 'Recall', 'F1 Score'])
+
+    print('\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n')
+    print("          SVC, DEC_TREE, RAND_FOREST AND BAYES SCORES             ")
     print(scores)
-    print('\n* * * * * * * * * * * * * * * \n')
+    print('\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n')
 
 
-def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> None:
-    #   parameters: kernel type, gamma, regularization parameter (C)
-    tuned_parameters = [{'kernel': ['rbf','linear'], 
-                         'gamma': [0.001, 0.01, 0.1, 10],
-                         'C': [0.001, 0.01, 0.1, 1, 10]}]
-    #   SVC - estimator, cv - 5-fold cross-validation, 
-    grid = GridSearchCV(SVC(), tuned_parameters, cv=5, scoring='accuracy')
-    grid.fit(x_train, y_train)
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> pd.DataFrame:
+    tuned_parameters = [
+        {'kernel': 'rbf', 'gamma': 0.001, 'C': 1},
+        {'kernel': 'linear', 'C': 0.1},
+        {'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1},
+        {'kernel': 'linear', 'C': 1},
+        {'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01}
+    ]
+    scores = []
+
+    for params in tuned_parameters:
+        model = SVC(**params)
+        model.fit(x_train, y_train)
+        y_pred = model.predict(x_test)
+
+        acc = accuracy_score(y_test, y_pred)
+        prec = precision_score(y_test, y_pred, average='weighted')
+        rec = recall_score(y_test, y_pred, average='weighted')
+        f1 = f1_score(y_test, y_pred, average='weighted')
+
+        scores.append([acc, prec, rec, f1, params])
+
+
+    cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
+    scores_df = pd.DataFrame(scores, columns=cols)
     
-    print("Best set found on training datasets:")
-    print(f' > {grid.best_params_}')
-    print(f' > {grid.best_estimator_}')
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    print("               SVC WITH HYPERTUNED PARAMETERS   ")
+    print(scores_df)
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    return scores_df
     
-    model = grid.best_estimator_
-    model.fit(x_train, y_train)
-    y_pred = model.predict(x_test)
-    score = accuracy_score(y_pred, y_test)
+
+def hyperparameter_tuning_decision_tree(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> pd.DataFrame:
+    tuned_parameters = [
+        {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1},
+        {'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2},
+        {'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4},
+        {'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1},
+        {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2}
+        ]
+    scores = []
     
-    print('Score for best model and best parameter set: ')
-    print(f' > {score}')
+    for params in tuned_parameters:
+        model = DecisionTreeClassifier(**params)
+        model.fit(x_train, y_train)
+        y_pred = model.predict(x_test)
+        
+        acc = accuracy_score(y_test, y_pred)
+        prec = precision_score(y_test, y_pred, average='weighted')
+        rec = recall_score(y_test, y_pred, average='weighted')
+        f1 = f1_score(y_test, y_pred, average='weighted')
+        
+        scores.append([acc, prec, rec, f1, params])
     
-    matrix = confusion_matrix(y_test, y_pred)
-    plt.subplots(figsize=(16, 9))
-    sns.heatmap(matrix.T, square=True, annot=True, fmt='d', cbar=False)
-    plt.xlabel('true label')
-    plt.ylabel('predicted label')
+    cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
+    scores_df = pd.DataFrame(scores, columns=cols)
     
-    print(classification_report(y_test, y_pred))
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    print("            DecisionTree WITH HYPERTUNED PARAMETERS   ")
+    print(scores_df)
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    return scores_df
+
+
+def hyperparameter_tuning_naive_bayes(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> pd.DataFrame:
+    tuned_parameters = [
+        {'var_smoothing': 1e-9},
+        {'var_smoothing': 1e-8},
+        {'var_smoothing': 1e-7},
+        {'var_smoothing': 1e-6},
+        {'var_smoothing': 1e-5}
+    ]
+    scores = []
+    
+    for params in tuned_parameters:
+        model = GaussianNB(**params)
+        model.fit(x_train, y_train)
+        y_pred = model.predict(x_test)
+        
+        acc = accuracy_score(y_test, y_pred)
+        prec = precision_score(y_test, y_pred, average='weighted')
+        rec = recall_score(y_test, y_pred, average='weighted')
+        f1 = f1_score(y_test, y_pred, average='weighted')
+        
+        scores.append([acc, prec, rec, f1, params])
+    
+    cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
+    scores_df = pd.DataFrame(scores, columns=cols)
+    
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    print("            Naive Bayes WITH HYPERTUNED PARAMETERS   ")
+    print(scores_df)
+    print("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n")
+    return scores_df
+
+
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def test_models(df: pd.DataFrame) -> None:
+    # Initialize an empty DataFrame
+    results_df = pd.DataFrame()
+
+    for preprocess_name, preprocess_method in [("PCA", split_dataset_with_PCA),
+                                               ("Feature Selection", split_dataset_with_FeatureSelection),
+                                               ("Standard Scaler", split_dataset_with_StandardScaler),
+                                               ("MinMax Scaler", split_dataset_with_MinMaxScaler),
+                                               ("Normalizer", split_dataset_with_Normalizer)]:
+
+        if preprocess_name == "Feature Selection":
+            x_train, x_test, y_train, y_test = preprocess_method(df, k=6)
+        else:
+            x_train, x_test, y_train, y_test = preprocess_method(df)
+
+        for model_name, model_func in [("Decision Tree", hyperparameter_tuning_decision_tree),
+                                       ("SVC", hyperparameter_tuning_svc),
+                                       ("Naive Bayes", hyperparameter_tuning_naive_bayes)]:
+            model_results_df = model_func(x_train, x_test, y_train, y_test)
+
+            model_results_df["Preprocessing Method"] = preprocess_name
+            model_results_df["Model"] = model_name
+            columns_order = ["Preprocessing Method", "Model", "Accuracy", "Precision", "Recall", "F1 Score", "Parameters"]
+            model_results_df = model_results_df[columns_order]
+            
+            results_df = results_df.append(model_results_df, ignore_index=True)
+
+    results_df = results_df.sort_values(by='Model')
+    results_df.to_csv("results.csv", index=False)
+
+
+#   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 def main():
     df = read_data()
-    X, Y = get_X_and_Y(df)
-    
     data_exploration(df)    
-    x_train, x_test, y_train, y_test = split_dataset_with_PCA(df)
-    svc = testing_models_SVC(x_train, x_test, y_train, y_test)
-    dec_tree = testing_models_DecisionTree(x_train, x_test, y_train, y_test)
-    rand_forest = testing_models_RandomForest(x_train, x_test, y_train, y_test)
-    gaussian_nb = testing_models_GaussianNB(x_train, x_test, y_train, y_test)
-    
-    compare_scores(svc, dec_tree, rand_forest, gaussian_nb)
-    print('-----')
-    hyperparameter_tuning_svc(x_train, x_test, y_train, y_test)
-
-
-
-
-
-
-
+    test_models(df)
 
 
 if __name__ == '__main__':
