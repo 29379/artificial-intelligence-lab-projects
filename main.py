@@ -5,12 +5,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-from sklearn.preprocessing import MinMaxScaler, StandardScaler, Normalizer
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, Normalizer, KBinsDiscretizer
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import KFold, cross_val_score, train_test_split, GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, precision_score, recall_score, classification_report
 from sklearn.svm import SVC
@@ -138,7 +137,6 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     pca_red = PCA(n_components=6)
     X_reduced = pca_red.fit_transform(X_var)
     
-    #   Splitting the dataset with 80-20 proportions
     X = X_reduced
     Y = df['Type'].values
     x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.2, random_state=1)
@@ -153,7 +151,6 @@ def split_dataset_with_FeatureSelection(df: pd.DataFrame, k: int) -> tuple[np.nd
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
     Y = df['Type'].values
-    
     feature_selector = SelectKBest(f_classif, k=k)  #   f_classif - feature importance measure
     x2 = feature_selector.fit_transform(X, Y)
     
@@ -169,13 +166,10 @@ def split_dataset_with_StandardScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
     Y = df['Type'].values
-    
-    # Perform normalization on the features
     scaler = StandardScaler()
     x2 = scaler.fit_transform(X)
     
     x_train, x_test, y_train, y_test = train_test_split(x2, Y, test_size=0.2, random_state=1)
-
     return x_train, x_test, y_train, y_test
 
 
@@ -186,8 +180,6 @@ def split_dataset_with_StandardScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.
 def split_dataset_with_MinMaxScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
-    
-    # Apply MinMaxScaler for normalization
     scaler = MinMaxScaler()
     x2 = scaler.fit_transform(X)
     
@@ -201,13 +193,25 @@ def split_dataset_with_MinMaxScaler(df: pd.DataFrame) -> tuple[np.ndarray, np.nd
 def split_dataset_with_Normalizer(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     #   grab specific columns from the dataframe
     X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
-    
-    # Apply Normalizer for normalization
     normalizer = Normalizer()
     x2 = normalizer.fit_transform(X)
     
     x_train, x_test, y_train, y_test = train_test_split(x2, df['Type'].values, test_size=0.2, random_state=1)
     return x_train, x_test, y_train, y_test    
+
+
+#   Transforming constant variables into disccrete ones, splitting data into ranges or categories.
+#   Uniform discretization splits the values into equal ranges. Encoding is ordinal instead of default one-hot,
+#   because it preserves the order of the categories
+def split_dataset_with_Discretizer(df: pd.DataFrame, n_bins: int) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    # Grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    discretizer = KBinsDiscretizer(n_bins=n_bins, encode='ordinal', strategy='uniform')
+    x2 = discretizer.fit_transform(X)
+    
+    x_train, x_test, y_train, y_test = train_test_split(x2, df['Type'].values, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test
+
 
 
 #   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -388,18 +392,22 @@ def test_models(df: pd.DataFrame) -> None:
 
     for preprocess_name, preprocess_method in [("PCA", split_dataset_with_PCA),
                                                ("Feature Selection", split_dataset_with_FeatureSelection),
-                                               ("Standard Scaler", split_dataset_with_StandardScaler),
-                                               ("MinMax Scaler", split_dataset_with_MinMaxScaler),
-                                               ("Normalizer", split_dataset_with_Normalizer)]:
+                                               ("Standarization", split_dataset_with_StandardScaler),
+                                               ("Normalization", split_dataset_with_Normalizer),
+                                               ("Discretization", split_dataset_with_Discretizer),
+                                               ("MinMax Scaling", split_dataset_with_MinMaxScaler)]:
+        
 
         if preprocess_name == "Feature Selection":
             x_train, x_test, y_train, y_test = preprocess_method(df, k=6)
+        elif preprocess_name == "Discretization":
+            x_train, x_test, y_train, y_test = preprocess_method(df, n_bins=6)
         else:
             x_train, x_test, y_train, y_test = preprocess_method(df)
 
         for model_name, model_func in [("Decision Tree", hyperparameter_tuning_decision_tree),
-                                       ("SVC", hyperparameter_tuning_svc),
-                                       ("Naive Bayes", hyperparameter_tuning_naive_bayes)]:
+                                       ("Naive Bayes", hyperparameter_tuning_naive_bayes),
+                                       ("SVC", hyperparameter_tuning_svc)]:
             model_results_df = model_func(x_train, x_test, y_train, y_test)
 
             model_results_df["Preprocessing Method"] = preprocess_name
@@ -409,7 +417,7 @@ def test_models(df: pd.DataFrame) -> None:
             
             results_df = results_df.append(model_results_df, ignore_index=True)
 
-    results_df = results_df.sort_values(by='Model')
+    results_df = results_df.sort_values(by=['Model', 'Preprocessing Method'])
     results_df.to_csv("results.csv", index=False)
 
 
