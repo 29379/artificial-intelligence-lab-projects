@@ -213,6 +213,13 @@ def split_dataset_with_Discretizer(df: pd.DataFrame, n_bins: int) -> tuple[np.nd
     return x_train, x_test, y_train, y_test
 
 
+def split_dataset_without_preprocessing(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    # Grab specific columns from the dataframe
+    X = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
+    Y = df['Type'].values
+    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
+    return x_train, x_test, y_train, y_test
+
 
 #   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -395,7 +402,8 @@ def test_models(df: pd.DataFrame) -> None:
                                                ("Standarization", split_dataset_with_StandardScaler),
                                                ("Normalization", split_dataset_with_Normalizer),
                                                ("Discretization", split_dataset_with_Discretizer),
-                                               ("MinMax Scaling", split_dataset_with_MinMaxScaler)]:
+                                               ("MinMax Scaling", split_dataset_with_MinMaxScaler),
+                                               ("No Preprocessing", split_dataset_without_preprocessing)]:
         
 
         if preprocess_name == "Feature Selection":
