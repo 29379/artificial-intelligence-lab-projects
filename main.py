@@ -23,12 +23,6 @@ from sentence_transformers import SentenceTransformer
 from enum import Enum
 
 
-def generate_embeedings() -> None:
-    model = SentenceTransformer('bert-base-cased')
-    texts_list = ["Hello, my dog is cute.", "I love Artificial Intelligence. Machine Learning is my passion!"]
-    embeddings = model.encode(texts_list)
-    print(embeddings.shape)
-
 def read_ratings() -> pd.DataFrame:
     ratings = pd.DataFrame()
     for i in [1, 2, 3]:
@@ -40,33 +34,46 @@ def read_ratings() -> pd.DataFrame:
     return ratings
 
 
-joke_texts = 'jokes/Dataset4JokeSet.xlsx'
-ratings = 'ratings/[final] April 2015 to Nov 30 2019 - Transformed Jester Data.xlsx'
+def read_jokes() -> list[str]:
+    jokes = []
+    for i in range(1, 101):
+        file_name = f'jokes/init{i}.html'
+        with open(file_name, 'r') as file:
+            html_code = file.read()
+            soup = BeautifulSoup(html_code, 'html.parser')
+            joke = soup.find('font', size='+1').text.strip()
+            jokes.append(joke)
 
-#   jokes:      1 column (the joke)
-#   ratings:    rows - user ratings, columns - joke ratings
-def read_files() -> tuple[pd.DataFrame, pd.DataFrame]:
-    joke_texts_df = pd.read_excel(joke_texts)
-    ratings_df = pd.read_excel(ratings)
+    return jokes
+
+
+def generate_embeedings(jokes: list[str]) -> any:
+    model = SentenceTransformer('bert-base-cased')
+    embeddings = model.encode(jokes)    #   encoding the jokes and changing text values into vectors
+    print(embeddings.shape)
+    return embeddings
+
+
+def split_dataset_with_StandardScaler(embeeded_jokes: any, ratings: pd.DataFrame) -> tuple[any, any, any, any]:
+    scaler = StandardScaler()
+    x_train, x_test, y_train, y_test = train_test_split(
+        embeeded_jokes,
+        ratings,
+        test_size=.2,
+        random_state=1
+    )
+    x_train_scaled = scaler.fit_transform(x_train)
+    x_test_scaled = scaler.fit_transform(x_test)
     
-    #   99 means no rating, so I dropped all the rows and columns, where it is appropriate, where there are only 99s
-    columns_without_any_rating = [1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 14, 20, 27, 31, 43, 51, 52, 61, 73, 80, 100, 116]
-    rows_to_drop = [joke - 1 for joke in columns_without_any_rating]
-    joke_texts_df.drop(rows_to_drop)
-    ratings_df.drop(ratings_df.columns[columns_without_any_rating], axis=1, inplace=True)
+    return x_train_scaled, x_test_scaled, y_train, y_test
     
-    return joke_texts_df, ratings_df
+
 
 if __name__ == '__main__':
-    # jokes, ratings = read_files()
-    # indexes = jokes.loc[(jokes == 99).all(axis=1)].index
-    # print(indexes)
-    
-    # indexes = ratings.columns[(ratings == 99).all(axis=0)]
-    # print(indexes)
-    
-    # generate_embeedings()
-    read_ratings()
+    ratings = read_ratings()
+    jokes = read_jokes()
+    embeeded_jokes = generate_embeedings(jokes)
+    x_train, x_test, y_train, y_test = split_dataset_with_StandardScaler(embeeded_jokes, ratings)
 
 
     
