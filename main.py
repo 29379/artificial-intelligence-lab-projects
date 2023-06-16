@@ -21,6 +21,7 @@ from sklearn.preprocessing import StandardScaler
 from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
 from enum import Enum
+from itertools import product
 
 
 def read_ratings() -> pd.DataFrame:
@@ -56,21 +57,26 @@ def generate_embeedings(jokes: list[str]) -> any:
 
 def split_dataset_with_StandardScaler(embeeded_jokes: any, ratings: pd.DataFrame) -> tuple[any, any, any, any]:
     scaler = StandardScaler()
+    # x_train, x_test, y_train, y_test = train_test_split(
+    #     embeeded_jokes,
+    #     ratings,
+    #     test_size=.2,
+    #     random_state=1
+    # )
+    # x_train_scaled = scaler.fit_transform(x_train)
+    # x_test_scaled = scaler.fit_transform(x_test)
+    
+    normalized_embeedings = scaler.fit_transform(embeeded_jokes)
     x_train, x_test, y_train, y_test = train_test_split(
-        embeeded_jokes,
-        ratings,
-        test_size=.2,
-        random_state=1
+        normalized_embeedings, ratings, test_size=.2, random_state=3
     )
-    x_train_scaled = scaler.fit_transform(x_train)
-    x_test_scaled = scaler.fit_transform(x_test)
     
     print("x_train shape:", x_train.shape)
     print("y_train shape:", y_train.shape)
     print("x_test shape:", x_test.shape)
     print("y_test shape:", y_test.shape)
     
-    return x_train_scaled, x_test_scaled, y_train, y_test
+    return x_train, x_test, y_train, y_test
 
 
 # def run_MLPRegressor(x_train: any, x_test: any, y_train: any, y_test: any) -> MLPRegressor:
@@ -84,7 +90,7 @@ def split_dataset_with_StandardScaler(embeeded_jokes: any, ratings: pd.DataFrame
 #     model.fit(x_train, y_train)
 #     y_pred = model.predict(x_test)
 #     return model
-def run_regressor(x_train: any, x_test: any, y_train: any, y_test: any, params: dict, mode: int) -> tuple[list[float], list[float], list[float]]:
+def run_regressor(x_train: any, x_test: any, y_train: any, y_test: any, params: dict) -> tuple[list[float], list[float], list[float]]:
     _hidden_layer_sizes = params['hidden_layer_sizes']
     _activation = params['activation']
     _alpha = params['alpha']
@@ -117,22 +123,10 @@ def run_regressor(x_train: any, x_test: any, y_train: any, y_test: any, params: 
         train_loss.append(mean_squared_error(y_train, pred_y_train))
         test_loss.append(mean_squared_error(y_test, pred_y_test))
     loss_curve = mlp.loss_curve_    
-    if mode == 1:
-        return train_loss
-    elif mode == 2:
-        return test_loss
-    elif mode == 3:
-        return loss_curve
-    else:
-        raise Exception('Invalid mode')
+    return train_loss, test_loss, loss_curve
     
             
-def run(x_train: any, x_test: any, y_train: any, y_test: any):
-    mode: dict = {
-        'train': 1,
-        'test': 2,
-        'loss_curve': 3
-    }
+def run_with_constant_learning_rates(x_train: any, x_test: any, y_train: any, y_test: any) -> None:
     params: list[dict] = [
         {
             'hidden_layer_sizes': (100,),
@@ -143,33 +137,114 @@ def run(x_train: any, x_test: any, y_train: any, y_test: any):
             'solver': 'sgd',
             'learning_rate': 'constant',
             'learning_rate_init': 0.001,
-            'epochs': 100
+            'epochs': 500
         },
-        # {
-        #     'hidden_layer_sizes': (100,100,),
-        #     'activation': 'relu',
-        #     'alpha': 0.0,
-        #     'random_state': 1,
-        #     'max_iter': 500,
-        #     'solver': 'sgd',
-        #     'learning_rate': 'constant',
-        #     'learning_rate_init': 0.001,
-        #     'epochs': 1000
-        # }
+        {
+            'hidden_layer_sizes': (100,100,),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 1,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 500
+        },
+        {
+            'hidden_layer_sizes': (100,100,100),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 1,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 500
+        },
+        {
+            'hidden_layer_sizes': (100,),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 1,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 1000
+        },
+        {
+            'hidden_layer_sizes': (100,100,),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 1,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 1000
+        },
+        {
+            'hidden_layer_sizes': (100,100,100),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 1,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 1000
+        }
     ]
     
     for param_batch in params:
-        loss_train = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['train'])
-        loss_test = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['test'])
-        loss_curve = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['loss_curve'])
-        plt.title(param_batch['epochs'])
+        loss_train, loss_test, loss_curve = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['train'])
+        plt.title(f'Epochs: {param_batch["epochs"]} | Layers: {param_batch["hidden_layer_sizes"]}')
         plt.plot(range(len(loss_train)), loss_train, label=f'Train Loss')
         plt.plot(range(len(loss_test)), loss_test, label=f'Test Loss')
         plt.plot(range(len(loss_curve)), loss_curve, label=f'Loss curve')
         plt.legend()
         plt.show()
         
+
+def run(x_train: any, x_test: any, y_train: any, y_test: any) -> None:
+    solver = ['sgd']
+    activation = ['relu']
+    alpha = [0.0]
+    random_state = [0]
+    max_iter = [500]
     
+    hidden_layer_sizes=[(25,), (25, 25,),
+                        (100,),(100, 100,),
+                        (500,), (500, 500)]
+    learning_rates=['constant', 'adaptive', 'invscaling']
+    learning_rate_inits=[0.001, 0.01, 0.1, 1.]
+    epochs=[100, 500, 1000, 2000]
+    
+    parameter_combinations = list(product(hidden_layer_sizes, learning_rates, learning_rate_inits, epochs))
+    
+    for combination in parameter_combinations:
+        hidden_layer_size, learning_rate, learning_rate_init, epoch = combination
+        params = {
+            'hidden_layer_sizes': combination[0],
+            'learning_rate': combination[1],
+            'learning_rate_init': combination[2],
+            'epochs': combination[3],
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 0,
+            'max_iter': 500,
+            'solver': 'sgd',
+        }
+        print('-------------------\n')
+        print(f'Running with params: {params}')
+        print('\n-------------------\n')
+        loss_train, loss_test, loss_curve = run_regressor(x_train, x_test, y_train, y_test, params)
+        plt.title(f'Epochs: {params["epochs"]} | Layers: {params["hidden_layer_sizes"]} | Learning rate: {params["learning_rate"]} | Learning rate init: {params["learning_rate_init"]}')
+        plt.plot(range(len(loss_train)), loss_train, label=f'Train Loss')
+        plt.plot(range(len(loss_test)), loss_test, label=f'Test Loss')
+        plt.plot(range(len(loss_curve)), loss_curve, label=f'Loss curve')
+        plt.legend()
+        plt.show()
     
 
 if __name__ == '__main__':    
@@ -177,7 +252,7 @@ if __name__ == '__main__':
     jokes = read_jokes()
     embeeded_jokes = generate_embeedings(jokes)
     x_train, x_test, y_train, y_test = split_dataset_with_StandardScaler(embeeded_jokes, ratings)
+    #run_with_constant_learning_rates(x_train, x_test, y_train, y_test)
     run(x_train, x_test, y_train, y_test)
-
 
     
