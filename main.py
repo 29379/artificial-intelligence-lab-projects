@@ -65,15 +65,119 @@ def split_dataset_with_StandardScaler(embeeded_jokes: any, ratings: pd.DataFrame
     x_train_scaled = scaler.fit_transform(x_train)
     x_test_scaled = scaler.fit_transform(x_test)
     
+    print("x_train shape:", x_train.shape)
+    print("y_train shape:", y_train.shape)
+    print("x_test shape:", x_test.shape)
+    print("y_test shape:", y_test.shape)
+    
     return x_train_scaled, x_test_scaled, y_train, y_test
+
+
+# def run_MLPRegressor(x_train: any, x_test: any, y_train: any, y_test: any) -> MLPRegressor:
+#     model = MLPRegressor(
+#         hidden_layer_sizes=(100, 100, 100),
+#         activation='relu',
+#         solver='adam',
+#         max_iter=500,
+#         random_state=1
+#     )
+#     model.fit(x_train, y_train)
+#     y_pred = model.predict(x_test)
+#     return model
+def run_regressor(x_train: any, x_test: any, y_train: any, y_test: any, params: dict, mode: int) -> tuple[list[float], list[float], list[float]]:
+    _hidden_layer_sizes = params['hidden_layer_sizes']
+    _activation = params['activation']
+    _alpha = params['alpha']
+    _random_state = params['random_state']
+    _max_iter = params['max_iter']
+    _solver = params['solver']
+    _learning_rate = params['learning_rate']
+    _learning_rate_init = params['learning_rate_init']
+    _epochs = params['epochs']
+    
+    mlp = MLPRegressor(
+        hidden_layer_sizes=_hidden_layer_sizes,
+        activation=_activation,
+        solver=_solver,
+        max_iter=_max_iter,
+        random_state=_random_state,
+        learning_rate=_learning_rate,
+        learning_rate_init=_learning_rate_init,
+        alpha=_alpha
+    )
+    
+    train_loss = []
+    test_loss = []
+    
+    for epoch in range(_epochs):
+        mlp.partial_fit(x_train, y_train)
+        pred_y_train = mlp.predict(x_train)
+        pred_y_test = mlp.predict(x_test)
+        
+        train_loss.append(mean_squared_error(y_train, pred_y_train))
+        test_loss.append(mean_squared_error(y_test, pred_y_test))
+    loss_curve = mlp.loss_curve_    
+    if mode == 1:
+        return train_loss
+    elif mode == 2:
+        return test_loss
+    elif mode == 3:
+        return loss_curve
+    else:
+        raise Exception('Invalid mode')
+    
+            
+def run(x_train: any, x_test: any, y_train: any, y_test: any):
+    mode: dict = {
+        'train': 1,
+        'test': 2,
+        'loss_curve': 3
+    }
+    params: list[dict] = [
+        {
+            'hidden_layer_sizes': (100,),
+            'activation': 'relu',
+            'alpha': 0.0,
+            'random_state': 0,
+            'max_iter': 500,
+            'solver': 'sgd',
+            'learning_rate': 'constant',
+            'learning_rate_init': 0.001,
+            'epochs': 100
+        },
+        # {
+        #     'hidden_layer_sizes': (100,100,),
+        #     'activation': 'relu',
+        #     'alpha': 0.0,
+        #     'random_state': 1,
+        #     'max_iter': 500,
+        #     'solver': 'sgd',
+        #     'learning_rate': 'constant',
+        #     'learning_rate_init': 0.001,
+        #     'epochs': 1000
+        # }
+    ]
+    
+    for param_batch in params:
+        loss_train = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['train'])
+        loss_test = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['test'])
+        loss_curve = run_regressor(x_train, x_test, y_train, y_test, param_batch, mode['loss_curve'])
+        plt.title(param_batch['epochs'])
+        plt.plot(range(len(loss_train)), loss_train, label=f'Train Loss')
+        plt.plot(range(len(loss_test)), loss_test, label=f'Test Loss')
+        plt.plot(range(len(loss_curve)), loss_curve, label=f'Loss curve')
+        plt.legend()
+        plt.show()
+        
+    
     
 
-
-if __name__ == '__main__':
+if __name__ == '__main__':    
     ratings = read_ratings()
     jokes = read_jokes()
     embeeded_jokes = generate_embeedings(jokes)
     x_train, x_test, y_train, y_test = split_dataset_with_StandardScaler(embeeded_jokes, ratings)
+    run(x_train, x_test, y_train, y_test)
 
 
     
