@@ -1,5 +1,3 @@
-from GlassType import GlassType
-
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -130,6 +128,10 @@ def split_dataset_with_PCA(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np
     #   grab specific columns from the dataframe
     X_var = df[['RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe']]
     pca = PCA(random_state=1)   #   seed
+    
+    #   tutaj - train test split
+    #   tutaj - standaryzacja przed PCA
+    
     pca.fit(X_var)
     
     #   RI, Na, Mg, Al, Si i K equals to more or less 99.8%, so it is safe to say that I can cut
@@ -294,7 +296,7 @@ def compare_scores(svc_scores: float, dec_tree_scores: float, rand_forest_scores
 
 
 def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: np.ndarray, y_test: np.ndarray) -> pd.DataFrame:
-    tuned_parameters = [
+    tuned_parameters = [    # kernel type, regularization parameter, kernel coefficient
         {'kernel': 'rbf', 'gamma': 0.001, 'C': 1},
         {'kernel': 'linear', 'C': 0.1},
         {'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1},
@@ -312,8 +314,13 @@ def hyperparameter_tuning_svc(x_train: np.ndarray, x_test: np.ndarray, y_train: 
         prec = precision_score(y_test, y_pred, average='weighted')
         rec = recall_score(y_test, y_pred, average='weighted')
         f1 = f1_score(y_test, y_pred, average='weighted')
+        matrix = confusion_matrix(y_test, y_pred)
+        plt.subplots(figsize=(16, 9))
+        sns.heatmap(matrix.T, square=True, annot=True, fmt='d', cbar=False)
+        plt.xlabel('true label')
+        plt.ylabel('predicted label')
 
-        scores.append([acc, prec, rec, f1, params])
+        scores.loc([acc, prec, rec, f1, params])
 
 
     cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
@@ -346,7 +353,7 @@ def hyperparameter_tuning_decision_tree(x_train: np.ndarray, x_test: np.ndarray,
         rec = recall_score(y_test, y_pred, average='weighted')
         f1 = f1_score(y_test, y_pred, average='weighted')
         
-        scores.append([acc, prec, rec, f1, params])
+        scores.loc([acc, prec, rec, f1, params])
     
     cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
     scores_df = pd.DataFrame(scores, columns=cols)
@@ -378,7 +385,7 @@ def hyperparameter_tuning_naive_bayes(x_train: np.ndarray, x_test: np.ndarray, y
         rec = recall_score(y_test, y_pred, average='weighted')
         f1 = f1_score(y_test, y_pred, average='weighted')
         
-        scores.append([acc, prec, rec, f1, params])
+        scores.loc([acc, prec, rec, f1, params])
     
     cols = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'Parameters']
     scores_df = pd.DataFrame(scores, columns=cols)
@@ -423,7 +430,7 @@ def test_models(df: pd.DataFrame) -> None:
             columns_order = ["Preprocessing Method", "Model", "Accuracy", "Precision", "Recall", "F1 Score", "Parameters"]
             model_results_df = model_results_df[columns_order]
             
-            results_df = results_df.append(model_results_df, ignore_index=True)
+            results_df = results_df.loc(model_results_df, ignore_index=True)
 
     results_df = results_df.sort_values(by=['Model', 'Preprocessing Method'])
     results_df.to_csv("results.csv", index=False)
@@ -442,3 +449,5 @@ if __name__ == '__main__':
     main()
     plt.show()
     
+    
+#   granice decyzyjne drzewa vs skm - sklearn feature do wizualizacji DecisionTree

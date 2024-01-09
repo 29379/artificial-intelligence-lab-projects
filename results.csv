@@ -1,0 +1,106 @@
+Preprocessing Method;Model;Accuracy;Precision;Recall;F1 Score;Parameters;;;;;;;;
+Discretization;Decision Tree;0.627906977;0.568475452;0.627906977;0.590075585;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Discretization;Decision Tree;0.674418605;0.595348837;0.674418605;0.627906977;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Discretization;Decision Tree;0.697674419;0.622868217;0.697674419;0.651362326;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+Discretization;Decision Tree;0.627906977;0.571576227;0.627906977;0.592778825;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Discretization;Decision Tree;0.651162791;0.580878553;0.651162791;0.607544421;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Feature Selection;Decision Tree;0.558139535;0.571982281;0.558139535;0.550268336;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Feature Selection;Decision Tree;0.720930233;0.630232558;0.720930233;0.670045717;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Feature Selection;Decision Tree;0.697674419;0.633430233;0.697674419;0.649298634;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+Feature Selection;Decision Tree;0.581395349;0.637964361;0.581395349;0.585191811;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Feature Selection;Decision Tree;0.651162791;0.587794498;0.651162791;0.612911227;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+MinMax Scaling;Decision Tree;0.720930233;0.740739203;0.720930233;0.71885737;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+MinMax Scaling;Decision Tree;0.674418605;0.73873929;0.674418605;0.652101121;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+MinMax Scaling;Decision Tree;0.720930233;0.779388965;0.720930233;0.698781838;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+MinMax Scaling;Decision Tree;0.651162791;0.677408638;0.651162791;0.651162791;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+MinMax Scaling;Decision Tree;0.744186047;0.748652639;0.744186047;0.740502936;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+No Preprocessing;Decision Tree;0.720930233;0.732041344;0.720930233;0.717843425;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+No Preprocessing;Decision Tree;0.651162791;0.719767442;0.651162791;0.631746032;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+No Preprocessing;Decision Tree;0.744186047;0.792840857;0.744186047;0.719793227;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+No Preprocessing;Decision Tree;0.651162791;0.68667263;0.651162791;0.651139719;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+No Preprocessing;Decision Tree;0.76744186;0.767620751;0.76744186;0.762687339;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Normalization;Decision Tree;0.627906977;0.67555158;0.627906977;0.631896205;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Normalization;Decision Tree;0.674418605;0.592350285;0.674418605;0.627338501;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Normalization;Decision Tree;0.627906977;0.646919625;0.627906977;0.61203291;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+Normalization;Decision Tree;0.627906977;0.652048726;0.627906977;0.630672185;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Normalization;Decision Tree;0.604651163;0.524031008;0.604651163;0.557105943;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+PCA;Decision Tree;0.604651163;0.543743079;0.604651163;0.569946333;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+PCA;Decision Tree;0.697674419;0.603488372;0.697674419;0.645171366;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+PCA;Decision Tree;0.627906977;0.566457961;0.627906977;0.59369509;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+PCA;Decision Tree;0.604651163;0.622902292;0.604651163;0.599223741;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+PCA;Decision Tree;0.627906977;0.566998893;0.627906977;0.593202147;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Standarization;Decision Tree;0.697674419;0.719708715;0.697674419;0.697789498;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Standarization;Decision Tree;0.651162791;0.719767442;0.651162791;0.631746032;{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Standarization;Decision Tree;0.744186047;0.792840857;0.744186047;0.719793227;{'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 4};;;;;;;;
+Standarization;Decision Tree;0.674418605;0.688261351;0.674418605;0.66873385;{'criterion': 'entropy', 'max_depth': 15, 'min_samples_split': 2, 'min_samples_leaf': 1};;;;;;;;
+Standarization;Decision Tree;0.76744186;0.767620751;0.76744186;0.762687339;{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5, 'min_samples_leaf': 2};;;;;;;;
+Discretization;Naive Bayes;0.162790698;0.159000861;0.162790698;0.142550184;{'var_smoothing': 1e-09};;;;;;;;
+Discretization;Naive Bayes;0.162790698;0.159000861;0.162790698;0.142550184;{'var_smoothing': 1e-08};;;;;;;;
+Discretization;Naive Bayes;0.162790698;0.137491191;0.162790698;0.134321986;{'var_smoothing': 1e-07};;;;;;;;
+Discretization;Naive Bayes;0.162790698;0.122383721;0.162790698;0.128834169;{'var_smoothing': 1e-06};;;;;;;;
+Discretization;Naive Bayes;0.209302326;0.13126615;0.209302326;0.148800295;{'var_smoothing': 1e-05};;;;;;;;
+Feature Selection;Naive Bayes;0.279069767;0.292026578;0.279069767;0.239854081;{'var_smoothing': 1e-09};;;;;;;;
+Feature Selection;Naive Bayes;0.279069767;0.292026578;0.279069767;0.239854081;{'var_smoothing': 1e-08};;;;;;;;
+Feature Selection;Naive Bayes;0.302325581;0.51369509;0.302325581;0.282930931;{'var_smoothing': 1e-07};;;;Etykiety wierszy;Œrednia z F1 Score;Œrednia z Accuracy;Œrednia z Precision;Œrednia z Recall
+Feature Selection;Naive Bayes;0.302325581;0.51369509;0.302325581;0.282930931;{'var_smoothing': 1e-06};;;;Decision Tree;0.646372401;0.668438538;0.659060398;0.668438538
+Feature Selection;Naive Bayes;0.372093023;0.648837209;0.372093023;0.391518468;{'var_smoothing': 1e-05};;;;Discretization;0.613933627;0.655813953;0.587829457;0.655813953
+MinMax Scaling;Naive Bayes;0.255813953;0.24551495;0.255813953;0.200790394;{'var_smoothing': 1e-09};;;;Feature Selection;0.613543145;0.641860465;0.612280786;0.641860465
+MinMax Scaling;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-08};;;;MinMax Scaling;0.692281211;0.702325581;0.736985747;0.702325581
+MinMax Scaling;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-07};;;;No Preprocessing;0.696641948;0.706976744;0.739788605;0.706976744
+MinMax Scaling;Naive Bayes;0.302325581;0.541621944;0.302325581;0.283180644;{'var_smoothing': 1e-06};;;;Normalization;0.611809149;0.63255814;0.618180245;0.63255814
+MinMax Scaling;Naive Bayes;0.348837209;0.602325581;0.348837209;0.35245478;{'var_smoothing': 1e-05};;;;PCA;0.600247735;0.63255814;0.580718119;0.63255814
+No Preprocessing;Naive Bayes;0.255813953;0.24551495;0.255813953;0.200790394;{'var_smoothing': 1e-09};;;;Standarization;0.696149989;0.706976744;0.737639823;0.706976744
+No Preprocessing;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-08};;;;Naive Bayes;0.305492702;0.332225914;0.43657327;0.332225914
+No Preprocessing;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-07};;;;Discretization;0.139411364;0.172093023;0.141828557;0.172093023
+No Preprocessing;Naive Bayes;0.302325581;0.541621944;0.302325581;0.283180644;{'var_smoothing': 1e-06};;;;Feature Selection;0.287417699;0.306976744;0.452056109;0.306976744
+No Preprocessing;Naive Bayes;0.372093023;0.63124368;0.372093023;0.38246563;{'var_smoothing': 1e-05};;;;MinMax Scaling;0.264832061;0.293023256;0.46476588;0.293023256
+Normalization;Naive Bayes;0.279069767;0.292026578;0.279069767;0.239854081;{'var_smoothing': 1e-09};;;;No Preprocessing;0.270834231;0.297674419;0.4705495;0.297674419
+Normalization;Naive Bayes;0.279069767;0.292026578;0.279069767;0.239854081;{'var_smoothing': 1e-08};;;;Normalization;0.270279717;0.297674419;0.399474345;0.297674419
+Normalization;Naive Bayes;0.279069767;0.292026578;0.279069767;0.239854081;{'var_smoothing': 1e-07};;;;PCA;0.657319832;0.674418605;0.72179402;0.674418605
+Normalization;Naive Bayes;0.302325581;0.51369509;0.302325581;0.282930931;{'var_smoothing': 1e-06};;;;Standarization;0.248354011;0.28372093;0.405544481;0.28372093
+Normalization;Naive Bayes;0.348837209;0.607596899;0.348837209;0.348905408;{'var_smoothing': 1e-05};;;;SVC;0.249386099;0.372093023;0.227258983;0.372093023
+PCA;Naive Bayes;0.674418605;0.72179402;0.674418605;0.657319832;{'var_smoothing': 1e-09};;;;Discretization;0.317740109;0.427906977;0.282736473;0.427906977
+PCA;Naive Bayes;0.674418605;0.72179402;0.674418605;0.657319832;{'var_smoothing': 1e-08};;;;Feature Selection;0.26628813;0.381395349;0.259282074;0.381395349
+PCA;Naive Bayes;0.674418605;0.72179402;0.674418605;0.657319832;{'var_smoothing': 1e-07};;;;MinMax Scaling;0.193923761;0.330232558;0.176240114;0.330232558
+PCA;Naive Bayes;0.674418605;0.72179402;0.674418605;0.657319832;{'var_smoothing': 1e-06};;;;No Preprocessing;0.272876388;0.386046512;0.258596445;0.386046512
+PCA;Naive Bayes;0.674418605;0.72179402;0.674418605;0.657319832;{'var_smoothing': 1e-05};;;;Normalization;0.121775899;0.279069767;0.077879935;0.279069767
+Standarization;Naive Bayes;0.255813953;0.24551495;0.255813953;0.200790394;{'var_smoothing': 1e-09};;;;PCA;0.277305205;0.390697674;0.261391223;0.390697674
+Standarization;Naive Bayes;0.255813953;0.24551495;0.255813953;0.200790394;{'var_smoothing': 1e-08};;;;Standarization;0.295793199;0.409302326;0.274686617;0.409302326
+Standarization;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-07};;;;Suma koñcowa;0.400417067;0.457585825;0.440964217;0.457585825
+Standarization;Naive Bayes;0.279069767;0.467183463;0.279069767;0.243867244;{'var_smoothing': 1e-06};;;;;;;;
+Standarization;Naive Bayes;0.348837209;0.602325581;0.348837209;0.35245478;{'var_smoothing': 1e-05};;;;;;;;
+Discretization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+Discretization;SVC;0.627906977;0.572351421;0.627906977;0.591745234;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+Discretization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+Discretization;SVC;0.674418605;0.607691138;0.674418605;0.631627618;{'kernel': 'linear', 'C': 1};;;;;;;;
+Discretization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+Feature Selection;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+Feature Selection;SVC;0.511627907;0.508859358;0.511627907;0.451384275;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+Feature Selection;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+Feature Selection;SVC;0.558139535;0.553911205;0.558139535;0.514728682;{'kernel': 'linear', 'C': 1};;;;;;;;
+Feature Selection;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+MinMax Scaling;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+MinMax Scaling;SVC;0.348837209;0.155201958;0.348837209;0.205478036;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+MinMax Scaling;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+MinMax Scaling;SVC;0.465116279;0.492358804;0.465116279;0.398813073;{'kernel': 'linear', 'C': 1};;;;;;;;
+MinMax Scaling;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+No Preprocessing;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+No Preprocessing;SVC;0.488372093;0.493450949;0.488372093;0.43213678;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+No Preprocessing;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+No Preprocessing;SVC;0.604651163;0.565891473;0.604651163;0.566917465;{'kernel': 'linear', 'C': 1};;;;;;;;
+No Preprocessing;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+Normalization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+Normalization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+Normalization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+Normalization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'linear', 'C': 1};;;;;;;;
+Normalization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+PCA;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+PCA;SVC;0.488372093;0.493450949;0.488372093;0.43213678;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+PCA;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+PCA;SVC;0.627906977;0.579865361;0.627906977;0.589061551;{'kernel': 'linear', 'C': 1};;;;;;;;
+PCA;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
+Standarization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.001, 'C': 1};;;;;;;;
+Standarization;SVC;0.488372093;0.502583979;0.488372093;0.441008604;{'kernel': 'linear', 'C': 0.1};;;;;;;;
+Standarization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.01, 'C': 0.1};;;;;;;;
+Standarization;SVC;0.720930233;0.637209302;0.720930233;0.672629696;{'kernel': 'linear', 'C': 1};;;;;;;;
+Standarization;SVC;0.279069767;0.077879935;0.279069767;0.121775899;{'kernel': 'rbf', 'gamma': 0.1, 'C': 0.01};;;;;;;;
