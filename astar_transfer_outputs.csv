@@ -1,2218 +1,2217 @@
-A* - TRANSFERS,1.055148
-From: ,Mirkow - Sportowa,To: ,Gospodarska
-Mirkow - Sportowa,>,,,20:50:00
-BIERUTOWSKA (Wiadukt),>,914,21:11:00,21:13:00
-Bierutowska 75,>,914,21:13:00,21:14:00
-Bierutowska,>,914,21:14:00,21:15:00
-Bierutowska 65,>,914,21:15:00,21:15:00
-Dobroszycka,>,914,21:15:00,21:16:00
-PSIE POLE (Stacja kolejowa),>,914,21:16:00,21:17:00
-Psie Pole (Rondo Lotnikow Polskich),>,914,21:17:00,21:18:00
-Psie Pole,>,914,21:18:00,21:19:00
-C.H. Korona,>,914,21:19:00,21:22:00
-Brucknera,>,914,21:22:00,21:24:00
-Grudziadzka,>,914,21:24:00,21:25:00
-KROMERA,>,914,21:25:00,21:28:00
-Ketrzynska,>,6,21:34:00,21:35:00
-Kwidzynska,>,6,21:35:00,21:36:00
-Sniadeckich,>,921,21:32:00,21:34:00
-Kochanowskiego,>,921,21:34:00,21:36:00
-Chopina,>,17,21:42:00,21:43:00
-Karlowicza,>,17,21:43:00,21:44:00
-Stadion Olimpijski,>,17,21:44:00,21:45:00
-8 Maja,>,17,21:45:00,21:46:00
-Godebskiego (AWF Wroclaw),>,17,21:46:00,21:47:00
-SEPOLNO,>,17,21:47:00,21:49:00
-Monopolowa,>,115,21:56:00,21:57:00
-Kolumba,>,115,21:57:00,21:58:00
-Magellana,>,115,21:58:00,21:59:00
-Swojczyce,>,115,21:59:00,22:00:00
-Miloszycka,>,118,22:09:00,22:11:00
-Gospodarska,>,118,22:11:00,22:12:00
-
-A* - TRANSFERS,0.438439
-From: ,Krakowska,To: ,ZWYCIESKA
-Krakowska,>,,,18:50:00
-KRAKOWSKA (Centrum handlowe),>,114,18:57:00,18:58:00
-Park Wschodni,>,114,18:58:00,19:00:00
-Armii Krajowej (Bogedaina),>,134,19:04:00,19:05:00
-Transbud,>,134,19:05:00,19:06:00
-Bardzka,>,134,19:06:00,19:08:00
-Kamienna,>,134,19:08:00,19:09:00
-Wapienna,>,134,19:09:00,19:10:00
-Borowska,>,134,19:10:00,19:11:00
-Uniwersytet Ekonomiczny,>,134,19:11:00,19:14:00
-Drukarska,>,134,19:14:00,19:16:00
-Rondo,>,134,19:16:00,19:18:00
-Sztabowa,>,2,19:20:00,19:21:00
-Hallera,>,2,19:21:00,19:23:00
-Sudecka,>,144,19:23:00,19:24:00
-Jarzebinowa,>,144,19:24:00,19:25:00
-Skierniewicka,>,144,19:25:00,19:26:00
-Wyscigowa,>,144,19:26:00,19:29:00
-Malinowa,>,144,19:29:00,19:30:00
-Ozynowa,>,144,19:30:00,19:31:00
-rondo Sw. Ojca Pio,>,144,19:31:00,19:34:00
-ZWYCIESKA,>,144,19:34:00,19:35:00
-
-A* - TRANSFERS,0.001077
-From: ,Os. Przyjazni,To: ,IWINY - petla
-Os. Przyjazni,>,,,00:25:00
-
-A* - TRANSFERS,2.377242
-From: ,Wiaduktowa,To: ,Krolewiecka
-Wiaduktowa,>,,,09:16:00
-Gazowa,>,125,09:16:00,09:17:00
-TARNOGAJ,>,125,09:17:00,09:18:00
-Klimasa,>,125,09:18:00,09:19:00
-Transbud,>,125,09:19:00,09:21:00
-Bardzka,>,125,09:21:00,09:23:00
-Kamienna,>,125,09:23:00,09:25:00
-Prudnicka,>,125,09:25:00,09:26:00
-Hubska (Dawida),>,125,09:26:00,09:27:00
-DWORZEC AUTOBUSOWY,>,125,09:27:00,09:30:00
-Dworzec Glowny (Stawowa),>,31,09:32:00,09:34:00
-Arkady (Capitol),>,31,09:34:00,09:36:00
-pl. Legionow,>,31,09:36:00,09:38:00
-pl. Orlat Lwowskich,>,31,09:38:00,09:40:00
-PL. JANA PAWLA II,>,31,09:40:00,09:43:00
-Mlodych Technikow,>,31,09:43:00,09:45:00
-pl. Strzegomski (Muzeum Wspolczesne),>,31,09:45:00,09:46:00
-ZACHODNIA (Stacja kolejowa),>,31,09:46:00,09:48:00
-Niedzwiedzia,>,31,09:48:00,09:50:00
-Malopanewska,>,31,09:50:00,09:51:00
-Kwiska,>,31,09:51:00,09:53:00
-Kolista,>,31,09:53:00,09:57:00
-PILCZYCKA (Anima),>,31,09:57:00,09:58:00
-Modra,>,31,09:58:00,09:59:00
-Gornicza,>,31,09:59:00,10:00:00
-Dworska,>,31,10:00:00,10:02:00
-TARCZYNSKI ARENA (Krolewiecka),>,31,10:02:00,10:03:00
-Krolewiecka,>,101,10:18:00,10:19:00
-
-A* - TRANSFERS,0.453129
-From: ,KSIEZE MALE,To: ,Biestrzykow - Wroclawska
-KSIEZE MALE,>,,,06:03:00
-Glubczycka,>,3,06:04:00,06:05:00
-Karwinska,>,3,06:05:00,06:06:00
-Gazowa,>,124,06:10:00,06:12:00
-TARNOGAJ,>,124,06:12:00,06:13:00
-Zlotostocka,>,136,06:14:00,06:15:00
-GAJ - petla,>,136,06:15:00,06:17:00
-Swieradowska,>,136,06:17:00,06:18:00
-GAJ,>,136,06:18:00,06:20:00
-Borowska (Szpital),>,903,06:32:00,06:34:00
-Przystankowa,>,903,06:34:00,06:35:00
-Wojszyce,>,903,06:35:00,06:36:00
-Parafialna,>,903,06:36:00,06:37:00
-Obozna,>,903,06:37:00,06:38:00
-Galczynskiego,>,903,06:38:00,06:39:00
-Biestrzykow - Wroclawska,>,903,06:39:00,06:42:00
-
-A* - TRANSFERS,0.459507
-From: ,Tunelowa,To: ,Modra
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.008933
-From: ,DH Astra,To: ,Tarczynski Arena (Lotnicza)
-DH Astra,>,,,11:59:00
-Park Zachodni,>,20,12:00:00,12:01:00
-Bajana,>,20,12:01:00,12:02:00
-Metalowcow,>,20,12:02:00,12:03:00
-PILCZYCE,>,20,12:03:00,12:05:00
-Tarczynski Arena (Lotnicza),>,20,12:05:00,12:06:00
-
-A* - TRANSFERS,0.079823
-From: ,Dlugoleka - Kasztanowa,To: ,Kielczow - petla/Wroclawska
-Dlugoleka - Kasztanowa,>,,,20:47:00
-Dlugoleka - Wiejska,>,914,21:06:00,21:07:00
-Mirkow - Jagiellonska,>,914,21:07:00,21:09:00
-Mirkow - Sportowa,>,914,21:09:00,21:11:00
-BIERUTOWSKA (Wiadukt),>,914,21:11:00,21:13:00
-Bierutowska 75,>,914,21:13:00,21:14:00
-Bierutowska,>,914,21:14:00,21:15:00
-Bierutowska 65,>,914,21:15:00,21:15:00
-Dobroszycka,>,914,21:15:00,21:16:00
-PSIE POLE (Stacja kolejowa),>,914,21:16:00,21:17:00
-Psie Pole (Rondo Lotnikow Polskich),>,914,21:17:00,21:18:00
-Psie Pole (Gorlicka),>,147,21:31:00,21:32:00
-MULICKA,>,147,21:32:00,21:33:00
-Gorlicka,>,121,21:29:00,21:30:00
-Palacha,>,921,21:36:00,21:37:00
-Zgorzelisko,>,921,21:37:00,21:38:00
-Kurlandzka,>,921,21:38:00,21:38:00
-Mrozna,>,921,21:38:00,21:39:00
-Wilczyce,>,921,21:39:00,21:39:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,921,21:39:00,21:40:00
-Wilczyce - szkola,>,921,21:40:00,21:41:00
-Wilczyce - Dworska,>,921,21:41:00,21:41:00
-Wilczyce - Debowa,>,921,21:41:00,21:42:00
-Wilczyce - Sosnowa,>,921,21:42:00,21:43:00
-Kielczow - osiedle,>,921,21:43:00,21:44:00
-Kielczow - cmentarz,>,921,21:44:00,21:45:00
-Kielczow - petla/Wroclawska,>,921,21:45:00,21:46:00
-
-A* - TRANSFERS,0.380028
-From: ,Szczodre - Trzebnicka (na wys. nr 3a),To: ,Dubois
-Szczodre - Trzebnicka (na wys. nr 3a),>,,,06:39:00
-Szczodre - Trzebnicka,>,904,07:11:00,07:12:00
-Dlugoleka - Parkowa skrzy. Konopnicka,>,914,07:17:00,07:18:00
-Dlugoleka - Parkowa/skrzy.,>,914,07:18:00,07:19:00
-Dlugoleka - Kasztanowa,>,914,07:19:00,07:21:00
-Dlugoleka - Wiejska,>,914,07:21:00,07:23:00
-Mirkow - Jagiellonska,>,914,07:23:00,07:26:00
-Mirkow - Sportowa,>,914,07:26:00,07:28:00
-BIERUTOWSKA (Wiadukt),>,914,07:28:00,07:31:00
-Bierutowska 75,>,914,07:31:00,07:32:00
-Bierutowska,>,914,07:32:00,07:33:00
-Bierutowska 65,>,914,07:33:00,07:33:00
-Dobroszycka,>,914,07:33:00,07:34:00
-PSIE POLE (Stacja kolejowa),>,914,07:34:00,07:35:00
-Psie Pole (Rondo Lotnikow Polskich),>,914,07:35:00,07:36:00
-Psie Pole,>,914,07:36:00,07:37:00
-C.H. Korona,>,914,07:37:00,07:41:00
-Brucknera,>,914,07:41:00,07:43:00
-Grudziadzka,>,914,07:43:00,07:44:00
-KROMERA,>,914,07:44:00,07:48:00
-Mosty Warszawskie,>,23,07:49:00,07:51:00
-Daszynskiego,>,23,07:51:00,07:52:00
-Nowowiejska,>,23,07:52:00,07:54:00
-Jednosci Narodowej,>,23,07:54:00,07:55:00
-Na Szancach,>,23,07:55:00,07:56:00
-pl. Bema,>,23,07:56:00,07:58:00
-Dubois,>,6,08:02:00,08:04:00
-
-A* - TRANSFERS,0.171503
-From: ,ROD Oswiata,To: ,GIELDOWA (Centrum Hurtu)
-ROD Oswiata,>,,,15:29:00
-FAT,>,143,15:30:00,15:34:00
-GRABISZYNSKA (Cmentarz),>,143,15:34:00,15:36:00
-GRABISZYNSKA (Cmentarz II),>,143,15:36:00,15:37:00
-OPOROW,>,143,15:37:00,15:38:00
-Solskiego,>,143,15:38:00,15:39:00
-Wiejska,>,143,15:39:00,15:42:00
-Adamieckiego,>,107,15:44:00,15:46:00
-Morelowskiego,>,107,15:46:00,15:47:00
-GIELDOWA (Centrum Hurtu),>,107,15:47:00,15:48:00
-
-A* - TRANSFERS,2.834376
-From: ,Wolska,To: ,Brzezina - Zacisze
-Wolska,>,,,18:06:00
-LESNICA,>,123,18:07:00,18:08:00
-Sredzka,>,101,18:12:00,18:13:00
-Eluarda,>,138,18:19:00,18:20:00
-Brzezinska,>,137,18:30:00,18:31:00
-Owczarska,>,137,18:31:00,18:32:00
-Dolnobrzeska,>,137,18:32:00,18:33:00
-Mokra,>,137,18:33:00,18:36:00
-Las Mokrzanski,>,137,18:36:00,18:37:00
-Brzezina - Biedronka,>,937,19:47:00,19:49:00
-Brzezina - Zacisze,>,937,19:49:00,19:50:00
-
-A* - TRANSFERS,0.0
-From: ,Zabrodzie - petla,To: ,Lenartowice przy posesji nr 11a
-Zabrodzie - petla,>,,,00:01:00
-
-A* - TRANSFERS,1.603222
-From: ,Waniliowa,To: ,Borowska (Szpital)
-The correct path was not found,,,,
-
-A* - TRANSFERS,2.481618
-From: ,Hala Orbita,To: ,Pisarzowice - Kolejowa
-Hala Orbita,>,,,19:30:00
-Wejherowska,>,119,19:31:00,19:34:00
-Kwiska,>,119,19:34:00,19:36:00
-DH Astra,>,33,19:41:00,19:43:00
-Park Zachodni,>,33,19:43:00,19:44:00
-Bajana,>,33,19:44:00,19:45:00
-Metalowcow,>,33,19:45:00,19:46:00
-PILCZYCE,>,33,19:46:00,19:48:00
-Tarczynski Arena (Lotnicza),>,20,19:50:00,19:51:00
-Glinianki,>,20,19:51:00,19:53:00
-Aleja Architektow,>,20,19:53:00,19:54:00
-Grabowa,>,20,19:54:00,19:55:00
-Kosmonautow (Szpital),>,20,19:55:00,19:57:00
-Kamiennogorska (Osrodek dla niewidomych),>,20,19:57:00,19:58:00
-Zlotnicka,>,20,19:58:00,20:00:00
-Wschowska,>,20,20:00:00,20:01:00
-Jeleniogorska,>,20,20:01:00,20:02:00
-LESNICA,>,20,20:02:00,20:03:00
-RUBCZAKA (Stacja kolejowa),>,917,20:05:00,20:06:00
-Rubczaka,>,917,20:06:00,20:07:00
-Sredzka,>,123,20:08:00,20:09:00
-Wolska,>,123,20:09:00,20:11:00
-Polkowicka,>,123,20:11:00,20:13:00
-Hartmana,>,123,20:13:00,20:14:00
-Marszowicka,>,123,20:14:00,20:14:00
-Bojanowska,>,123,20:14:00,20:15:00
-Malomicka,>,123,20:15:00,20:16:00
-Marszowice,>,123,20:16:00,20:17:00
-Wilkszynska,>,923,20:38:00,20:40:00
-Lososiowicka,>,923,20:40:00,20:41:00
-Krzelowska,>,923,20:41:00,20:42:00
-Wilkszyn - Miloszyn,>,923,20:42:00,20:43:00
-Wilkszyn - Polna,>,923,20:43:00,20:44:00
-Wilkszyn (petla),>,923,20:44:00,20:45:00
-Pisarzowice - Graniczna,>,923,20:45:00,20:47:00
-Pisarzowice - Odrzanska,>,923,20:47:00,20:49:00
-Pisarzowice - Szkolna,>,923,20:49:00,20:50:00
-Pisarzowice - Kolejowa,>,923,20:50:00,20:51:00
-
-A* - TRANSFERS,0.338697
-From: ,Kielczow - osiedle,To: ,Park Staromiejski
-Kielczow - osiedle,>,,,13:30:00
-Wilczyce - Sosnowa,>,911,13:49:00,13:50:00
-Wilczyce - Debowa,>,911,13:50:00,13:51:00
-Wilczyce - Dworska,>,911,13:51:00,13:52:00
-Wilczyce - Borowa,>,911,13:52:00,13:53:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,911,13:53:00,13:54:00
-Wilczyce,>,911,13:54:00,13:54:00
-Mrozna,>,911,13:54:00,13:55:00
-Kurlandzka,>,911,13:55:00,13:55:00
-Zgorzelisko,>,911,13:55:00,13:56:00
-Palacha,>,911,13:56:00,13:57:00
-Szewczenki,>,911,13:57:00,13:58:00
-Gorlicka,>,911,13:58:00,13:59:00
-MULICKA,>,911,13:59:00,14:00:00
-Psie Pole (Rondo Lotnikow Polskich),>,911,14:00:00,14:01:00
-Psie Pole,>,911,14:01:00,14:02:00
-C.H. Korona,>,911,14:02:00,14:06:00
-Brucknera,>,911,14:06:00,14:08:00
-Kwidzynska,>,911,14:08:00,14:10:00
-Sniadeckich,>,911,14:10:00,14:12:00
-Kochanowskiego,>,911,14:12:00,14:15:00
-PL. GRUNWALDZKI,>,911,14:15:00,14:17:00
-most Grunwaldzki,>,4,14:18:00,14:19:00
-Urzad Wojewodzki (Impart),>,4,14:19:00,14:21:00
-GALERIA DOMINIKANSKA,>,4,14:21:00,14:25:00
-Park Staromiejski,>,23,14:27:00,14:29:00
-
-A* - TRANSFERS,6.308239
-From: ,STABLOWICKA (Osrodek zdrowia),To: ,Kepa (na wys. nr 36)
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.01496
-From: ,Kurlandzka,To: ,Sniadeckich
-Kurlandzka,>,,,06:41:00
-Zgorzelisko,>,921,06:55:00,06:56:00
-Palacha,>,921,06:56:00,06:57:00
-Szewczenki,>,921,06:57:00,06:58:00
-Gorlicka,>,921,06:58:00,06:59:00
-MULICKA,>,921,06:59:00,07:00:00
-Psie Pole (Rondo Lotnikow Polskich),>,921,07:00:00,07:01:00
-Psie Pole,>,921,07:01:00,07:02:00
-C.H. Korona,>,921,07:02:00,07:06:00
-Brucknera,>,921,07:06:00,07:08:00
-Kwidzynska,>,921,07:08:00,07:10:00
-Sniadeckich,>,921,07:10:00,07:12:00
-
-A* - TRANSFERS,2.890253
-From: ,Mickiewicza,To: ,Pustecka
-Mickiewicza,>,,,06:48:00
-Kliniki - Politechnika Wroclawska,>,115,06:52:00,06:54:00
-PL. GRUNWALDZKI,>,115,06:54:00,06:57:00
-most Grunwaldzki,>,16,06:58:00,06:59:00
-Poczta Glowna,>,D,07:00:00,07:02:00
-GALERIA DOMINIKANSKA,>,D,07:02:00,07:05:00
-Swidnicka,>,33,07:06:00,07:08:00
-Zamkowa,>,33,07:08:00,07:09:00
-Rynek,>,33,07:09:00,07:11:00
-PL. JANA PAWLA II,>,33,07:11:00,07:14:00
-Mlodych Technikow,>,33,07:14:00,07:16:00
-pl. Strzegomski (Muzeum Wspolczesne),>,33,07:16:00,07:17:00
-ZACHODNIA (Stacja kolejowa),>,33,07:17:00,07:19:00
-Niedzwiedzia,>,33,07:19:00,07:21:00
-Malopanewska,>,33,07:21:00,07:22:00
-Kwiska,>,33,07:22:00,07:24:00
-DH Astra,>,33,07:24:00,07:26:00
-Park Zachodni,>,33,07:26:00,07:27:00
-Bajana,>,33,07:27:00,07:28:00
-Metalowcow,>,33,07:28:00,07:29:00
-PILCZYCE,>,33,07:29:00,07:31:00
-Tarczynski Arena (Lotnicza),>,3,07:33:00,07:34:00
-Glinianki,>,3,07:34:00,07:36:00
-Aleja Architektow,>,3,07:36:00,07:37:00
-Grabowa,>,3,07:37:00,07:38:00
-Kosmonautow (Szpital),>,3,07:38:00,07:40:00
-Kamiennogorska (Osrodek dla niewidomych),>,3,07:40:00,07:41:00
-Zlotnicka,>,3,07:41:00,07:43:00
-Wschowska,>,3,07:43:00,07:44:00
-Jeleniogorska,>,3,07:44:00,07:45:00
-LESNICA,>,3,07:45:00,07:46:00
-RUBCZAKA (Stacja kolejowa),>,123,07:48:00,07:50:00
-Rubczaka,>,123,07:50:00,07:51:00
-Serowarska,>,917,08:02:00,08:04:00
-Trzmielowicka,>,917,08:04:00,08:05:00
-Pustecka,>,917,08:05:00,08:06:00
-
-A* - TRANSFERS,1.185339
-From: ,Wilczyce - Wilczycka (Clarena),To: ,FAT
-Wilczyce - Wilczycka (Clarena),>,,,05:58:00
-Wilczyce - Wilczycka (Stary Mlyn),>,941,06:25:00,06:27:00
-Swojczyce,>,941,06:27:00,06:32:00
-Magellana,>,941,06:32:00,06:33:00
-Kolumba,>,941,06:33:00,06:34:00
-Monopolowa,>,941,06:34:00,06:35:00
-SEPOLNO,>,941,06:35:00,06:37:00
-Godebskiego (AWF Wroclaw),>,941,06:37:00,06:38:00
-8 Maja,>,941,06:38:00,06:39:00
-Stadion Olimpijski,>,941,06:39:00,06:41:00
-Karlowicza,>,9,06:44:00,06:45:00
-Chopina,>,9,06:45:00,06:46:00
-Kochanowskiego,>,9,06:46:00,06:48:00
-Grunwaldzka,>,9,06:48:00,06:49:00
-Piastowska,>,9,06:49:00,06:50:00
-Gornickiego,>,9,06:50:00,06:52:00
-Ogrod Botaniczny,>,9,06:52:00,06:54:00
-pl. Bema,>,9,06:54:00,06:56:00
-Hala Targowa,>,9,06:56:00,06:58:00
-pl. Nowy Targ,>,9,06:58:00,06:59:00
-GALERIA DOMINIKANSKA,>,9,06:59:00,07:01:00
-Park Staromiejski,>,23,07:03:00,07:05:00
-Opera,>,23,07:05:00,07:07:00
-pl. Orlat Lwowskich,>,23,07:07:00,07:11:00
-Teczowa,>,127,07:12:00,07:13:00
-Grabiszynska,>,127,07:13:00,07:15:00
-Pereca,>,74,07:17:00,07:19:00
-Stalowa,>,74,07:19:00,07:21:00
-pl. Srebrny,>,74,07:21:00,07:22:00
-Bzowa (Centrum Zajezdnia),>,74,07:22:00,07:23:00
-Hutmen,>,74,07:23:00,07:24:00
-FAT,>,74,07:24:00,07:26:00
-
-A* - TRANSFERS,2.025441
-From: ,OPATOWICE,To: ,Glowna
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.0
-From: ,Szymanow - skrzyz.,To: ,Jaszkotle - kosciol
-Szymanow - skrzyz.,>,,,00:24:00
-
-A* - TRANSFERS,0.0
-From: ,IWINY - petla,To: ,Galczynskiego
-IWINY - petla,>,,,08:47:00
-
-A* - TRANSFERS,0.95556
-From: ,TARCZYNSKI ARENA (Krolewiecka),To: ,Koncowa
-TARCZYNSKI ARENA (Krolewiecka),>,,,07:02:00
-Dworska,>,31,07:02:00,07:03:00
-Gornicza,>,31,07:03:00,07:04:00
-Rekodzielnicza,>,136,07:05:00,07:07:00
-Metalowcow,>,136,07:07:00,07:08:00
-Szybowcowa,>,136,07:08:00,07:11:00
-Bulwar Dedala,>,136,07:11:00,07:12:00
-Bystrzycka,>,136,07:12:00,07:14:00
-Hynka,>,136,07:14:00,07:15:00
-Drzewieckiego,>,136,07:15:00,07:16:00
-Orlinskiego,>,136,07:16:00,07:17:00
-Na Ostatnim Groszu,>,136,07:17:00,07:18:00
-Gadowianka,>,136,07:18:00,07:20:00
-Szkocka,>,136,07:20:00,07:22:00
-Wroclawski Park Technologiczny,>,136,07:22:00,07:24:00
-ROD Oswiata,>,136,07:24:00,07:26:00
-FAT,>,136,07:26:00,07:32:00
-Ostrowskiego,>,119,07:38:00,07:39:00
-Koncowa,>,119,07:39:00,07:41:00
-
-A* - TRANSFERS,0.000365
-From: ,SWINIARY,To: ,Mosty Warszawskie
-SWINIARY,>,,,00:12:00
-
-A* - TRANSFERS,2.382282
-From: ,Monte Cassino,To: ,REDZIN
-Monte Cassino,>,,,19:56:00
-Libelta,>,145,20:02:00,20:03:00
-SEPOLNO,>,145,20:03:00,20:05:00
-Godebskiego (AWF Wroclaw),>,9,20:08:00,20:09:00
-8 Maja,>,9,20:09:00,20:10:00
-Stadion Olimpijski,>,9,20:10:00,20:11:00
-Karlowicza,>,9,20:11:00,20:12:00
-Chopina,>,9,20:12:00,20:13:00
-Kochanowskiego,>,9,20:13:00,20:15:00
-Grunwaldzka,>,9,20:15:00,20:16:00
-Piastowska,>,9,20:16:00,20:17:00
-Prusa,>,70,20:18:00,20:20:00
-Wyszynskiego,>,70,20:20:00,20:21:00
-Nowowiejska,>,70,20:21:00,20:23:00
-Slowianska,>,70,20:23:00,20:24:00
-DWORZEC NADODRZE,>,70,20:24:00,20:26:00
-Kleczkowska,>,714,20:35:00,20:37:00
-most Osobowicki,>,714,20:37:00,20:39:00
-Serbska (C.K. Agora),>,714,20:39:00,20:40:00
-OSOBOWICKA (Cmentarz II),>,714,20:40:00,20:41:00
-OSOBOWICKA (Cmentarz),>,714,20:41:00,20:42:00
-OSOBOWICE,>,714,20:42:00,20:43:00
-Jarocinska,>,140,21:09:00,21:11:00
-Lipska,>,140,21:11:00,21:12:00
-Las Osobowicki,>,118,21:43:00,21:44:00
-REDZIN,>,118,21:44:00,21:50:00
-
-A* - TRANSFERS,1.559381
-From: ,Hippiczna,To: ,Awicenny (Stacja kolejowa)
-The correct path was not found,,,,
-
-A* - TRANSFERS,1.506423
-From: ,OPOROW,To: ,Kozanowska
-The correct path was not found,,,,
-
-A* - TRANSFERS,1.25533
-From: ,Kepinska,To: ,Kopanskiego
-Kepinska,>,,,17:26:00
-Kamienskiego,>,74,17:27:00,17:28:00
-Broniewskiego,>,74,17:28:00,17:30:00
-Pola,>,132,17:36:00,17:37:00
-Syrokomli,>,132,17:37:00,17:38:00
-Kasprowicza,>,132,17:38:00,17:39:00
-pl. Danilowskiego,>,132,17:39:00,17:41:00
-Berenta,>,132,17:41:00,17:42:00
-KROMERA,>,132,17:42:00,17:47:00
-Kromera (Czajkowskiego),>,N,17:57:00,17:59:00
-Grudziadzka,>,N,17:59:00,18:00:00
-Brucknera,>,N,18:00:00,18:01:00
-Psie Pole,>,N,18:01:00,18:05:00
-Psie Pole (Rondo Lotnikow Polskich),>,N,18:05:00,18:07:00
-Zakrzowska,>,151,18:08:00,18:09:00
-Kopanskiego,>,151,18:09:00,18:10:00
-
-A* - TRANSFERS,3.571845
-From: ,Pisarzowice - Kolejowa,To: ,Siedlec - skrzy. Osiedlowa
-Pisarzowice - Kolejowa,>,,,07:51:00
-Pisarzowice - Szkolna,>,923,08:12:00,08:13:00
-Pisarzowice - Odrzanska,>,923,08:13:00,08:14:00
-Pisarzowice - Graniczna,>,923,08:14:00,08:16:00
-Wilkszyn (petla),>,923,08:16:00,08:18:00
-Wilkszyn - Polna,>,923,08:18:00,08:19:00
-Wilkszyn - Miloszyn,>,923,08:19:00,08:20:00
-Krzelowska,>,923,08:20:00,08:21:00
-Lososiowicka,>,923,08:21:00,08:22:00
-Wilkszynska,>,923,08:22:00,08:23:00
-Marszowice,>,923,08:23:00,08:24:00
-Glowna,>,923,08:24:00,08:26:00
-Park Stablowicki,>,923,08:26:00,08:27:00
-Stablowice,>,923,08:27:00,08:28:00
-Ciechocinska,>,923,08:28:00,08:29:00
-Sniezna,>,923,08:29:00,08:30:00
-Jeleniogorska,>,923,08:30:00,08:31:00
-Wschowska,>,10,08:32:00,08:33:00
-Zlotnicka,>,10,08:33:00,08:34:00
-Kamiennogorska (Osrodek dla niewidomych),>,10,08:34:00,08:35:00
-Kosmonautow (Szpital),>,10,08:35:00,08:36:00
-Grabowa,>,10,08:36:00,08:38:00
-Aleja Architektow,>,10,08:38:00,08:39:00
-Glinianki,>,10,08:39:00,08:40:00
-Tarczynski Arena (Lotnicza),>,10,08:40:00,08:41:00
-PILCZYCE,>,10,08:41:00,08:43:00
-Metalowcow,>,10,08:43:00,08:44:00
-Bajana,>,10,08:44:00,08:46:00
-Park Zachodni,>,10,08:46:00,08:47:00
-DH Astra,>,10,08:47:00,08:48:00
-Kwiska,>,10,08:48:00,08:50:00
-Malopanewska,>,10,08:50:00,08:51:00
-Niedzwiedzia,>,10,08:51:00,08:53:00
-ZACHODNIA (Stacja kolejowa),>,10,08:53:00,08:56:00
-pl. Strzegomski (Muzeum Wspolczesne),>,10,08:56:00,08:58:00
-Mlodych Technikow,>,10,08:58:00,08:59:00
-PL. JANA PAWLA II,>,10,08:59:00,09:01:00
-Rynek,>,10,09:01:00,09:03:00
-Zamkowa,>,10,09:03:00,09:04:00
-Swidnicka,>,10,09:04:00,09:06:00
-GALERIA DOMINIKANSKA,>,10,09:06:00,09:09:00
-pl. Nowy Targ,>,9,09:10:00,09:11:00
-Hala Targowa,>,9,09:11:00,09:12:00
-pl. Bema,>,9,09:12:00,09:15:00
-Ogrod Botaniczny,>,9,09:15:00,09:17:00
-Wyszynskiego,>,128,09:18:00,09:20:00
-Damrota,>,128,09:20:00,09:21:00
-KROMERA,>,128,09:21:00,09:24:00
-Kromera (Czajkowskiego),>,128,09:24:00,09:26:00
-Grudziadzka,>,128,09:26:00,09:27:00
-Brucknera,>,128,09:27:00,09:29:00
-C.H. Korona,>,128,09:29:00,09:31:00
-Zielna,>,128,09:31:00,09:33:00
-Psie Pole,>,128,09:33:00,09:34:00
-Psie Pole (Rondo Lotnikow Polskich),>,128,09:34:00,09:35:00
-Zakrzowska,>,128,09:35:00,09:36:00
-Kopanskiego,>,128,09:36:00,09:37:00
-Wallenroda,>,128,09:37:00,09:38:00
-Przedwiosnie (Stacja kolejowa),>,128,09:38:00,09:39:00
-Azaliowa,>,151,09:46:00,09:48:00
-Pawlowice,>,151,09:48:00,09:49:00
-Starodebowa,>,151,09:49:00,09:50:00
-Pawlowicka,>,151,09:50:00,09:51:00
-Przebisniegowa,>,151,09:51:00,09:52:00
-Ramiszow,>,936,10:01:00,10:05:00
-Pasikurowice - cmentarz,>,936,10:05:00,10:08:00
-Pasikurowice - skrzy. Malinowa,>,936,10:08:00,10:10:00
-Pasikurowice - Energetyczna,>,936,10:10:00,10:11:00
-Pasikurowice - n/z,>,936,10:11:00,10:12:00
-Bukowina,>,936,10:12:00,10:14:00
-Bukowina - skrzy.,>,936,10:14:00,10:16:00
-Bakow,>,936,10:16:00,10:17:00
-Lozina - Wroclawska (na wys. nr 18),>,936,10:17:00,10:20:00
-Lozina - Nowego Osiedla I,>,936,10:20:00,10:22:00
-Lozina - Nowego Osiedla II,>,936,10:22:00,10:23:00
-Tokary - centrum,>,936,10:23:00,10:26:00
-Tokary - osiedle,>,936,10:26:00,10:27:00
-Siedlec - skrzy. Osiedlowa,>,936,10:27:00,10:29:00
-
-A* - TRANSFERS,3.143325
-From: ,Wyscigowa,To: ,Goslawice - przejazd PKP
-The correct path was not found,,,,
-
-A* - TRANSFERS,1.171246
-From: ,Gorlicka,To: ,Ksieska
-Gorlicka,>,,,18:11:00
-MULICKA,>,121,18:18:00,18:19:00
-Psie Pole (Rondo Lotnikow Polskich),>,121,18:19:00,18:20:00
-Psie Pole,>,121,18:20:00,18:21:00
-Brucknera,>,N,18:24:00,18:28:00
-Kwidzynska,>,151,18:30:00,18:32:00
-Zacisze,>,151,18:32:00,18:33:00
-Sniadeckich,>,151,18:33:00,18:34:00
-Kochanowskiego,>,151,18:34:00,18:36:00
-Bujwida,>,151,18:36:00,18:38:00
-PL. GRUNWALDZKI,>,151,18:38:00,18:40:00
-most Grunwaldzki,>,16,18:43:00,18:44:00
-Urzad Wojewodzki (Impart),>,16,18:44:00,18:46:00
-pl. Wroblewskiego,>,16,18:46:00,18:49:00
-Komuny Paryskiej,>,16,18:49:00,18:50:00
-Kosciuszki,>,16,18:50:00,18:51:00
-Swistackiego,>,114,18:52:00,18:53:00
-Na Niskich Lakach,>,114,18:53:00,18:55:00
-Krakowska,>,114,18:55:00,18:57:00
-KRAKOWSKA (Centrum handlowe),>,114,18:57:00,18:58:00
-Park Wschodni,>,114,18:58:00,19:00:00
-Karwinska,>,114,19:00:00,19:02:00
-Glubczycka,>,3,19:03:00,19:04:00
-KSIEZE MALE,>,3,19:04:00,19:05:00
-Ksieska,>,100,19:07:00,19:08:00
-
-A* - TRANSFERS,1.482938
-From: ,GRABISZYNSKA (Cmentarz II),To: ,Wislanska
-GRABISZYNSKA (Cmentarz II),>,,,16:55:00
-GRABISZYNSKA (Cmentarz),>,20,16:55:00,16:56:00
-Fiolkowa,>,20,16:56:00,16:57:00
-FAT,>,20,16:57:00,16:59:00
-ROD Oswiata,>,136,17:07:00,17:09:00
-Wroclawski Park Technologiczny,>,136,17:09:00,17:10:00
-Szkocka,>,136,17:10:00,17:12:00
-Gadowianka,>,136,17:12:00,17:14:00
-Na Ostatnim Groszu,>,136,17:14:00,17:16:00
-Orlinskiego,>,136,17:16:00,17:17:00
-Drzewieckiego,>,136,17:17:00,17:18:00
-Hynka,>,136,17:18:00,17:19:00
-Bystrzycka,>,136,17:19:00,17:21:00
-Bulwar Dedala,>,136,17:21:00,17:22:00
-Szybowcowa,>,136,17:22:00,17:23:00
-Metalowcow,>,136,17:23:00,17:27:00
-Rekodzielnicza,>,136,17:27:00,17:28:00
-Gornicza,>,136,17:28:00,17:30:00
-KOZANOW (Dokerska),>,136,17:30:00,17:31:00
-KOZANOW,>,136,17:31:00,17:33:00
-Dzielna,>,127,17:36:00,17:37:00
-Wislanska,>,127,17:37:00,17:38:00
-
-A* - TRANSFERS,0.437078
-From: ,ZACHODNIA (Stacja kolejowa),To: ,Kasprowicza
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.20653
-From: ,Marcepanowa,To: ,Trawowa
-The correct path was not found,,,,
-
-A* - TRANSFERS,1.82813
-From: ,Trawowa,To: ,RATYN
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.641158
-From: ,Kolumba,To: ,Bielawa
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.0
-From: ,Budziwojowice,To: ,Pietrzykowice - zaklad
-Budziwojowice,>,,,02:40:00
-
-A* - TRANSFERS,0.046928
-From: ,Jerzmanowska nr 9,To: ,Wilkszyn - Polna
-Jerzmanowska nr 9,>,,,23:29:00
-Zernicka,>,909,23:29:00,23:30:00
-Strachowicka,>,909,23:30:00,23:31:00
-Zerniki,>,909,23:31:00,23:32:00
-Szczecinska,>,909,23:32:00,23:33:00
-Kolobrzeska,>,909,23:33:00,23:35:00
-Nowy Dwor (Stacja kolejowa),>,909,23:35:00,23:37:00
-Nowy Dwor,>,909,23:37:00,23:42:00
-Nowodworska,>,106,23:45:00,23:46:00
-MUCHOBOR MALY (Stacja kolejowa),>,148,23:58:00,23:59:00
-
-A* - TRANSFERS,0.163585
-From: ,Muchobor Wielki,To: ,JARNOLTOW
-Muchobor Wielki,>,,,21:36:00
-Muchobor Wielki (Roslinna),>,119,21:40:00,21:41:00
-Tyrmanda,>,119,21:41:00,21:42:00
-MINSKA (Rondo Rotm. Pileckiego),>,119,21:42:00,21:43:00
-Rogowska,>,119,21:43:00,21:45:00
-Nowy Dwor,>,119,21:45:00,21:47:00
-Chociebuska,>,126,21:48:00,21:50:00
-Nowy Dwor (Rogowska),>,109,21:52:00,21:53:00
-Nowy Dwor (Stacja kolejowa),>,109,21:53:00,21:54:00
-Kolobrzeska,>,109,21:54:00,21:55:00
-Szczecinska,>,109,21:55:00,21:57:00
-Zerniki,>,109,21:57:00,21:58:00
-Strachowicka,>,109,21:58:00,21:59:00
-Zernicka,>,109,21:59:00,22:00:00
-Jerzmanowska nr 9,>,109,22:00:00,22:01:00
-Jerzmanowska nr 17,>,109,22:01:00,22:02:00
-Jerzmanowo (Cmentarz I),>,109,22:02:00,22:05:00
-Piolunowa,>,109,22:05:00,22:06:00
-Jasinskiej,>,109,22:06:00,22:07:00
-Adamczewskich,>,109,22:07:00,22:08:00
-Kosnego,>,109,22:08:00,22:09:00
-Krzeptowska,>,109,22:09:00,22:10:00
-Jarnoltowska (Samotworska),>,109,22:10:00,22:11:00
-JARNOLTOW,>,109,22:11:00,22:13:00
-
-A* - TRANSFERS,3.404509
-From: ,KOZANOW (Dokerska),To: ,Kielczowek
-The correct path was not found,,,,
-
-A* - TRANSFERS,7.038927
-From: ,Kielczow - petla/Wroclawska,To: ,Szymanow
-The correct path was not found,,,,
-
-A* - TRANSFERS,3.029265
-From: ,Kielczow - petla (Plac Jana Gdaka),To: ,Rakow - osiedle
-Kielczow - petla (Plac Jana Gdaka),>,,,18:43:00
-Kielczow - WODROL,>,911,18:46:00,18:48:00
-Kielczow - osiedle,>,911,18:48:00,18:49:00
-Wilczyce - Sosnowa,>,911,18:49:00,18:50:00
-Wilczyce - Debowa,>,911,18:50:00,18:51:00
-Wilczyce - Dworska,>,911,18:51:00,18:52:00
-Wilczyce - Borowa,>,911,18:52:00,18:53:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,911,18:53:00,18:54:00
-Wilczyce,>,911,18:54:00,18:54:00
-Mrozna,>,911,18:54:00,18:55:00
-Kurlandzka,>,911,18:55:00,18:55:00
-Zgorzelisko,>,911,18:55:00,18:56:00
-Palacha,>,911,18:56:00,18:57:00
-Szewczenki,>,911,18:57:00,18:58:00
-Gorlicka,>,911,18:58:00,18:59:00
-MULICKA,>,911,18:59:00,19:00:00
-Psie Pole (Rondo Lotnikow Polskich),>,911,19:00:00,19:01:00
-Psie Pole,>,911,19:01:00,19:02:00
-C.H. Korona,>,911,19:02:00,19:06:00
-Brucknera,>,911,19:06:00,19:08:00
-Kwidzynska,>,911,19:08:00,19:10:00
-Sniadeckich,>,911,19:10:00,19:12:00
-Kochanowskiego,>,911,19:12:00,19:14:00
-PL. GRUNWALDZKI,>,911,19:14:00,19:16:00
-most Grunwaldzki,>,D,19:17:00,19:19:00
-Poczta Glowna,>,D,19:19:00,19:21:00
-skwer Krasinskiego,>,A,19:22:00,19:25:00
-Dworzec Glowny (Dworcowa),>,146,19:27:00,19:28:00
-DWORZEC GLOWNY,>,146,19:28:00,19:31:00
-DWORZEC AUTOBUSOWY,>,146,19:31:00,19:33:00
-Sanocka,>,15,19:40:00,19:42:00
-Uniwersytet Ekonomiczny,>,15,19:42:00,19:44:00
-Wisniowa,>,15,19:44:00,19:46:00
-Jaworowa,>,15,19:46:00,19:47:00
-Weigla (Szpital),>,15,19:47:00,19:48:00
-Pultuska,>,15,19:48:00,19:49:00
-PARK POLUDNIOWY,>,15,19:49:00,19:50:00
-Hippiczna,>,612,20:05:00,20:06:00
-Partynice (tor wyscigow konnych),>,612,20:06:00,20:09:00
-Biskupice Podg. LG Electronics,>,602,21:50:00,22:07:00
-Biskupice Podg. LG Energy Solution Wr. I,>,602,22:07:00,22:11:00
-Biskupice Podg. LG Chem,>,607,22:40:00,22:41:00
-Biskupice Podg. LG Innotek,>,607,22:41:00,22:42:00
-Biskupice Podg. DSC Poland/Dong Yang,>,607,22:42:00,22:44:00
-
-A* - TRANSFERS,1.5335
-From: ,Zagrodnicza,To: ,Kosmonautow (Szpital)
-Zagrodnicza,>,,,04:59:00
-Niedzialkowskiego,>,115,05:03:00,05:04:00
-Mikolowska,>,115,05:04:00,05:05:00
-Swojczyce,>,115,05:05:00,05:06:00
-Magellana,>,115,05:06:00,05:07:00
-Kolumba,>,115,05:07:00,05:08:00
-Monopolowa,>,115,05:08:00,05:09:00
-SEPOLNO,>,115,05:09:00,05:10:00
-Godebskiego (AWF Wroclaw),>,115,05:10:00,05:11:00
-8 Maja,>,115,05:11:00,05:12:00
-Park Szczytnicki,>,115,05:12:00,05:13:00
-Mickiewicza,>,115,05:13:00,05:14:00
-Kliniki - Politechnika Wroclawska,>,115,05:14:00,05:16:00
-PL. GRUNWALDZKI,>,115,05:16:00,05:18:00
-most Grunwaldzki,>,4,05:20:00,05:21:00
-Urzad Wojewodzki (Impart),>,4,05:21:00,05:23:00
-GALERIA DOMINIKANSKA,>,4,05:23:00,05:26:00
-Park Staromiejski,>,17,05:30:00,05:32:00
-Opera,>,17,05:32:00,05:34:00
-SWIDNICKA (Dom Europy),>,7,05:36:00,05:37:00
-Olawska,>,7,05:37:00,05:38:00
-Wita Stwosza,>,7,05:38:00,05:39:00
-Uniwersytecka,>,7,05:39:00,05:40:00
-Dubois,>,7,05:40:00,05:42:00
-Uniwersytet Wroclawski,>,6,05:36:00,05:38:00
-Rynek,>,6,05:38:00,05:41:00
-PL. JANA PAWLA II,>,3,05:33:00,05:36:00
-Mlodych Technikow,>,3,05:36:00,05:38:00
-pl. Strzegomski (Muzeum Wspolczesne),>,3,05:38:00,05:39:00
-ZACHODNIA (Stacja kolejowa),>,3,05:39:00,05:41:00
-Niedzwiedzia,>,3,05:41:00,05:43:00
-Malopanewska,>,3,05:43:00,05:44:00
-Kwiska,>,3,05:44:00,05:46:00
-DH Astra,>,3,05:46:00,05:48:00
-Park Zachodni,>,3,05:48:00,05:49:00
-Bajana,>,3,05:49:00,05:50:00
-Metalowcow,>,3,05:50:00,05:51:00
-PILCZYCE,>,3,05:51:00,05:53:00
-Tarczynski Arena (Lotnicza),>,3,05:53:00,05:54:00
-Glinianki,>,3,05:54:00,05:56:00
-Aleja Architektow,>,3,05:56:00,05:57:00
-Grabowa,>,3,05:57:00,05:58:00
-Kosmonautow (Szpital),>,3,05:58:00,06:00:00
-
-A* - TRANSFERS,0.001995
-From: ,Dubois,To: ,Kielczow - Zgodna
-Dubois,>,,,00:53:00
-
-A* - TRANSFERS,1.516809
-From: ,Wilczyce - Borowa,To: ,Dlugoleka - Parkowa skrzy. Konopnicka
-Wilczyce - Borowa,>,,,13:04:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,911,13:33:00,13:34:00
-Wilczyce,>,911,13:34:00,13:34:00
-Mrozna,>,911,13:34:00,13:35:00
-Kurlandzka,>,911,13:35:00,13:35:00
-Zgorzelisko,>,911,13:35:00,13:36:00
-Palacha,>,911,13:36:00,13:37:00
-Szewczenki,>,911,13:37:00,13:38:00
-Gorlicka,>,911,13:38:00,13:39:00
-MULICKA,>,911,13:39:00,13:40:00
-Psie Pole (Rondo Lotnikow Polskich),>,911,13:40:00,13:41:00
-PSIE POLE (Stacja kolejowa),>,904,13:48:00,13:49:00
-Dobroszycka,>,904,13:49:00,13:50:00
-Bierutowska 65,>,904,13:50:00,13:50:00
-Bierutowska,>,904,13:50:00,13:51:00
-Bierutowska 75,>,904,13:51:00,13:51:00
-BIERUTOWSKA (Wiadukt),>,904,13:51:00,13:52:00
-Mirkow - Sportowa,>,904,13:52:00,13:54:00
-Mirkow - Jagiellonska,>,904,13:54:00,13:56:00
-Dlugoleka - Wiejska,>,904,13:56:00,13:59:00
-Dlugoleka - Kasztanowa,>,904,13:59:00,14:01:00
-Dlugoleka - Parkowa/skrzy.,>,904,14:01:00,14:03:00
-Szczodre - Trzebnicka (na wys. nr 3a),>,904,14:03:00,14:04:00
-Szczodre - Trzebnicka,>,904,14:04:00,14:05:00
-Dlugoleka - Parkowa skrzy. Konopnicka,>,914,14:27:00,14:28:00
-
-A* - TRANSFERS,0.329158
-From: ,Kielczow - Zgodna,To: ,Krynicka
-Kielczow - Zgodna,>,,,18:20:00
-Piecowice,>,931,19:00:00,19:04:00
-Kielczow - Boczna,>,911,19:10:00,19:14:00
-Kielczow - petla (Plac Jana Gdaka),>,911,19:14:00,19:16:00
-Kielczow - WODROL,>,911,19:16:00,19:18:00
-Kielczow - osiedle,>,911,19:18:00,19:19:00
-Wilczyce - Sosnowa,>,911,19:19:00,19:20:00
-Wilczyce - Debowa,>,911,19:20:00,19:21:00
-Wilczyce - Dworska,>,911,19:21:00,19:22:00
-Wilczyce - Borowa,>,911,19:22:00,19:23:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,911,19:23:00,19:24:00
-Wilczyce,>,911,19:24:00,19:24:00
-Mrozna,>,911,19:24:00,19:25:00
-Kurlandzka,>,911,19:25:00,19:25:00
-Zgorzelisko,>,911,19:25:00,19:26:00
-Palacha,>,911,19:26:00,19:27:00
-Szewczenki,>,911,19:27:00,19:28:00
-Gorlicka,>,911,19:28:00,19:29:00
-MULICKA,>,911,19:29:00,19:30:00
-Psie Pole (Rondo Lotnikow Polskich),>,911,19:30:00,19:31:00
-Psie Pole,>,911,19:31:00,19:32:00
-C.H. Korona,>,911,19:32:00,19:36:00
-Brucknera,>,911,19:36:00,19:38:00
-Kwidzynska,>,911,19:38:00,19:40:00
-Sniadeckich,>,911,19:40:00,19:42:00
-Kochanowskiego,>,911,19:42:00,19:44:00
-PL. GRUNWALDZKI,>,911,19:44:00,19:46:00
-most Grunwaldzki,>,146,19:48:00,19:50:00
-Poczta Glowna,>,146,19:50:00,19:52:00
-skwer Krasinskiego,>,146,19:52:00,19:55:00
-Dworzec Glowny (Dworcowa),>,146,19:55:00,19:56:00
-DWORZEC GLOWNY,>,146,19:56:00,19:59:00
-DWORZEC AUTOBUSOWY,>,146,19:59:00,20:01:00
-Dyrekcyjna,>,146,20:01:00,20:02:00
-Borowska,>,146,20:02:00,20:04:00
-Sliczna,>,146,20:04:00,20:06:00
-ROD Bajki,>,146,20:06:00,20:07:00
-Orzechowa,>,146,20:07:00,20:08:00
-Bardzka,>,146,20:08:00,20:10:00
-Krynicka,>,146,20:10:00,20:11:00
-
-A* - TRANSFERS,2.825409
-From: ,WALBRZYSKA,To: ,Olsztynska
-WALBRZYSKA,>,,,06:08:00
-Koscielna,>,107,06:11:00,06:12:00
-KLECINA,>,107,06:12:00,06:13:00
-Skarbowcow,>,107,06:13:00,06:14:00
-Os. Przyjazni,>,107,06:14:00,06:15:00
-Zimowa,>,107,06:15:00,06:16:00
-KRZYKI,>,107,06:16:00,06:18:00
-Orla,>,2,06:20:00,06:22:00
-Jastrzebia,>,2,06:22:00,06:23:00
-Hallera,>,2,06:23:00,06:24:00
-Sztabowa,>,2,06:24:00,06:25:00
-Rondo,>,2,06:25:00,06:26:00
-Wielka,>,2,06:26:00,06:28:00
-Zaolzianska,>,2,06:28:00,06:29:00
-Arkady (Capitol),>,2,06:29:00,06:32:00
-DWORZEC GLOWNY,>,2,06:32:00,06:35:00
-Wzgorze Partyzantow,>,2,06:35:00,06:37:00
-GALERIA DOMINIKANSKA,>,2,06:37:00,06:40:00
-Urzad Wojewodzki (Muzeum Narodowe),>,2,06:40:00,06:43:00
-Katedra,>,2,06:43:00,06:44:00
-Reja,>,2,06:44:00,06:46:00
-PL. GRUNWALDZKI,>,2,06:46:00,06:49:00
-Kliniki - Politechnika Wroclawska,>,2,06:49:00,06:51:00
-Mickiewicza,>,115,06:57:00,06:59:00
-Park Szczytnicki,>,115,06:59:00,07:00:00
-8 Maja,>,115,07:00:00,07:01:00
-Godebskiego (AWF Wroclaw),>,115,07:01:00,07:02:00
-SEPOLNO,>,115,07:02:00,07:03:00
-Monopolowa,>,115,07:03:00,07:05:00
-Kolumba,>,115,07:05:00,07:06:00
-Magellana,>,115,07:06:00,07:07:00
-Swojczyce,>,115,07:07:00,07:08:00
-Miloszycka,>,118,07:12:00,07:14:00
-Gospodarska,>,118,07:14:00,07:15:00
-Ceglana,>,118,07:15:00,07:16:00
-Kowalska,>,118,07:16:00,07:18:00
-Tczewska,>,118,07:18:00,07:19:00
-Dzialdowska,>,118,07:19:00,07:20:00
-Kowale (Stacja kolejowa),>,118,07:20:00,07:21:00
-Kowalska 56,>,118,07:21:00,07:22:00
-Olsztynska,>,118,07:22:00,07:23:00
-
-A* - TRANSFERS,0.502614
-From: ,Szkolna,To: ,KMINKOWA
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.96357
-From: ,Rynek,To: ,Klimasa
-Rynek,>,,,02:18:00
-PL. JANA PAWLA II,>,10,03:47:00,03:50:00
-Mlodych Technikow,>,10,03:50:00,03:52:00
-pl. Strzegomski (Muzeum Wspolczesne),>,10,03:52:00,03:53:00
-ZACHODNIA (Stacja kolejowa),>,10,03:53:00,03:55:00
-Niedzwiedzia,>,10,03:55:00,03:57:00
-Malopanewska,>,10,03:57:00,03:58:00
-Kwiska,>,10,03:58:00,04:00:00
-Na Ostatnim Groszu,>,129,04:09:00,04:11:00
-Gadowianka,>,126,04:12:00,04:14:00
-Szkocka,>,126,04:14:00,04:16:00
-Wroclawski Park Technologiczny,>,126,04:16:00,04:17:00
-ROD Oswiata,>,126,04:17:00,04:18:00
-FAT,>,126,04:18:00,04:20:00
-Hutmen,>,126,04:20:00,04:21:00
-Bzowa (Centrum Zajezdnia),>,126,04:21:00,04:22:00
-pl. Srebrny,>,126,04:22:00,04:23:00
-Stalowa,>,126,04:23:00,04:24:00
-Pereca,>,126,04:24:00,04:25:00
-Grabiszynska,>,126,04:25:00,04:27:00
-Zaporoska,>,126,04:27:00,04:29:00
-Rondo,>,126,04:29:00,04:30:00
-Drukarska,>,134,04:32:00,04:35:00
-Uniwersytet Ekonomiczny,>,134,04:35:00,04:36:00
-Borowska,>,134,04:36:00,04:38:00
-Wapienna,>,134,04:38:00,04:39:00
-Widna,>,134,04:39:00,04:40:00
-Kamienna,>,134,04:40:00,04:41:00
-Bardzka,>,134,04:41:00,04:43:00
-Nyska,>,134,04:43:00,04:44:00
-Transbud,>,134,04:44:00,04:45:00
-Klimasa,>,8,04:52:00,04:53:00
-
-A* - TRANSFERS,0.3793
-From: ,SZYMANOW-petla,To: ,Libelta
-SZYMANOW-petla,>,,,22:30:00
-Szymanow (Letnia),>,908,22:49:00,22:50:00
-Szymanow,>,908,22:50:00,22:51:00
-Szymanow (Widawska),>,908,22:51:00,22:52:00
-Szymanow - skrzyz.,>,908,22:52:00,22:53:00
-Psary - Szkola,>,908,22:53:00,22:54:00
-Widawa,>,908,22:54:00,22:57:00
-Konopackiej,>,908,22:57:00,22:58:00
-Rondo Obroncow Grodna,>,908,22:58:00,22:59:00
-Lekarska,>,908,22:59:00,23:00:00
-Zmigrodzka (Obwodnica),>,908,23:00:00,23:01:00
-POSWIETNE,>,908,23:01:00,23:02:00
-Wolowska,>,908,23:02:00,23:03:00
-Kepinska,>,908,23:03:00,23:04:00
-Kamienskiego,>,908,23:04:00,23:05:00
-Broniewskiego,>,908,23:05:00,23:06:00
-Pola,>,119,23:10:00,23:11:00
-Syrokomli,>,119,23:11:00,23:12:00
-Kasprowicza,>,119,23:12:00,23:13:00
-pl. Danilowskiego,>,119,23:13:00,23:14:00
-Berenta,>,151,23:16:00,23:17:00
-KROMERA,>,151,23:17:00,23:19:00
-Kwidzynska,>,151,23:19:00,23:21:00
-Zacisze,>,131,23:27:00,23:28:00
-Sniadeckich,>,131,23:28:00,23:29:00
-Kochanowskiego,>,131,23:29:00,23:30:00
-Bujwida,>,131,23:30:00,23:31:00
-PL. GRUNWALDZKI,>,131,23:31:00,23:33:00
-Kliniki - Politechnika Wroclawska,>,255,23:40:00,23:41:00
-Hala Stulecia,>,255,23:41:00,23:42:00
-Tramwajowa,>,255,23:42:00,23:43:00
-Chelmonskiego,>,255,23:43:00,23:44:00
-Piramowicza,>,255,23:44:00,23:45:00
-Spoldzielcza,>,255,23:45:00,23:46:00
-Monte Cassino,>,255,23:46:00,23:47:00
-Libelta,>,255,23:47:00,23:48:00
-
-A* - TRANSFERS,0.216887
-From: ,Jedrzejowska,To: ,REDZINSKA
-Jedrzejowska,>,,,12:31:00
-Brodzka,>,102,12:34:00,12:35:00
-Kozia,>,102,12:35:00,12:36:00
-Polnocna,>,102,12:36:00,12:37:00
-Maslicka (Staw),>,102,12:37:00,12:38:00
-Maslice Male (Brodnicka),>,102,12:38:00,12:39:00
-Redzinska (Cmentarz),>,102,12:39:00,12:40:00
-Turoszowska,>,104,13:04:00,13:06:00
-REDZINSKA,>,104,13:06:00,13:07:00
-
-A* - TRANSFERS,0.978296
-From: ,Bojanowska,To: ,Bociania
-Bojanowska,>,,,19:28:00
-Marszowicka,>,123,19:28:00,19:29:00
-Hartmana,>,123,19:29:00,19:30:00
-Polkowicka,>,123,19:30:00,19:31:00
-Wolska,>,123,19:31:00,19:33:00
-Sredzka,>,123,19:33:00,19:35:00
-Rubczaka,>,123,19:35:00,19:36:00
-RUBCZAKA (Stacja kolejowa),>,123,19:36:00,19:37:00
-LESNICA,>,123,19:37:00,19:38:00
-Jeleniogorska,>,3,19:41:00,19:42:00
-Wschowska,>,3,19:42:00,19:43:00
-Zlotnicka,>,3,19:43:00,19:44:00
-Kamiennogorska (Osrodek dla niewidomych),>,3,19:44:00,19:45:00
-Kosmonautow (Szpital),>,3,19:45:00,19:46:00
-Grabowa,>,3,19:46:00,19:48:00
-Aleja Architektow,>,3,19:48:00,19:49:00
-Glinianki,>,3,19:49:00,19:50:00
-Tarczynski Arena (Lotnicza),>,3,19:50:00,19:51:00
-PILCZYCE,>,3,19:51:00,19:53:00
-Metalowcow,>,3,19:53:00,19:54:00
-Bajana,>,3,19:54:00,19:56:00
-Park Zachodni,>,3,19:56:00,19:57:00
-DH Astra,>,3,19:57:00,19:58:00
-Kwiska,>,3,19:58:00,20:00:00
-Wejherowska,>,128,20:02:00,20:04:00
-Rysia,>,128,20:04:00,20:05:00
-Popowice,>,128,20:05:00,20:07:00
-POPOWICE (Stacja kolejowa),>,128,20:07:00,20:08:00
-DLUGA (Politechnika),>,128,20:08:00,20:09:00
-Poznanska,>,128,20:09:00,20:10:00
-Dluga,>,128,20:10:00,20:11:00
-Dmowskiego,>,128,20:11:00,20:14:00
-Pomorska,>,128,20:14:00,20:16:00
-Dubois,>,128,20:16:00,20:17:00
-pl. Bema,>,128,20:17:00,20:19:00
-Ogrod Botaniczny,>,128,20:19:00,20:21:00
-Wyszynskiego,>,128,20:21:00,20:23:00
-Damrota,>,128,20:23:00,20:24:00
-KROMERA,>,128,20:24:00,20:27:00
-Ketrzynska,>,11,20:29:00,20:30:00
-Kwidzynska,>,11,20:30:00,20:31:00
-Gesia,>,11,20:31:00,20:32:00
-Bociania,>,11,20:32:00,20:34:00
-
-A* - TRANSFERS,2.16655
-From: ,Ramiszow,To: ,Wysoka - osiedle
-The correct path was not found,,,,
-
-A* - TRANSFERS,3.098662
-From: ,Kolejowa,To: ,Kamien - skrzy. Krysztalowa
-The correct path was not found,,,,
-
-A* - TRANSFERS,3.568634
-From: ,GAJ - petla,To: ,Brzezinka Sredzka - ul. Parkowa
-GAJ - petla,>,,,17:14:00
-Swieradowska,>,K,17:14:00,17:15:00
-GAJ,>,K,17:15:00,17:17:00
-Dzialkowa,>,K,17:17:00,17:19:00
-Sliczna,>,K,17:19:00,17:21:00
-Borowska,>,K,17:21:00,17:23:00
-DWORZEC AUTOBUSOWY,>,K,17:23:00,17:26:00
-Dworzec Glowny (Stawowa),>,32,17:31:00,17:33:00
-Arkady (Capitol),>,32,17:33:00,17:35:00
-pl. Legionow,>,32,17:35:00,17:37:00
-pl. Orlat Lwowskich,>,32,17:37:00,17:39:00
-PL. JANA PAWLA II,>,32,17:39:00,17:42:00
-Mlodych Technikow,>,32,17:42:00,17:44:00
-pl. Strzegomski (Muzeum Wspolczesne),>,32,17:44:00,17:45:00
-ZACHODNIA (Stacja kolejowa),>,32,17:45:00,17:47:00
-Niedzwiedzia,>,32,17:47:00,17:49:00
-Malopanewska,>,32,17:49:00,17:50:00
-Kwiska,>,32,17:50:00,17:52:00
-DH Astra,>,10,17:54:00,17:56:00
-Park Zachodni,>,10,17:56:00,17:57:00
-Bajana,>,10,17:57:00,17:58:00
-Metalowcow,>,10,17:58:00,17:59:00
-PILCZYCE,>,10,17:59:00,18:01:00
-Tarczynski Arena (Lotnicza),>,10,18:01:00,18:02:00
-Glinianki,>,10,18:02:00,18:04:00
-Aleja Architektow,>,10,18:04:00,18:05:00
-Grabowa,>,10,18:05:00,18:06:00
-Kosmonautow (Szpital),>,10,18:06:00,18:08:00
-Kamiennogorska (Osrodek dla niewidomych),>,10,18:08:00,18:09:00
-Zlotnicka,>,10,18:09:00,18:11:00
-Wschowska,>,10,18:11:00,18:12:00
-Jeleniogorska,>,10,18:12:00,18:13:00
-Sniezna,>,101,18:16:00,18:17:00
-Ciechocinska,>,101,18:17:00,18:18:00
-Stablowice,>,101,18:18:00,18:19:00
-Park Stablowicki,>,101,18:19:00,18:20:00
-Glowna,>,101,18:20:00,18:21:00
-Marszowice,>,123,18:24:00,18:26:00
-Wilkszynska,>,923,18:28:00,18:30:00
-Lososiowicka,>,923,18:30:00,18:31:00
-Krzelowska,>,923,18:31:00,18:32:00
-Wilkszyn - Miloszyn,>,923,18:32:00,18:33:00
-Wilkszyn - Polna,>,923,18:33:00,18:34:00
-Wilkszyn (petla),>,923,18:34:00,18:35:00
-Pisarzowice - Graniczna,>,923,18:35:00,18:37:00
-Pisarzowice - Odrzanska,>,923,18:37:00,18:39:00
-Pisarzowice - Szkolna,>,923,18:39:00,18:40:00
-Pisarzowice - Kolejowa,>,923,18:40:00,18:41:00
-Brzezinka Sredzka - ul. Kolejowa,>,923,18:41:00,18:43:00
-Brzezinka Sredzka - PKP,>,923,18:43:00,18:43:00
-Brzezinka Sredzka - ul. Parkowa,>,923,18:43:00,18:46:00
-
-A* - TRANSFERS,1.98513
-From: ,Morwowa,To: ,Jasinskiej
-Morwowa,>,,,15:15:00
-Krynicka,>,31,15:15:00,15:16:00
-Bardzka,>,31,15:16:00,15:17:00
-Kamienna,>,31,15:17:00,15:18:00
-Prudnicka,>,31,15:18:00,15:19:00
-Gajowa,>,31,15:19:00,15:20:00
-Joannitow,>,31,15:20:00,15:22:00
-DWORZEC AUTOBUSOWY,>,31,15:22:00,15:25:00
-Dworzec Glowny (Stawowa),>,31,15:25:00,15:27:00
-Arkady (Capitol),>,31,15:27:00,15:29:00
-pl. Legionow,>,31,15:29:00,15:31:00
-pl. Orlat Lwowskich,>,31,15:31:00,15:33:00
-PL. JANA PAWLA II,>,31,15:33:00,15:36:00
-Mlodych Technikow,>,31,15:36:00,15:38:00
-pl. Strzegomski (Muzeum Wspolczesne),>,31,15:38:00,15:39:00
-ZACHODNIA (Stacja kolejowa),>,31,15:39:00,15:41:00
-Niedzwiedzia,>,31,15:41:00,15:43:00
-Malopanewska,>,31,15:43:00,15:44:00
-Kwiska,>,31,15:44:00,15:46:00
-Na Ostatnim Groszu,>,143,15:48:00,15:51:00
-Orlinskiego,>,129,15:52:00,15:53:00
-Drzewieckiego,>,129,15:53:00,15:54:00
-Hynka,>,129,15:54:00,15:56:00
-Bystrzycka,>,129,15:56:00,15:58:00
-KUZNIKI (Stacja kolejowa),>,129,15:58:00,15:59:00
-KUZNIKI,>,129,15:59:00,16:01:00
-Kolobrzeska,>,129,16:01:00,16:02:00
-Szczecinska,>,109,16:05:00,16:07:00
-Zerniki,>,109,16:07:00,16:09:00
-Strachowicka,>,109,16:09:00,16:10:00
-Zernicka,>,109,16:10:00,16:11:00
-Jerzmanowska nr 9,>,109,16:11:00,16:12:00
-Jerzmanowska nr 17,>,109,16:12:00,16:13:00
-Jerzmanowo (Cmentarz I),>,109,16:13:00,16:16:00
-Piolunowa,>,109,16:16:00,16:17:00
-Jasinskiej,>,109,16:17:00,16:18:00
-
-A* - TRANSFERS,1.996847
-From: ,Wysoka - Chabrowa,To: ,Kurlandzka
-Wysoka - Chabrowa,>,,,17:44:00
-Wysoka,>,913,17:46:00,17:47:00
-ROD Storczyk,>,112,18:02:00,18:03:00
-Kutrzeby,>,112,18:03:00,18:04:00
-Oltaszyn,>,112,18:04:00,18:07:00
-Swit,>,112,18:07:00,18:08:00
-Parafialna,>,112,18:08:00,18:10:00
-Wojszyce,>,112,18:10:00,18:11:00
-Przystankowa,>,112,18:11:00,18:13:00
-Borowska (Szpital),>,112,18:13:00,18:14:00
-Dzialkowa,>,112,18:14:00,18:16:00
-ROD Bajki,>,112,18:16:00,18:18:00
-Sliczna,>,112,18:18:00,18:19:00
-Borowska,>,112,18:19:00,18:20:00
-DWORZEC AUTOBUSOWY,>,112,18:20:00,18:23:00
-DWORZEC GLOWNY,>,112,18:23:00,18:26:00
-Wzgorze Partyzantow,>,11,18:27:00,18:29:00
-GALERIA DOMINIKANSKA,>,11,18:29:00,18:32:00
-pl. Nowy Targ,>,11,18:32:00,18:33:00
-Hala Targowa,>,11,18:33:00,18:34:00
-pl. Bema,>,11,18:34:00,18:37:00
-Na Szancach,>,11,18:37:00,18:38:00
-Jednosci Narodowej,>,11,18:38:00,18:39:00
-Nowowiejska,>,11,18:39:00,18:41:00
-Daszynskiego,>,11,18:41:00,18:42:00
-Mosty Warszawskie,>,11,18:42:00,18:43:00
-KROMERA,>,11,18:43:00,18:46:00
-Ketrzynska,>,11,18:46:00,18:47:00
-Kwidzynska,>,11,18:47:00,18:48:00
-Brucknera,>,121,18:49:00,18:51:00
-C.H. Korona,>,121,18:51:00,18:53:00
-Zielna,>,121,18:53:00,18:55:00
-Psie Pole,>,121,18:55:00,18:56:00
-Psie Pole (Rondo Lotnikow Polskich),>,121,18:56:00,18:58:00
-MULICKA,>,121,18:58:00,18:59:00
-Gorlicka,>,121,18:59:00,19:00:00
-Palacha,>,911,19:05:00,19:06:00
-Zgorzelisko,>,911,19:06:00,19:07:00
-Kurlandzka,>,911,19:07:00,19:07:00
-
-A* - TRANSFERS,0.0
-From: ,Kaczorowskiego,To: ,Lososiowicka
-Kaczorowskiego,>,,,01:35:00
-
-A* - TRANSFERS,0.588053
-From: ,Kowale (Stacja kolejowa),To: ,METALOWCOW (Osrodek sportu)
-Kowale (Stacja kolejowa),>,,,22:30:00
-Kowalska 56,>,118,22:50:00,22:51:00
-Olsztynska,>,118,22:51:00,22:52:00
-C.H. Korona,>,118,22:52:00,22:54:00
-Brucknera,>,118,22:54:00,22:56:00
-Kwidzynska,>,118,22:56:00,22:58:00
-KROMERA,>,118,22:58:00,23:01:00
-Berenta,>,118,23:01:00,23:03:00
-pl. Danilowskiego,>,118,23:03:00,23:04:00
-Kasprowicza,>,118,23:04:00,23:05:00
-Syrokomli,>,118,23:05:00,23:06:00
-Pola,>,118,23:06:00,23:07:00
-Broniewskiego,>,118,23:07:00,23:08:00
-Baltycka,>,118,23:08:00,23:10:00
-Bezpieczna,>,118,23:10:00,23:11:00
-Paprotna,>,129,23:16:00,23:17:00
-Irysowa,>,111,23:23:00,23:24:00
-Obornicka (Obwodnica),>,111,23:24:00,23:25:00
-Ostowa (Muzeum Militarne),>,111,23:25:00,23:26:00
-Cwiczebna,>,143,23:28:00,23:29:00
-
-A* - TRANSFERS,0.891326
-From: ,Poznanska,To: ,Brodzka
-Poznanska,>,,,19:09:00
-DLUGA (Politechnika),>,122,19:09:00,19:10:00
-POPOWICE (Stacja kolejowa),>,122,19:10:00,19:11:00
-Popowice,>,122,19:11:00,19:12:00
-Rysia,>,122,19:12:00,19:14:00
-Wejherowska,>,122,19:14:00,19:16:00
-Kwiska,>,122,19:16:00,19:18:00
-DH Astra,>,10,19:21:00,19:23:00
-Park Zachodni,>,10,19:23:00,19:24:00
-Bajana,>,10,19:24:00,19:25:00
-Metalowcow,>,10,19:25:00,19:26:00
-PILCZYCE,>,10,19:26:00,19:28:00
-Tarczynski Arena (Lotnicza),>,10,19:28:00,19:29:00
-Glinianki,>,10,19:29:00,19:31:00
-Aleja Architektow,>,10,19:31:00,19:32:00
-Grabowa,>,10,19:32:00,19:33:00
-Kosmonautow (Szpital),>,10,19:33:00,19:35:00
-Fieldorfa (Szpital),>,102,19:38:00,19:39:00
-Fieldorfa,>,102,19:39:00,19:40:00
-Stoszowska,>,102,19:40:00,19:41:00
-Olbrachtowska,>,102,19:41:00,19:42:00
-Arachidowa,>,102,19:42:00,19:43:00
-Wojanowska,>,102,19:43:00,19:44:00
-Stablowice,>,102,19:44:00,19:45:00
-Park Stablowicki,>,102,19:45:00,19:46:00
-Glowna,>,102,19:46:00,19:47:00
-Welniana,>,102,19:47:00,19:49:00
-Chwalkowska,>,102,19:49:00,19:50:00
-Jedrzejowska,>,102,19:50:00,19:51:00
-Brodzka,>,102,19:51:00,19:52:00
-
-A* - TRANSFERS,3.037467
-From: ,Pruszowice - las,To: ,Fieldorfa
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.597195
-From: ,Domaszczyn - Kosciol,To: ,ROD Mieczyk
-Domaszczyn - Kosciol,>,,,21:35:00
-Domaszczyn - Wroclawska Skrzyzowanie,>,914,22:15:00,22:17:00
-Domaszczyn - Stawowa,>,914,22:17:00,22:18:00
-Pruszowice - las,>,934,22:35:00,22:36:00
-Odolanowska,>,934,22:36:00,22:39:00
-Odrodzenia Polski,>,934,22:39:00,22:39:00
-ZAKRZOW,>,934,22:39:00,22:40:00
-Przedwiosnie (Stacja kolejowa),>,934,22:40:00,22:41:00
-Wallenroda,>,934,22:41:00,22:42:00
-Psie Pole (Rondo Lotnikow Polskich),>,934,22:42:00,22:44:00
-Psie Pole,>,D,22:46:00,22:47:00
-Brucknera,>,D,22:47:00,22:51:00
-Grudziadzka,>,121,22:53:00,22:54:00
-Kromera (Czajkowskiego),>,121,22:54:00,22:55:00
-KROMERA,>,121,22:55:00,22:57:00
-Berenta,>,121,22:57:00,22:58:00
-Kasprowicza,>,121,22:58:00,22:59:00
-Syrokomli,>,121,22:59:00,23:00:00
-Pola,>,121,23:00:00,23:01:00
-Broniewskiego,>,121,23:01:00,23:02:00
-Trzebnicka,>,70,23:03:00,23:05:00
-DWORZEC NADODRZE,>,70,23:05:00,23:07:00
-Kleczkowska,>,714,23:15:00,23:17:00
-pl. Strzelecki,>,K,23:22:00,23:23:00
-Pomorska,>,K,23:23:00,23:25:00
-Dmowskiego,>,15,23:16:00,23:18:00
-PL. JANA PAWLA II,>,15,23:18:00,23:20:00
-Mlodych Technikow,>,31,23:23:00,23:25:00
-pl. Strzegomski (Muzeum Wspolczesne),>,31,23:25:00,23:26:00
-ZACHODNIA (Stacja kolejowa),>,31,23:26:00,23:27:00
-Niedzwiedzia,>,31,23:27:00,23:29:00
-Malopanewska,>,31,23:29:00,23:30:00
-Kwiska,>,31,23:30:00,23:32:00
-Kolista,>,31,23:32:00,23:36:00
-PILCZYCKA (Anima),>,31,23:36:00,23:37:00
-Modra,>,31,23:37:00,23:38:00
-Gornicza,>,31,23:38:00,23:39:00
-Rekodzielnicza,>,246,23:50:00,23:51:00
-Metalowcow,>,246,23:51:00,23:52:00
-Bajana,>,253,23:56:00,23:57:00
-
-A* - TRANSFERS,0.022125
-From: ,Ostowa (Muzeum Militarne),To: ,Hala Orbita
-Ostowa (Muzeum Militarne),>,,,04:26:00
-Cwiczebna,>,105,04:29:00,04:30:00
-Obornicka (Obwodnica),>,105,04:30:00,04:31:00
-most Milenijny,>,101,04:33:00,04:37:00
-Hala Orbita,>,101,04:37:00,04:38:00
-
-A* - TRANSFERS,4.504576
-From: ,Wilkszyn - Miloszyn,To: ,Kielczow - Ladna
-Wilkszyn - Miloszyn,>,,,16:17:00
-Krzelowska,>,923,16:35:00,16:36:00
-Lososiowicka,>,923,16:36:00,16:37:00
-Wilkszynska,>,923,16:37:00,16:38:00
-Marszowice,>,923,16:38:00,16:39:00
-Glowna,>,923,16:39:00,16:41:00
-Park Stablowicki,>,923,16:41:00,16:42:00
-Stablowice,>,923,16:42:00,16:43:00
-Ciechocinska,>,923,16:43:00,16:44:00
-Sniezna,>,923,16:44:00,16:45:00
-Jeleniogorska,>,923,16:45:00,16:46:00
-Wschowska,>,3,16:51:00,16:52:00
-Zlotnicka,>,3,16:52:00,16:53:00
-Wielkopolska,>,148,17:01:00,17:02:00
-Zlotniki,>,148,17:02:00,17:03:00
-Malopolska (Osrodek dla niewidomych),>,148,17:03:00,17:04:00
-Zernicka (Stacja kolejowa),>,148,17:04:00,17:07:00
-Strachowicka,>,148,17:07:00,17:09:00
-Zerniki,>,148,17:09:00,17:10:00
-Szczecinska,>,148,17:10:00,17:11:00
-Kolobrzeska,>,148,17:11:00,17:13:00
-Nowy Dwor (Stacja kolejowa),>,148,17:13:00,17:15:00
-Chociebuska,>,148,17:15:00,17:17:00
-Nowy Dwor,>,148,17:17:00,17:18:00
-Rogowska,>,107,17:20:00,17:22:00
-MINSKA (Rondo Rotm. Pileckiego),>,107,17:22:00,17:25:00
-Tyrmanda,>,107,17:25:00,17:27:00
-Zagony,>,107,17:27:00,17:28:00
-Muchobor Wielki,>,107,17:28:00,17:29:00
-Stanislawowska (W.K. Formaty),>,107,17:29:00,17:30:00
-Awicenny (Stacja kolejowa),>,132,17:34:00,17:37:00
-Awicenny,>,132,17:37:00,17:38:00
-Chachaja,>,132,17:38:00,17:39:00
-Jordanowska,>,132,17:39:00,17:41:00
-Tyniecka,>,125,21:35:00,21:37:00
-Kwiatkowskiego (Rondo),>,125,21:37:00,21:38:00
-
-A* - TRANSFERS,0.664747
-From: ,Piwnika-Ponurego,To: ,BROCHOW (Stacja kolejowa)
-Piwnika-Ponurego,>,,,22:16:00
-Zakrzowska,>,147,22:29:00,22:30:00
-Psie Pole (Rondo Lotnikow Polskich),>,147,22:30:00,22:31:00
-Psie Pole,>,N,22:32:00,22:33:00
-Brucknera,>,N,22:33:00,22:37:00
-Grudziadzka,>,N,22:37:00,22:38:00
-Kromera (Czajkowskiego),>,N,22:38:00,22:39:00
-KROMERA,>,N,22:39:00,22:41:00
-Ketrzynska,>,11,22:42:00,22:43:00
-Kwidzynska,>,11,22:43:00,22:44:00
-Zacisze,>,151,22:40:00,22:41:00
-Sniadeckich,>,151,22:41:00,22:42:00
-Kochanowskiego,>,151,22:42:00,22:44:00
-Bujwida,>,151,22:44:00,22:46:00
-PL. GRUNWALDZKI,>,151,22:46:00,22:48:00
-most Grunwaldzki,>,70,22:57:00,22:58:00
-Urzad Wojewodzki (Impart),>,70,22:58:00,23:00:00
-pl. Wroblewskiego,>,70,23:00:00,23:02:00
-pl. Zgody (Muzeum Etnograficzne),>,5,23:03:00,23:04:00
-Na Niskich Lakach,>,5,23:04:00,23:06:00
-Krakowska,>,5,23:06:00,23:07:00
-KRAKOWSKA (Centrum handlowe),>,5,23:07:00,23:08:00
-Armii Krajowej,>,5,23:08:00,23:09:00
-Park Wschodni,>,5,23:09:00,23:10:00
-Karwinska,>,5,23:10:00,23:11:00
-Wiaduktowa,>,114,23:25:00,23:27:00
-Topolowa,>,114,23:27:00,23:28:00
-BROCHOW (Stacja kolejowa),>,114,23:28:00,23:29:00
-
-A* - TRANSFERS,0.64382
-From: ,Popowice,To: ,Ratyn - skrzyzowanie
-Popowice,>,,,22:53:00
-Rysia,>,128,22:54:00,22:56:00
-Wejherowska,>,128,22:56:00,22:58:00
-Hala Orbita,>,119,23:00:00,23:02:00
-most Milenijny,>,119,23:02:00,23:03:00
-OSOBOWICKA (Cmentarz),>,119,23:03:00,23:04:00
-OSOBOWICKA (Cmentarz II),>,119,23:04:00,23:05:00
-Luzycka,>,119,23:05:00,23:06:00
-Rozanka,>,119,23:06:00,23:07:00
-Bezpieczna,>,119,23:07:00,23:08:00
-Baltycka (szkola),>,119,23:08:00,23:09:00
-Baltycka,>,119,23:09:00,23:09:00
-Broniewskiego,>,119,23:09:00,23:10:00
-Pola,>,119,23:10:00,23:11:00
-Syrokomli,>,119,23:11:00,23:12:00
-Kasprowicza,>,119,23:12:00,23:13:00
-pl. Danilowskiego,>,119,23:13:00,23:14:00
-Berenta,>,151,23:16:00,23:17:00
-KROMERA,>,151,23:17:00,23:19:00
-Kwidzynska,>,151,23:19:00,23:21:00
-Zacisze,>,131,23:27:00,23:28:00
-Sniadeckich,>,131,23:28:00,23:29:00
-Moniuszki,>,259,23:53:00,23:54:00
-Stadion Olimpijski,>,259,23:54:00,23:55:00
-8 Maja,>,259,23:55:00,23:56:00
-Park Szczytnicki,>,115,23:58:00,23:59:00
-
-A* - TRANSFERS,0.006978
-From: ,Lozina - Cmentarz,To: ,Chelmonskiego
-Lozina - Cmentarz,>,,,22:33:00
-Budziwojowice,>,904,23:32:00,23:33:00
-Losice - plac zabaw,>,904,23:33:00,23:35:00
-Szczodre - stawy,>,904,23:35:00,23:37:00
-Szczodre - Szkola,>,904,23:37:00,23:39:00
-Szczodre - petla,>,904,23:39:00,23:40:00
-Szczodre - Trzebnicka,>,904,23:40:00,23:41:00
-Dlugoleka - Parkowa skrzy. Konopnicka,>,904,23:41:00,23:42:00
-Dlugoleka - Parkowa/skrzy.,>,904,23:42:00,23:43:00
-Dlugoleka - Kasztanowa,>,904,23:43:00,23:44:00
-Dlugoleka - Wiejska,>,904,23:44:00,23:45:00
-Mirkow - Jagiellonska,>,904,23:45:00,23:47:00
-Mirkow - Sportowa,>,904,23:47:00,23:49:00
-BIERUTOWSKA (Wiadukt),>,904,23:49:00,23:51:00
-Bierutowska 75,>,904,23:51:00,23:52:00
-Bierutowska,>,904,23:52:00,23:53:00
-Bierutowska 65,>,904,23:53:00,23:53:00
-Dobroszycka,>,904,23:53:00,23:54:00
-PSIE POLE (Stacja kolejowa),>,904,23:54:00,23:55:00
-Psie Pole (Rondo Lotnikow Polskich),>,904,23:55:00,23:56:00
-Psie Pole,>,904,23:56:00,23:57:00
-
-A* - TRANSFERS,3.146378
-From: ,Gwiazdzista,To: ,Wilczyce - Debowa
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.888298
-From: ,Brzezinska,To: ,Chopina
-Brzezinska,>,,,21:20:00
-Eluarda,>,137,22:13:00,22:14:00
-Sredzka,>,137,22:14:00,22:15:00
-Rubczaka,>,137,22:15:00,22:16:00
-RUBCZAKA (Stacja kolejowa),>,137,22:16:00,22:17:00
-LESNICA,>,137,22:17:00,22:18:00
-Jeleniogorska,>,101,22:23:00,22:24:00
-Wschowska,>,20,22:25:00,22:26:00
-Zlotnicka,>,20,22:26:00,22:27:00
-Kamiennogorska (Osrodek dla niewidomych),>,20,22:27:00,22:28:00
-Kosmonautow (Szpital),>,20,22:28:00,22:29:00
-Grabowa,>,20,22:29:00,22:31:00
-Aleja Architektow,>,20,22:31:00,22:32:00
-Glinianki,>,20,22:32:00,22:33:00
-Tarczynski Arena (Lotnicza),>,20,22:33:00,22:34:00
-PILCZYCE,>,20,22:34:00,22:36:00
-Metalowcow,>,20,22:36:00,22:37:00
-Bajana,>,20,22:37:00,22:39:00
-Park Zachodni,>,20,22:39:00,22:40:00
-DH Astra,>,20,22:40:00,22:41:00
-Kwiska,>,20,22:41:00,22:43:00
-Malopanewska,>,20,22:43:00,22:44:00
-Niedzwiedzia,>,20,22:44:00,22:45:00
-ZACHODNIA (Stacja kolejowa),>,20,22:45:00,22:48:00
-pl. Strzegomski (Muzeum Wspolczesne),>,10,22:52:00,22:54:00
-Mlodych Technikow,>,10,22:54:00,22:55:00
-PL. JANA PAWLA II,>,10,22:55:00,22:57:00
-Rynek,>,10,22:57:00,22:59:00
-Zamkowa,>,10,22:59:00,23:00:00
-Swidnicka,>,10,23:00:00,23:02:00
-GALERIA DOMINIKANSKA,>,10,23:02:00,23:04:00
-Urzad Wojewodzki (Muzeum Narodowe),>,10,23:04:00,23:07:00
-Katedra,>,10,23:07:00,23:08:00
-Reja,>,10,23:08:00,23:09:00
-PL. GRUNWALDZKI,>,10,23:09:00,23:11:00
-Kliniki - Politechnika Wroclawska,>,10,23:11:00,23:13:00
-Mickiewicza,>,115,23:20:00,23:21:00
-Park Szczytnicki,>,115,23:21:00,23:22:00
-8 Maja,>,115,23:22:00,23:23:00
-Stadion Olimpijski,>,9,23:34:00,23:35:00
-Karlowicza,>,9,23:35:00,23:36:00
-Chopina,>,9,23:36:00,23:37:00
-
-A* - TRANSFERS,2.389335
-From: ,Smolecka,To: ,Kolumba
-Smolecka,>,,,15:53:00
-Dworzec Swiebodzki,>,23,15:57:00,15:59:00
-pl. Orlat Lwowskich,>,23,15:59:00,16:01:00
-Renoma,>,23,16:01:00,16:05:00
-Opera,>,23,16:05:00,16:07:00
-Park Staromiejski,>,23,16:07:00,16:09:00
-GALERIA DOMINIKANSKA,>,23,16:09:00,16:12:00
-Urzad Wojewodzki (Impart),>,D,16:14:00,16:17:00
-most Grunwaldzki,>,D,16:17:00,16:19:00
-PL. GRUNWALDZKI,>,D,16:19:00,16:22:00
-Kochanowskiego,>,D,16:22:00,16:26:00
-Chopina,>,17,16:32:00,16:34:00
-Karlowicza,>,17,16:34:00,16:35:00
-Stadion Olimpijski,>,17,16:35:00,16:36:00
-8 Maja,>,17,16:36:00,16:37:00
-Godebskiego (AWF Wroclaw),>,17,16:37:00,16:38:00
-SEPOLNO,>,17,16:38:00,16:40:00
-Monopolowa,>,115,16:48:00,16:50:00
-Kolumba,>,115,16:50:00,16:51:00
-
-A* - TRANSFERS,2.618573
-From: ,Hynka,To: ,Wysoka - Lipowa
-Hynka,>,,,12:37:00
-Drzewieckiego,>,129,12:37:00,12:38:00
-Orlinskiego,>,129,12:38:00,12:39:00
-Na Ostatnim Groszu,>,129,12:39:00,12:41:00
-Gadowianka,>,126,12:46:00,12:48:00
-Szkocka,>,126,12:48:00,12:50:00
-Wroclawski Park Technologiczny,>,126,12:50:00,12:51:00
-ROD Oswiata,>,126,12:51:00,12:52:00
-FAT,>,126,12:52:00,12:56:00
-Aleja Pracy,>,A,12:57:00,12:59:00
-Ojca Beyzyma,>,70,13:02:00,13:03:00
-Mielecka,>,70,13:03:00,13:05:00
-Gajowicka,>,70,13:05:00,13:06:00
-Hallera,>,70,13:06:00,13:08:00
-Sudecka,>,136,13:11:00,13:12:00
-Jarzebinowa,>,144,13:15:00,13:16:00
-Skierniewicka,>,144,13:16:00,13:17:00
-Wyscigowa,>,144,13:17:00,13:20:00
-Malinowa,>,144,13:20:00,13:21:00
-Ozynowa,>,144,13:21:00,13:22:00
-rondo Sw. Ojca Pio,>,144,13:22:00,13:25:00
-Wysoka - osiedle,>,913,13:31:00,13:33:00
-Wysoka - Radosna,>,913,13:33:00,13:34:00
-Wysoka - Chabrowa,>,913,13:34:00,13:35:00
-Wysoka,>,913,13:35:00,13:36:00
-Wysoka - Lipowa,>,913,13:36:00,13:36:00
-
-A* - TRANSFERS,0.683854
-From: ,Bociania,To: ,Kielczow - Wroclawska
-Bociania,>,,,18:43:00
-Gesia,>,11,18:54:00,18:55:00
-Kwidzynska,>,11,18:55:00,18:57:00
-Ketrzynska,>,11,18:57:00,18:58:00
-KROMERA,>,11,18:58:00,19:00:00
-Kromera (Czajkowskiego),>,130,19:02:00,19:04:00
-Grudziadzka,>,130,19:04:00,19:05:00
-Brucknera,>,130,19:05:00,19:06:00
-C.H. Korona,>,111,19:02:00,19:04:00
-Zielna,>,111,19:04:00,19:06:00
-Psie Pole,>,111,19:06:00,19:07:00
-Psie Pole (Rondo Lotnikow Polskich),>,111,19:07:00,19:09:00
-KIELCZOWSKA (LZN),>,131,19:11:00,19:13:00
-Poleska,>,131,19:13:00,19:14:00
-Kielczowska,>,131,19:14:00,19:15:00
-Zmudzka,>,131,19:15:00,19:16:00
-Kielczowska (Cmentarz),>,121,19:20:00,19:21:00
-Kielczow - Sosnowa,>,931,19:25:00,19:26:00
-Kielczow - Biedronka,>,931,19:26:00,19:27:00
-Kielczow - Wroclawska,>,931,19:27:00,19:28:00
-
-A* - TRANSFERS,0.0
-From: ,Ksieginice ul. Sportowa,To: ,Wilczyce - Sosnowa
-Ksieginice ul. Sportowa,>,,,06:29:00
-
-A* - TRANSFERS,0.0
-From: ,Brzezina - Biedronka,To: ,Grzybowa
-Brzezina - Biedronka,>,,,09:41:00
-Las Mokrzanski,>,937,10:02:00,10:04:00
-Mokra,>,937,10:04:00,10:05:00
-Grzybowa,>,937,10:05:00,10:07:00
-
-A* - TRANSFERS,2.783323
-From: ,Moniuszki,To: ,Awicenny
-Moniuszki,>,,,14:52:00
-Stadion Olimpijski,>,345,14:57:00,14:58:00
-8 Maja,>,17,15:00:00,15:01:00
-Park Szczytnicki,>,115,15:03:00,15:04:00
-Mickiewicza,>,115,15:04:00,15:05:00
-Kliniki - Politechnika Wroclawska,>,115,15:05:00,15:07:00
-PL. GRUNWALDZKI,>,115,15:07:00,15:10:00
-Reja,>,115,15:10:00,15:12:00
-Katedra,>,10,15:16:00,15:18:00
-Urzad Wojewodzki (Muzeum Narodowe),>,10,15:18:00,15:20:00
-GALERIA DOMINIKANSKA,>,10,15:20:00,15:24:00
-Swidnicka,>,10,15:24:00,15:26:00
-Zamkowa,>,10,15:26:00,15:27:00
-Narodowe Forum Muzyki,>,4,15:28:00,15:30:00
-pl. Legionow,>,4,15:30:00,15:32:00
-Kolejowa,>,4,15:32:00,15:33:00
-Grabiszynska,>,4,15:33:00,15:34:00
-Pereca,>,4,15:34:00,15:36:00
-Stalowa,>,4,15:36:00,15:38:00
-pl. Srebrny,>,4,15:38:00,15:39:00
-Bzowa (Centrum Zajezdnia),>,4,15:39:00,15:40:00
-Hutmen,>,4,15:40:00,15:41:00
-FAT,>,4,15:41:00,15:43:00
-Ostrowskiego,>,107,15:48:00,15:49:00
-Koncowa,>,107,15:49:00,15:51:00
-Krzemieniecka,>,107,15:51:00,15:53:00
-Trawowa,>,107,15:53:00,15:54:00
-Stanislawowska (W.K. Formaty),>,107,15:54:00,15:56:00
-Awicenny (Stacja kolejowa),>,132,16:00:00,16:03:00
-Awicenny,>,132,16:03:00,16:04:00
-
-A* - TRANSFERS,1.608329
-From: ,Volvo,To: ,Gajowicka (szkola)
-Volvo,>,,,13:58:00
-Volvo - brama II,>,118,14:06:00,14:10:00
-Monopolowa,>,315,14:14:00,14:17:00
-SEPOLNO,>,315,14:17:00,14:19:00
-Libelta,>,315,14:19:00,14:21:00
-Monte Cassino,>,315,14:21:00,14:22:00
-Okrzei,>,315,14:22:00,14:23:00
-Partyzantow,>,315,14:23:00,14:24:00
-Tramwajowa,>,315,14:24:00,14:26:00
-Hala Stulecia,>,315,14:26:00,14:28:00
-Kliniki - Politechnika Wroclawska,>,315,14:28:00,14:30:00
-PL. GRUNWALDZKI,>,315,14:30:00,14:33:00
-most Grunwaldzki,>,D,14:34:00,14:36:00
-Poczta Glowna,>,D,14:36:00,14:39:00
-GALERIA DOMINIKANSKA,>,D,14:39:00,14:42:00
-Renoma,>,D,14:42:00,14:46:00
-Arkady (Capitol),>,D,14:46:00,14:48:00
-Rondo,>,D,14:48:00,14:52:00
-Hallera,>,D,14:52:00,14:55:00
-Raclawicka (szkola),>,133,15:00:00,15:02:00
-Modlinska,>,133,15:02:00,15:04:00
-Gajowicka (szkola),>,143,15:06:00,15:08:00
-
-A* - TRANSFERS,2.573255
-From: ,Sliwowa,To: ,Kamien - skrzy.
-Sliwowa,>,,,16:22:00
-Maslicka (Staw),>,102,16:30:00,16:31:00
-Maslice Male (Brodnicka),>,103,16:34:00,16:35:00
-Redzinska (Cmentarz),>,103,16:35:00,16:36:00
-Maslicka (Osiedle),>,103,16:36:00,16:37:00
-TARCZYNSKI ARENA (Krolewiecka),>,103,16:37:00,16:38:00
-Dworska,>,103,16:38:00,16:39:00
-Gornicza,>,103,16:39:00,16:41:00
-Modra,>,103,16:41:00,16:42:00
-Kolista,>,103,16:42:00,16:44:00
-Wejherowska,>,103,16:44:00,16:47:00
-Rysia,>,103,16:47:00,16:49:00
-Popowice,>,103,16:49:00,16:51:00
-POPOWICE (Stacja kolejowa),>,103,16:51:00,16:52:00
-DLUGA (Politechnika),>,103,16:52:00,16:53:00
-Poznanska,>,103,16:53:00,16:54:00
-Dluga,>,128,16:55:00,16:56:00
-Dmowskiego,>,128,16:56:00,16:59:00
-Pomorska,>,128,16:59:00,17:01:00
-Dubois,>,128,17:01:00,17:03:00
-pl. Bema,>,128,17:03:00,17:06:00
-Ogrod Botaniczny,>,128,17:06:00,17:09:00
-Wyszynskiego,>,128,17:09:00,17:11:00
-Damrota,>,128,17:11:00,17:12:00
-KROMERA,>,128,17:12:00,17:15:00
-Kromera (Czajkowskiego),>,128,17:15:00,17:17:00
-Grudziadzka,>,128,17:17:00,17:18:00
-Brucknera,>,128,17:18:00,17:20:00
-C.H. Korona,>,128,17:20:00,17:22:00
-Zielna,>,128,17:22:00,17:24:00
-Psie Pole,>,128,17:24:00,17:25:00
-Psie Pole (Rondo Lotnikow Polskich),>,128,17:25:00,17:27:00
-PSIE POLE (Stacja kolejowa),>,924,17:29:00,17:30:00
-Dobroszycka,>,924,17:30:00,17:31:00
-Bierutowska 65,>,924,17:31:00,17:31:00
-Bierutowska,>,924,17:31:00,17:32:00
-Bierutowska 75,>,924,17:32:00,17:32:00
-BIERUTOWSKA (Wiadukt),>,924,17:32:00,17:33:00
-Mirkow - Sportowa,>,924,17:33:00,17:35:00
-Mirkow - Jagiellonska,>,924,17:35:00,17:37:00
-Dlugoleka - Wiejska,>,924,17:37:00,17:40:00
-Dlugoleka - Kasztanowa,>,924,17:40:00,17:41:00
-Dlugoleka - Kosciol,>,924,17:41:00,17:45:00
-Dlugoleka - Nowy Urzad,>,924,17:45:00,17:46:00
-Kamien - Bursztynowa,>,924,17:46:00,17:48:00
-Kamien - skrzy.,>,924,17:48:00,17:49:00
-
-A* - TRANSFERS,0.000998
-From: ,Orzechowa,To: ,PL. GRUNWALDZKI
-Orzechowa,>,,,01:28:00
-
-A* - TRANSFERS,4.285391
-From: ,Ksieginice - skrzyz. Warzyna,To: ,Dlugoleka - Kosciol
-Ksieginice - skrzyz. Warzyna,>,,,05:15:00
-Bialkow,>,940,05:48:00,05:54:00
-Kleka,>,940,05:54:00,05:57:00
-Miekinia - Urzad Gminy,>,940,05:57:00,06:02:00
-Mrozow - Wyzwolenia,>,958,06:39:00,06:47:00
-Mrozow - Swietlica,>,958,06:47:00,06:49:00
-Zurawiniec,>,958,06:49:00,06:52:00
-Krepice - Wroclawska,>,958,06:52:00,06:54:00
-Krepice,>,958,06:54:00,06:57:00
-ZAR,>,958,06:57:00,07:00:00
-Mokrzanska,>,958,07:00:00,07:03:00
-Krepicka,>,958,07:03:00,07:04:00
-Krepicka - szkola,>,958,07:04:00,07:05:00
-Zajazdowa,>,958,07:05:00,07:06:00
-Eluarda,>,958,07:06:00,07:07:00
-Sredzka,>,958,07:07:00,07:09:00
-Rubczaka,>,958,07:09:00,07:10:00
-RUBCZAKA (Stacja kolejowa),>,958,07:10:00,07:11:00
-LESNICA,>,958,07:11:00,07:12:00
-Jeleniogorska,>,3,07:14:00,07:15:00
-Wschowska,>,3,07:15:00,07:16:00
-Zlotnicka,>,3,07:16:00,07:17:00
-Kamiennogorska (Osrodek dla niewidomych),>,3,07:17:00,07:18:00
-Kosmonautow (Szpital),>,3,07:18:00,07:19:00
-Grabowa,>,3,07:19:00,07:21:00
-Aleja Architektow,>,3,07:21:00,07:22:00
-Glinianki,>,3,07:22:00,07:23:00
-Tarczynski Arena (Lotnicza),>,3,07:23:00,07:24:00
-PILCZYCE,>,3,07:24:00,07:26:00
-Metalowcow,>,3,07:26:00,07:27:00
-Bajana,>,3,07:27:00,07:29:00
-Park Zachodni,>,3,07:29:00,07:30:00
-DH Astra,>,3,07:30:00,07:31:00
-Kwiska,>,3,07:31:00,07:33:00
-Malopanewska,>,3,07:33:00,07:34:00
-Niedzwiedzia,>,3,07:34:00,07:36:00
-ZACHODNIA (Stacja kolejowa),>,3,07:36:00,07:39:00
-pl. Strzegomski (Muzeum Wspolczesne),>,3,07:39:00,07:41:00
-Mlodych Technikow,>,3,07:41:00,07:42:00
-PL. JANA PAWLA II,>,3,07:42:00,07:44:00
-Rynek,>,3,07:44:00,07:47:00
-Zamkowa,>,3,07:47:00,07:48:00
-Swidnicka,>,3,07:48:00,07:50:00
-GALERIA DOMINIKANSKA,>,3,07:50:00,07:53:00
-Urzad Wojewodzki (Impart),>,D,07:54:00,07:57:00
-most Grunwaldzki,>,D,07:57:00,07:58:00
-PL. GRUNWALDZKI,>,D,07:58:00,08:00:00
-Kochanowskiego,>,D,08:00:00,08:03:00
-Sniadeckich,>,D,08:03:00,08:05:00
-Zacisze,>,D,08:05:00,08:06:00
-Kwidzynska,>,D,08:06:00,08:08:00
-Brucknera,>,D,08:08:00,08:10:00
-Psie Pole,>,D,08:10:00,08:14:00
-Psie Pole (Rondo Lotnikow Polskich),>,D,08:14:00,08:16:00
-PSIE POLE (Stacja kolejowa),>,914,08:27:00,08:28:00
-Dobroszycka,>,914,08:28:00,08:29:00
-Bierutowska 65,>,914,08:29:00,08:29:00
-Bierutowska,>,914,08:29:00,08:30:00
-Bierutowska 75,>,914,08:30:00,08:30:00
-BIERUTOWSKA (Wiadukt),>,914,08:30:00,08:31:00
-Mirkow - Sportowa,>,914,08:31:00,08:33:00
-Mirkow - Jagiellonska,>,914,08:33:00,08:35:00
-Dlugoleka - Wiejska,>,914,08:35:00,08:37:00
-Dlugoleka - Kasztanowa,>,914,08:37:00,08:39:00
-Dlugoleka - Kosciol,>,924,09:10:00,09:14:00
-
-A* - TRANSFERS,0.848377
-From: ,Szczodre - Szkola,To: ,Wapienna
-Szczodre - Szkola,>,,,04:28:00
-Szczodre - petla,>,904,04:34:00,04:36:00
-Szczodre - Trzebnicka,>,904,04:36:00,04:37:00
-Dlugoleka - Parkowa skrzy. Konopnicka,>,904,04:37:00,04:38:00
-Dlugoleka - Parkowa/skrzy.,>,904,04:38:00,04:39:00
-Dlugoleka - Kasztanowa,>,904,04:39:00,04:41:00
-Dlugoleka - Wiejska,>,904,04:41:00,04:42:00
-Mirkow - Jagiellonska,>,904,04:42:00,04:44:00
-Mirkow - Sportowa,>,904,04:44:00,04:46:00
-BIERUTOWSKA (Wiadukt),>,904,04:46:00,04:48:00
-Bierutowska 75,>,904,04:48:00,04:49:00
-Bierutowska,>,904,04:49:00,04:50:00
-Bierutowska 65,>,904,04:50:00,04:50:00
-Dobroszycka,>,904,04:50:00,04:51:00
-PSIE POLE (Stacja kolejowa),>,904,04:51:00,04:52:00
-Psie Pole (Rondo Lotnikow Polskich),>,904,04:52:00,04:53:00
-Psie Pole,>,904,04:53:00,04:54:00
-C.H. Korona,>,904,04:54:00,04:57:00
-Brucknera,>,904,04:57:00,04:59:00
-Grudziadzka,>,904,04:59:00,05:00:00
-KROMERA,>,904,05:00:00,05:02:00
-Ketrzynska,>,11,05:03:00,05:04:00
-Kwidzynska,>,11,05:04:00,05:05:00
-Zacisze,>,151,05:04:00,05:05:00
-Sniadeckich,>,151,05:05:00,05:06:00
-Kochanowskiego,>,151,05:06:00,05:08:00
-Bujwida,>,151,05:08:00,05:09:00
-PL. GRUNWALDZKI,>,151,05:09:00,05:11:00
-most Grunwaldzki,>,16,05:13:00,05:14:00
-Urzad Wojewodzki (Impart),>,16,05:14:00,05:16:00
-pl. Wroblewskiego,>,16,05:16:00,05:19:00
-Komuny Paryskiej,>,16,05:19:00,05:20:00
-Kosciuszki,>,16,05:20:00,05:21:00
-Hubska (Dawida),>,16,05:21:00,05:24:00
-Prudnicka,>,16,05:24:00,05:25:00
-Kamienna,>,16,05:25:00,05:27:00
-Wapienna,>,134,05:28:00,05:29:00
-
-A* - TRANSFERS,0.230962
-From: ,Kowalska,To: ,Katedra
-Kowalska,>,,,09:47:00
-Ceglana,>,118,09:58:00,09:59:00
-Gospodarska,>,118,09:59:00,10:00:00
-Miloszycka,>,118,10:00:00,10:01:00
-Swojczyce,>,118,10:01:00,10:02:00
-Magellana,>,118,10:02:00,10:03:00
-Kolumba,>,118,10:03:00,10:04:00
-Monopolowa,>,118,10:04:00,10:05:00
-SEPOLNO,>,118,10:05:00,10:07:00
-Godebskiego (AWF Wroclaw),>,17,10:11:00,10:12:00
-8 Maja,>,17,10:12:00,10:13:00
-Park Szczytnicki,>,115,10:16:00,10:17:00
-Mickiewicza,>,115,10:17:00,10:18:00
-Kliniki - Politechnika Wroclawska,>,115,10:18:00,10:20:00
-PL. GRUNWALDZKI,>,115,10:20:00,10:23:00
-Reja,>,115,10:23:00,10:25:00
-Katedra,>,111,10:27:00,10:29:00
-
-A* - TRANSFERS,0.912307
-From: ,Kielczow - Biedronka,To: ,Ceglana
-Kielczow - Biedronka,>,,,14:31:00
-Kielczow - Ladna,>,931,14:38:00,14:39:00
-Kielczowska (Cmentarz),>,931,14:39:00,14:41:00
-Zmudzka,>,931,14:41:00,14:42:00
-Kielczowska,>,931,14:42:00,14:43:00
-Poleska,>,931,14:43:00,14:44:00
-KIELCZOWSKA (LZN),>,931,14:44:00,14:45:00
-Psie Pole (Rondo Lotnikow Polskich),>,931,14:45:00,14:47:00
-Psie Pole,>,121,14:50:00,14:51:00
-Zielna,>,121,14:51:00,14:52:00
-C.H. Korona,>,121,14:52:00,14:54:00
-Brucknera,>,914,14:56:00,14:58:00
-Olsztynska,>,118,15:28:00,15:30:00
-Kowalska 56,>,118,15:30:00,15:31:00
-Kowale (Stacja kolejowa),>,118,15:31:00,15:32:00
-Dzialdowska,>,118,15:32:00,15:33:00
-Tczewska,>,118,15:33:00,15:34:00
-Kowalska,>,118,15:34:00,15:35:00
-Ceglana,>,118,15:35:00,15:36:00
-
-A* - TRANSFERS,0.744215
-From: ,BROCHOW (Stacja kolejowa),To: ,Dluga
-BROCHOW (Stacja kolejowa),>,,,11:35:00
-Topolowa,>,114,11:36:00,11:38:00
-Wiaduktowa,>,114,11:38:00,11:39:00
-Karwinska,>,114,11:39:00,11:42:00
-Park Wschodni,>,114,11:42:00,11:43:00
-KRAKOWSKA (Centrum handlowe),>,114,11:43:00,11:45:00
-Krakowska,>,114,11:45:00,11:46:00
-Na Niskich Lakach,>,114,11:46:00,11:48:00
-pl. Zgody (Muzeum Etnograficzne),>,3,11:51:00,11:52:00
-pl. Wroblewskiego,>,3,11:52:00,11:55:00
-GALERIA DOMINIKANSKA,>,3,11:55:00,11:59:00
-Swidnicka,>,3,11:59:00,12:01:00
-Zamkowa,>,3,12:01:00,12:02:00
-Rynek,>,3,12:02:00,12:04:00
-PL. JANA PAWLA II,>,3,12:04:00,12:07:00
-Inowroclawska,>,104,12:08:00,12:10:00
-Szczepin,>,104,12:10:00,12:12:00
-LITOMSKA (ZUS),>,104,12:12:00,12:13:00
-Poznanska,>,104,12:13:00,12:15:00
-Dluga,>,128,12:19:00,12:20:00
-
-A* - TRANSFERS,4.288602
-From: ,Dlugoleka - Parkowa/skrzy.,To: ,Krepicka
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.0
-From: ,Opatowicka nr 59,To: ,Brochowska
-Opatowicka nr 59,>,,,00:43:00
-
-A* - TRANSFERS,3.687284
-From: ,Poczta Glowna,To: ,Lozina - Wroclawska (na wys. nr 18)
-Poczta Glowna,>,,,15:26:00
-GALERIA DOMINIKANSKA,>,N,15:31:00,15:34:00
-pl. Nowy Targ,>,9,15:35:00,15:36:00
-Hala Targowa,>,9,15:36:00,15:37:00
-pl. Bema,>,9,15:37:00,15:40:00
-Ogrod Botaniczny,>,9,15:40:00,15:42:00
-Gornickiego,>,9,15:42:00,15:43:00
-Piastowska,>,9,15:43:00,15:44:00
-Grunwaldzka,>,9,15:44:00,15:46:00
-Kochanowskiego,>,9,15:46:00,15:48:00
-Sniadeckich,>,111,15:50:00,15:52:00
-Zacisze,>,111,15:52:00,15:54:00
-Kwidzynska,>,111,15:54:00,15:56:00
-Brucknera,>,111,15:56:00,15:58:00
-C.H. Korona,>,111,15:58:00,16:00:00
-Zielna,>,111,16:00:00,16:02:00
-Psie Pole,>,111,16:02:00,16:03:00
-Psie Pole (Rondo Lotnikow Polskich),>,111,16:03:00,16:05:00
-Zakrzowska,>,111,16:05:00,16:06:00
-Kopanskiego,>,111,16:06:00,16:07:00
-Wallenroda,>,111,16:07:00,16:08:00
-Przedwiosnie (Stacja kolejowa),>,151,16:17:00,16:18:00
-Azaliowa,>,151,16:18:00,16:20:00
-Pawlowice,>,151,16:20:00,16:21:00
-Starodebowa,>,151,16:21:00,16:22:00
-Pawlowicka,>,151,16:22:00,16:23:00
-Przebisniegowa,>,151,16:23:00,16:24:00
-Ramiszow,>,936,16:41:00,16:45:00
-Pasikurowice - cmentarz,>,936,16:45:00,16:48:00
-Pasikurowice - skrzy. Malinowa,>,936,16:48:00,16:50:00
-Pasikurowice - Energetyczna,>,936,16:50:00,16:51:00
-Pasikurowice - n/z,>,936,16:51:00,16:52:00
-Bukowina,>,936,16:52:00,16:54:00
-Bukowina - skrzy.,>,936,16:54:00,16:56:00
-Bakow,>,936,16:56:00,16:57:00
-Lozina - Wroclawska (na wys. nr 18),>,936,16:57:00,17:00:00
-
-A* - TRANSFERS,0.264322
-From: ,Rakow - osiedle,To: ,Dmowskiego
-Rakow - osiedle,>,,,06:09:00
-Bielawa,>,911,06:54:00,06:56:00
-Piecowice,>,911,06:56:00,07:00:00
-Kielczow - Boczna,>,911,07:00:00,07:04:00
-Kielczow - petla (Plac Jana Gdaka),>,911,07:04:00,07:06:00
-Kielczow - WODROL,>,911,07:06:00,07:08:00
-Kielczow - osiedle,>,911,07:08:00,07:09:00
-Wilczyce - Sosnowa,>,911,07:09:00,07:10:00
-Wilczyce - Debowa,>,911,07:10:00,07:11:00
-Wilczyce - Dworska,>,911,07:11:00,07:12:00
-Wilczyce - Borowa,>,911,07:12:00,07:13:00
-Wilczyce - Wroclawska (na wys. nr 1F),>,911,07:13:00,07:14:00
-Wilczyce,>,911,07:14:00,07:14:00
-Mrozna,>,911,07:14:00,07:15:00
-Kurlandzka,>,911,07:15:00,07:15:00
-Zgorzelisko,>,911,07:15:00,07:16:00
-Palacha,>,911,07:16:00,07:17:00
-Szewczenki,>,911,07:17:00,07:18:00
-Gorlicka,>,911,07:18:00,07:19:00
-MULICKA,>,911,07:19:00,07:20:00
-Psie Pole (Rondo Lotnikow Polskich),>,911,07:20:00,07:21:00
-Psie Pole,>,911,07:21:00,07:22:00
-C.H. Korona,>,911,07:22:00,07:26:00
-Brucknera,>,911,07:26:00,07:28:00
-Grudziadzka,>,128,07:29:00,07:30:00
-Kromera (Czajkowskiego),>,128,07:30:00,07:32:00
-KROMERA,>,128,07:32:00,07:35:00
-Mosty Warszawskie,>,128,07:35:00,07:37:00
-Wyszynskiego,>,128,07:37:00,07:39:00
-Ogrod Botaniczny,>,128,07:39:00,07:42:00
-Swietokrzyska,>,128,07:42:00,07:44:00
-pl. Bema,>,128,07:44:00,07:45:00
-Dubois,>,128,07:45:00,07:50:00
-Pomorska,>,128,07:50:00,07:52:00
-Dmowskiego,>,128,07:52:00,07:54:00
-
-A* - TRANSFERS,1.671791
-From: ,pl. Orlat Lwowskich,To: ,Baltycka (szkola)
-The correct path was not found,,,,
-
-A* - TRANSFERS,0.0
-From: ,Volvo - brama II,To: ,Soltysowicka
-Volvo - brama II,>,,,20:37:00
-
-A* - TRANSFERS,0.00105
-From: ,Dobroszycka,To: ,Wilczyce - szkola
-Dobroszycka,>,,,23:57:00
-
-A* - TRANSFERS,1.929484
-From: ,Szymanow (Letnia),To: ,Mirkow - skrzy. Polna
-Szymanow (Letnia),>,,,21:10:00
-Szymanow,>,908,21:20:00,21:21:00
-Szymanow (Widawska),>,908,21:21:00,21:22:00
-Szymanow - skrzyz.,>,908,21:22:00,21:23:00
-Psary - Szkola,>,908,21:23:00,21:24:00
-Widawa,>,908,21:24:00,21:27:00
-Konopackiej,>,908,21:27:00,21:28:00
-Rondo Obroncow Grodna,>,908,21:28:00,21:29:00
-Lekarska,>,908,21:29:00,21:30:00
-Zmigrodzka (Obwodnica),>,908,21:30:00,21:31:00
-POSWIETNE,>,908,21:31:00,21:32:00
-Wolowska,>,908,21:32:00,21:33:00
-Kepinska,>,908,21:33:00,21:34:00
-Kamienskiego,>,908,21:34:00,21:35:00
-Broniewskiego,>,908,21:35:00,21:37:00
-Pola,>,N,21:40:00,21:41:00
-Syrokomli,>,N,21:41:00,21:42:00
-Berenta,>,N,21:42:00,21:44:00
-KROMERA,>,N,21:44:00,21:46:00
-Ketrzynska,>,23,21:49:00,21:50:00
-Kwidzynska,>,23,21:50:00,21:51:00
-Zacisze,>,121,21:55:00,21:56:00
-Sniadeckich,>,121,21:56:00,21:57:00
-Moniuszki,>,259,23:53:00,23:54:00
-
-A* - TRANSFERS,0.20449
-From: ,Na Szancach,To: ,Rozanka
-Na Szancach,>,,,09:24:00
-Jednosci Narodowej,>,8,09:26:00,09:27:00
-Slowianska,>,8,09:27:00,09:29:00
-DWORZEC NADODRZE,>,8,09:29:00,09:31:00
-Kleczkowska,>,714,09:35:00,09:37:00
-most Osobowicki,>,714,09:37:00,09:39:00
-Luzycka,>,K,09:40:00,09:42:00
-Rozanka,>,K,09:42:00,09:43:00
-
-A* - TRANSFERS,1.00385
-From: ,Kielczow - Ladna,To: ,Chinska
-Kielczow - Ladna,>,,,08:56:00
-Kielczowska (Cmentarz),>,931,09:14:00,09:16:00
-Zmudzka,>,931,09:16:00,09:17:00
-Kielczowska,>,931,09:17:00,09:18:00
-Poleska,>,931,09:18:00,09:19:00
-KIELCZOWSKA (LZN),>,931,09:19:00,09:20:00
-Psie Pole (Rondo Lotnikow Polskich),>,931,09:20:00,09:22:00
-Psie Pole,>,D,09:23:00,09:24:00
-Brucknera,>,D,09:24:00,09:29:00
-Kwidzynska,>,131,09:32:00,09:34:00
-Zacisze,>,131,09:34:00,09:35:00
-Sniadeckich,>,131,09:35:00,09:36:00
-Kochanowskiego,>,131,09:36:00,09:38:00
-Bujwida,>,131,09:38:00,09:40:00
-PL. GRUNWALDZKI,>,131,09:40:00,09:42:00
-most Grunwaldzki,>,16,09:43:00,09:44:00
-Urzad Wojewodzki (Impart),>,16,09:44:00,09:46:00
-pl. Wroblewskiego,>,16,09:46:00,09:49:00
-pl. Zgody (Muzeum Etnograficzne),>,3,09:52:00,09:54:00
-Na Niskich Lakach,>,3,09:54:00,09:56:00
-Krakowska,>,3,09:56:00,09:57:00
-KRAKOWSKA (Centrum handlowe),>,3,09:57:00,09:59:00
-Armii Krajowej,>,3,09:59:00,10:00:00
-Park Wschodni,>,3,10:00:00,10:01:00
-Karwinska,>,3,10:01:00,10:03:00
-Wiaduktowa,>,114,10:04:00,10:06:00
-Topolowa,>,114,10:06:00,10:07:00
-BROCHOW (Stacja kolejowa),>,114,10:07:00,10:09:00
-Chinska,>,114,10:09:00,10:10:00
-
-A* - TRANSFERS,1.703088
-From: ,Bielany Wroclawskie - PKP,To: ,Trestno - kosciol
-Bielany Wroclawskie - PKP,>,,,21:15:00
-Sleza - skrzyzowanie,>,612,21:19:00,21:20:00
-Sleza - Debowa,>,612,21:20:00,21:21:00
-Sleza - autostrada,>,612,21:21:00,21:23:00
-Wysoka - Radosna,>,612,21:23:00,21:25:00
-Wysoka - Chabrowa,>,612,21:25:00,21:26:00
-Wysoka,>,612,21:26:00,21:27:00
-ROD Storczyk,>,612,21:27:00,21:28:00
-Kutrzeby,>,612,21:28:00,21:29:00
-Oltaszyn,>,612,21:29:00,21:31:00
-Swit,>,612,21:31:00,21:32:00
-Parafialna,>,612,21:32:00,21:34:00
-Wojszyce,>,612,21:34:00,21:35:00
-Przystankowa,>,612,21:35:00,21:36:00
-Borowska (Szpital),>,612,21:36:00,21:37:00
-Dzialkowa,>,612,21:37:00,21:39:00
-ROD Bajki,>,612,21:39:00,21:41:00
-Orzechowa,>,133,21:43:00,21:44:00
-Bardzka,>,133,21:44:00,21:46:00
-Nyska,>,134,21:47:00,21:48:00
-Transbud,>,134,21:48:00,21:49:00
-Armii Krajowej (Bogedaina),>,134,21:49:00,21:50:00
-Park Wschodni,>,134,21:50:00,21:51:00
-Armii Krajowej,>,3,22:02:00,22:03:00
-KRAKOWSKA (Centrum handlowe),>,3,22:03:00,22:04:00
-Krakowska,>,3,22:04:00,22:05:00
-Na Niskich Lakach,>,3,22:05:00,22:07:00
-Rakowiecka,>,120,22:56:00,22:58:00
-Miedzyrzecka,>,120,22:58:00,23:00:00
-Bierdzany,>,120,23:00:00,23:01:00
-Nowy Dom,>,120,23:01:00,23:04:00
-Opatowicka nr 59,>,120,23:04:00,23:06:00
-Opatowicka nr 85,>,120,23:06:00,23:07:00
-OPATOWICE,>,120,23:07:00,23:08:00
-Opatowicka nr 127,>,120,23:08:00,23:09:00
-Zalewowa,>,120,23:09:00,23:10:00
-Trestno - swietlica,>,120,23:10:00,23:11:00
-Trestno - kosciol,>,120,23:11:00,23:12:00
-
-A* - TRANSFERS,0.0
-From: ,Dlugoleka - Nowy Urzad,To: ,TARCZYNSKI ARENA (Krolewiecka)
-Dlugoleka - Nowy Urzad,>,,,23:56:00
-
-A* - TRANSFERS,2.870237
-From: ,Krzemieniecka,To: ,KLOKOCZYCE
-The correct path was not found,,,,
-
-A* - TRANSFERS,2.342021
-From: ,Zarembowicza,To: ,PAWLOWICE (Widawska)
-Zarembowicza,>,,,19:22:00
-Strachowice General Aviation,>,106,19:31:00,19:32:00
-Skarzynskiego,>,106,19:32:00,19:34:00
-Graniczna,>,106,19:34:00,19:35:00
-Przybyly,>,106,19:35:00,19:36:00
-Zagloby,>,106,19:36:00,19:37:00
-Park Tysiaclecia,>,106,19:37:00,19:39:00
-MINSKA (Rondo Rotm. Pileckiego),>,106,19:39:00,19:40:00
-Rogowska,>,106,19:40:00,19:43:00
-Nowy Dwor,>,106,19:43:00,19:45:00
-Nowodworska,>,106,19:45:00,19:46:00
-Strzegomska 148,>,106,19:46:00,19:47:00
-Otynska,>,106,19:47:00,19:49:00
-Fabryczna,>,106,19:49:00,19:50:00
-Dolnoslaska Szkola Wyzsza,>,106,19:50:00,19:51:00
-Wroclawski Park Przemyslowy,>,106,19:51:00,19:52:00
-Srubowa,>,106,19:52:00,19:54:00
-Smolecka,>,106,19:54:00,19:55:00
-Dworzec Swiebodzki,>,106,19:55:00,19:57:00
-pl. Orlat Lwowskich,>,106,19:57:00,19:59:00
-Renoma,>,106,19:59:00,20:01:00
-Opera,>,23,20:03:00,20:05:00
-Park Staromiejski,>,23,20:05:00,20:07:00
-GALERIA DOMINIKANSKA,>,23,20:07:00,20:10:00
-pl. Nowy Targ,>,23,20:10:00,20:11:00
-Hala Targowa,>,23,20:11:00,20:12:00
-pl. Bema,>,23,20:12:00,20:14:00
-Na Szancach,>,23,20:14:00,20:15:00
-Jednosci Narodowej,>,23,20:15:00,20:16:00
-Nowowiejska,>,23,20:16:00,20:18:00
-Daszynskiego,>,23,20:18:00,20:19:00
-Mosty Warszawskie,>,23,20:19:00,20:20:00
-KROMERA,>,23,20:20:00,20:23:00
-Kromera (Czajkowskiego),>,N,20:25:00,20:27:00
-Grudziadzka,>,N,20:27:00,20:28:00
-Brucknera,>,N,20:28:00,20:29:00
-Psie Pole,>,N,20:29:00,20:33:00
-Psie Pole (Rondo Lotnikow Polskich),>,N,20:33:00,20:34:00
-Zakrzowska,>,147,20:36:00,20:37:00
-Kopanskiego,>,111,20:40:00,20:41:00
-Wallenroda,>,111,20:41:00,20:42:00
-Przedwiosnie (Stacja kolejowa),>,151,20:44:00,20:45:00
-Azaliowa,>,151,20:45:00,20:46:00
-Pawlowice,>,151,20:46:00,20:47:00
-Starodebowa,>,151,20:47:00,20:48:00
-Pawlowicka,>,151,20:48:00,20:49:00
-Przebisniegowa,>,151,20:49:00,20:50:00
-PAWLOWICE (Widawska),>,151,20:50:00,20:51:00
-
-A* - TRANSFERS,5.752642
-From: ,Miloszycka,To: ,SZYMANOW-petla
-Miloszycka,>,,,13:14:00
-Gospodarska,>,315,13:14:00,13:15:00
-Ceglana,>,315,13:15:00,13:15:00
-Monopolowa,>,315,13:15:00,13:18:00
-SEPOLNO,>,315,13:18:00,13:20:00
-Godebskiego (AWF Wroclaw),>,115,13:24:00,13:25:00
-8 Maja,>,115,13:25:00,13:26:00
-Park Szczytnicki,>,115,13:26:00,13:27:00
-Mickiewicza,>,115,13:27:00,13:28:00
-Kliniki - Politechnika Wroclawska,>,115,13:28:00,13:30:00
-PL. GRUNWALDZKI,>,115,13:30:00,13:33:00
-most Grunwaldzki,>,4,13:35:00,13:36:00
-Urzad Wojewodzki (Impart),>,4,13:36:00,13:38:00
-GALERIA DOMINIKANSKA,>,4,13:38:00,13:42:00
-Swidnicka,>,4,13:42:00,13:44:00
-Zamkowa,>,4,13:44:00,13:45:00
-Rynek,>,3,13:47:00,13:49:00
-PL. JANA PAWLA II,>,3,13:49:00,13:52:00
-Mlodych Technikow,>,3,13:52:00,13:54:00
-pl. Strzegomski (Muzeum Wspolczesne),>,3,13:54:00,13:55:00
-ZACHODNIA (Stacja kolejowa),>,3,13:55:00,13:57:00
-Niedzwiedzia,>,3,13:57:00,13:59:00
-Malopanewska,>,3,13:59:00,14:00:00
-Kwiska,>,3,14:00:00,14:02:00
-DH Astra,>,3,14:02:00,14:04:00
-Park Zachodni,>,3,14:04:00,14:05:00
-Bajana,>,3,14:05:00,14:06:00
-Metalowcow,>,3,14:06:00,14:07:00
-PILCZYCE,>,3,14:07:00,14:09:00
-Tarczynski Arena (Lotnicza),>,3,14:09:00,14:10:00
-Glinianki,>,3,14:10:00,14:12:00
-Aleja Architektow,>,3,14:12:00,14:13:00
-Grabowa,>,3,14:13:00,14:14:00
-Kosmonautow (Szpital),>,3,14:14:00,14:16:00
-Kamiennogorska (Osrodek dla niewidomych),>,3,14:16:00,14:17:00
-Zlotnicka,>,3,14:17:00,14:19:00
-Wschowska,>,3,14:19:00,14:20:00
-Jeleniogorska,>,3,14:20:00,14:21:00
-LESNICA,>,3,14:21:00,14:22:00
-Sredzka,>,101,14:23:00,14:24:00
-Eluarda,>,938,14:44:00,14:46:00
-Zajazdowa,>,938,14:46:00,14:47:00
-Krepicka - szkola,>,938,14:47:00,14:48:00
-Krepicka,>,938,14:48:00,14:49:00
-Mokrzanska,>,938,14:49:00,14:50:00
-ZAR,>,938,14:50:00,14:53:00
-Krepice - Wroclawska,>,958,17:19:00,17:23:00
-Zurawiniec,>,958,17:23:00,17:26:00
-Mrozow - Swietlica,>,958,17:26:00,17:29:00
-Mrozow - Wyzwolenia,>,958,17:29:00,17:31:00
-Wojnowice - Glowna,>,940,18:18:00,18:21:00
-Wilkostow,>,940,18:21:00,18:24:00
-Czerna,>,940,18:24:00,18:27:00
-
-A* - TRANSFERS,0.818084
-From: ,Bardzka,To: ,Drzewieckiego
-Bardzka,>,,,18:32:00
-Kamienna,>,32,18:32:00,18:33:00
-Wapienna,>,124,18:34:00,18:35:00
-Borowska,>,124,18:35:00,18:36:00
-Uniwersytet Ekonomiczny,>,124,18:36:00,18:39:00
-Drukarska,>,124,18:39:00,18:41:00
-Rondo,>,124,18:41:00,18:43:00
-Krucza,>,124,18:43:00,18:46:00
-Grochowa,>,124,18:46:00,18:48:00
-Stalowa,>,124,18:48:00,18:50:00
-pl. Srebrny,>,124,18:50:00,18:51:00
-Bzowa (Centrum Zajezdnia),>,124,18:51:00,18:52:00
-Hutmen,>,124,18:52:00,18:53:00
-FAT,>,124,18:53:00,18:55:00
-ROD Oswiata,>,124,18:55:00,18:57:00
-Wroclawski Park Technologiczny,>,124,18:57:00,18:58:00
-Szkocka,>,124,18:58:00,19:00:00
-Gadowianka,>,124,19:00:00,19:02:00
-Na Ostatnim Groszu,>,124,19:02:00,19:04:00
-Orlinskiego,>,136,19:05:00,19:06:00
-Drzewieckiego,>,136,19:06:00,19:07:00
-
-A* - TRANSFERS,3.642353
-From: ,Na Grobli (Hydropolis),To: ,Ferma - stadnina koni
-Na Grobli (Hydropolis),>,,,17:13:00
-pl. Wroblewskiego,>,920,17:20:00,17:23:00
-GALERIA DOMINIKANSKA,>,920,17:23:00,17:28:00
-Swidnicka,>,33,17:30:00,17:32:00
-Zamkowa,>,33,17:32:00,17:33:00
-Rynek,>,33,17:33:00,17:35:00
-PL. JANA PAWLA II,>,33,17:35:00,17:38:00
-Mlodych Technikow,>,33,17:38:00,17:40:00
-pl. Strzegomski (Muzeum Wspolczesne),>,33,17:40:00,17:41:00
-ZACHODNIA (Stacja kolejowa),>,33,17:41:00,17:43:00
-Niedzwiedzia,>,33,17:43:00,17:45:00
-Malopanewska,>,33,17:45:00,17:46:00
-Kwiska,>,33,17:46:00,17:48:00
-DH Astra,>,33,17:48:00,17:50:00
-Park Zachodni,>,33,17:50:00,17:51:00
-Bajana,>,33,17:51:00,17:52:00
-Metalowcow,>,33,17:52:00,17:53:00
-PILCZYCE,>,33,17:53:00,17:55:00
-Tarczynski Arena (Lotnicza),>,3,17:57:00,17:58:00
-Glinianki,>,3,17:58:00,18:00:00
-Aleja Architektow,>,3,18:00:00,18:01:00
-Grabowa,>,3,18:01:00,18:02:00
-Kosmonautow (Szpital),>,3,18:02:00,18:04:00
-Kamiennogorska (Osrodek dla niewidomych),>,3,18:04:00,18:05:00
-Zlotnicka,>,3,18:05:00,18:07:00
-Wschowska,>,3,18:07:00,18:08:00
-Jeleniogorska,>,3,18:08:00,18:09:00
-LESNICA,>,3,18:09:00,18:10:00
-Sredzka,>,101,18:12:00,18:13:00
-Rubczaka,>,937,18:15:00,18:16:00
-Serowarska,>,917,18:37:00,18:39:00
-Trzmielowicka,>,917,18:39:00,18:40:00
-Pustecka,>,917,18:40:00,18:41:00
-Miodowa,>,917,18:41:00,18:43:00
-Szkolna,>,917,18:43:00,18:44:00
-Ratyn - skrzyzowanie,>,917,18:44:00,18:45:00
-Krajobrazowa,>,917,18:45:00,18:46:00
-Las Ratynski,>,917,18:46:00,18:47:00
-Ferma - stadnina koni,>,917,18:47:00,18:48:00
-
+A* - TRANSFERS;1.055148;;;
+From: ;Mirkow - Sportowa;To: ;Gospodarska;
+Mirkow - Sportowa;>;;;20:50:00
+BIERUTOWSKA (Wiadukt);>;914;21:11:00;21:13:00
+Bierutowska 75;>;914;21:13:00;21:14:00
+Bierutowska;>;914;21:14:00;21:15:00
+Bierutowska 65;>;914;21:15:00;21:15:00
+Dobroszycka;>;914;21:15:00;21:16:00
+PSIE POLE (Stacja kolejowa);>;914;21:16:00;21:17:00
+Psie Pole (Rondo Lotnikow Polskich);>;914;21:17:00;21:18:00
+Psie Pole;>;914;21:18:00;21:19:00
+C.H. Korona;>;914;21:19:00;21:22:00
+Brucknera;>;914;21:22:00;21:24:00
+Grudziadzka;>;914;21:24:00;21:25:00
+KROMERA;>;914;21:25:00;21:28:00
+Ketrzynska;>;6;21:34:00;21:35:00
+Kwidzynska;>;6;21:35:00;21:36:00
+Sniadeckich;>;921;21:32:00;21:34:00
+Kochanowskiego;>;921;21:34:00;21:36:00
+Chopina;>;17;21:42:00;21:43:00
+Karlowicza;>;17;21:43:00;21:44:00
+Stadion Olimpijski;>;17;21:44:00;21:45:00
+8 Maja;>;17;21:45:00;21:46:00
+Godebskiego (AWF Wroclaw);>;17;21:46:00;21:47:00
+SEPOLNO;>;17;21:47:00;21:49:00
+Monopolowa;>;115;21:56:00;21:57:00
+Kolumba;>;115;21:57:00;21:58:00
+Magellana;>;115;21:58:00;21:59:00
+Swojczyce;>;115;21:59:00;22:00:00
+Miloszycka;>;118;22:09:00;22:11:00
+Gospodarska;>;118;22:11:00;22:12:00
+;;;;
+A* - TRANSFERS;0.438439;;;
+From: ;Krakowska;To: ;ZWYCIESKA;
+Krakowska;>;;;18:50:00
+KRAKOWSKA (Centrum handlowe);>;114;18:57:00;18:58:00
+Park Wschodni;>;114;18:58:00;19:00:00
+Armii Krajowej (Bogedaina);>;134;19:04:00;19:05:00
+Transbud;>;134;19:05:00;19:06:00
+Bardzka;>;134;19:06:00;19:08:00
+Kamienna;>;134;19:08:00;19:09:00
+Wapienna;>;134;19:09:00;19:10:00
+Borowska;>;134;19:10:00;19:11:00
+Uniwersytet Ekonomiczny;>;134;19:11:00;19:14:00
+Drukarska;>;134;19:14:00;19:16:00
+Rondo;>;134;19:16:00;19:18:00
+Sztabowa;>;2;19:20:00;19:21:00
+Hallera;>;2;19:21:00;19:23:00
+Sudecka;>;144;19:23:00;19:24:00
+Jarzebinowa;>;144;19:24:00;19:25:00
+Skierniewicka;>;144;19:25:00;19:26:00
+Wyscigowa;>;144;19:26:00;19:29:00
+Malinowa;>;144;19:29:00;19:30:00
+Ozynowa;>;144;19:30:00;19:31:00
+rondo Sw. Ojca Pio;>;144;19:31:00;19:34:00
+ZWYCIESKA;>;144;19:34:00;19:35:00
+;;;;
+A* - TRANSFERS;0.001077;;;
+From: ;Os. Przyjazni;To: ;IWINY - petla;
+Os. Przyjazni;>;;;00:25:00
+;;;;
+A* - TRANSFERS;2.377242;;;
+From: ;Wiaduktowa;To: ;Krolewiecka;
+Wiaduktowa;>;;;09:16:00
+Gazowa;>;125;09:16:00;09:17:00
+TARNOGAJ;>;125;09:17:00;09:18:00
+Klimasa;>;125;09:18:00;09:19:00
+Transbud;>;125;09:19:00;09:21:00
+Bardzka;>;125;09:21:00;09:23:00
+Kamienna;>;125;09:23:00;09:25:00
+Prudnicka;>;125;09:25:00;09:26:00
+Hubska (Dawida);>;125;09:26:00;09:27:00
+DWORZEC AUTOBUSOWY;>;125;09:27:00;09:30:00
+Dworzec Glowny (Stawowa);>;31;09:32:00;09:34:00
+Arkady (Capitol);>;31;09:34:00;09:36:00
+pl. Legionow;>;31;09:36:00;09:38:00
+pl. Orlat Lwowskich;>;31;09:38:00;09:40:00
+PL. JANA PAWLA II;>;31;09:40:00;09:43:00
+Mlodych Technikow;>;31;09:43:00;09:45:00
+pl. Strzegomski (Muzeum Wspolczesne);>;31;09:45:00;09:46:00
+ZACHODNIA (Stacja kolejowa);>;31;09:46:00;09:48:00
+Niedzwiedzia;>;31;09:48:00;09:50:00
+Malopanewska;>;31;09:50:00;09:51:00
+Kwiska;>;31;09:51:00;09:53:00
+Kolista;>;31;09:53:00;09:57:00
+PILCZYCKA (Anima);>;31;09:57:00;09:58:00
+Modra;>;31;09:58:00;09:59:00
+Gornicza;>;31;09:59:00;10:00:00
+Dworska;>;31;10:00:00;10:02:00
+TARCZYNSKI ARENA (Krolewiecka);>;31;10:02:00;10:03:00
+Krolewiecka;>;101;10:18:00;10:19:00
+;;;;
+A* - TRANSFERS;0.453129;;;
+From: ;KSIEZE MALE;To: ;Biestrzykow - Wroclawska;
+KSIEZE MALE;>;;;06:03:00
+Glubczycka;>;3;06:04:00;06:05:00
+Karwinska;>;3;06:05:00;06:06:00
+Gazowa;>;124;06:10:00;06:12:00
+TARNOGAJ;>;124;06:12:00;06:13:00
+Zlotostocka;>;136;06:14:00;06:15:00
+GAJ - petla;>;136;06:15:00;06:17:00
+Swieradowska;>;136;06:17:00;06:18:00
+GAJ;>;136;06:18:00;06:20:00
+Borowska (Szpital);>;903;06:32:00;06:34:00
+Przystankowa;>;903;06:34:00;06:35:00
+Wojszyce;>;903;06:35:00;06:36:00
+Parafialna;>;903;06:36:00;06:37:00
+Obozna;>;903;06:37:00;06:38:00
+Galczynskiego;>;903;06:38:00;06:39:00
+Biestrzykow - Wroclawska;>;903;06:39:00;06:42:00
+;;;;
+A* - TRANSFERS;0.459507;;;
+From: ;Tunelowa;To: ;Modra;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.008933;;;
+From: ;DH Astra;To: ;Tarczynski Arena (Lotnicza);
+DH Astra;>;;;11:59:00
+Park Zachodni;>;20;12:00:00;12:01:00
+Bajana;>;20;12:01:00;12:02:00
+Metalowcow;>;20;12:02:00;12:03:00
+PILCZYCE;>;20;12:03:00;12:05:00
+Tarczynski Arena (Lotnicza);>;20;12:05:00;12:06:00
+;;;;
+A* - TRANSFERS;0.079823;;;
+From: ;Dlugoleka - Kasztanowa;To: ;Kielczow - petla/Wroclawska;
+Dlugoleka - Kasztanowa;>;;;20:47:00
+Dlugoleka - Wiejska;>;914;21:06:00;21:07:00
+Mirkow - Jagiellonska;>;914;21:07:00;21:09:00
+Mirkow - Sportowa;>;914;21:09:00;21:11:00
+BIERUTOWSKA (Wiadukt);>;914;21:11:00;21:13:00
+Bierutowska 75;>;914;21:13:00;21:14:00
+Bierutowska;>;914;21:14:00;21:15:00
+Bierutowska 65;>;914;21:15:00;21:15:00
+Dobroszycka;>;914;21:15:00;21:16:00
+PSIE POLE (Stacja kolejowa);>;914;21:16:00;21:17:00
+Psie Pole (Rondo Lotnikow Polskich);>;914;21:17:00;21:18:00
+Psie Pole (Gorlicka);>;147;21:31:00;21:32:00
+MULICKA;>;147;21:32:00;21:33:00
+Gorlicka;>;121;21:29:00;21:30:00
+Palacha;>;921;21:36:00;21:37:00
+Zgorzelisko;>;921;21:37:00;21:38:00
+Kurlandzka;>;921;21:38:00;21:38:00
+Mrozna;>;921;21:38:00;21:39:00
+Wilczyce;>;921;21:39:00;21:39:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;921;21:39:00;21:40:00
+Wilczyce - szkola;>;921;21:40:00;21:41:00
+Wilczyce - Dworska;>;921;21:41:00;21:41:00
+Wilczyce - Debowa;>;921;21:41:00;21:42:00
+Wilczyce - Sosnowa;>;921;21:42:00;21:43:00
+Kielczow - osiedle;>;921;21:43:00;21:44:00
+Kielczow - cmentarz;>;921;21:44:00;21:45:00
+Kielczow - petla/Wroclawska;>;921;21:45:00;21:46:00
+;;;;
+A* - TRANSFERS;0.380028;;;
+From: ;Szczodre - Trzebnicka (na wys. nr 3a);To: ;Dubois;
+Szczodre - Trzebnicka (na wys. nr 3a);>;;;06:39:00
+Szczodre - Trzebnicka;>;904;07:11:00;07:12:00
+Dlugoleka - Parkowa skrzy. Konopnicka;>;914;07:17:00;07:18:00
+Dlugoleka - Parkowa/skrzy.;>;914;07:18:00;07:19:00
+Dlugoleka - Kasztanowa;>;914;07:19:00;07:21:00
+Dlugoleka - Wiejska;>;914;07:21:00;07:23:00
+Mirkow - Jagiellonska;>;914;07:23:00;07:26:00
+Mirkow - Sportowa;>;914;07:26:00;07:28:00
+BIERUTOWSKA (Wiadukt);>;914;07:28:00;07:31:00
+Bierutowska 75;>;914;07:31:00;07:32:00
+Bierutowska;>;914;07:32:00;07:33:00
+Bierutowska 65;>;914;07:33:00;07:33:00
+Dobroszycka;>;914;07:33:00;07:34:00
+PSIE POLE (Stacja kolejowa);>;914;07:34:00;07:35:00
+Psie Pole (Rondo Lotnikow Polskich);>;914;07:35:00;07:36:00
+Psie Pole;>;914;07:36:00;07:37:00
+C.H. Korona;>;914;07:37:00;07:41:00
+Brucknera;>;914;07:41:00;07:43:00
+Grudziadzka;>;914;07:43:00;07:44:00
+KROMERA;>;914;07:44:00;07:48:00
+Mosty Warszawskie;>;23;07:49:00;07:51:00
+Daszynskiego;>;23;07:51:00;07:52:00
+Nowowiejska;>;23;07:52:00;07:54:00
+Jednosci Narodowej;>;23;07:54:00;07:55:00
+Na Szancach;>;23;07:55:00;07:56:00
+pl. Bema;>;23;07:56:00;07:58:00
+Dubois;>;6;08:02:00;08:04:00
+;;;;
+A* - TRANSFERS;0.171503;;;
+From: ;ROD Oswiata;To: ;GIELDOWA (Centrum Hurtu);
+ROD Oswiata;>;;;15:29:00
+FAT;>;143;15:30:00;15:34:00
+GRABISZYNSKA (Cmentarz);>;143;15:34:00;15:36:00
+GRABISZYNSKA (Cmentarz II);>;143;15:36:00;15:37:00
+OPOROW;>;143;15:37:00;15:38:00
+Solskiego;>;143;15:38:00;15:39:00
+Wiejska;>;143;15:39:00;15:42:00
+Adamieckiego;>;107;15:44:00;15:46:00
+Morelowskiego;>;107;15:46:00;15:47:00
+GIELDOWA (Centrum Hurtu);>;107;15:47:00;15:48:00
+;;;;
+A* - TRANSFERS;2.834376;;;
+From: ;Wolska;To: ;Brzezina - Zacisze;
+Wolska;>;;;18:06:00
+LESNICA;>;123;18:07:00;18:08:00
+Sredzka;>;101;18:12:00;18:13:00
+Eluarda;>;138;18:19:00;18:20:00
+Brzezinska;>;137;18:30:00;18:31:00
+Owczarska;>;137;18:31:00;18:32:00
+Dolnobrzeska;>;137;18:32:00;18:33:00
+Mokra;>;137;18:33:00;18:36:00
+Las Mokrzanski;>;137;18:36:00;18:37:00
+Brzezina - Biedronka;>;937;19:47:00;19:49:00
+Brzezina - Zacisze;>;937;19:49:00;19:50:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Zabrodzie - petla;To: ;Lenartowice przy posesji nr 11a;
+Zabrodzie - petla;>;;;00:01:00
+;;;;
+A* - TRANSFERS;1.603222;;;
+From: ;Waniliowa;To: ;Borowska (Szpital);
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;2.481618;;;
+From: ;Hala Orbita;To: ;Pisarzowice - Kolejowa;
+Hala Orbita;>;;;19:30:00
+Wejherowska;>;119;19:31:00;19:34:00
+Kwiska;>;119;19:34:00;19:36:00
+DH Astra;>;33;19:41:00;19:43:00
+Park Zachodni;>;33;19:43:00;19:44:00
+Bajana;>;33;19:44:00;19:45:00
+Metalowcow;>;33;19:45:00;19:46:00
+PILCZYCE;>;33;19:46:00;19:48:00
+Tarczynski Arena (Lotnicza);>;20;19:50:00;19:51:00
+Glinianki;>;20;19:51:00;19:53:00
+Aleja Architektow;>;20;19:53:00;19:54:00
+Grabowa;>;20;19:54:00;19:55:00
+Kosmonautow (Szpital);>;20;19:55:00;19:57:00
+Kamiennogorska (Osrodek dla niewidomych);>;20;19:57:00;19:58:00
+Zlotnicka;>;20;19:58:00;20:00:00
+Wschowska;>;20;20:00:00;20:01:00
+Jeleniogorska;>;20;20:01:00;20:02:00
+LESNICA;>;20;20:02:00;20:03:00
+RUBCZAKA (Stacja kolejowa);>;917;20:05:00;20:06:00
+Rubczaka;>;917;20:06:00;20:07:00
+Sredzka;>;123;20:08:00;20:09:00
+Wolska;>;123;20:09:00;20:11:00
+Polkowicka;>;123;20:11:00;20:13:00
+Hartmana;>;123;20:13:00;20:14:00
+Marszowicka;>;123;20:14:00;20:14:00
+Bojanowska;>;123;20:14:00;20:15:00
+Malomicka;>;123;20:15:00;20:16:00
+Marszowice;>;123;20:16:00;20:17:00
+Wilkszynska;>;923;20:38:00;20:40:00
+Lososiowicka;>;923;20:40:00;20:41:00
+Krzelowska;>;923;20:41:00;20:42:00
+Wilkszyn - Miloszyn;>;923;20:42:00;20:43:00
+Wilkszyn - Polna;>;923;20:43:00;20:44:00
+Wilkszyn (petla);>;923;20:44:00;20:45:00
+Pisarzowice - Graniczna;>;923;20:45:00;20:47:00
+Pisarzowice - Odrzanska;>;923;20:47:00;20:49:00
+Pisarzowice - Szkolna;>;923;20:49:00;20:50:00
+Pisarzowice - Kolejowa;>;923;20:50:00;20:51:00
+;;;;
+A* - TRANSFERS;0.338697;;;
+From: ;Kielczow - osiedle;To: ;Park Staromiejski;
+Kielczow - osiedle;>;;;13:30:00
+Wilczyce - Sosnowa;>;911;13:49:00;13:50:00
+Wilczyce - Debowa;>;911;13:50:00;13:51:00
+Wilczyce - Dworska;>;911;13:51:00;13:52:00
+Wilczyce - Borowa;>;911;13:52:00;13:53:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;911;13:53:00;13:54:00
+Wilczyce;>;911;13:54:00;13:54:00
+Mrozna;>;911;13:54:00;13:55:00
+Kurlandzka;>;911;13:55:00;13:55:00
+Zgorzelisko;>;911;13:55:00;13:56:00
+Palacha;>;911;13:56:00;13:57:00
+Szewczenki;>;911;13:57:00;13:58:00
+Gorlicka;>;911;13:58:00;13:59:00
+MULICKA;>;911;13:59:00;14:00:00
+Psie Pole (Rondo Lotnikow Polskich);>;911;14:00:00;14:01:00
+Psie Pole;>;911;14:01:00;14:02:00
+C.H. Korona;>;911;14:02:00;14:06:00
+Brucknera;>;911;14:06:00;14:08:00
+Kwidzynska;>;911;14:08:00;14:10:00
+Sniadeckich;>;911;14:10:00;14:12:00
+Kochanowskiego;>;911;14:12:00;14:15:00
+PL. GRUNWALDZKI;>;911;14:15:00;14:17:00
+most Grunwaldzki;>;4;14:18:00;14:19:00
+Urzad Wojewodzki (Impart);>;4;14:19:00;14:21:00
+GALERIA DOMINIKANSKA;>;4;14:21:00;14:25:00
+Park Staromiejski;>;23;14:27:00;14:29:00
+;;;;
+A* - TRANSFERS;6.308239;;;
+From: ;STABLOWICKA (Osrodek zdrowia);To: ;Kepa (na wys. nr 36);
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.01496;;;
+From: ;Kurlandzka;To: ;Sniadeckich;
+Kurlandzka;>;;;06:41:00
+Zgorzelisko;>;921;06:55:00;06:56:00
+Palacha;>;921;06:56:00;06:57:00
+Szewczenki;>;921;06:57:00;06:58:00
+Gorlicka;>;921;06:58:00;06:59:00
+MULICKA;>;921;06:59:00;07:00:00
+Psie Pole (Rondo Lotnikow Polskich);>;921;07:00:00;07:01:00
+Psie Pole;>;921;07:01:00;07:02:00
+C.H. Korona;>;921;07:02:00;07:06:00
+Brucknera;>;921;07:06:00;07:08:00
+Kwidzynska;>;921;07:08:00;07:10:00
+Sniadeckich;>;921;07:10:00;07:12:00
+;;;;
+A* - TRANSFERS;2.890253;;;
+From: ;Mickiewicza;To: ;Pustecka;
+Mickiewicza;>;;;06:48:00
+Kliniki - Politechnika Wroclawska;>;115;06:52:00;06:54:00
+PL. GRUNWALDZKI;>;115;06:54:00;06:57:00
+most Grunwaldzki;>;16;06:58:00;06:59:00
+Poczta Glowna;>;D;07:00:00;07:02:00
+GALERIA DOMINIKANSKA;>;D;07:02:00;07:05:00
+Swidnicka;>;33;07:06:00;07:08:00
+Zamkowa;>;33;07:08:00;07:09:00
+Rynek;>;33;07:09:00;07:11:00
+PL. JANA PAWLA II;>;33;07:11:00;07:14:00
+Mlodych Technikow;>;33;07:14:00;07:16:00
+pl. Strzegomski (Muzeum Wspolczesne);>;33;07:16:00;07:17:00
+ZACHODNIA (Stacja kolejowa);>;33;07:17:00;07:19:00
+Niedzwiedzia;>;33;07:19:00;07:21:00
+Malopanewska;>;33;07:21:00;07:22:00
+Kwiska;>;33;07:22:00;07:24:00
+DH Astra;>;33;07:24:00;07:26:00
+Park Zachodni;>;33;07:26:00;07:27:00
+Bajana;>;33;07:27:00;07:28:00
+Metalowcow;>;33;07:28:00;07:29:00
+PILCZYCE;>;33;07:29:00;07:31:00
+Tarczynski Arena (Lotnicza);>;3;07:33:00;07:34:00
+Glinianki;>;3;07:34:00;07:36:00
+Aleja Architektow;>;3;07:36:00;07:37:00
+Grabowa;>;3;07:37:00;07:38:00
+Kosmonautow (Szpital);>;3;07:38:00;07:40:00
+Kamiennogorska (Osrodek dla niewidomych);>;3;07:40:00;07:41:00
+Zlotnicka;>;3;07:41:00;07:43:00
+Wschowska;>;3;07:43:00;07:44:00
+Jeleniogorska;>;3;07:44:00;07:45:00
+LESNICA;>;3;07:45:00;07:46:00
+RUBCZAKA (Stacja kolejowa);>;123;07:48:00;07:50:00
+Rubczaka;>;123;07:50:00;07:51:00
+Serowarska;>;917;08:02:00;08:04:00
+Trzmielowicka;>;917;08:04:00;08:05:00
+Pustecka;>;917;08:05:00;08:06:00
+;;;;
+A* - TRANSFERS;1.185339;;;
+From: ;Wilczyce - Wilczycka (Clarena);To: ;FAT;
+Wilczyce - Wilczycka (Clarena);>;;;05:58:00
+Wilczyce - Wilczycka (Stary Mlyn);>;941;06:25:00;06:27:00
+Swojczyce;>;941;06:27:00;06:32:00
+Magellana;>;941;06:32:00;06:33:00
+Kolumba;>;941;06:33:00;06:34:00
+Monopolowa;>;941;06:34:00;06:35:00
+SEPOLNO;>;941;06:35:00;06:37:00
+Godebskiego (AWF Wroclaw);>;941;06:37:00;06:38:00
+8 Maja;>;941;06:38:00;06:39:00
+Stadion Olimpijski;>;941;06:39:00;06:41:00
+Karlowicza;>;9;06:44:00;06:45:00
+Chopina;>;9;06:45:00;06:46:00
+Kochanowskiego;>;9;06:46:00;06:48:00
+Grunwaldzka;>;9;06:48:00;06:49:00
+Piastowska;>;9;06:49:00;06:50:00
+Gornickiego;>;9;06:50:00;06:52:00
+Ogrod Botaniczny;>;9;06:52:00;06:54:00
+pl. Bema;>;9;06:54:00;06:56:00
+Hala Targowa;>;9;06:56:00;06:58:00
+pl. Nowy Targ;>;9;06:58:00;06:59:00
+GALERIA DOMINIKANSKA;>;9;06:59:00;07:01:00
+Park Staromiejski;>;23;07:03:00;07:05:00
+Opera;>;23;07:05:00;07:07:00
+pl. Orlat Lwowskich;>;23;07:07:00;07:11:00
+Teczowa;>;127;07:12:00;07:13:00
+Grabiszynska;>;127;07:13:00;07:15:00
+Pereca;>;74;07:17:00;07:19:00
+Stalowa;>;74;07:19:00;07:21:00
+pl. Srebrny;>;74;07:21:00;07:22:00
+Bzowa (Centrum Zajezdnia);>;74;07:22:00;07:23:00
+Hutmen;>;74;07:23:00;07:24:00
+FAT;>;74;07:24:00;07:26:00
+;;;;
+A* - TRANSFERS;2.025441;;;
+From: ;OPATOWICE;To: ;Glowna;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Szymanow - skrzyz.;To: ;Jaszkotle - kosciol;
+Szymanow - skrzyz.;>;;;00:24:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;IWINY - petla;To: ;Galczynskiego;
+IWINY - petla;>;;;08:47:00
+;;;;
+A* - TRANSFERS;0.95556;;;
+From: ;TARCZYNSKI ARENA (Krolewiecka);To: ;Koncowa;
+TARCZYNSKI ARENA (Krolewiecka);>;;;07:02:00
+Dworska;>;31;07:02:00;07:03:00
+Gornicza;>;31;07:03:00;07:04:00
+Rekodzielnicza;>;136;07:05:00;07:07:00
+Metalowcow;>;136;07:07:00;07:08:00
+Szybowcowa;>;136;07:08:00;07:11:00
+Bulwar Dedala;>;136;07:11:00;07:12:00
+Bystrzycka;>;136;07:12:00;07:14:00
+Hynka;>;136;07:14:00;07:15:00
+Drzewieckiego;>;136;07:15:00;07:16:00
+Orlinskiego;>;136;07:16:00;07:17:00
+Na Ostatnim Groszu;>;136;07:17:00;07:18:00
+Gadowianka;>;136;07:18:00;07:20:00
+Szkocka;>;136;07:20:00;07:22:00
+Wroclawski Park Technologiczny;>;136;07:22:00;07:24:00
+ROD Oswiata;>;136;07:24:00;07:26:00
+FAT;>;136;07:26:00;07:32:00
+Ostrowskiego;>;119;07:38:00;07:39:00
+Koncowa;>;119;07:39:00;07:41:00
+;;;;
+A* - TRANSFERS;0.000365;;;
+From: ;SWINIARY;To: ;Mosty Warszawskie;
+SWINIARY;>;;;00:12:00
+;;;;
+A* - TRANSFERS;2.382282;;;
+From: ;Monte Cassino;To: ;REDZIN;
+Monte Cassino;>;;;19:56:00
+Libelta;>;145;20:02:00;20:03:00
+SEPOLNO;>;145;20:03:00;20:05:00
+Godebskiego (AWF Wroclaw);>;9;20:08:00;20:09:00
+8 Maja;>;9;20:09:00;20:10:00
+Stadion Olimpijski;>;9;20:10:00;20:11:00
+Karlowicza;>;9;20:11:00;20:12:00
+Chopina;>;9;20:12:00;20:13:00
+Kochanowskiego;>;9;20:13:00;20:15:00
+Grunwaldzka;>;9;20:15:00;20:16:00
+Piastowska;>;9;20:16:00;20:17:00
+Prusa;>;70;20:18:00;20:20:00
+Wyszynskiego;>;70;20:20:00;20:21:00
+Nowowiejska;>;70;20:21:00;20:23:00
+Slowianska;>;70;20:23:00;20:24:00
+DWORZEC NADODRZE;>;70;20:24:00;20:26:00
+Kleczkowska;>;714;20:35:00;20:37:00
+most Osobowicki;>;714;20:37:00;20:39:00
+Serbska (C.K. Agora);>;714;20:39:00;20:40:00
+OSOBOWICKA (Cmentarz II);>;714;20:40:00;20:41:00
+OSOBOWICKA (Cmentarz);>;714;20:41:00;20:42:00
+OSOBOWICE;>;714;20:42:00;20:43:00
+Jarocinska;>;140;21:09:00;21:11:00
+Lipska;>;140;21:11:00;21:12:00
+Las Osobowicki;>;118;21:43:00;21:44:00
+REDZIN;>;118;21:44:00;21:50:00
+;;;;
+A* - TRANSFERS;1.559381;;;
+From: ;Hippiczna;To: ;Awicenny (Stacja kolejowa);
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;1.506423;;;
+From: ;OPOROW;To: ;Kozanowska;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;1.25533;;;
+From: ;Kepinska;To: ;Kopanskiego;
+Kepinska;>;;;17:26:00
+Kamienskiego;>;74;17:27:00;17:28:00
+Broniewskiego;>;74;17:28:00;17:30:00
+Pola;>;132;17:36:00;17:37:00
+Syrokomli;>;132;17:37:00;17:38:00
+Kasprowicza;>;132;17:38:00;17:39:00
+pl. Danilowskiego;>;132;17:39:00;17:41:00
+Berenta;>;132;17:41:00;17:42:00
+KROMERA;>;132;17:42:00;17:47:00
+Kromera (Czajkowskiego);>;N;17:57:00;17:59:00
+Grudziadzka;>;N;17:59:00;18:00:00
+Brucknera;>;N;18:00:00;18:01:00
+Psie Pole;>;N;18:01:00;18:05:00
+Psie Pole (Rondo Lotnikow Polskich);>;N;18:05:00;18:07:00
+Zakrzowska;>;151;18:08:00;18:09:00
+Kopanskiego;>;151;18:09:00;18:10:00
+;;;;
+A* - TRANSFERS;3.571845;;;
+From: ;Pisarzowice - Kolejowa;To: ;Siedlec - skrzy. Osiedlowa;
+Pisarzowice - Kolejowa;>;;;07:51:00
+Pisarzowice - Szkolna;>;923;08:12:00;08:13:00
+Pisarzowice - Odrzanska;>;923;08:13:00;08:14:00
+Pisarzowice - Graniczna;>;923;08:14:00;08:16:00
+Wilkszyn (petla);>;923;08:16:00;08:18:00
+Wilkszyn - Polna;>;923;08:18:00;08:19:00
+Wilkszyn - Miloszyn;>;923;08:19:00;08:20:00
+Krzelowska;>;923;08:20:00;08:21:00
+Lososiowicka;>;923;08:21:00;08:22:00
+Wilkszynska;>;923;08:22:00;08:23:00
+Marszowice;>;923;08:23:00;08:24:00
+Glowna;>;923;08:24:00;08:26:00
+Park Stablowicki;>;923;08:26:00;08:27:00
+Stablowice;>;923;08:27:00;08:28:00
+Ciechocinska;>;923;08:28:00;08:29:00
+Sniezna;>;923;08:29:00;08:30:00
+Jeleniogorska;>;923;08:30:00;08:31:00
+Wschowska;>;10;08:32:00;08:33:00
+Zlotnicka;>;10;08:33:00;08:34:00
+Kamiennogorska (Osrodek dla niewidomych);>;10;08:34:00;08:35:00
+Kosmonautow (Szpital);>;10;08:35:00;08:36:00
+Grabowa;>;10;08:36:00;08:38:00
+Aleja Architektow;>;10;08:38:00;08:39:00
+Glinianki;>;10;08:39:00;08:40:00
+Tarczynski Arena (Lotnicza);>;10;08:40:00;08:41:00
+PILCZYCE;>;10;08:41:00;08:43:00
+Metalowcow;>;10;08:43:00;08:44:00
+Bajana;>;10;08:44:00;08:46:00
+Park Zachodni;>;10;08:46:00;08:47:00
+DH Astra;>;10;08:47:00;08:48:00
+Kwiska;>;10;08:48:00;08:50:00
+Malopanewska;>;10;08:50:00;08:51:00
+Niedzwiedzia;>;10;08:51:00;08:53:00
+ZACHODNIA (Stacja kolejowa);>;10;08:53:00;08:56:00
+pl. Strzegomski (Muzeum Wspolczesne);>;10;08:56:00;08:58:00
+Mlodych Technikow;>;10;08:58:00;08:59:00
+PL. JANA PAWLA II;>;10;08:59:00;09:01:00
+Rynek;>;10;09:01:00;09:03:00
+Zamkowa;>;10;09:03:00;09:04:00
+Swidnicka;>;10;09:04:00;09:06:00
+GALERIA DOMINIKANSKA;>;10;09:06:00;09:09:00
+pl. Nowy Targ;>;9;09:10:00;09:11:00
+Hala Targowa;>;9;09:11:00;09:12:00
+pl. Bema;>;9;09:12:00;09:15:00
+Ogrod Botaniczny;>;9;09:15:00;09:17:00
+Wyszynskiego;>;128;09:18:00;09:20:00
+Damrota;>;128;09:20:00;09:21:00
+KROMERA;>;128;09:21:00;09:24:00
+Kromera (Czajkowskiego);>;128;09:24:00;09:26:00
+Grudziadzka;>;128;09:26:00;09:27:00
+Brucknera;>;128;09:27:00;09:29:00
+C.H. Korona;>;128;09:29:00;09:31:00
+Zielna;>;128;09:31:00;09:33:00
+Psie Pole;>;128;09:33:00;09:34:00
+Psie Pole (Rondo Lotnikow Polskich);>;128;09:34:00;09:35:00
+Zakrzowska;>;128;09:35:00;09:36:00
+Kopanskiego;>;128;09:36:00;09:37:00
+Wallenroda;>;128;09:37:00;09:38:00
+Przedwiosnie (Stacja kolejowa);>;128;09:38:00;09:39:00
+Azaliowa;>;151;09:46:00;09:48:00
+Pawlowice;>;151;09:48:00;09:49:00
+Starodebowa;>;151;09:49:00;09:50:00
+Pawlowicka;>;151;09:50:00;09:51:00
+Przebisniegowa;>;151;09:51:00;09:52:00
+Ramiszow;>;936;10:01:00;10:05:00
+Pasikurowice - cmentarz;>;936;10:05:00;10:08:00
+Pasikurowice - skrzy. Malinowa;>;936;10:08:00;10:10:00
+Pasikurowice - Energetyczna;>;936;10:10:00;10:11:00
+Pasikurowice - n/z;>;936;10:11:00;10:12:00
+Bukowina;>;936;10:12:00;10:14:00
+Bukowina - skrzy.;>;936;10:14:00;10:16:00
+Bakow;>;936;10:16:00;10:17:00
+Lozina - Wroclawska (na wys. nr 18);>;936;10:17:00;10:20:00
+Lozina - Nowego Osiedla I;>;936;10:20:00;10:22:00
+Lozina - Nowego Osiedla II;>;936;10:22:00;10:23:00
+Tokary - centrum;>;936;10:23:00;10:26:00
+Tokary - osiedle;>;936;10:26:00;10:27:00
+Siedlec - skrzy. Osiedlowa;>;936;10:27:00;10:29:00
+;;;;
+A* - TRANSFERS;3.143325;;;
+From: ;Wyscigowa;To: ;Goslawice - przejazd PKP;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;1.171246;;;
+From: ;Gorlicka;To: ;Ksieska;
+Gorlicka;>;;;18:11:00
+MULICKA;>;121;18:18:00;18:19:00
+Psie Pole (Rondo Lotnikow Polskich);>;121;18:19:00;18:20:00
+Psie Pole;>;121;18:20:00;18:21:00
+Brucknera;>;N;18:24:00;18:28:00
+Kwidzynska;>;151;18:30:00;18:32:00
+Zacisze;>;151;18:32:00;18:33:00
+Sniadeckich;>;151;18:33:00;18:34:00
+Kochanowskiego;>;151;18:34:00;18:36:00
+Bujwida;>;151;18:36:00;18:38:00
+PL. GRUNWALDZKI;>;151;18:38:00;18:40:00
+most Grunwaldzki;>;16;18:43:00;18:44:00
+Urzad Wojewodzki (Impart);>;16;18:44:00;18:46:00
+pl. Wroblewskiego;>;16;18:46:00;18:49:00
+Komuny Paryskiej;>;16;18:49:00;18:50:00
+Kosciuszki;>;16;18:50:00;18:51:00
+Swistackiego;>;114;18:52:00;18:53:00
+Na Niskich Lakach;>;114;18:53:00;18:55:00
+Krakowska;>;114;18:55:00;18:57:00
+KRAKOWSKA (Centrum handlowe);>;114;18:57:00;18:58:00
+Park Wschodni;>;114;18:58:00;19:00:00
+Karwinska;>;114;19:00:00;19:02:00
+Glubczycka;>;3;19:03:00;19:04:00
+KSIEZE MALE;>;3;19:04:00;19:05:00
+Ksieska;>;100;19:07:00;19:08:00
+;;;;
+A* - TRANSFERS;1.482938;;;
+From: ;GRABISZYNSKA (Cmentarz II);To: ;Wislanska;
+GRABISZYNSKA (Cmentarz II);>;;;16:55:00
+GRABISZYNSKA (Cmentarz);>;20;16:55:00;16:56:00
+Fiolkowa;>;20;16:56:00;16:57:00
+FAT;>;20;16:57:00;16:59:00
+ROD Oswiata;>;136;17:07:00;17:09:00
+Wroclawski Park Technologiczny;>;136;17:09:00;17:10:00
+Szkocka;>;136;17:10:00;17:12:00
+Gadowianka;>;136;17:12:00;17:14:00
+Na Ostatnim Groszu;>;136;17:14:00;17:16:00
+Orlinskiego;>;136;17:16:00;17:17:00
+Drzewieckiego;>;136;17:17:00;17:18:00
+Hynka;>;136;17:18:00;17:19:00
+Bystrzycka;>;136;17:19:00;17:21:00
+Bulwar Dedala;>;136;17:21:00;17:22:00
+Szybowcowa;>;136;17:22:00;17:23:00
+Metalowcow;>;136;17:23:00;17:27:00
+Rekodzielnicza;>;136;17:27:00;17:28:00
+Gornicza;>;136;17:28:00;17:30:00
+KOZANOW (Dokerska);>;136;17:30:00;17:31:00
+KOZANOW;>;136;17:31:00;17:33:00
+Dzielna;>;127;17:36:00;17:37:00
+Wislanska;>;127;17:37:00;17:38:00
+;;;;
+A* - TRANSFERS;0.437078;;;
+From: ;ZACHODNIA (Stacja kolejowa);To: ;Kasprowicza;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.20653;;;
+From: ;Marcepanowa;To: ;Trawowa;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;1.82813;;;
+From: ;Trawowa;To: ;RATYN;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.641158;;;
+From: ;Kolumba;To: ;Bielawa;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Budziwojowice;To: ;Pietrzykowice - zaklad;
+Budziwojowice;>;;;02:40:00
+;;;;
+A* - TRANSFERS;0.046928;;;
+From: ;Jerzmanowska nr 9;To: ;Wilkszyn - Polna;
+Jerzmanowska nr 9;>;;;23:29:00
+Zernicka;>;909;23:29:00;23:30:00
+Strachowicka;>;909;23:30:00;23:31:00
+Zerniki;>;909;23:31:00;23:32:00
+Szczecinska;>;909;23:32:00;23:33:00
+Kolobrzeska;>;909;23:33:00;23:35:00
+Nowy Dwor (Stacja kolejowa);>;909;23:35:00;23:37:00
+Nowy Dwor;>;909;23:37:00;23:42:00
+Nowodworska;>;106;23:45:00;23:46:00
+MUCHOBOR MALY (Stacja kolejowa);>;148;23:58:00;23:59:00
+;;;;
+A* - TRANSFERS;0.163585;;;
+From: ;Muchobor Wielki;To: ;JARNOLTOW;
+Muchobor Wielki;>;;;21:36:00
+Muchobor Wielki (Roslinna);>;119;21:40:00;21:41:00
+Tyrmanda;>;119;21:41:00;21:42:00
+MINSKA (Rondo Rotm. Pileckiego);>;119;21:42:00;21:43:00
+Rogowska;>;119;21:43:00;21:45:00
+Nowy Dwor;>;119;21:45:00;21:47:00
+Chociebuska;>;126;21:48:00;21:50:00
+Nowy Dwor (Rogowska);>;109;21:52:00;21:53:00
+Nowy Dwor (Stacja kolejowa);>;109;21:53:00;21:54:00
+Kolobrzeska;>;109;21:54:00;21:55:00
+Szczecinska;>;109;21:55:00;21:57:00
+Zerniki;>;109;21:57:00;21:58:00
+Strachowicka;>;109;21:58:00;21:59:00
+Zernicka;>;109;21:59:00;22:00:00
+Jerzmanowska nr 9;>;109;22:00:00;22:01:00
+Jerzmanowska nr 17;>;109;22:01:00;22:02:00
+Jerzmanowo (Cmentarz I);>;109;22:02:00;22:05:00
+Piolunowa;>;109;22:05:00;22:06:00
+Jasinskiej;>;109;22:06:00;22:07:00
+Adamczewskich;>;109;22:07:00;22:08:00
+Kosnego;>;109;22:08:00;22:09:00
+Krzeptowska;>;109;22:09:00;22:10:00
+Jarnoltowska (Samotworska);>;109;22:10:00;22:11:00
+JARNOLTOW;>;109;22:11:00;22:13:00
+;;;;
+A* - TRANSFERS;3.404509;;;
+From: ;KOZANOW (Dokerska);To: ;Kielczowek;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;7.038927;;;
+From: ;Kielczow - petla/Wroclawska;To: ;Szymanow;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;3.029265;;;
+From: ;Kielczow - petla (Plac Jana Gdaka);To: ;Rakow - osiedle;
+Kielczow - petla (Plac Jana Gdaka);>;;;18:43:00
+Kielczow - WODROL;>;911;18:46:00;18:48:00
+Kielczow - osiedle;>;911;18:48:00;18:49:00
+Wilczyce - Sosnowa;>;911;18:49:00;18:50:00
+Wilczyce - Debowa;>;911;18:50:00;18:51:00
+Wilczyce - Dworska;>;911;18:51:00;18:52:00
+Wilczyce - Borowa;>;911;18:52:00;18:53:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;911;18:53:00;18:54:00
+Wilczyce;>;911;18:54:00;18:54:00
+Mrozna;>;911;18:54:00;18:55:00
+Kurlandzka;>;911;18:55:00;18:55:00
+Zgorzelisko;>;911;18:55:00;18:56:00
+Palacha;>;911;18:56:00;18:57:00
+Szewczenki;>;911;18:57:00;18:58:00
+Gorlicka;>;911;18:58:00;18:59:00
+MULICKA;>;911;18:59:00;19:00:00
+Psie Pole (Rondo Lotnikow Polskich);>;911;19:00:00;19:01:00
+Psie Pole;>;911;19:01:00;19:02:00
+C.H. Korona;>;911;19:02:00;19:06:00
+Brucknera;>;911;19:06:00;19:08:00
+Kwidzynska;>;911;19:08:00;19:10:00
+Sniadeckich;>;911;19:10:00;19:12:00
+Kochanowskiego;>;911;19:12:00;19:14:00
+PL. GRUNWALDZKI;>;911;19:14:00;19:16:00
+most Grunwaldzki;>;D;19:17:00;19:19:00
+Poczta Glowna;>;D;19:19:00;19:21:00
+skwer Krasinskiego;>;A;19:22:00;19:25:00
+Dworzec Glowny (Dworcowa);>;146;19:27:00;19:28:00
+DWORZEC GLOWNY;>;146;19:28:00;19:31:00
+DWORZEC AUTOBUSOWY;>;146;19:31:00;19:33:00
+Sanocka;>;15;19:40:00;19:42:00
+Uniwersytet Ekonomiczny;>;15;19:42:00;19:44:00
+Wisniowa;>;15;19:44:00;19:46:00
+Jaworowa;>;15;19:46:00;19:47:00
+Weigla (Szpital);>;15;19:47:00;19:48:00
+Pultuska;>;15;19:48:00;19:49:00
+PARK POLUDNIOWY;>;15;19:49:00;19:50:00
+Hippiczna;>;612;20:05:00;20:06:00
+Partynice (tor wyscigow konnych);>;612;20:06:00;20:09:00
+Biskupice Podg. LG Electronics;>;602;21:50:00;22:07:00
+Biskupice Podg. LG Energy Solution Wr. I;>;602;22:07:00;22:11:00
+Biskupice Podg. LG Chem;>;607;22:40:00;22:41:00
+Biskupice Podg. LG Innotek;>;607;22:41:00;22:42:00
+Biskupice Podg. DSC Poland/Dong Yang;>;607;22:42:00;22:44:00
+;;;;
+A* - TRANSFERS;1.5335;;;
+From: ;Zagrodnicza;To: ;Kosmonautow (Szpital);
+Zagrodnicza;>;;;04:59:00
+Niedzialkowskiego;>;115;05:03:00;05:04:00
+Mikolowska;>;115;05:04:00;05:05:00
+Swojczyce;>;115;05:05:00;05:06:00
+Magellana;>;115;05:06:00;05:07:00
+Kolumba;>;115;05:07:00;05:08:00
+Monopolowa;>;115;05:08:00;05:09:00
+SEPOLNO;>;115;05:09:00;05:10:00
+Godebskiego (AWF Wroclaw);>;115;05:10:00;05:11:00
+8 Maja;>;115;05:11:00;05:12:00
+Park Szczytnicki;>;115;05:12:00;05:13:00
+Mickiewicza;>;115;05:13:00;05:14:00
+Kliniki - Politechnika Wroclawska;>;115;05:14:00;05:16:00
+PL. GRUNWALDZKI;>;115;05:16:00;05:18:00
+most Grunwaldzki;>;4;05:20:00;05:21:00
+Urzad Wojewodzki (Impart);>;4;05:21:00;05:23:00
+GALERIA DOMINIKANSKA;>;4;05:23:00;05:26:00
+Park Staromiejski;>;17;05:30:00;05:32:00
+Opera;>;17;05:32:00;05:34:00
+SWIDNICKA (Dom Europy);>;7;05:36:00;05:37:00
+Olawska;>;7;05:37:00;05:38:00
+Wita Stwosza;>;7;05:38:00;05:39:00
+Uniwersytecka;>;7;05:39:00;05:40:00
+Dubois;>;7;05:40:00;05:42:00
+Uniwersytet Wroclawski;>;6;05:36:00;05:38:00
+Rynek;>;6;05:38:00;05:41:00
+PL. JANA PAWLA II;>;3;05:33:00;05:36:00
+Mlodych Technikow;>;3;05:36:00;05:38:00
+pl. Strzegomski (Muzeum Wspolczesne);>;3;05:38:00;05:39:00
+ZACHODNIA (Stacja kolejowa);>;3;05:39:00;05:41:00
+Niedzwiedzia;>;3;05:41:00;05:43:00
+Malopanewska;>;3;05:43:00;05:44:00
+Kwiska;>;3;05:44:00;05:46:00
+DH Astra;>;3;05:46:00;05:48:00
+Park Zachodni;>;3;05:48:00;05:49:00
+Bajana;>;3;05:49:00;05:50:00
+Metalowcow;>;3;05:50:00;05:51:00
+PILCZYCE;>;3;05:51:00;05:53:00
+Tarczynski Arena (Lotnicza);>;3;05:53:00;05:54:00
+Glinianki;>;3;05:54:00;05:56:00
+Aleja Architektow;>;3;05:56:00;05:57:00
+Grabowa;>;3;05:57:00;05:58:00
+Kosmonautow (Szpital);>;3;05:58:00;06:00:00
+;;;;
+A* - TRANSFERS;0.001995;;;
+From: ;Dubois;To: ;Kielczow - Zgodna;
+Dubois;>;;;00:53:00
+;;;;
+A* - TRANSFERS;1.516809;;;
+From: ;Wilczyce - Borowa;To: ;Dlugoleka - Parkowa skrzy. Konopnicka;
+Wilczyce - Borowa;>;;;13:04:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;911;13:33:00;13:34:00
+Wilczyce;>;911;13:34:00;13:34:00
+Mrozna;>;911;13:34:00;13:35:00
+Kurlandzka;>;911;13:35:00;13:35:00
+Zgorzelisko;>;911;13:35:00;13:36:00
+Palacha;>;911;13:36:00;13:37:00
+Szewczenki;>;911;13:37:00;13:38:00
+Gorlicka;>;911;13:38:00;13:39:00
+MULICKA;>;911;13:39:00;13:40:00
+Psie Pole (Rondo Lotnikow Polskich);>;911;13:40:00;13:41:00
+PSIE POLE (Stacja kolejowa);>;904;13:48:00;13:49:00
+Dobroszycka;>;904;13:49:00;13:50:00
+Bierutowska 65;>;904;13:50:00;13:50:00
+Bierutowska;>;904;13:50:00;13:51:00
+Bierutowska 75;>;904;13:51:00;13:51:00
+BIERUTOWSKA (Wiadukt);>;904;13:51:00;13:52:00
+Mirkow - Sportowa;>;904;13:52:00;13:54:00
+Mirkow - Jagiellonska;>;904;13:54:00;13:56:00
+Dlugoleka - Wiejska;>;904;13:56:00;13:59:00
+Dlugoleka - Kasztanowa;>;904;13:59:00;14:01:00
+Dlugoleka - Parkowa/skrzy.;>;904;14:01:00;14:03:00
+Szczodre - Trzebnicka (na wys. nr 3a);>;904;14:03:00;14:04:00
+Szczodre - Trzebnicka;>;904;14:04:00;14:05:00
+Dlugoleka - Parkowa skrzy. Konopnicka;>;914;14:27:00;14:28:00
+;;;;
+A* - TRANSFERS;0.329158;;;
+From: ;Kielczow - Zgodna;To: ;Krynicka;
+Kielczow - Zgodna;>;;;18:20:00
+Piecowice;>;931;19:00:00;19:04:00
+Kielczow - Boczna;>;911;19:10:00;19:14:00
+Kielczow - petla (Plac Jana Gdaka);>;911;19:14:00;19:16:00
+Kielczow - WODROL;>;911;19:16:00;19:18:00
+Kielczow - osiedle;>;911;19:18:00;19:19:00
+Wilczyce - Sosnowa;>;911;19:19:00;19:20:00
+Wilczyce - Debowa;>;911;19:20:00;19:21:00
+Wilczyce - Dworska;>;911;19:21:00;19:22:00
+Wilczyce - Borowa;>;911;19:22:00;19:23:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;911;19:23:00;19:24:00
+Wilczyce;>;911;19:24:00;19:24:00
+Mrozna;>;911;19:24:00;19:25:00
+Kurlandzka;>;911;19:25:00;19:25:00
+Zgorzelisko;>;911;19:25:00;19:26:00
+Palacha;>;911;19:26:00;19:27:00
+Szewczenki;>;911;19:27:00;19:28:00
+Gorlicka;>;911;19:28:00;19:29:00
+MULICKA;>;911;19:29:00;19:30:00
+Psie Pole (Rondo Lotnikow Polskich);>;911;19:30:00;19:31:00
+Psie Pole;>;911;19:31:00;19:32:00
+C.H. Korona;>;911;19:32:00;19:36:00
+Brucknera;>;911;19:36:00;19:38:00
+Kwidzynska;>;911;19:38:00;19:40:00
+Sniadeckich;>;911;19:40:00;19:42:00
+Kochanowskiego;>;911;19:42:00;19:44:00
+PL. GRUNWALDZKI;>;911;19:44:00;19:46:00
+most Grunwaldzki;>;146;19:48:00;19:50:00
+Poczta Glowna;>;146;19:50:00;19:52:00
+skwer Krasinskiego;>;146;19:52:00;19:55:00
+Dworzec Glowny (Dworcowa);>;146;19:55:00;19:56:00
+DWORZEC GLOWNY;>;146;19:56:00;19:59:00
+DWORZEC AUTOBUSOWY;>;146;19:59:00;20:01:00
+Dyrekcyjna;>;146;20:01:00;20:02:00
+Borowska;>;146;20:02:00;20:04:00
+Sliczna;>;146;20:04:00;20:06:00
+ROD Bajki;>;146;20:06:00;20:07:00
+Orzechowa;>;146;20:07:00;20:08:00
+Bardzka;>;146;20:08:00;20:10:00
+Krynicka;>;146;20:10:00;20:11:00
+;;;;
+A* - TRANSFERS;2.825409;;;
+From: ;WALBRZYSKA;To: ;Olsztynska;
+WALBRZYSKA;>;;;06:08:00
+Koscielna;>;107;06:11:00;06:12:00
+KLECINA;>;107;06:12:00;06:13:00
+Skarbowcow;>;107;06:13:00;06:14:00
+Os. Przyjazni;>;107;06:14:00;06:15:00
+Zimowa;>;107;06:15:00;06:16:00
+KRZYKI;>;107;06:16:00;06:18:00
+Orla;>;2;06:20:00;06:22:00
+Jastrzebia;>;2;06:22:00;06:23:00
+Hallera;>;2;06:23:00;06:24:00
+Sztabowa;>;2;06:24:00;06:25:00
+Rondo;>;2;06:25:00;06:26:00
+Wielka;>;2;06:26:00;06:28:00
+Zaolzianska;>;2;06:28:00;06:29:00
+Arkady (Capitol);>;2;06:29:00;06:32:00
+DWORZEC GLOWNY;>;2;06:32:00;06:35:00
+Wzgorze Partyzantow;>;2;06:35:00;06:37:00
+GALERIA DOMINIKANSKA;>;2;06:37:00;06:40:00
+Urzad Wojewodzki (Muzeum Narodowe);>;2;06:40:00;06:43:00
+Katedra;>;2;06:43:00;06:44:00
+Reja;>;2;06:44:00;06:46:00
+PL. GRUNWALDZKI;>;2;06:46:00;06:49:00
+Kliniki - Politechnika Wroclawska;>;2;06:49:00;06:51:00
+Mickiewicza;>;115;06:57:00;06:59:00
+Park Szczytnicki;>;115;06:59:00;07:00:00
+8 Maja;>;115;07:00:00;07:01:00
+Godebskiego (AWF Wroclaw);>;115;07:01:00;07:02:00
+SEPOLNO;>;115;07:02:00;07:03:00
+Monopolowa;>;115;07:03:00;07:05:00
+Kolumba;>;115;07:05:00;07:06:00
+Magellana;>;115;07:06:00;07:07:00
+Swojczyce;>;115;07:07:00;07:08:00
+Miloszycka;>;118;07:12:00;07:14:00
+Gospodarska;>;118;07:14:00;07:15:00
+Ceglana;>;118;07:15:00;07:16:00
+Kowalska;>;118;07:16:00;07:18:00
+Tczewska;>;118;07:18:00;07:19:00
+Dzialdowska;>;118;07:19:00;07:20:00
+Kowale (Stacja kolejowa);>;118;07:20:00;07:21:00
+Kowalska 56;>;118;07:21:00;07:22:00
+Olsztynska;>;118;07:22:00;07:23:00
+;;;;
+A* - TRANSFERS;0.502614;;;
+From: ;Szkolna;To: ;KMINKOWA;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.96357;;;
+From: ;Rynek;To: ;Klimasa;
+Rynek;>;;;02:18:00
+PL. JANA PAWLA II;>;10;03:47:00;03:50:00
+Mlodych Technikow;>;10;03:50:00;03:52:00
+pl. Strzegomski (Muzeum Wspolczesne);>;10;03:52:00;03:53:00
+ZACHODNIA (Stacja kolejowa);>;10;03:53:00;03:55:00
+Niedzwiedzia;>;10;03:55:00;03:57:00
+Malopanewska;>;10;03:57:00;03:58:00
+Kwiska;>;10;03:58:00;04:00:00
+Na Ostatnim Groszu;>;129;04:09:00;04:11:00
+Gadowianka;>;126;04:12:00;04:14:00
+Szkocka;>;126;04:14:00;04:16:00
+Wroclawski Park Technologiczny;>;126;04:16:00;04:17:00
+ROD Oswiata;>;126;04:17:00;04:18:00
+FAT;>;126;04:18:00;04:20:00
+Hutmen;>;126;04:20:00;04:21:00
+Bzowa (Centrum Zajezdnia);>;126;04:21:00;04:22:00
+pl. Srebrny;>;126;04:22:00;04:23:00
+Stalowa;>;126;04:23:00;04:24:00
+Pereca;>;126;04:24:00;04:25:00
+Grabiszynska;>;126;04:25:00;04:27:00
+Zaporoska;>;126;04:27:00;04:29:00
+Rondo;>;126;04:29:00;04:30:00
+Drukarska;>;134;04:32:00;04:35:00
+Uniwersytet Ekonomiczny;>;134;04:35:00;04:36:00
+Borowska;>;134;04:36:00;04:38:00
+Wapienna;>;134;04:38:00;04:39:00
+Widna;>;134;04:39:00;04:40:00
+Kamienna;>;134;04:40:00;04:41:00
+Bardzka;>;134;04:41:00;04:43:00
+Nyska;>;134;04:43:00;04:44:00
+Transbud;>;134;04:44:00;04:45:00
+Klimasa;>;8;04:52:00;04:53:00
+;;;;
+A* - TRANSFERS;0.3793;;;
+From: ;SZYMANOW-petla;To: ;Libelta;
+SZYMANOW-petla;>;;;22:30:00
+Szymanow (Letnia);>;908;22:49:00;22:50:00
+Szymanow;>;908;22:50:00;22:51:00
+Szymanow (Widawska);>;908;22:51:00;22:52:00
+Szymanow - skrzyz.;>;908;22:52:00;22:53:00
+Psary - Szkola;>;908;22:53:00;22:54:00
+Widawa;>;908;22:54:00;22:57:00
+Konopackiej;>;908;22:57:00;22:58:00
+Rondo Obroncow Grodna;>;908;22:58:00;22:59:00
+Lekarska;>;908;22:59:00;23:00:00
+Zmigrodzka (Obwodnica);>;908;23:00:00;23:01:00
+POSWIETNE;>;908;23:01:00;23:02:00
+Wolowska;>;908;23:02:00;23:03:00
+Kepinska;>;908;23:03:00;23:04:00
+Kamienskiego;>;908;23:04:00;23:05:00
+Broniewskiego;>;908;23:05:00;23:06:00
+Pola;>;119;23:10:00;23:11:00
+Syrokomli;>;119;23:11:00;23:12:00
+Kasprowicza;>;119;23:12:00;23:13:00
+pl. Danilowskiego;>;119;23:13:00;23:14:00
+Berenta;>;151;23:16:00;23:17:00
+KROMERA;>;151;23:17:00;23:19:00
+Kwidzynska;>;151;23:19:00;23:21:00
+Zacisze;>;131;23:27:00;23:28:00
+Sniadeckich;>;131;23:28:00;23:29:00
+Kochanowskiego;>;131;23:29:00;23:30:00
+Bujwida;>;131;23:30:00;23:31:00
+PL. GRUNWALDZKI;>;131;23:31:00;23:33:00
+Kliniki - Politechnika Wroclawska;>;255;23:40:00;23:41:00
+Hala Stulecia;>;255;23:41:00;23:42:00
+Tramwajowa;>;255;23:42:00;23:43:00
+Chelmonskiego;>;255;23:43:00;23:44:00
+Piramowicza;>;255;23:44:00;23:45:00
+Spoldzielcza;>;255;23:45:00;23:46:00
+Monte Cassino;>;255;23:46:00;23:47:00
+Libelta;>;255;23:47:00;23:48:00
+;;;;
+A* - TRANSFERS;0.216887;;;
+From: ;Jedrzejowska;To: ;REDZINSKA;
+Jedrzejowska;>;;;12:31:00
+Brodzka;>;102;12:34:00;12:35:00
+Kozia;>;102;12:35:00;12:36:00
+Polnocna;>;102;12:36:00;12:37:00
+Maslicka (Staw);>;102;12:37:00;12:38:00
+Maslice Male (Brodnicka);>;102;12:38:00;12:39:00
+Redzinska (Cmentarz);>;102;12:39:00;12:40:00
+Turoszowska;>;104;13:04:00;13:06:00
+REDZINSKA;>;104;13:06:00;13:07:00
+;;;;
+A* - TRANSFERS;0.978296;;;
+From: ;Bojanowska;To: ;Bociania;
+Bojanowska;>;;;19:28:00
+Marszowicka;>;123;19:28:00;19:29:00
+Hartmana;>;123;19:29:00;19:30:00
+Polkowicka;>;123;19:30:00;19:31:00
+Wolska;>;123;19:31:00;19:33:00
+Sredzka;>;123;19:33:00;19:35:00
+Rubczaka;>;123;19:35:00;19:36:00
+RUBCZAKA (Stacja kolejowa);>;123;19:36:00;19:37:00
+LESNICA;>;123;19:37:00;19:38:00
+Jeleniogorska;>;3;19:41:00;19:42:00
+Wschowska;>;3;19:42:00;19:43:00
+Zlotnicka;>;3;19:43:00;19:44:00
+Kamiennogorska (Osrodek dla niewidomych);>;3;19:44:00;19:45:00
+Kosmonautow (Szpital);>;3;19:45:00;19:46:00
+Grabowa;>;3;19:46:00;19:48:00
+Aleja Architektow;>;3;19:48:00;19:49:00
+Glinianki;>;3;19:49:00;19:50:00
+Tarczynski Arena (Lotnicza);>;3;19:50:00;19:51:00
+PILCZYCE;>;3;19:51:00;19:53:00
+Metalowcow;>;3;19:53:00;19:54:00
+Bajana;>;3;19:54:00;19:56:00
+Park Zachodni;>;3;19:56:00;19:57:00
+DH Astra;>;3;19:57:00;19:58:00
+Kwiska;>;3;19:58:00;20:00:00
+Wejherowska;>;128;20:02:00;20:04:00
+Rysia;>;128;20:04:00;20:05:00
+Popowice;>;128;20:05:00;20:07:00
+POPOWICE (Stacja kolejowa);>;128;20:07:00;20:08:00
+DLUGA (Politechnika);>;128;20:08:00;20:09:00
+Poznanska;>;128;20:09:00;20:10:00
+Dluga;>;128;20:10:00;20:11:00
+Dmowskiego;>;128;20:11:00;20:14:00
+Pomorska;>;128;20:14:00;20:16:00
+Dubois;>;128;20:16:00;20:17:00
+pl. Bema;>;128;20:17:00;20:19:00
+Ogrod Botaniczny;>;128;20:19:00;20:21:00
+Wyszynskiego;>;128;20:21:00;20:23:00
+Damrota;>;128;20:23:00;20:24:00
+KROMERA;>;128;20:24:00;20:27:00
+Ketrzynska;>;11;20:29:00;20:30:00
+Kwidzynska;>;11;20:30:00;20:31:00
+Gesia;>;11;20:31:00;20:32:00
+Bociania;>;11;20:32:00;20:34:00
+;;;;
+A* - TRANSFERS;2.16655;;;
+From: ;Ramiszow;To: ;Wysoka - osiedle;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;3.098662;;;
+From: ;Kolejowa;To: ;Kamien - skrzy. Krysztalowa;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;3.568634;;;
+From: ;GAJ - petla;To: ;Brzezinka Sredzka - ul. Parkowa;
+GAJ - petla;>;;;17:14:00
+Swieradowska;>;K;17:14:00;17:15:00
+GAJ;>;K;17:15:00;17:17:00
+Dzialkowa;>;K;17:17:00;17:19:00
+Sliczna;>;K;17:19:00;17:21:00
+Borowska;>;K;17:21:00;17:23:00
+DWORZEC AUTOBUSOWY;>;K;17:23:00;17:26:00
+Dworzec Glowny (Stawowa);>;32;17:31:00;17:33:00
+Arkady (Capitol);>;32;17:33:00;17:35:00
+pl. Legionow;>;32;17:35:00;17:37:00
+pl. Orlat Lwowskich;>;32;17:37:00;17:39:00
+PL. JANA PAWLA II;>;32;17:39:00;17:42:00
+Mlodych Technikow;>;32;17:42:00;17:44:00
+pl. Strzegomski (Muzeum Wspolczesne);>;32;17:44:00;17:45:00
+ZACHODNIA (Stacja kolejowa);>;32;17:45:00;17:47:00
+Niedzwiedzia;>;32;17:47:00;17:49:00
+Malopanewska;>;32;17:49:00;17:50:00
+Kwiska;>;32;17:50:00;17:52:00
+DH Astra;>;10;17:54:00;17:56:00
+Park Zachodni;>;10;17:56:00;17:57:00
+Bajana;>;10;17:57:00;17:58:00
+Metalowcow;>;10;17:58:00;17:59:00
+PILCZYCE;>;10;17:59:00;18:01:00
+Tarczynski Arena (Lotnicza);>;10;18:01:00;18:02:00
+Glinianki;>;10;18:02:00;18:04:00
+Aleja Architektow;>;10;18:04:00;18:05:00
+Grabowa;>;10;18:05:00;18:06:00
+Kosmonautow (Szpital);>;10;18:06:00;18:08:00
+Kamiennogorska (Osrodek dla niewidomych);>;10;18:08:00;18:09:00
+Zlotnicka;>;10;18:09:00;18:11:00
+Wschowska;>;10;18:11:00;18:12:00
+Jeleniogorska;>;10;18:12:00;18:13:00
+Sniezna;>;101;18:16:00;18:17:00
+Ciechocinska;>;101;18:17:00;18:18:00
+Stablowice;>;101;18:18:00;18:19:00
+Park Stablowicki;>;101;18:19:00;18:20:00
+Glowna;>;101;18:20:00;18:21:00
+Marszowice;>;123;18:24:00;18:26:00
+Wilkszynska;>;923;18:28:00;18:30:00
+Lososiowicka;>;923;18:30:00;18:31:00
+Krzelowska;>;923;18:31:00;18:32:00
+Wilkszyn - Miloszyn;>;923;18:32:00;18:33:00
+Wilkszyn - Polna;>;923;18:33:00;18:34:00
+Wilkszyn (petla);>;923;18:34:00;18:35:00
+Pisarzowice - Graniczna;>;923;18:35:00;18:37:00
+Pisarzowice - Odrzanska;>;923;18:37:00;18:39:00
+Pisarzowice - Szkolna;>;923;18:39:00;18:40:00
+Pisarzowice - Kolejowa;>;923;18:40:00;18:41:00
+Brzezinka Sredzka - ul. Kolejowa;>;923;18:41:00;18:43:00
+Brzezinka Sredzka - PKP;>;923;18:43:00;18:43:00
+Brzezinka Sredzka - ul. Parkowa;>;923;18:43:00;18:46:00
+;;;;
+A* - TRANSFERS;1.98513;;;
+From: ;Morwowa;To: ;Jasinskiej;
+Morwowa;>;;;15:15:00
+Krynicka;>;31;15:15:00;15:16:00
+Bardzka;>;31;15:16:00;15:17:00
+Kamienna;>;31;15:17:00;15:18:00
+Prudnicka;>;31;15:18:00;15:19:00
+Gajowa;>;31;15:19:00;15:20:00
+Joannitow;>;31;15:20:00;15:22:00
+DWORZEC AUTOBUSOWY;>;31;15:22:00;15:25:00
+Dworzec Glowny (Stawowa);>;31;15:25:00;15:27:00
+Arkady (Capitol);>;31;15:27:00;15:29:00
+pl. Legionow;>;31;15:29:00;15:31:00
+pl. Orlat Lwowskich;>;31;15:31:00;15:33:00
+PL. JANA PAWLA II;>;31;15:33:00;15:36:00
+Mlodych Technikow;>;31;15:36:00;15:38:00
+pl. Strzegomski (Muzeum Wspolczesne);>;31;15:38:00;15:39:00
+ZACHODNIA (Stacja kolejowa);>;31;15:39:00;15:41:00
+Niedzwiedzia;>;31;15:41:00;15:43:00
+Malopanewska;>;31;15:43:00;15:44:00
+Kwiska;>;31;15:44:00;15:46:00
+Na Ostatnim Groszu;>;143;15:48:00;15:51:00
+Orlinskiego;>;129;15:52:00;15:53:00
+Drzewieckiego;>;129;15:53:00;15:54:00
+Hynka;>;129;15:54:00;15:56:00
+Bystrzycka;>;129;15:56:00;15:58:00
+KUZNIKI (Stacja kolejowa);>;129;15:58:00;15:59:00
+KUZNIKI;>;129;15:59:00;16:01:00
+Kolobrzeska;>;129;16:01:00;16:02:00
+Szczecinska;>;109;16:05:00;16:07:00
+Zerniki;>;109;16:07:00;16:09:00
+Strachowicka;>;109;16:09:00;16:10:00
+Zernicka;>;109;16:10:00;16:11:00
+Jerzmanowska nr 9;>;109;16:11:00;16:12:00
+Jerzmanowska nr 17;>;109;16:12:00;16:13:00
+Jerzmanowo (Cmentarz I);>;109;16:13:00;16:16:00
+Piolunowa;>;109;16:16:00;16:17:00
+Jasinskiej;>;109;16:17:00;16:18:00
+;;;;
+A* - TRANSFERS;1.996847;;;
+From: ;Wysoka - Chabrowa;To: ;Kurlandzka;
+Wysoka - Chabrowa;>;;;17:44:00
+Wysoka;>;913;17:46:00;17:47:00
+ROD Storczyk;>;112;18:02:00;18:03:00
+Kutrzeby;>;112;18:03:00;18:04:00
+Oltaszyn;>;112;18:04:00;18:07:00
+Swit;>;112;18:07:00;18:08:00
+Parafialna;>;112;18:08:00;18:10:00
+Wojszyce;>;112;18:10:00;18:11:00
+Przystankowa;>;112;18:11:00;18:13:00
+Borowska (Szpital);>;112;18:13:00;18:14:00
+Dzialkowa;>;112;18:14:00;18:16:00
+ROD Bajki;>;112;18:16:00;18:18:00
+Sliczna;>;112;18:18:00;18:19:00
+Borowska;>;112;18:19:00;18:20:00
+DWORZEC AUTOBUSOWY;>;112;18:20:00;18:23:00
+DWORZEC GLOWNY;>;112;18:23:00;18:26:00
+Wzgorze Partyzantow;>;11;18:27:00;18:29:00
+GALERIA DOMINIKANSKA;>;11;18:29:00;18:32:00
+pl. Nowy Targ;>;11;18:32:00;18:33:00
+Hala Targowa;>;11;18:33:00;18:34:00
+pl. Bema;>;11;18:34:00;18:37:00
+Na Szancach;>;11;18:37:00;18:38:00
+Jednosci Narodowej;>;11;18:38:00;18:39:00
+Nowowiejska;>;11;18:39:00;18:41:00
+Daszynskiego;>;11;18:41:00;18:42:00
+Mosty Warszawskie;>;11;18:42:00;18:43:00
+KROMERA;>;11;18:43:00;18:46:00
+Ketrzynska;>;11;18:46:00;18:47:00
+Kwidzynska;>;11;18:47:00;18:48:00
+Brucknera;>;121;18:49:00;18:51:00
+C.H. Korona;>;121;18:51:00;18:53:00
+Zielna;>;121;18:53:00;18:55:00
+Psie Pole;>;121;18:55:00;18:56:00
+Psie Pole (Rondo Lotnikow Polskich);>;121;18:56:00;18:58:00
+MULICKA;>;121;18:58:00;18:59:00
+Gorlicka;>;121;18:59:00;19:00:00
+Palacha;>;911;19:05:00;19:06:00
+Zgorzelisko;>;911;19:06:00;19:07:00
+Kurlandzka;>;911;19:07:00;19:07:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Kaczorowskiego;To: ;Lososiowicka;
+Kaczorowskiego;>;;;01:35:00
+;;;;
+A* - TRANSFERS;0.588053;;;
+From: ;Kowale (Stacja kolejowa);To: ;METALOWCOW (Osrodek sportu);
+Kowale (Stacja kolejowa);>;;;22:30:00
+Kowalska 56;>;118;22:50:00;22:51:00
+Olsztynska;>;118;22:51:00;22:52:00
+C.H. Korona;>;118;22:52:00;22:54:00
+Brucknera;>;118;22:54:00;22:56:00
+Kwidzynska;>;118;22:56:00;22:58:00
+KROMERA;>;118;22:58:00;23:01:00
+Berenta;>;118;23:01:00;23:03:00
+pl. Danilowskiego;>;118;23:03:00;23:04:00
+Kasprowicza;>;118;23:04:00;23:05:00
+Syrokomli;>;118;23:05:00;23:06:00
+Pola;>;118;23:06:00;23:07:00
+Broniewskiego;>;118;23:07:00;23:08:00
+Baltycka;>;118;23:08:00;23:10:00
+Bezpieczna;>;118;23:10:00;23:11:00
+Paprotna;>;129;23:16:00;23:17:00
+Irysowa;>;111;23:23:00;23:24:00
+Obornicka (Obwodnica);>;111;23:24:00;23:25:00
+Ostowa (Muzeum Militarne);>;111;23:25:00;23:26:00
+Cwiczebna;>;143;23:28:00;23:29:00
+;;;;
+A* - TRANSFERS;0.891326;;;
+From: ;Poznanska;To: ;Brodzka;
+Poznanska;>;;;19:09:00
+DLUGA (Politechnika);>;122;19:09:00;19:10:00
+POPOWICE (Stacja kolejowa);>;122;19:10:00;19:11:00
+Popowice;>;122;19:11:00;19:12:00
+Rysia;>;122;19:12:00;19:14:00
+Wejherowska;>;122;19:14:00;19:16:00
+Kwiska;>;122;19:16:00;19:18:00
+DH Astra;>;10;19:21:00;19:23:00
+Park Zachodni;>;10;19:23:00;19:24:00
+Bajana;>;10;19:24:00;19:25:00
+Metalowcow;>;10;19:25:00;19:26:00
+PILCZYCE;>;10;19:26:00;19:28:00
+Tarczynski Arena (Lotnicza);>;10;19:28:00;19:29:00
+Glinianki;>;10;19:29:00;19:31:00
+Aleja Architektow;>;10;19:31:00;19:32:00
+Grabowa;>;10;19:32:00;19:33:00
+Kosmonautow (Szpital);>;10;19:33:00;19:35:00
+Fieldorfa (Szpital);>;102;19:38:00;19:39:00
+Fieldorfa;>;102;19:39:00;19:40:00
+Stoszowska;>;102;19:40:00;19:41:00
+Olbrachtowska;>;102;19:41:00;19:42:00
+Arachidowa;>;102;19:42:00;19:43:00
+Wojanowska;>;102;19:43:00;19:44:00
+Stablowice;>;102;19:44:00;19:45:00
+Park Stablowicki;>;102;19:45:00;19:46:00
+Glowna;>;102;19:46:00;19:47:00
+Welniana;>;102;19:47:00;19:49:00
+Chwalkowska;>;102;19:49:00;19:50:00
+Jedrzejowska;>;102;19:50:00;19:51:00
+Brodzka;>;102;19:51:00;19:52:00
+;;;;
+A* - TRANSFERS;3.037467;;;
+From: ;Pruszowice - las;To: ;Fieldorfa;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.597195;;;
+From: ;Domaszczyn - Kosciol;To: ;ROD Mieczyk;
+Domaszczyn - Kosciol;>;;;21:35:00
+Domaszczyn - Wroclawska Skrzyzowanie;>;914;22:15:00;22:17:00
+Domaszczyn - Stawowa;>;914;22:17:00;22:18:00
+Pruszowice - las;>;934;22:35:00;22:36:00
+Odolanowska;>;934;22:36:00;22:39:00
+Odrodzenia Polski;>;934;22:39:00;22:39:00
+ZAKRZOW;>;934;22:39:00;22:40:00
+Przedwiosnie (Stacja kolejowa);>;934;22:40:00;22:41:00
+Wallenroda;>;934;22:41:00;22:42:00
+Psie Pole (Rondo Lotnikow Polskich);>;934;22:42:00;22:44:00
+Psie Pole;>;D;22:46:00;22:47:00
+Brucknera;>;D;22:47:00;22:51:00
+Grudziadzka;>;121;22:53:00;22:54:00
+Kromera (Czajkowskiego);>;121;22:54:00;22:55:00
+KROMERA;>;121;22:55:00;22:57:00
+Berenta;>;121;22:57:00;22:58:00
+Kasprowicza;>;121;22:58:00;22:59:00
+Syrokomli;>;121;22:59:00;23:00:00
+Pola;>;121;23:00:00;23:01:00
+Broniewskiego;>;121;23:01:00;23:02:00
+Trzebnicka;>;70;23:03:00;23:05:00
+DWORZEC NADODRZE;>;70;23:05:00;23:07:00
+Kleczkowska;>;714;23:15:00;23:17:00
+pl. Strzelecki;>;K;23:22:00;23:23:00
+Pomorska;>;K;23:23:00;23:25:00
+Dmowskiego;>;15;23:16:00;23:18:00
+PL. JANA PAWLA II;>;15;23:18:00;23:20:00
+Mlodych Technikow;>;31;23:23:00;23:25:00
+pl. Strzegomski (Muzeum Wspolczesne);>;31;23:25:00;23:26:00
+ZACHODNIA (Stacja kolejowa);>;31;23:26:00;23:27:00
+Niedzwiedzia;>;31;23:27:00;23:29:00
+Malopanewska;>;31;23:29:00;23:30:00
+Kwiska;>;31;23:30:00;23:32:00
+Kolista;>;31;23:32:00;23:36:00
+PILCZYCKA (Anima);>;31;23:36:00;23:37:00
+Modra;>;31;23:37:00;23:38:00
+Gornicza;>;31;23:38:00;23:39:00
+Rekodzielnicza;>;246;23:50:00;23:51:00
+Metalowcow;>;246;23:51:00;23:52:00
+Bajana;>;253;23:56:00;23:57:00
+;;;;
+A* - TRANSFERS;0.022125;;;
+From: ;Ostowa (Muzeum Militarne);To: ;Hala Orbita;
+Ostowa (Muzeum Militarne);>;;;04:26:00
+Cwiczebna;>;105;04:29:00;04:30:00
+Obornicka (Obwodnica);>;105;04:30:00;04:31:00
+most Milenijny;>;101;04:33:00;04:37:00
+Hala Orbita;>;101;04:37:00;04:38:00
+;;;;
+A* - TRANSFERS;4.504576;;;
+From: ;Wilkszyn - Miloszyn;To: ;Kielczow - Ladna;
+Wilkszyn - Miloszyn;>;;;16:17:00
+Krzelowska;>;923;16:35:00;16:36:00
+Lososiowicka;>;923;16:36:00;16:37:00
+Wilkszynska;>;923;16:37:00;16:38:00
+Marszowice;>;923;16:38:00;16:39:00
+Glowna;>;923;16:39:00;16:41:00
+Park Stablowicki;>;923;16:41:00;16:42:00
+Stablowice;>;923;16:42:00;16:43:00
+Ciechocinska;>;923;16:43:00;16:44:00
+Sniezna;>;923;16:44:00;16:45:00
+Jeleniogorska;>;923;16:45:00;16:46:00
+Wschowska;>;3;16:51:00;16:52:00
+Zlotnicka;>;3;16:52:00;16:53:00
+Wielkopolska;>;148;17:01:00;17:02:00
+Zlotniki;>;148;17:02:00;17:03:00
+Malopolska (Osrodek dla niewidomych);>;148;17:03:00;17:04:00
+Zernicka (Stacja kolejowa);>;148;17:04:00;17:07:00
+Strachowicka;>;148;17:07:00;17:09:00
+Zerniki;>;148;17:09:00;17:10:00
+Szczecinska;>;148;17:10:00;17:11:00
+Kolobrzeska;>;148;17:11:00;17:13:00
+Nowy Dwor (Stacja kolejowa);>;148;17:13:00;17:15:00
+Chociebuska;>;148;17:15:00;17:17:00
+Nowy Dwor;>;148;17:17:00;17:18:00
+Rogowska;>;107;17:20:00;17:22:00
+MINSKA (Rondo Rotm. Pileckiego);>;107;17:22:00;17:25:00
+Tyrmanda;>;107;17:25:00;17:27:00
+Zagony;>;107;17:27:00;17:28:00
+Muchobor Wielki;>;107;17:28:00;17:29:00
+Stanislawowska (W.K. Formaty);>;107;17:29:00;17:30:00
+Awicenny (Stacja kolejowa);>;132;17:34:00;17:37:00
+Awicenny;>;132;17:37:00;17:38:00
+Chachaja;>;132;17:38:00;17:39:00
+Jordanowska;>;132;17:39:00;17:41:00
+Tyniecka;>;125;21:35:00;21:37:00
+Kwiatkowskiego (Rondo);>;125;21:37:00;21:38:00
+;;;;
+A* - TRANSFERS;0.664747;;;
+From: ;Piwnika-Ponurego;To: ;BROCHOW (Stacja kolejowa);
+Piwnika-Ponurego;>;;;22:16:00
+Zakrzowska;>;147;22:29:00;22:30:00
+Psie Pole (Rondo Lotnikow Polskich);>;147;22:30:00;22:31:00
+Psie Pole;>;N;22:32:00;22:33:00
+Brucknera;>;N;22:33:00;22:37:00
+Grudziadzka;>;N;22:37:00;22:38:00
+Kromera (Czajkowskiego);>;N;22:38:00;22:39:00
+KROMERA;>;N;22:39:00;22:41:00
+Ketrzynska;>;11;22:42:00;22:43:00
+Kwidzynska;>;11;22:43:00;22:44:00
+Zacisze;>;151;22:40:00;22:41:00
+Sniadeckich;>;151;22:41:00;22:42:00
+Kochanowskiego;>;151;22:42:00;22:44:00
+Bujwida;>;151;22:44:00;22:46:00
+PL. GRUNWALDZKI;>;151;22:46:00;22:48:00
+most Grunwaldzki;>;70;22:57:00;22:58:00
+Urzad Wojewodzki (Impart);>;70;22:58:00;23:00:00
+pl. Wroblewskiego;>;70;23:00:00;23:02:00
+pl. Zgody (Muzeum Etnograficzne);>;5;23:03:00;23:04:00
+Na Niskich Lakach;>;5;23:04:00;23:06:00
+Krakowska;>;5;23:06:00;23:07:00
+KRAKOWSKA (Centrum handlowe);>;5;23:07:00;23:08:00
+Armii Krajowej;>;5;23:08:00;23:09:00
+Park Wschodni;>;5;23:09:00;23:10:00
+Karwinska;>;5;23:10:00;23:11:00
+Wiaduktowa;>;114;23:25:00;23:27:00
+Topolowa;>;114;23:27:00;23:28:00
+BROCHOW (Stacja kolejowa);>;114;23:28:00;23:29:00
+;;;;
+A* - TRANSFERS;0.64382;;;
+From: ;Popowice;To: ;Ratyn - skrzyzowanie;
+Popowice;>;;;22:53:00
+Rysia;>;128;22:54:00;22:56:00
+Wejherowska;>;128;22:56:00;22:58:00
+Hala Orbita;>;119;23:00:00;23:02:00
+most Milenijny;>;119;23:02:00;23:03:00
+OSOBOWICKA (Cmentarz);>;119;23:03:00;23:04:00
+OSOBOWICKA (Cmentarz II);>;119;23:04:00;23:05:00
+Luzycka;>;119;23:05:00;23:06:00
+Rozanka;>;119;23:06:00;23:07:00
+Bezpieczna;>;119;23:07:00;23:08:00
+Baltycka (szkola);>;119;23:08:00;23:09:00
+Baltycka;>;119;23:09:00;23:09:00
+Broniewskiego;>;119;23:09:00;23:10:00
+Pola;>;119;23:10:00;23:11:00
+Syrokomli;>;119;23:11:00;23:12:00
+Kasprowicza;>;119;23:12:00;23:13:00
+pl. Danilowskiego;>;119;23:13:00;23:14:00
+Berenta;>;151;23:16:00;23:17:00
+KROMERA;>;151;23:17:00;23:19:00
+Kwidzynska;>;151;23:19:00;23:21:00
+Zacisze;>;131;23:27:00;23:28:00
+Sniadeckich;>;131;23:28:00;23:29:00
+Moniuszki;>;259;23:53:00;23:54:00
+Stadion Olimpijski;>;259;23:54:00;23:55:00
+8 Maja;>;259;23:55:00;23:56:00
+Park Szczytnicki;>;115;23:58:00;23:59:00
+;;;;
+A* - TRANSFERS;0.006978;;;
+From: ;Lozina - Cmentarz;To: ;Chelmonskiego;
+Lozina - Cmentarz;>;;;22:33:00
+Budziwojowice;>;904;23:32:00;23:33:00
+Losice - plac zabaw;>;904;23:33:00;23:35:00
+Szczodre - stawy;>;904;23:35:00;23:37:00
+Szczodre - Szkola;>;904;23:37:00;23:39:00
+Szczodre - petla;>;904;23:39:00;23:40:00
+Szczodre - Trzebnicka;>;904;23:40:00;23:41:00
+Dlugoleka - Parkowa skrzy. Konopnicka;>;904;23:41:00;23:42:00
+Dlugoleka - Parkowa/skrzy.;>;904;23:42:00;23:43:00
+Dlugoleka - Kasztanowa;>;904;23:43:00;23:44:00
+Dlugoleka - Wiejska;>;904;23:44:00;23:45:00
+Mirkow - Jagiellonska;>;904;23:45:00;23:47:00
+Mirkow - Sportowa;>;904;23:47:00;23:49:00
+BIERUTOWSKA (Wiadukt);>;904;23:49:00;23:51:00
+Bierutowska 75;>;904;23:51:00;23:52:00
+Bierutowska;>;904;23:52:00;23:53:00
+Bierutowska 65;>;904;23:53:00;23:53:00
+Dobroszycka;>;904;23:53:00;23:54:00
+PSIE POLE (Stacja kolejowa);>;904;23:54:00;23:55:00
+Psie Pole (Rondo Lotnikow Polskich);>;904;23:55:00;23:56:00
+Psie Pole;>;904;23:56:00;23:57:00
+;;;;
+A* - TRANSFERS;3.146378;;;
+From: ;Gwiazdzista;To: ;Wilczyce - Debowa;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0.888298;;;
+From: ;Brzezinska;To: ;Chopina;
+Brzezinska;>;;;21:20:00
+Eluarda;>;137;22:13:00;22:14:00
+Sredzka;>;137;22:14:00;22:15:00
+Rubczaka;>;137;22:15:00;22:16:00
+RUBCZAKA (Stacja kolejowa);>;137;22:16:00;22:17:00
+LESNICA;>;137;22:17:00;22:18:00
+Jeleniogorska;>;101;22:23:00;22:24:00
+Wschowska;>;20;22:25:00;22:26:00
+Zlotnicka;>;20;22:26:00;22:27:00
+Kamiennogorska (Osrodek dla niewidomych);>;20;22:27:00;22:28:00
+Kosmonautow (Szpital);>;20;22:28:00;22:29:00
+Grabowa;>;20;22:29:00;22:31:00
+Aleja Architektow;>;20;22:31:00;22:32:00
+Glinianki;>;20;22:32:00;22:33:00
+Tarczynski Arena (Lotnicza);>;20;22:33:00;22:34:00
+PILCZYCE;>;20;22:34:00;22:36:00
+Metalowcow;>;20;22:36:00;22:37:00
+Bajana;>;20;22:37:00;22:39:00
+Park Zachodni;>;20;22:39:00;22:40:00
+DH Astra;>;20;22:40:00;22:41:00
+Kwiska;>;20;22:41:00;22:43:00
+Malopanewska;>;20;22:43:00;22:44:00
+Niedzwiedzia;>;20;22:44:00;22:45:00
+ZACHODNIA (Stacja kolejowa);>;20;22:45:00;22:48:00
+pl. Strzegomski (Muzeum Wspolczesne);>;10;22:52:00;22:54:00
+Mlodych Technikow;>;10;22:54:00;22:55:00
+PL. JANA PAWLA II;>;10;22:55:00;22:57:00
+Rynek;>;10;22:57:00;22:59:00
+Zamkowa;>;10;22:59:00;23:00:00
+Swidnicka;>;10;23:00:00;23:02:00
+GALERIA DOMINIKANSKA;>;10;23:02:00;23:04:00
+Urzad Wojewodzki (Muzeum Narodowe);>;10;23:04:00;23:07:00
+Katedra;>;10;23:07:00;23:08:00
+Reja;>;10;23:08:00;23:09:00
+PL. GRUNWALDZKI;>;10;23:09:00;23:11:00
+Kliniki - Politechnika Wroclawska;>;10;23:11:00;23:13:00
+Mickiewicza;>;115;23:20:00;23:21:00
+Park Szczytnicki;>;115;23:21:00;23:22:00
+8 Maja;>;115;23:22:00;23:23:00
+Stadion Olimpijski;>;9;23:34:00;23:35:00
+Karlowicza;>;9;23:35:00;23:36:00
+Chopina;>;9;23:36:00;23:37:00
+;;;;
+A* - TRANSFERS;2.389335;;;
+From: ;Smolecka;To: ;Kolumba;
+Smolecka;>;;;15:53:00
+Dworzec Swiebodzki;>;23;15:57:00;15:59:00
+pl. Orlat Lwowskich;>;23;15:59:00;16:01:00
+Renoma;>;23;16:01:00;16:05:00
+Opera;>;23;16:05:00;16:07:00
+Park Staromiejski;>;23;16:07:00;16:09:00
+GALERIA DOMINIKANSKA;>;23;16:09:00;16:12:00
+Urzad Wojewodzki (Impart);>;D;16:14:00;16:17:00
+most Grunwaldzki;>;D;16:17:00;16:19:00
+PL. GRUNWALDZKI;>;D;16:19:00;16:22:00
+Kochanowskiego;>;D;16:22:00;16:26:00
+Chopina;>;17;16:32:00;16:34:00
+Karlowicza;>;17;16:34:00;16:35:00
+Stadion Olimpijski;>;17;16:35:00;16:36:00
+8 Maja;>;17;16:36:00;16:37:00
+Godebskiego (AWF Wroclaw);>;17;16:37:00;16:38:00
+SEPOLNO;>;17;16:38:00;16:40:00
+Monopolowa;>;115;16:48:00;16:50:00
+Kolumba;>;115;16:50:00;16:51:00
+;;;;
+A* - TRANSFERS;2.618573;;;
+From: ;Hynka;To: ;Wysoka - Lipowa;
+Hynka;>;;;12:37:00
+Drzewieckiego;>;129;12:37:00;12:38:00
+Orlinskiego;>;129;12:38:00;12:39:00
+Na Ostatnim Groszu;>;129;12:39:00;12:41:00
+Gadowianka;>;126;12:46:00;12:48:00
+Szkocka;>;126;12:48:00;12:50:00
+Wroclawski Park Technologiczny;>;126;12:50:00;12:51:00
+ROD Oswiata;>;126;12:51:00;12:52:00
+FAT;>;126;12:52:00;12:56:00
+Aleja Pracy;>;A;12:57:00;12:59:00
+Ojca Beyzyma;>;70;13:02:00;13:03:00
+Mielecka;>;70;13:03:00;13:05:00
+Gajowicka;>;70;13:05:00;13:06:00
+Hallera;>;70;13:06:00;13:08:00
+Sudecka;>;136;13:11:00;13:12:00
+Jarzebinowa;>;144;13:15:00;13:16:00
+Skierniewicka;>;144;13:16:00;13:17:00
+Wyscigowa;>;144;13:17:00;13:20:00
+Malinowa;>;144;13:20:00;13:21:00
+Ozynowa;>;144;13:21:00;13:22:00
+rondo Sw. Ojca Pio;>;144;13:22:00;13:25:00
+Wysoka - osiedle;>;913;13:31:00;13:33:00
+Wysoka - Radosna;>;913;13:33:00;13:34:00
+Wysoka - Chabrowa;>;913;13:34:00;13:35:00
+Wysoka;>;913;13:35:00;13:36:00
+Wysoka - Lipowa;>;913;13:36:00;13:36:00
+;;;;
+A* - TRANSFERS;0.683854;;;
+From: ;Bociania;To: ;Kielczow - Wroclawska;
+Bociania;>;;;18:43:00
+Gesia;>;11;18:54:00;18:55:00
+Kwidzynska;>;11;18:55:00;18:57:00
+Ketrzynska;>;11;18:57:00;18:58:00
+KROMERA;>;11;18:58:00;19:00:00
+Kromera (Czajkowskiego);>;130;19:02:00;19:04:00
+Grudziadzka;>;130;19:04:00;19:05:00
+Brucknera;>;130;19:05:00;19:06:00
+C.H. Korona;>;111;19:02:00;19:04:00
+Zielna;>;111;19:04:00;19:06:00
+Psie Pole;>;111;19:06:00;19:07:00
+Psie Pole (Rondo Lotnikow Polskich);>;111;19:07:00;19:09:00
+KIELCZOWSKA (LZN);>;131;19:11:00;19:13:00
+Poleska;>;131;19:13:00;19:14:00
+Kielczowska;>;131;19:14:00;19:15:00
+Zmudzka;>;131;19:15:00;19:16:00
+Kielczowska (Cmentarz);>;121;19:20:00;19:21:00
+Kielczow - Sosnowa;>;931;19:25:00;19:26:00
+Kielczow - Biedronka;>;931;19:26:00;19:27:00
+Kielczow - Wroclawska;>;931;19:27:00;19:28:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Ksieginice ul. Sportowa;To: ;Wilczyce - Sosnowa;
+Ksieginice ul. Sportowa;>;;;06:29:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Brzezina - Biedronka;To: ;Grzybowa;
+Brzezina - Biedronka;>;;;09:41:00
+Las Mokrzanski;>;937;10:02:00;10:04:00
+Mokra;>;937;10:04:00;10:05:00
+Grzybowa;>;937;10:05:00;10:07:00
+;;;;
+A* - TRANSFERS;2.783323;;;
+From: ;Moniuszki;To: ;Awicenny;
+Moniuszki;>;;;14:52:00
+Stadion Olimpijski;>;345;14:57:00;14:58:00
+8 Maja;>;17;15:00:00;15:01:00
+Park Szczytnicki;>;115;15:03:00;15:04:00
+Mickiewicza;>;115;15:04:00;15:05:00
+Kliniki - Politechnika Wroclawska;>;115;15:05:00;15:07:00
+PL. GRUNWALDZKI;>;115;15:07:00;15:10:00
+Reja;>;115;15:10:00;15:12:00
+Katedra;>;10;15:16:00;15:18:00
+Urzad Wojewodzki (Muzeum Narodowe);>;10;15:18:00;15:20:00
+GALERIA DOMINIKANSKA;>;10;15:20:00;15:24:00
+Swidnicka;>;10;15:24:00;15:26:00
+Zamkowa;>;10;15:26:00;15:27:00
+Narodowe Forum Muzyki;>;4;15:28:00;15:30:00
+pl. Legionow;>;4;15:30:00;15:32:00
+Kolejowa;>;4;15:32:00;15:33:00
+Grabiszynska;>;4;15:33:00;15:34:00
+Pereca;>;4;15:34:00;15:36:00
+Stalowa;>;4;15:36:00;15:38:00
+pl. Srebrny;>;4;15:38:00;15:39:00
+Bzowa (Centrum Zajezdnia);>;4;15:39:00;15:40:00
+Hutmen;>;4;15:40:00;15:41:00
+FAT;>;4;15:41:00;15:43:00
+Ostrowskiego;>;107;15:48:00;15:49:00
+Koncowa;>;107;15:49:00;15:51:00
+Krzemieniecka;>;107;15:51:00;15:53:00
+Trawowa;>;107;15:53:00;15:54:00
+Stanislawowska (W.K. Formaty);>;107;15:54:00;15:56:00
+Awicenny (Stacja kolejowa);>;132;16:00:00;16:03:00
+Awicenny;>;132;16:03:00;16:04:00
+;;;;
+A* - TRANSFERS;1.608329;;;
+From: ;Volvo;To: ;Gajowicka (szkola);
+Volvo;>;;;13:58:00
+Volvo - brama II;>;118;14:06:00;14:10:00
+Monopolowa;>;315;14:14:00;14:17:00
+SEPOLNO;>;315;14:17:00;14:19:00
+Libelta;>;315;14:19:00;14:21:00
+Monte Cassino;>;315;14:21:00;14:22:00
+Okrzei;>;315;14:22:00;14:23:00
+Partyzantow;>;315;14:23:00;14:24:00
+Tramwajowa;>;315;14:24:00;14:26:00
+Hala Stulecia;>;315;14:26:00;14:28:00
+Kliniki - Politechnika Wroclawska;>;315;14:28:00;14:30:00
+PL. GRUNWALDZKI;>;315;14:30:00;14:33:00
+most Grunwaldzki;>;D;14:34:00;14:36:00
+Poczta Glowna;>;D;14:36:00;14:39:00
+GALERIA DOMINIKANSKA;>;D;14:39:00;14:42:00
+Renoma;>;D;14:42:00;14:46:00
+Arkady (Capitol);>;D;14:46:00;14:48:00
+Rondo;>;D;14:48:00;14:52:00
+Hallera;>;D;14:52:00;14:55:00
+Raclawicka (szkola);>;133;15:00:00;15:02:00
+Modlinska;>;133;15:02:00;15:04:00
+Gajowicka (szkola);>;143;15:06:00;15:08:00
+;;;;
+A* - TRANSFERS;2.573255;;;
+From: ;Sliwowa;To: ;Kamien - skrzy.;
+Sliwowa;>;;;16:22:00
+Maslicka (Staw);>;102;16:30:00;16:31:00
+Maslice Male (Brodnicka);>;103;16:34:00;16:35:00
+Redzinska (Cmentarz);>;103;16:35:00;16:36:00
+Maslicka (Osiedle);>;103;16:36:00;16:37:00
+TARCZYNSKI ARENA (Krolewiecka);>;103;16:37:00;16:38:00
+Dworska;>;103;16:38:00;16:39:00
+Gornicza;>;103;16:39:00;16:41:00
+Modra;>;103;16:41:00;16:42:00
+Kolista;>;103;16:42:00;16:44:00
+Wejherowska;>;103;16:44:00;16:47:00
+Rysia;>;103;16:47:00;16:49:00
+Popowice;>;103;16:49:00;16:51:00
+POPOWICE (Stacja kolejowa);>;103;16:51:00;16:52:00
+DLUGA (Politechnika);>;103;16:52:00;16:53:00
+Poznanska;>;103;16:53:00;16:54:00
+Dluga;>;128;16:55:00;16:56:00
+Dmowskiego;>;128;16:56:00;16:59:00
+Pomorska;>;128;16:59:00;17:01:00
+Dubois;>;128;17:01:00;17:03:00
+pl. Bema;>;128;17:03:00;17:06:00
+Ogrod Botaniczny;>;128;17:06:00;17:09:00
+Wyszynskiego;>;128;17:09:00;17:11:00
+Damrota;>;128;17:11:00;17:12:00
+KROMERA;>;128;17:12:00;17:15:00
+Kromera (Czajkowskiego);>;128;17:15:00;17:17:00
+Grudziadzka;>;128;17:17:00;17:18:00
+Brucknera;>;128;17:18:00;17:20:00
+C.H. Korona;>;128;17:20:00;17:22:00
+Zielna;>;128;17:22:00;17:24:00
+Psie Pole;>;128;17:24:00;17:25:00
+Psie Pole (Rondo Lotnikow Polskich);>;128;17:25:00;17:27:00
+PSIE POLE (Stacja kolejowa);>;924;17:29:00;17:30:00
+Dobroszycka;>;924;17:30:00;17:31:00
+Bierutowska 65;>;924;17:31:00;17:31:00
+Bierutowska;>;924;17:31:00;17:32:00
+Bierutowska 75;>;924;17:32:00;17:32:00
+BIERUTOWSKA (Wiadukt);>;924;17:32:00;17:33:00
+Mirkow - Sportowa;>;924;17:33:00;17:35:00
+Mirkow - Jagiellonska;>;924;17:35:00;17:37:00
+Dlugoleka - Wiejska;>;924;17:37:00;17:40:00
+Dlugoleka - Kasztanowa;>;924;17:40:00;17:41:00
+Dlugoleka - Kosciol;>;924;17:41:00;17:45:00
+Dlugoleka - Nowy Urzad;>;924;17:45:00;17:46:00
+Kamien - Bursztynowa;>;924;17:46:00;17:48:00
+Kamien - skrzy.;>;924;17:48:00;17:49:00
+;;;;
+A* - TRANSFERS;0.000998;;;
+From: ;Orzechowa;To: ;PL. GRUNWALDZKI;
+Orzechowa;>;;;01:28:00
+;;;;
+A* - TRANSFERS;4.285391;;;
+From: ;Ksieginice - skrzyz. Warzyna;To: ;Dlugoleka - Kosciol;
+Ksieginice - skrzyz. Warzyna;>;;;05:15:00
+Bialkow;>;940;05:48:00;05:54:00
+Kleka;>;940;05:54:00;05:57:00
+Miekinia - Urzad Gminy;>;940;05:57:00;06:02:00
+Mrozow - Wyzwolenia;>;958;06:39:00;06:47:00
+Mrozow - Swietlica;>;958;06:47:00;06:49:00
+Zurawiniec;>;958;06:49:00;06:52:00
+Krepice - Wroclawska;>;958;06:52:00;06:54:00
+Krepice;>;958;06:54:00;06:57:00
+ZAR;>;958;06:57:00;07:00:00
+Mokrzanska;>;958;07:00:00;07:03:00
+Krepicka;>;958;07:03:00;07:04:00
+Krepicka - szkola;>;958;07:04:00;07:05:00
+Zajazdowa;>;958;07:05:00;07:06:00
+Eluarda;>;958;07:06:00;07:07:00
+Sredzka;>;958;07:07:00;07:09:00
+Rubczaka;>;958;07:09:00;07:10:00
+RUBCZAKA (Stacja kolejowa);>;958;07:10:00;07:11:00
+LESNICA;>;958;07:11:00;07:12:00
+Jeleniogorska;>;3;07:14:00;07:15:00
+Wschowska;>;3;07:15:00;07:16:00
+Zlotnicka;>;3;07:16:00;07:17:00
+Kamiennogorska (Osrodek dla niewidomych);>;3;07:17:00;07:18:00
+Kosmonautow (Szpital);>;3;07:18:00;07:19:00
+Grabowa;>;3;07:19:00;07:21:00
+Aleja Architektow;>;3;07:21:00;07:22:00
+Glinianki;>;3;07:22:00;07:23:00
+Tarczynski Arena (Lotnicza);>;3;07:23:00;07:24:00
+PILCZYCE;>;3;07:24:00;07:26:00
+Metalowcow;>;3;07:26:00;07:27:00
+Bajana;>;3;07:27:00;07:29:00
+Park Zachodni;>;3;07:29:00;07:30:00
+DH Astra;>;3;07:30:00;07:31:00
+Kwiska;>;3;07:31:00;07:33:00
+Malopanewska;>;3;07:33:00;07:34:00
+Niedzwiedzia;>;3;07:34:00;07:36:00
+ZACHODNIA (Stacja kolejowa);>;3;07:36:00;07:39:00
+pl. Strzegomski (Muzeum Wspolczesne);>;3;07:39:00;07:41:00
+Mlodych Technikow;>;3;07:41:00;07:42:00
+PL. JANA PAWLA II;>;3;07:42:00;07:44:00
+Rynek;>;3;07:44:00;07:47:00
+Zamkowa;>;3;07:47:00;07:48:00
+Swidnicka;>;3;07:48:00;07:50:00
+GALERIA DOMINIKANSKA;>;3;07:50:00;07:53:00
+Urzad Wojewodzki (Impart);>;D;07:54:00;07:57:00
+most Grunwaldzki;>;D;07:57:00;07:58:00
+PL. GRUNWALDZKI;>;D;07:58:00;08:00:00
+Kochanowskiego;>;D;08:00:00;08:03:00
+Sniadeckich;>;D;08:03:00;08:05:00
+Zacisze;>;D;08:05:00;08:06:00
+Kwidzynska;>;D;08:06:00;08:08:00
+Brucknera;>;D;08:08:00;08:10:00
+Psie Pole;>;D;08:10:00;08:14:00
+Psie Pole (Rondo Lotnikow Polskich);>;D;08:14:00;08:16:00
+PSIE POLE (Stacja kolejowa);>;914;08:27:00;08:28:00
+Dobroszycka;>;914;08:28:00;08:29:00
+Bierutowska 65;>;914;08:29:00;08:29:00
+Bierutowska;>;914;08:29:00;08:30:00
+Bierutowska 75;>;914;08:30:00;08:30:00
+BIERUTOWSKA (Wiadukt);>;914;08:30:00;08:31:00
+Mirkow - Sportowa;>;914;08:31:00;08:33:00
+Mirkow - Jagiellonska;>;914;08:33:00;08:35:00
+Dlugoleka - Wiejska;>;914;08:35:00;08:37:00
+Dlugoleka - Kasztanowa;>;914;08:37:00;08:39:00
+Dlugoleka - Kosciol;>;924;09:10:00;09:14:00
+;;;;
+A* - TRANSFERS;0.848377;;;
+From: ;Szczodre - Szkola;To: ;Wapienna;
+Szczodre - Szkola;>;;;04:28:00
+Szczodre - petla;>;904;04:34:00;04:36:00
+Szczodre - Trzebnicka;>;904;04:36:00;04:37:00
+Dlugoleka - Parkowa skrzy. Konopnicka;>;904;04:37:00;04:38:00
+Dlugoleka - Parkowa/skrzy.;>;904;04:38:00;04:39:00
+Dlugoleka - Kasztanowa;>;904;04:39:00;04:41:00
+Dlugoleka - Wiejska;>;904;04:41:00;04:42:00
+Mirkow - Jagiellonska;>;904;04:42:00;04:44:00
+Mirkow - Sportowa;>;904;04:44:00;04:46:00
+BIERUTOWSKA (Wiadukt);>;904;04:46:00;04:48:00
+Bierutowska 75;>;904;04:48:00;04:49:00
+Bierutowska;>;904;04:49:00;04:50:00
+Bierutowska 65;>;904;04:50:00;04:50:00
+Dobroszycka;>;904;04:50:00;04:51:00
+PSIE POLE (Stacja kolejowa);>;904;04:51:00;04:52:00
+Psie Pole (Rondo Lotnikow Polskich);>;904;04:52:00;04:53:00
+Psie Pole;>;904;04:53:00;04:54:00
+C.H. Korona;>;904;04:54:00;04:57:00
+Brucknera;>;904;04:57:00;04:59:00
+Grudziadzka;>;904;04:59:00;05:00:00
+KROMERA;>;904;05:00:00;05:02:00
+Ketrzynska;>;11;05:03:00;05:04:00
+Kwidzynska;>;11;05:04:00;05:05:00
+Zacisze;>;151;05:04:00;05:05:00
+Sniadeckich;>;151;05:05:00;05:06:00
+Kochanowskiego;>;151;05:06:00;05:08:00
+Bujwida;>;151;05:08:00;05:09:00
+PL. GRUNWALDZKI;>;151;05:09:00;05:11:00
+most Grunwaldzki;>;16;05:13:00;05:14:00
+Urzad Wojewodzki (Impart);>;16;05:14:00;05:16:00
+pl. Wroblewskiego;>;16;05:16:00;05:19:00
+Komuny Paryskiej;>;16;05:19:00;05:20:00
+Kosciuszki;>;16;05:20:00;05:21:00
+Hubska (Dawida);>;16;05:21:00;05:24:00
+Prudnicka;>;16;05:24:00;05:25:00
+Kamienna;>;16;05:25:00;05:27:00
+Wapienna;>;134;05:28:00;05:29:00
+;;;;
+A* - TRANSFERS;0.230962;;;
+From: ;Kowalska;To: ;Katedra;
+Kowalska;>;;;09:47:00
+Ceglana;>;118;09:58:00;09:59:00
+Gospodarska;>;118;09:59:00;10:00:00
+Miloszycka;>;118;10:00:00;10:01:00
+Swojczyce;>;118;10:01:00;10:02:00
+Magellana;>;118;10:02:00;10:03:00
+Kolumba;>;118;10:03:00;10:04:00
+Monopolowa;>;118;10:04:00;10:05:00
+SEPOLNO;>;118;10:05:00;10:07:00
+Godebskiego (AWF Wroclaw);>;17;10:11:00;10:12:00
+8 Maja;>;17;10:12:00;10:13:00
+Park Szczytnicki;>;115;10:16:00;10:17:00
+Mickiewicza;>;115;10:17:00;10:18:00
+Kliniki - Politechnika Wroclawska;>;115;10:18:00;10:20:00
+PL. GRUNWALDZKI;>;115;10:20:00;10:23:00
+Reja;>;115;10:23:00;10:25:00
+Katedra;>;111;10:27:00;10:29:00
+;;;;
+A* - TRANSFERS;0.912307;;;
+From: ;Kielczow - Biedronka;To: ;Ceglana;
+Kielczow - Biedronka;>;;;14:31:00
+Kielczow - Ladna;>;931;14:38:00;14:39:00
+Kielczowska (Cmentarz);>;931;14:39:00;14:41:00
+Zmudzka;>;931;14:41:00;14:42:00
+Kielczowska;>;931;14:42:00;14:43:00
+Poleska;>;931;14:43:00;14:44:00
+KIELCZOWSKA (LZN);>;931;14:44:00;14:45:00
+Psie Pole (Rondo Lotnikow Polskich);>;931;14:45:00;14:47:00
+Psie Pole;>;121;14:50:00;14:51:00
+Zielna;>;121;14:51:00;14:52:00
+C.H. Korona;>;121;14:52:00;14:54:00
+Brucknera;>;914;14:56:00;14:58:00
+Olsztynska;>;118;15:28:00;15:30:00
+Kowalska 56;>;118;15:30:00;15:31:00
+Kowale (Stacja kolejowa);>;118;15:31:00;15:32:00
+Dzialdowska;>;118;15:32:00;15:33:00
+Tczewska;>;118;15:33:00;15:34:00
+Kowalska;>;118;15:34:00;15:35:00
+Ceglana;>;118;15:35:00;15:36:00
+;;;;
+A* - TRANSFERS;0.744215;;;
+From: ;BROCHOW (Stacja kolejowa);To: ;Dluga;
+BROCHOW (Stacja kolejowa);>;;;11:35:00
+Topolowa;>;114;11:36:00;11:38:00
+Wiaduktowa;>;114;11:38:00;11:39:00
+Karwinska;>;114;11:39:00;11:42:00
+Park Wschodni;>;114;11:42:00;11:43:00
+KRAKOWSKA (Centrum handlowe);>;114;11:43:00;11:45:00
+Krakowska;>;114;11:45:00;11:46:00
+Na Niskich Lakach;>;114;11:46:00;11:48:00
+pl. Zgody (Muzeum Etnograficzne);>;3;11:51:00;11:52:00
+pl. Wroblewskiego;>;3;11:52:00;11:55:00
+GALERIA DOMINIKANSKA;>;3;11:55:00;11:59:00
+Swidnicka;>;3;11:59:00;12:01:00
+Zamkowa;>;3;12:01:00;12:02:00
+Rynek;>;3;12:02:00;12:04:00
+PL. JANA PAWLA II;>;3;12:04:00;12:07:00
+Inowroclawska;>;104;12:08:00;12:10:00
+Szczepin;>;104;12:10:00;12:12:00
+LITOMSKA (ZUS);>;104;12:12:00;12:13:00
+Poznanska;>;104;12:13:00;12:15:00
+Dluga;>;128;12:19:00;12:20:00
+;;;;
+A* - TRANSFERS;4.288602;;;
+From: ;Dlugoleka - Parkowa/skrzy.;To: ;Krepicka;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Opatowicka nr 59;To: ;Brochowska;
+Opatowicka nr 59;>;;;00:43:00
+;;;;
+A* - TRANSFERS;3.687284;;;
+From: ;Poczta Glowna;To: ;Lozina - Wroclawska (na wys. nr 18);
+Poczta Glowna;>;;;15:26:00
+GALERIA DOMINIKANSKA;>;N;15:31:00;15:34:00
+pl. Nowy Targ;>;9;15:35:00;15:36:00
+Hala Targowa;>;9;15:36:00;15:37:00
+pl. Bema;>;9;15:37:00;15:40:00
+Ogrod Botaniczny;>;9;15:40:00;15:42:00
+Gornickiego;>;9;15:42:00;15:43:00
+Piastowska;>;9;15:43:00;15:44:00
+Grunwaldzka;>;9;15:44:00;15:46:00
+Kochanowskiego;>;9;15:46:00;15:48:00
+Sniadeckich;>;111;15:50:00;15:52:00
+Zacisze;>;111;15:52:00;15:54:00
+Kwidzynska;>;111;15:54:00;15:56:00
+Brucknera;>;111;15:56:00;15:58:00
+C.H. Korona;>;111;15:58:00;16:00:00
+Zielna;>;111;16:00:00;16:02:00
+Psie Pole;>;111;16:02:00;16:03:00
+Psie Pole (Rondo Lotnikow Polskich);>;111;16:03:00;16:05:00
+Zakrzowska;>;111;16:05:00;16:06:00
+Kopanskiego;>;111;16:06:00;16:07:00
+Wallenroda;>;111;16:07:00;16:08:00
+Przedwiosnie (Stacja kolejowa);>;151;16:17:00;16:18:00
+Azaliowa;>;151;16:18:00;16:20:00
+Pawlowice;>;151;16:20:00;16:21:00
+Starodebowa;>;151;16:21:00;16:22:00
+Pawlowicka;>;151;16:22:00;16:23:00
+Przebisniegowa;>;151;16:23:00;16:24:00
+Ramiszow;>;936;16:41:00;16:45:00
+Pasikurowice - cmentarz;>;936;16:45:00;16:48:00
+Pasikurowice - skrzy. Malinowa;>;936;16:48:00;16:50:00
+Pasikurowice - Energetyczna;>;936;16:50:00;16:51:00
+Pasikurowice - n/z;>;936;16:51:00;16:52:00
+Bukowina;>;936;16:52:00;16:54:00
+Bukowina - skrzy.;>;936;16:54:00;16:56:00
+Bakow;>;936;16:56:00;16:57:00
+Lozina - Wroclawska (na wys. nr 18);>;936;16:57:00;17:00:00
+;;;;
+A* - TRANSFERS;0.264322;;;
+From: ;Rakow - osiedle;To: ;Dmowskiego;
+Rakow - osiedle;>;;;06:09:00
+Bielawa;>;911;06:54:00;06:56:00
+Piecowice;>;911;06:56:00;07:00:00
+Kielczow - Boczna;>;911;07:00:00;07:04:00
+Kielczow - petla (Plac Jana Gdaka);>;911;07:04:00;07:06:00
+Kielczow - WODROL;>;911;07:06:00;07:08:00
+Kielczow - osiedle;>;911;07:08:00;07:09:00
+Wilczyce - Sosnowa;>;911;07:09:00;07:10:00
+Wilczyce - Debowa;>;911;07:10:00;07:11:00
+Wilczyce - Dworska;>;911;07:11:00;07:12:00
+Wilczyce - Borowa;>;911;07:12:00;07:13:00
+Wilczyce - Wroclawska (na wys. nr 1F);>;911;07:13:00;07:14:00
+Wilczyce;>;911;07:14:00;07:14:00
+Mrozna;>;911;07:14:00;07:15:00
+Kurlandzka;>;911;07:15:00;07:15:00
+Zgorzelisko;>;911;07:15:00;07:16:00
+Palacha;>;911;07:16:00;07:17:00
+Szewczenki;>;911;07:17:00;07:18:00
+Gorlicka;>;911;07:18:00;07:19:00
+MULICKA;>;911;07:19:00;07:20:00
+Psie Pole (Rondo Lotnikow Polskich);>;911;07:20:00;07:21:00
+Psie Pole;>;911;07:21:00;07:22:00
+C.H. Korona;>;911;07:22:00;07:26:00
+Brucknera;>;911;07:26:00;07:28:00
+Grudziadzka;>;128;07:29:00;07:30:00
+Kromera (Czajkowskiego);>;128;07:30:00;07:32:00
+KROMERA;>;128;07:32:00;07:35:00
+Mosty Warszawskie;>;128;07:35:00;07:37:00
+Wyszynskiego;>;128;07:37:00;07:39:00
+Ogrod Botaniczny;>;128;07:39:00;07:42:00
+Swietokrzyska;>;128;07:42:00;07:44:00
+pl. Bema;>;128;07:44:00;07:45:00
+Dubois;>;128;07:45:00;07:50:00
+Pomorska;>;128;07:50:00;07:52:00
+Dmowskiego;>;128;07:52:00;07:54:00
+;;;;
+A* - TRANSFERS;1.671791;;;
+From: ;pl. Orlat Lwowskich;To: ;Baltycka (szkola);
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Volvo - brama II;To: ;Soltysowicka;
+Volvo - brama II;>;;;20:37:00
+;;;;
+A* - TRANSFERS;0.00105;;;
+From: ;Dobroszycka;To: ;Wilczyce - szkola;
+Dobroszycka;>;;;23:57:00
+;;;;
+A* - TRANSFERS;1.929484;;;
+From: ;Szymanow (Letnia);To: ;Mirkow - skrzy. Polna;
+Szymanow (Letnia);>;;;21:10:00
+Szymanow;>;908;21:20:00;21:21:00
+Szymanow (Widawska);>;908;21:21:00;21:22:00
+Szymanow - skrzyz.;>;908;21:22:00;21:23:00
+Psary - Szkola;>;908;21:23:00;21:24:00
+Widawa;>;908;21:24:00;21:27:00
+Konopackiej;>;908;21:27:00;21:28:00
+Rondo Obroncow Grodna;>;908;21:28:00;21:29:00
+Lekarska;>;908;21:29:00;21:30:00
+Zmigrodzka (Obwodnica);>;908;21:30:00;21:31:00
+POSWIETNE;>;908;21:31:00;21:32:00
+Wolowska;>;908;21:32:00;21:33:00
+Kepinska;>;908;21:33:00;21:34:00
+Kamienskiego;>;908;21:34:00;21:35:00
+Broniewskiego;>;908;21:35:00;21:37:00
+Pola;>;N;21:40:00;21:41:00
+Syrokomli;>;N;21:41:00;21:42:00
+Berenta;>;N;21:42:00;21:44:00
+KROMERA;>;N;21:44:00;21:46:00
+Ketrzynska;>;23;21:49:00;21:50:00
+Kwidzynska;>;23;21:50:00;21:51:00
+Zacisze;>;121;21:55:00;21:56:00
+Sniadeckich;>;121;21:56:00;21:57:00
+Moniuszki;>;259;23:53:00;23:54:00
+;;;;
+A* - TRANSFERS;0.20449;;;
+From: ;Na Szancach;To: ;Rozanka;
+Na Szancach;>;;;09:24:00
+Jednosci Narodowej;>;8;09:26:00;09:27:00
+Slowianska;>;8;09:27:00;09:29:00
+DWORZEC NADODRZE;>;8;09:29:00;09:31:00
+Kleczkowska;>;714;09:35:00;09:37:00
+most Osobowicki;>;714;09:37:00;09:39:00
+Luzycka;>;K;09:40:00;09:42:00
+Rozanka;>;K;09:42:00;09:43:00
+;;;;
+A* - TRANSFERS;1.00385;;;
+From: ;Kielczow - Ladna;To: ;Chinska;
+Kielczow - Ladna;>;;;08:56:00
+Kielczowska (Cmentarz);>;931;09:14:00;09:16:00
+Zmudzka;>;931;09:16:00;09:17:00
+Kielczowska;>;931;09:17:00;09:18:00
+Poleska;>;931;09:18:00;09:19:00
+KIELCZOWSKA (LZN);>;931;09:19:00;09:20:00
+Psie Pole (Rondo Lotnikow Polskich);>;931;09:20:00;09:22:00
+Psie Pole;>;D;09:23:00;09:24:00
+Brucknera;>;D;09:24:00;09:29:00
+Kwidzynska;>;131;09:32:00;09:34:00
+Zacisze;>;131;09:34:00;09:35:00
+Sniadeckich;>;131;09:35:00;09:36:00
+Kochanowskiego;>;131;09:36:00;09:38:00
+Bujwida;>;131;09:38:00;09:40:00
+PL. GRUNWALDZKI;>;131;09:40:00;09:42:00
+most Grunwaldzki;>;16;09:43:00;09:44:00
+Urzad Wojewodzki (Impart);>;16;09:44:00;09:46:00
+pl. Wroblewskiego;>;16;09:46:00;09:49:00
+pl. Zgody (Muzeum Etnograficzne);>;3;09:52:00;09:54:00
+Na Niskich Lakach;>;3;09:54:00;09:56:00
+Krakowska;>;3;09:56:00;09:57:00
+KRAKOWSKA (Centrum handlowe);>;3;09:57:00;09:59:00
+Armii Krajowej;>;3;09:59:00;10:00:00
+Park Wschodni;>;3;10:00:00;10:01:00
+Karwinska;>;3;10:01:00;10:03:00
+Wiaduktowa;>;114;10:04:00;10:06:00
+Topolowa;>;114;10:06:00;10:07:00
+BROCHOW (Stacja kolejowa);>;114;10:07:00;10:09:00
+Chinska;>;114;10:09:00;10:10:00
+;;;;
+A* - TRANSFERS;1.703088;;;
+From: ;Bielany Wroclawskie - PKP;To: ;Trestno - kosciol;
+Bielany Wroclawskie - PKP;>;;;21:15:00
+Sleza - skrzyzowanie;>;612;21:19:00;21:20:00
+Sleza - Debowa;>;612;21:20:00;21:21:00
+Sleza - autostrada;>;612;21:21:00;21:23:00
+Wysoka - Radosna;>;612;21:23:00;21:25:00
+Wysoka - Chabrowa;>;612;21:25:00;21:26:00
+Wysoka;>;612;21:26:00;21:27:00
+ROD Storczyk;>;612;21:27:00;21:28:00
+Kutrzeby;>;612;21:28:00;21:29:00
+Oltaszyn;>;612;21:29:00;21:31:00
+Swit;>;612;21:31:00;21:32:00
+Parafialna;>;612;21:32:00;21:34:00
+Wojszyce;>;612;21:34:00;21:35:00
+Przystankowa;>;612;21:35:00;21:36:00
+Borowska (Szpital);>;612;21:36:00;21:37:00
+Dzialkowa;>;612;21:37:00;21:39:00
+ROD Bajki;>;612;21:39:00;21:41:00
+Orzechowa;>;133;21:43:00;21:44:00
+Bardzka;>;133;21:44:00;21:46:00
+Nyska;>;134;21:47:00;21:48:00
+Transbud;>;134;21:48:00;21:49:00
+Armii Krajowej (Bogedaina);>;134;21:49:00;21:50:00
+Park Wschodni;>;134;21:50:00;21:51:00
+Armii Krajowej;>;3;22:02:00;22:03:00
+KRAKOWSKA (Centrum handlowe);>;3;22:03:00;22:04:00
+Krakowska;>;3;22:04:00;22:05:00
+Na Niskich Lakach;>;3;22:05:00;22:07:00
+Rakowiecka;>;120;22:56:00;22:58:00
+Miedzyrzecka;>;120;22:58:00;23:00:00
+Bierdzany;>;120;23:00:00;23:01:00
+Nowy Dom;>;120;23:01:00;23:04:00
+Opatowicka nr 59;>;120;23:04:00;23:06:00
+Opatowicka nr 85;>;120;23:06:00;23:07:00
+OPATOWICE;>;120;23:07:00;23:08:00
+Opatowicka nr 127;>;120;23:08:00;23:09:00
+Zalewowa;>;120;23:09:00;23:10:00
+Trestno - swietlica;>;120;23:10:00;23:11:00
+Trestno - kosciol;>;120;23:11:00;23:12:00
+;;;;
+A* - TRANSFERS;0;;;
+From: ;Dlugoleka - Nowy Urzad;To: ;TARCZYNSKI ARENA (Krolewiecka);
+Dlugoleka - Nowy Urzad;>;;;23:56:00
+;;;;
+A* - TRANSFERS;2.870237;;;
+From: ;Krzemieniecka;To: ;KLOKOCZYCE;
+The correct path was not found;;;;
+;;;;
+A* - TRANSFERS;2.342021;;;
+From: ;Zarembowicza;To: ;PAWLOWICE (Widawska);
+Zarembowicza;>;;;19:22:00
+Strachowice General Aviation;>;106;19:31:00;19:32:00
+Skarzynskiego;>;106;19:32:00;19:34:00
+Graniczna;>;106;19:34:00;19:35:00
+Przybyly;>;106;19:35:00;19:36:00
+Zagloby;>;106;19:36:00;19:37:00
+Park Tysiaclecia;>;106;19:37:00;19:39:00
+MINSKA (Rondo Rotm. Pileckiego);>;106;19:39:00;19:40:00
+Rogowska;>;106;19:40:00;19:43:00
+Nowy Dwor;>;106;19:43:00;19:45:00
+Nowodworska;>;106;19:45:00;19:46:00
+Strzegomska 148;>;106;19:46:00;19:47:00
+Otynska;>;106;19:47:00;19:49:00
+Fabryczna;>;106;19:49:00;19:50:00
+Dolnoslaska Szkola Wyzsza;>;106;19:50:00;19:51:00
+Wroclawski Park Przemyslowy;>;106;19:51:00;19:52:00
+Srubowa;>;106;19:52:00;19:54:00
+Smolecka;>;106;19:54:00;19:55:00
+Dworzec Swiebodzki;>;106;19:55:00;19:57:00
+pl. Orlat Lwowskich;>;106;19:57:00;19:59:00
+Renoma;>;106;19:59:00;20:01:00
+Opera;>;23;20:03:00;20:05:00
+Park Staromiejski;>;23;20:05:00;20:07:00
+GALERIA DOMINIKANSKA;>;23;20:07:00;20:10:00
+pl. Nowy Targ;>;23;20:10:00;20:11:00
+Hala Targowa;>;23;20:11:00;20:12:00
+pl. Bema;>;23;20:12:00;20:14:00
+Na Szancach;>;23;20:14:00;20:15:00
+Jednosci Narodowej;>;23;20:15:00;20:16:00
+Nowowiejska;>;23;20:16:00;20:18:00
+Daszynskiego;>;23;20:18:00;20:19:00
+Mosty Warszawskie;>;23;20:19:00;20:20:00
+KROMERA;>;23;20:20:00;20:23:00
+Kromera (Czajkowskiego);>;N;20:25:00;20:27:00
+Grudziadzka;>;N;20:27:00;20:28:00
+Brucknera;>;N;20:28:00;20:29:00
+Psie Pole;>;N;20:29:00;20:33:00
+Psie Pole (Rondo Lotnikow Polskich);>;N;20:33:00;20:34:00
+Zakrzowska;>;147;20:36:00;20:37:00
+Kopanskiego;>;111;20:40:00;20:41:00
+Wallenroda;>;111;20:41:00;20:42:00
+Przedwiosnie (Stacja kolejowa);>;151;20:44:00;20:45:00
+Azaliowa;>;151;20:45:00;20:46:00
+Pawlowice;>;151;20:46:00;20:47:00
+Starodebowa;>;151;20:47:00;20:48:00
+Pawlowicka;>;151;20:48:00;20:49:00
+Przebisniegowa;>;151;20:49:00;20:50:00
+PAWLOWICE (Widawska);>;151;20:50:00;20:51:00
+;;;;
+A* - TRANSFERS;5.752642;;;
+From: ;Miloszycka;To: ;SZYMANOW-petla;
+Miloszycka;>;;;13:14:00
+Gospodarska;>;315;13:14:00;13:15:00
+Ceglana;>;315;13:15:00;13:15:00
+Monopolowa;>;315;13:15:00;13:18:00
+SEPOLNO;>;315;13:18:00;13:20:00
+Godebskiego (AWF Wroclaw);>;115;13:24:00;13:25:00
+8 Maja;>;115;13:25:00;13:26:00
+Park Szczytnicki;>;115;13:26:00;13:27:00
+Mickiewicza;>;115;13:27:00;13:28:00
+Kliniki - Politechnika Wroclawska;>;115;13:28:00;13:30:00
+PL. GRUNWALDZKI;>;115;13:30:00;13:33:00
+most Grunwaldzki;>;4;13:35:00;13:36:00
+Urzad Wojewodzki (Impart);>;4;13:36:00;13:38:00
+GALERIA DOMINIKANSKA;>;4;13:38:00;13:42:00
+Swidnicka;>;4;13:42:00;13:44:00
+Zamkowa;>;4;13:44:00;13:45:00
+Rynek;>;3;13:47:00;13:49:00
+PL. JANA PAWLA II;>;3;13:49:00;13:52:00
+Mlodych Technikow;>;3;13:52:00;13:54:00
+pl. Strzegomski (Muzeum Wspolczesne);>;3;13:54:00;13:55:00
+ZACHODNIA (Stacja kolejowa);>;3;13:55:00;13:57:00
+Niedzwiedzia;>;3;13:57:00;13:59:00
+Malopanewska;>;3;13:59:00;14:00:00
+Kwiska;>;3;14:00:00;14:02:00
+DH Astra;>;3;14:02:00;14:04:00
+Park Zachodni;>;3;14:04:00;14:05:00
+Bajana;>;3;14:05:00;14:06:00
+Metalowcow;>;3;14:06:00;14:07:00
+PILCZYCE;>;3;14:07:00;14:09:00
+Tarczynski Arena (Lotnicza);>;3;14:09:00;14:10:00
+Glinianki;>;3;14:10:00;14:12:00
+Aleja Architektow;>;3;14:12:00;14:13:00
+Grabowa;>;3;14:13:00;14:14:00
+Kosmonautow (Szpital);>;3;14:14:00;14:16:00
+Kamiennogorska (Osrodek dla niewidomych);>;3;14:16:00;14:17:00
+Zlotnicka;>;3;14:17:00;14:19:00
+Wschowska;>;3;14:19:00;14:20:00
+Jeleniogorska;>;3;14:20:00;14:21:00
+LESNICA;>;3;14:21:00;14:22:00
+Sredzka;>;101;14:23:00;14:24:00
+Eluarda;>;938;14:44:00;14:46:00
+Zajazdowa;>;938;14:46:00;14:47:00
+Krepicka - szkola;>;938;14:47:00;14:48:00
+Krepicka;>;938;14:48:00;14:49:00
+Mokrzanska;>;938;14:49:00;14:50:00
+ZAR;>;938;14:50:00;14:53:00
+Krepice - Wroclawska;>;958;17:19:00;17:23:00
+Zurawiniec;>;958;17:23:00;17:26:00
+Mrozow - Swietlica;>;958;17:26:00;17:29:00
+Mrozow - Wyzwolenia;>;958;17:29:00;17:31:00
+Wojnowice - Glowna;>;940;18:18:00;18:21:00
+Wilkostow;>;940;18:21:00;18:24:00
+Czerna;>;940;18:24:00;18:27:00
+;;;;
+A* - TRANSFERS;0.818084;;;
+From: ;Bardzka;To: ;Drzewieckiego;
+Bardzka;>;;;18:32:00
+Kamienna;>;32;18:32:00;18:33:00
+Wapienna;>;124;18:34:00;18:35:00
+Borowska;>;124;18:35:00;18:36:00
+Uniwersytet Ekonomiczny;>;124;18:36:00;18:39:00
+Drukarska;>;124;18:39:00;18:41:00
+Rondo;>;124;18:41:00;18:43:00
+Krucza;>;124;18:43:00;18:46:00
+Grochowa;>;124;18:46:00;18:48:00
+Stalowa;>;124;18:48:00;18:50:00
+pl. Srebrny;>;124;18:50:00;18:51:00
+Bzowa (Centrum Zajezdnia);>;124;18:51:00;18:52:00
+Hutmen;>;124;18:52:00;18:53:00
+FAT;>;124;18:53:00;18:55:00
+ROD Oswiata;>;124;18:55:00;18:57:00
+Wroclawski Park Technologiczny;>;124;18:57:00;18:58:00
+Szkocka;>;124;18:58:00;19:00:00
+Gadowianka;>;124;19:00:00;19:02:00
+Na Ostatnim Groszu;>;124;19:02:00;19:04:00
+Orlinskiego;>;136;19:05:00;19:06:00
+Drzewieckiego;>;136;19:06:00;19:07:00
+;;;;
+A* - TRANSFERS;3.642353;;;
+From: ;Na Grobli (Hydropolis);To: ;Ferma - stadnina koni;
+Na Grobli (Hydropolis);>;;;17:13:00
+pl. Wroblewskiego;>;920;17:20:00;17:23:00
+GALERIA DOMINIKANSKA;>;920;17:23:00;17:28:00
+Swidnicka;>;33;17:30:00;17:32:00
+Zamkowa;>;33;17:32:00;17:33:00
+Rynek;>;33;17:33:00;17:35:00
+PL. JANA PAWLA II;>;33;17:35:00;17:38:00
+Mlodych Technikow;>;33;17:38:00;17:40:00
+pl. Strzegomski (Muzeum Wspolczesne);>;33;17:40:00;17:41:00
+ZACHODNIA (Stacja kolejowa);>;33;17:41:00;17:43:00
+Niedzwiedzia;>;33;17:43:00;17:45:00
+Malopanewska;>;33;17:45:00;17:46:00
+Kwiska;>;33;17:46:00;17:48:00
+DH Astra;>;33;17:48:00;17:50:00
+Park Zachodni;>;33;17:50:00;17:51:00
+Bajana;>;33;17:51:00;17:52:00
+Metalowcow;>;33;17:52:00;17:53:00
+PILCZYCE;>;33;17:53:00;17:55:00
+Tarczynski Arena (Lotnicza);>;3;17:57:00;17:58:00
+Glinianki;>;3;17:58:00;18:00:00
+Aleja Architektow;>;3;18:00:00;18:01:00
+Grabowa;>;3;18:01:00;18:02:00
+Kosmonautow (Szpital);>;3;18:02:00;18:04:00
+Kamiennogorska (Osrodek dla niewidomych);>;3;18:04:00;18:05:00
+Zlotnicka;>;3;18:05:00;18:07:00
+Wschowska;>;3;18:07:00;18:08:00
+Jeleniogorska;>;3;18:08:00;18:09:00
+LESNICA;>;3;18:09:00;18:10:00
+Sredzka;>;101;18:12:00;18:13:00
+Rubczaka;>;937;18:15:00;18:16:00
+Serowarska;>;917;18:37:00;18:39:00
+Trzmielowicka;>;917;18:39:00;18:40:00
+Pustecka;>;917;18:40:00;18:41:00
+Miodowa;>;917;18:41:00;18:43:00
+Szkolna;>;917;18:43:00;18:44:00
+Ratyn - skrzyzowanie;>;917;18:44:00;18:45:00
+Krajobrazowa;>;917;18:45:00;18:46:00
+Las Ratynski;>;917;18:46:00;18:47:00
+Ferma - stadnina koni;>;917;18:47:00;18:48:00

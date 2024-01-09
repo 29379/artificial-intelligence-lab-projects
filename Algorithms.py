@@ -67,8 +67,10 @@ class Algorithms:
             self.used_lines.append(self.lines[my_focus])
             self.path.append(my_focus)
             my_focus = self.previous_nodes[my_focus]
+            
             if len(self.path) > 250:
                 break
+        
         self.arr_times.reverse()
         self.dep_times.reverse()
         self.used_lines.reverse()
