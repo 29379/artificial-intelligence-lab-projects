@@ -80,7 +80,7 @@ class Board:
     #   get all the moves that are possible for a specific player
     def get_valid_moves(self, player: int) -> list[tuple[int, int]]:
         valid_moves: list[tuple[int, int]] = []
-        pieces = self.get_player_pieces(self.current_player)
+        pieces = self.get_player_pieces(player)
         # for x in range(8):
         #     for y in range(8):
         #         if self.grid[x, y] == player:

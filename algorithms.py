@@ -45,7 +45,7 @@ class Algorithms:
                     prev_move, 
                     False 
                 )
-                
+              
                 if score == float('inf'):
                     return score, candidate
                 elif score > best_score:
