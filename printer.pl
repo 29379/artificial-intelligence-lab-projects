@@ -172,28 +172,28 @@ fix(low_on_magenta, 'Replace the ink inside the magenta ink cartridge').
 fix(low_on_yellow, 'Replace the ink inside the yellow ink cartridge').
 
 % ------------------------------------------
-% Basic queries
+% Basic queries - commented out to avoid errors
 
 % Retrieve all the supported printing functions
-print_function(brother_dcp_j105, Function).
+%print_function(brother_dcp_j105, Function).
 
 % Retrieve the printer state, warning light color and message for each of the states
-printer_state(State, WarningLight, Message).
+%printer_state(State, WarningLight, Message).
 
 % Retrieve all the ink cartridges supported by the printer
-ink_cartridge(brother_dcp_j105, Cartridge).
+%ink_cartridge(brother_dcp_j105, Cartridge).
 
 % Find all the paper sizes supported by the printer
-paper_size_supported(brother_dcp_j105, Size).
+%paper_size_supported(brother_dcp_j105, Size).
 
 % Check if the printer supports a fax feature
-has_fax(brother_dcp_j105, Feature).
+%has_fax(brother_dcp_j105, Feature).
 
 % Find all the physical parts of a printer
-printer_part(Part).
+%printer_part(Part).
 
 % Check if the printer supports duplex printing
-has_duplex_printing(brother_dcp_j105, Feature).
+%has_duplex_printing(brother_dcp_j105, Feature).
 
 % ---------------------------------------------
 % More complex queries
