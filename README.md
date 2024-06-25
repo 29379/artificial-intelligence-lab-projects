@@ -1,4 +1,4 @@
-# Old Projects Repository
+# Artificial Intelligence Lab Projects
 
 A repository containing a collection of projects written during one of my courses at Wrocław University of Science and Technology.
 
