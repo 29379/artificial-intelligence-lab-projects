@@ -1,0 +1,10 @@
+Heuristic;Win Ratio
+stability;28.67132867
+mobility;25.17482517
+corners;19.58041958
+coin_parity;25.17482517
+;
+Depths;Win Ratio
+depth-1;26.57342657
+depth-2;46.15384615
+depth-3;25.87412587
