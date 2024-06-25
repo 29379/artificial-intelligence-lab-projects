@@ -1,16 +1,47 @@
-A repository containing a bunch of old projects, that were written during one of my old courses at Wrocław University of Science and Technology
+# Old Projects Repository
+
+A repository containing a collection of projects written during one of my courses at Wrocław University of Science and Technology.
+
 ---
-Lab1
-Implementation of dijkstra's, A* algorithms and tabu search based on the data regarding public transport connections from MPK Wrocław
+
+## Lab 1
+
+**Topic:** Public Transport Algorithms
+
+- **Description:** Implementation of Dijkstra's, A* algorithms, and Tabu Search.
+- **Data Source:** MPK Wrocław public transport connections.
+
 ---
-Lab2
-MinMax and Alpha-Beta-Pruning algorithms implementation, based on the game 'Reversi'
+
+## Lab 2
+
+**Topic:** Game Algorithms
+
+- **Description:** Implementation of MinMax and Alpha-Beta Pruning algorithms.
+- **Game:** Reversi.
+
 ---
-Lab3
-Implementation of a simple knowledge base in Prolog regarding 'Brother DCP-J105' printer
+
+## Lab 3
+
+**Topic:** Knowledge Base in Prolog
+
+- **Description:** Implementation of a simple knowledge base.
+- **Example:** 'Brother DCP-J105' printer.
+
 ---
-Lab4
-Implementation of some simple machine learning algorithms
+
+## Lab 4
+
+**Topic:** Machine Learning Algorithms
+
+- **Description:** Implementation of some simple machine learning algorithms.
+
 ---
-Lab5
-Implementation of a neural network based on a Jester dataset
+
+## Lab 5
+
+**Topic:** Neural Networks
+
+- **Description:** Implementation of a neural network.
+- **Dataset:** Jester dataset.
